@@ -1,0 +1,12 @@
+*~
+*.swp
+*.tmp
+
+*.svn
+
+entries
+
+*.svn-base
+
+*.log
+
