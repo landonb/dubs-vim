@@ -4,17 +4,20 @@
  
 !define company "Retrosoft"
  
-!define prodname "dubsacks"
+!define prodname "dubsacks gVim"
+!define prodname_dotted "dubsacks.gVim"
 
 !define prodvers "0.0.1.0"
-!define prodvers_short "0.0.1"
+!define prodvers_friendly "v0.0.1"
 
 ;!define setup "dubsacks.exe"
-!define setup "dubsacks-v${prodvers_short}.exe"
+!define setup "dubsacks-${prodvers_friendly}.exe"
 
-!define exec "_staging.tmp\vim\vim72\gvim.exe"
+!define exec "vim72\gvim.exe"
 !define noexeccopy
- 
+;!define exec_params " --remote-silent ""%%1"""
+!define exec_params " --remote-silent"
+
 ; optional stuff
  
 ; text file to open in notepad after installation
@@ -26,12 +29,12 @@
 
 ; icons must be Microsoft .ICO files
 !define icon "favicon.ico"
-!define noiconcopy
  
 ; installer background screen
 ; !define screenimage background.bmp
 
 !define components "dubsacks-components.nsh"
+!define no_uninstall_cleanup
 
 ; file containing list of file-installation commands
 ;!define files "dubsacks-files.nsh"
