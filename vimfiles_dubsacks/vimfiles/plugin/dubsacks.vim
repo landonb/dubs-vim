@@ -685,6 +685,8 @@ command! -nargs=0 Lorem :normal iLorem ipsum dolor sit amet, consectetur
       \ proident, sunt in culpa qui officia deserunt mollit anim id est
       \ laborum.
 
+au BufRead,BufNewFile *.nsh setfiletype nsis
+
 " ------------------------------------------
 " ----------------------------------- EOF --
 
