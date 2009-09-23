@@ -142,8 +142,7 @@ class DubsacksMsiBuilder
 
   def self.prepare_dir_paths
 
-#   @staging_dir = File.join(File::dirname($0), "_staging.tmp")
-    @staging_dir = File.join(File::dirname($0), "_staging.tmp3")
+    @staging_dir = File.join(File::dirname($0), "_staging.tmp")
     @dest_vim_runtime = File.join(@staging_dir, File::basename(@opts.uri_vim_runtime))
     @dest_gvim_exe = File.join(@staging_dir, File::basename(@opts.uri_gvim_exe))
 
