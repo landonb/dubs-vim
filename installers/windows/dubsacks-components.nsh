@@ -19,7 +19,7 @@ Section "Windows gVim 32-bit"
   # install gVim to C:\Program Files or C:\Program Files (x86)
   setOutPath $INSTDIR
 
-  File /r .\_staging.tmp3\vimfiles_gvim\*.*
+  File /r .\_staging.tmp\vimfiles_gvim\*.*
 
 SectionEnd
 
@@ -29,7 +29,7 @@ Section "!dubsacks gVim Scripts"
   # e.g., C:\Documents and Settings\User
   setOutPath $PROFILE
 
-  File /r .\_staging.tmp3\vimfiles_dubsacks\*.*
+  File /r .\_staging.tmp\vimfiles_dubsacks\*.*
 
 SectionEnd
 
