@@ -15,8 +15,7 @@
 
 !define exec "vim72\gvim.exe"
 !define noexeccopy
-;!define exec_params " --remote-silent ""%%1"""
-!define exec_params " --remote-silent"
+!define exec_params "--remote-silent '%1'"
 
 ; optional stuff
  
