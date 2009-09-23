@@ -172,9 +172,10 @@ Section
   !endif
 
   !ifdef icon
-    !ifndef noiconcopy
+    ; copy the icon for the shortcut
+    ;!ifndef noiconcopy
       File /a "${srcdir}\${icon}"
-    !endif
+    ;!endif
   !endif
 
   ; any application-specific files
@@ -189,12 +190,16 @@ SectionEnd
 ; create shortcuts
 Section
 
+  !ifndef exec_params
+    !define exec_params ""
+  !endif
+
   CreateDirectory "${startmenu}"
   SetOutPath $INSTDIR ; for working directory
   !ifdef icon
-    CreateShortCut "${startmenu}\${prodname}.lnk" "$INSTDIR\${exec}" "" "$INSTDIR\${icon}"
+    CreateShortCut "${startmenu}\${prodname}.lnk" "$INSTDIR\${exec}" "${exec_params}" "$INSTDIR\${icon}"
   !else
-    CreateShortCut "${startmenu}\${prodname}.lnk" "$INSTDIR\${exec}"
+    CreateShortCut "${startmenu}\${prodname}.lnk" "$INSTDIR\${exec}" "${exec_params}"
   !endif
 
   !ifdef notefile
@@ -214,6 +219,9 @@ Section
     ExecShell "open" "$INSTDIR\${notefile}"
   !endif
 
+  ; Uninstall shortcut
+  CreateShortCut "${startmenu}\Uninstall ${prodname}.lnk" "$INSTDIR\uninstall.exe" ""
+
 SectionEnd
 
 ; Uninstaller
@@ -226,9 +234,6 @@ UninstallText "This will uninstall ${prodname}."
 !endif
 
 Section "Uninstall"
-
-  # Delete uninstaller
-  Delete $INSTDIR\uninstall.exe
 
   DeleteRegKey HKLM "${uninstkey}"
   DeleteRegKey HKLM "${regkey}"
@@ -258,7 +263,32 @@ Section "Uninstall"
 
 SectionEnd
 
-; User Components
+Function "un.RMDirHack"
+
+  ; Delete uninstaller
+  Delete $INSTDIR\uninstall.exe
+
+  ; Try to delete Installation directory
+  ; (fails if not empty, obv.)
+  RMDir "$INSTDIR"
+  ; Also try deleting the Company directory
+  RMDir "$PROGRAMFILES\${company}"
+
+FunctionEnd
+
+; Check now if the Installation directory
+; can be deleted
+Section "-un.RMDir Hack"
+
+  !ifndef no_uninstall_cleanup
+    Call un.RMDirHack
+  !endif
+  ; Otherwise, components file should 
+  ; call this as necessary
+
+SectionEnd
+
+; Call the user's custom sections last
 !ifdef components
   !include "${components}"
 !endif
