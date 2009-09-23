@@ -1,15 +1,21 @@
 
 Var assoc_cmds_bat_file_inst
 Var assoc_cmds_bat_file_uninst
+; This is a hack to indicate if it's okay to delete 
+; the uninstaller and the application dir on uninstall
+Var components_removed
+!define uninstall_sections_no 2
 
 Function InitAssocBat
-  StrCpy $assoc_cmds_bat_file_inst "assoc_cmds_inst.bat"
-  StrCpy $assoc_cmds_bat_file_uninst "assoc_cmds_uninst.bat"
+  StrCpy $assoc_cmds_bat_file_inst "install_ftype_assoc.bat"
+  StrCpy $assoc_cmds_bat_file_uninst "uninstall_ftype_assoc.bat"
+  IntFmt $components_removed "%d" 0
 FunctionEnd
 
 Function un.InitAssocBat
-  StrCpy $assoc_cmds_bat_file_inst "assoc_cmds_inst.bat"
-  StrCpy $assoc_cmds_bat_file_uninst "assoc_cmds_uninst.bat"
+  StrCpy $assoc_cmds_bat_file_inst "install_ftype_assoc.bat"
+  StrCpy $assoc_cmds_bat_file_uninst "uninstall_ftype_assoc.bat"
+  IntFmt $components_removed "%d" 0
 FunctionEnd
 
 ## INSTALLATION
@@ -23,6 +29,7 @@ Section "Windows gVim 32-bit"
 
 SectionEnd
 
+#   (The !bang just bolds the word it precedes)
 Section "!dubsacks gVim Scripts"
 
   # install dubsacks configuration to user's directory, 
@@ -46,6 +53,8 @@ Section "un.Uninstall Windows gVim 32-bit"
   # delete gVim from C:\Program Files or C:\Program Files (x86)
   RMDir /r $INSTDIR\vim72
 
+  IntOp $components_removed $components_removed + 1
+
 SectionEnd
 
 Section /o "!un.Remove *vim*, _vim* and vimfiles"
@@ -61,9 +70,24 @@ Section /o "!un.Remove *vim*, _vim* and vimfiles"
 
   # Try to delete Installation directory
   # (fails if not empty, obv.)
-  RMDir "$INSTDIR"
+  #RMDir "$INSTDIR"
   # Also try deleting the Company directory
-  RMDir "$PROGRAMFILES\${company}"
+  #RMDir "$PROGRAMFILES\${company}"
+
+  IntOp $components_removed $components_removed + 1
+
+SectionEnd
+
+Section "-un.Set RMDir Hack"
+  IntCmp $components_removed ${uninstall_sections_no} is_eq is_lt is_gt
+  is_eq:
+    Call un.RMDirHack
+    Goto done
+  is_lt:
+    Goto done
+  is_gt:
+    Goto done
+  done:
 
 SectionEnd
 
@@ -78,7 +102,7 @@ Section "-hidden SingleBatchIt-InIt"
   FileOpen $1 $INSTDIR\$assoc_cmds_bat_file_uninst w
   IfErrors open_failure
 
-  FileWrite $0 'ftype ${prodname}="$INSTDIR\vim72\gvim.exe" --remote-silent "%%1"$\n'
+  FileWrite $0 'ftype ${prodname_dotted}="$INSTDIR\vim72\gvim.exe" --remote-silent "%%1"$\n'
   Goto open_success
 
   open_failure:
@@ -88,11 +112,11 @@ Section "-hidden SingleBatchIt-InIt"
 
 SectionEnd
 
-SectionGroup "File Associations"
+SectionGroup /e "File Associations"
 
   # This is just for testing, see below for the BIG list of assoc exts...
   #Section ".bash"
-  #  FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  #  FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
   #SectionEnd
 
 # Vim cmd to convert list of 
@@ -101,7 +125,7 @@ SectionGroup "File Associations"
 #   assoc .bashrc=gvim
 #   etc.
 # to NSIS Sections:
-#   .,$s/# \+assoc \(\.[^=]*\)=.*$/  Section "\1"\r    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\\n"\r    FileWrite $1 "assoc ${__SECTION__}=txtfile$\\n"\r  SectionEnd\r/gc
+#   .,$s/# \+assoc \(\.[^=]*\)=.*$/  Section "\1"\r    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\\n"\r    FileWrite $1 "assoc ${__SECTION__}=txtfile$\\n"\r  SectionEnd\r/gc
 
 # assoc .=gvim
 # assoc .bash=gvim
@@ -150,233 +174,233 @@ SectionGroup "File Associations"
 # assoc .yaml=gvim
 # assoc .yml=gvim
 
-  Section "."
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o "."
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".bash"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".bash"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".bashrc"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".bashrc"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".bat"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".bat"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".c"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".c"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".cc"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".cc"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".conf"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".conf"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".css"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".css"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".csv"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".csv"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".dat"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".dat"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".django"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".django"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".gpx"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".gpx"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".h"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".h"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".hh"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".hh"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".hhc"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".hhc"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".hpp"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".hpp"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".htaccess"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".htaccess"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".inc"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".inc"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".inf"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".inf"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".ini"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".ini"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".java"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".java"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".js"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".js"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".layout"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".layout"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".log"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".log"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".manifest"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".manifest"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".nsh"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".nsh"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".nsi"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".nsi"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".php"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".php"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".pub"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".pub"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".py"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".py"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".rake"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".rake"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".rb"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".rb"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".rc"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".rc"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".rhtml"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".rhtml"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".rsa"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".rsa"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".s"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".s"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".settings"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".settings"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".text"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".text"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".textile"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".textile"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".txt"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".txt"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".vim"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".vim"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".vimprojects"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".vimprojects"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".vimrc"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".vimrc"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".xml"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".xml"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".yaml"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".yaml"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
-  Section ".yml"
-    FileWrite $0 "assoc ${__SECTION__}=${prodname}$\n"
+  Section /o ".yml"
+    FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
     FileWrite $1 "assoc ${__SECTION__}=txtfile$\n"
   SectionEnd
 
