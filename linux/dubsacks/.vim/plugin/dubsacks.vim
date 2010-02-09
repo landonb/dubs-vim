@@ -1,3 +1,20 @@
+" This file is part of Dubsacks.
+" --------------------------------
+" Dubsacks is Copyright © 2009, 2010 Landon Bouma.
+" 
+" Dubsacks is free software: you can redistribute it and/or modify
+" it under the terms of the GNU General Public License as published by
+" the Free Software Foundation, either version 3 of the License, or
+" (at your option) any later version.
+" 
+" Dubsacks is distributed in the hope that it will be useful,
+" but WITHOUT ANY WARRANTY; without even the implied warranty of
+" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+" GNU General Public License for more details.
+" 
+" You should have received a copy of the GNU General Public License
+" along with Dubsacks. If not, see <http://www.gnu.org/licenses/>.
+
 " ------------------------------------------
 "  Vim startup script for Windows gVim.
 " ------------------------------------------
@@ -7,7 +24,7 @@
 " License: What License?
 
 " NOTE!! If you edit this file, be sure to delete
-"        ~/vimfiles/Session.vim
+"        ~/.vim/Session.vim or ~/vimfiles/Session.vim
 "        (If you have dubsacks.vim loaded, you can 
 "         also run <Alt-f>e to close all windows 
 "         and then <Alt-f>x to quit; dubsacks will 
@@ -27,6 +44,46 @@ if exists("plugin_dubsacks_vim")
   finish
 endif
 let plugin_dubsacks_vim = 1
+
+" See what OS we're on
+" -------------------------
+let s:running_windows = has("win16") || has("win32") || has("win64")
+
+if !s:running_windows
+  let s:user_vim_dir = $HOME . "/.vim"
+else
+  let s:user_vim_dir = $HOME . "/vimfiles"
+endif
+
+" Enable syntax highlighting
+" -------------------------
+" This is enabled by default in Windows
+" but not Linux
+syntax enable
+
+" I want Ctrl-C/-V and to be able to 
+" highlight text with the shift and 
+" arrow keys in insert mode
+" -------------------------
+" Caveats
+" - Visual mode is CTRL-Q instead of CTRL-V
+" - Backspace and cursor keys wrap to previous/next line,
+"   rather than sounding the system bell (an-noy'ing!)
+" - CTRL-X and SHIFT-Del are Cut
+" - CTRL-C and CTRL-Insert are Copy
+" - CTRL-V and SHIFT-Insert are Paste
+" - Use CTRL-Q to do what CTRL-V used to do
+" - Use CTRL-S for saving, also in Insert mode
+" - CTRL-Z is Undo; not in cmdline though
+" - CTRL-Y is Redo (although not repeat); not in cmdline though
+" - Alt-Space is System menu
+" - CTRL-A is Select all
+" - CTRL-Tab is Next window
+" - CTRL-F4 is Close window
+if !s:running_windows
+  source $VIMRUNTIME/mswin.vim
+  behave mswin
+endif
 
 " Delete default Vim buffer
 " -------------------------
@@ -100,8 +157,8 @@ autocmd SessionLoadPost * nested
 "        sessionoptions=blank,buffers,curdir,
 "          \ folds,help,options,tabpages,winsize
 "      which means we can't update _this_ file 
-"      without first deleting 
-"      ~/vimfiles/Session.vim -- otherwise, 
+"      without first deleting ~/.vim/Session.vim 
+"      or ~/vimfiles/Session.vim -- otherwise, 
 "      Session.vim overrides any changes we make 
 "      here (because it stores mappings, etc., 
 "      and is loaded after this file). 
@@ -134,13 +191,13 @@ autocmd VimLeave * nested
   \ if (num_buffers == 1) 
   \     && (empty_buffers == 1) |
   \   call delete(
-  \     $HOME . "/vimfiles/Session.vim") |
+  \     s:user_vim_dir . "/Session.vim") |
   \ else |
-  \   if (!isdirectory($HOME . "/vimfiles")) |
-  \     call mkdir($HOME . "/vimfiles") |
+  \   if (!isdirectory(s:user_vim_dir)) |
+  \     call mkdir(s:user_vim_dir) |
   \   endif |
-  \   execute "mksession! " . $HOME . 
-  \     "/vimfiles/Session.vim" |
+  \   execute "mksession! " . 
+  \     s:user_vim_dir . "/Session.vim" |
   \ endif
 
 " Restore previous session on startup
@@ -160,9 +217,9 @@ autocmd VimEnter * nested
     \ if (greatest_buf_no == 1) 
     \     && (bufname(1) == "") 
     \     && filereadable(
-    \       $HOME . "/vimfiles/Session.vim") |
-    \   execute "source " . $HOME . 
-    \     "/vimfiles/Session.vim" |
+    \       s:user_vim_dir . "/Session.vim") |
+    \   execute "source " . 
+    \     s:user_vim_dir . "/Session.vim" |
     \ endif
 
 " ------------------------------------------
@@ -173,7 +230,17 @@ autocmd VimEnter * nested
 " --------------------------------
 if has("gui_running")
   " How come Courier New isn't the default?
-  set guifont=Courier_New:h9
+  if s:running_windows
+    set guifont=Courier_New:h9
+  else
+    " set guifont=Courier\ New\ 9
+    " NOTE In Debian, just setting guifont makes 
+    "      things look like shit; not sure why this 
+    "      doesn't happen in Fedora. Anyway, comment
+    "      this out or unset guifont to fix font issues.
+    "      ... or don't run Debian!
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+  endif
   " Get rid of silly, space-wasting toolbar
   " Default is 'egmrLtT'
   set guioptions=egmrLt
@@ -224,21 +291,24 @@ set smartcase
 " These should be set by default:
 "   set hlsearch  " Highlight search terms
 "   set incsearch " search dynamically as keyword is typed
+" but on my Ubuntu box, unlike Windows, they're not, so
+set hlsearch  " Highlight search terms
+set incsearch " search dynamically as keyword is typed
 
 " Common Backup file and Swap Directory
 " --------------------------------
 " Use a common directory for backups and 
 " swp files; creates the backup dir if new
-let s:backupDir = '"' . $USERPROFILE . '/.vim_backups' . '"'
-let s:backupFtype = getftype(s:backupDir)
+let s:backupDir = '"' . $HOME . '/.vim_backups' . '"'
+silent execute "let s:backupFtype = getftype(" . s:backupDir . ")"
 if "" == s:backupFtype
   silent execute '!mkdir ' . s:backupDir
 elseif "dir" != s:backupFtype
   call confirm('Backup directory exists but is not a directory! '
     \ . 'Dir: ' . s:backupDir . ' / Type: ' . s:backupFtype)
 endif
-set backupdir=$USERPROFILE/.vim_backups//
-set directory=$USERPROFILE/.vim_backups//
+set backupdir=$HOME/.vim_backups/
+set directory=$HOME/.vim_backups/
 
 " Skip Backups
 " --------------------------------
@@ -261,8 +331,13 @@ set shiftwidth=2
 set autoindent
 " smartindent is too smart and doesn't 
 " indent lines that look like C macros,
-" i.e., those that start with an octothorpe
-"set smartindent
+" i.e., those that start with an octothorpe;
+" if you hit return, get an indent, type '#',
+" smartindent moves the pound to the start of 
+" the line (this might just be with .py files, 
+" not sure...)
+" set smartindent
+set nosmartindent
 "set smarttab
 
 " Something Something Something
@@ -288,6 +363,15 @@ au VimEnter * set laststatus=2
 " I tried noerrorbells and novisualbell to
 " no avail, but this seems to do the trick.
 set vb t_vb=
+
+" Windows Grep Complaint Silencer
+" ------------------------------------------
+" Windows gVim complains when you grep using a path 
+" with backslashes in it... not sure why it complains 
+" since it doesn't actually do anything about it.
+if has("gui_win32")
+  silent !set nodosfilewarning=1
+endif
 
 " ------------------------------------------
 "  Dealing with Buffers
@@ -405,6 +489,7 @@ onoremap <C-h> <C-C>:nohlsearch<CR>
 " Options we use:
 "  -n makes grep show line numbers
 "  -R recurses directories
+"  -i --ignore-case
 "  -E uses extended regexp (same as egrep) 
 "       so that alternation (|) works, 
 "       among other opts
@@ -416,12 +501,12 @@ onoremap <C-h> <C-C>:nohlsearch<CR>
 if filereadable(
     \ $HOME . "/.vim/grep-exclude")
   " *nix
-  set grepprg=egrep\ -n\ -R\ --exclude-from=\"$HOME/.vim/grep-exclude\"
+  set grepprg=egrep\ -n\ -R\ -i\ --exclude-from=\"$HOME/.vim/grep-exclude\"
 elseif filereadable(
     \ $USERPROFILE . 
     \ "/vimfiles/grep-exclude")
   " Windows
-  set grepprg=egrep\ -n\ -R\ --exclude-from=\"$USERPROFILE/vimfiles/grep-exclude\"
+  set grepprg=egrep\ -n\ -R\ -i\ --exclude-from=\"$USERPROFILE/vimfiles/grep-exclude\"
 else
   call confirm('dubsacks.vim: Cannot find grep-xclude file', 'OK')
 endif
@@ -685,8 +770,32 @@ command! -nargs=0 Lorem :normal iLorem ipsum dolor sit amet, consectetur
       \ proident, sunt in culpa qui officia deserunt mollit anim id est
       \ laborum.
 
-au BufRead,BufNewFile *.nsh setfiletype nsis
+" What is this? A silly TODO, I suppose.
+" --------------------------------
+"set diffexpr=MyDiff()
+"function MyDiff()
+"  let opt = '-a --binary '
+"  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+"  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+"  let arg1 = v:fname_in
+"  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+"  let arg2 = v:fname_new
+"  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+"  let arg3 = v:fname_out
+"  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+"  let eq = ''
+"  if $VIMRUNTIME =~ ' '
+"    if &sh =~ '\<cmd'
+"      let cmd = '""' . $VIMRUNTIME . '\diff"'
+"      let eq = '"'
+"    else
+"      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+"    endif
+"  else
+"    let cmd = $VIMRUNTIME . '\diff'
+"  endif
+"  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+"endfunction
 
 " ------------------------------------------
 " ----------------------------------- EOF --
-

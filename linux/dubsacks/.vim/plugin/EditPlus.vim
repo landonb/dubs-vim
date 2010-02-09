@@ -1,3 +1,20 @@
+" This file is part of Dubsacks.
+" --------------------------------
+" Dubsacks is Copyright © 2009, 2010 Landon Bouma.
+" 
+" Dubsacks is free software: you can redistribute it and/or modify
+" it under the terms of the GNU General Public License as published by
+" the Free Software Foundation, either version 3 of the License, or
+" (at your option) any later version.
+" 
+" Dubsacks is distributed in the hope that it will be useful,
+" but WITHOUT ANY WARRANTY; without even the implied warranty of
+" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+" GNU General Public License for more details.
+" 
+" You should have received a copy of the GNU General Public License
+" along with Dubsacks. If not, see <http://www.gnu.org/licenses/>.
+
 " ------------------------------------------
 "  EditPlus Vim Treatment
 " ------------------------------------------
@@ -51,7 +68,7 @@ let plugin_editplus_vim = 1
 
 " The menu is created and populated 
 "   $VIMRUNTIME/menu.vim
-if has("menu")
+if has("menu") && has("gui_running")
 
   " --------------------------------
   " A Close is a close is a close
@@ -243,7 +260,9 @@ inoremap <C-S-BS> <C-O>d<Home>
 " NOTE Was originally called DeleteToEndOfWord, 
 "      but really,
 "   DeleteToEndOfWhitespaceAlphanumOrPunctuation
-function! s:Del2EndOfWsAz09OrPunct()
+" --------------------------------
+"  Original Flavor
+function! s:Del2EndOfWsAz09OrPunct_ORIG()
   " If the character under the cursor is 
   " whitespace, do 'dw'; if it's an alphanum, do 
   " 'dw'; if punctuation, delete one character
@@ -288,11 +307,129 @@ function! s:Del2EndOfWsAz09OrPunct()
   "         an executable code path
   endif
 endfunction
+" --------------------------------
+"  NEW FLAVOR
+function! s:Del2EndOfWsAz09OrPunct(wasInsertMode)
+  " If the character under the cursor is 
+  " whitespace, do 'dw'; if it's an alphanum, do 
+  " 'dw'; if punctuation, delete one character
+  " at a time -- this way, each Ctrl-Del deletes 
+  " a sequence of characters or a chunk of 
+  " whitespace, but never both (and punctuation 
+  " is deleted one-by-one, seriously, this is 
+  " the way's I like's it).
+  " 2010.01.01 First New Year's Resolution
+  "            Fix Ctrl-Del when EOL (it cur-
+  "            rently deletes back a char, rath-
+  "            er than sucking up the next line)
+  let s:char_under_cursor = 
+    \ getline(".")[col(".") - 1]
+  "call confirm(
+  "      \ 'char ' . s:char_under_cursor
+  "      \ . ' / char2nr ' . char2nr(s:char_under_cursor)
+  "      \ . ' / col. ' . col(".")
+  "      \ . ' / col$ ' . col("$"))
+  if (       ( ((col(".") + 1) == col("$")) 
+        \     && (col("$") != 2) )
+        \ || ( ((col(".") == col("$")) 
+        \     && (col("$") == 1)) 
+        \     && (char2nr(s:char_under_cursor) == 0) ) )
+    " At end of line; delete newline after cursor
+    " (what vi calls join lines)
+    execute 'normal gJ'
+    "execute 'j!'
+    " BUGBUG Vi returns the same col(".") for both 
+    " the last and next-to-last cursor positions, 
+    " so we're not sure whether to join lines or 
+    " to delete the last character on the line. 
+    " Fortunately, we can just go forward a 
+    " character and then delete the previous char, 
+    " which has the desired effect
+    "execute 'normal ^<Right'
+    "execute 'normal X'
+    "let this_col = col(".")
+    "execute 'normal l'
+    "let prev_col = col(".")
+    "call confirm('this ' . this_col . ' prev ' . prev_col)
+  else
+    let s:cur_col = col(".")
+    let s:tot_col = col("$")
+    if (a:wasInsertMode 
+          \ && (s:cur_col != 1) )
+      " <ESC> Made use back up, so move forward one,
+      " but not if we're the first column or the 
+      " second-to-last column
+        execute 'normal l'
+    endif
+    "let s:char_under_cursor = 
+    "  \ getline(".")[col(".")]
+    " Can't get this to work:
+    "    if s:char_under_cursor =~ "[^a-zA-Z0-9\\s]"
+    " But this works:
+    if (s:char_under_cursor =~ "[^a-zA-Z0-9]")
+          \ && (s:char_under_cursor !~ "\\s")
+      " Punctuation et al.; just delete the 
+      " char or sequence of the same char.
+      " Well, I can't get sequence-delete to 
+      " work, i.e.,
+      "      execute 'normal' . 
+      "        \ '"xd/' . s:char_under_cursor . '*'
+      " doesn't do squat. In fact, any time I try 
+      " the 'd/' motion it completely fails...
+      " Anyway, enough boo-hooing, just delete the 
+      " character-under-cursor:
+      execute 'normal "xdl'
+    elseif s:char_under_cursor =~ '[a-zA-Z0-9]'
+      " This is an alphanum; and same spiel as 
+      " above, using 'd/' does not work, so none of 
+      " this: 
+      "   execute 'normal' . '"xd/[a-zA-Z0-9]*'
+      " Instead try this:
+      "execute 'normal' . '"xde'
+      execute 'normal "xdw'
+    elseif s:char_under_cursor =~ '\s'
+    "if s:char_under_cursor =~ '\s
+      " whitespace
+      " Again -- blah, blah, blah -- this does not 
+      " work: execute 'normal' . '"xd/\s*'
+      execute 'normal "xdw'
+    " else
+    "   huh? this isn't/shouldn't be 
+    "         an executable code path
+    endif
+  endif
+  if (a:wasInsertMode 
+        \ && ((s:cur_col + 2) == s:tot_col))
+    " <ESC> Made use back up, so move forward one,
+    " but not if we're the first column or the 
+    " second-to-last column
+    "execute 'normal h'
+  endif
+endfunction
 " Map the function to Ctrl-Delete in normal and 
 " insert modes.
-noremap <C-Del> :call <SID>Del2EndOfWsAz09OrPunct()<CR>
+noremap <C-Del> :call <SID>Del2EndOfWsAz09OrPunct(0)<CR>
+" BUGBUG To call a function from Insert Mode -- or to even get 
+"        the current column number of the cursor -- we need 
+"        to either <C-O> or <Esc> out of Insert mode. If 
+"        we <C-O> and the cursor is on either the last 
+"        column or the second-to-last-column, the cursor 
+"        is moved to the last column. Likewise, if we 
+"        <Esc> and the cursor is on either the first column 
+"        or the second column, the cursor is moved to the 
+"        first column. I cannot figure out a work-around.
+"        I choose <Esc> as the lesser of two evils. I.e., 
+"        using <C-O>, if the cursor is at the second-to-
+"        last column, a join happens but the last character 
+"        remains; using <Esc>, if you <Ctrl-Del> from the 
+"        second column, both the first and second columns 
+"        are deleted. I <Ctrl-Del> from the end of a line 
+"        much more ofter than from the second column of a 
+"        line.
+"inoremap <C-Del> 
+"         \ <C-O>:call <SID>Del2EndOfWsAz09OrPunct()<CR>
 inoremap <C-Del> 
-         \ <C-O>:call <SID>Del2EndOfWsAz09OrPunct()<CR>
+         \ <Esc>:call <SID>Del2EndOfWsAz09OrPunct(1)<CR>i
 
 " Ctrl-Shift-Delete deletes to end of line
 noremap <C-S-Del> d$

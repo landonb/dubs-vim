@@ -7,7 +7,7 @@ backup_dir="$HOME/.vim-backup-"`eval date +%Y%m%d`
 # Case insensitve =~ regex matching
 shopt -s nocasematch
 
-read -a the_answer -p 'Install dubsacks vim files to '$backup_dir' ? [y/N] '
+read -a the_answer -p 'Install dubsacks vim files to '$HOME/.vim' ? [y/N] '
 if [[ $the_answer =~ ^ye?s?$ ]]; then
   : # no-op
 else

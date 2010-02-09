@@ -1,3 +1,20 @@
+" This file is part of Dubsacks.
+" --------------------------------
+" Dubsacks is Copyright © 2009, 2010 Landon Bouma.
+" 
+" Dubsacks is free software: you can redistribute it and/or modify
+" it under the terms of the GNU General Public License as published by
+" the Free Software Foundation, either version 3 of the License, or
+" (at your option) any later version.
+" 
+" Dubsacks is distributed in the hope that it will be useful,
+" but WITHOUT ANY WARRANTY; without even the implied warranty of
+" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+" GNU General Public License for more details.
+" 
+" You should have received a copy of the GNU General Public License
+" along with Dubsacks. If not, see <http://www.gnu.org/licenses/>.
+
 " ------------------------------------------
 " textile.vim
 " ------------------------------------------
@@ -40,18 +57,6 @@ command! -bang -nargs=0 RenderTextileToHtml
 " Map the :command to <Leader>tt
 noremap <silent> <Leader>tt 
   \ :RenderTextileToHtml<CR>
-
-" ------------------------------------------
-" File Extension Mappings
-
-" Map *.textile files to the syntax highlighter
-au BufRead,BufNewFile *.textile setf textile
-
-" Also map *.txt files, since you 
-" love Textile so much
-" au! BufRead,BufNewFile *.txt 
-"   \ set nowrap sw=2 sts=2 ts=8
-au BufRead,BufNewFile *.txt setfiletype textile
 
 " ------------------------------------------
 " Private Interface
