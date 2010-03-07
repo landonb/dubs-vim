@@ -184,8 +184,8 @@ g:rails_default_database	rails.txt	/*g:rails_default_database*
 g:rails_default_file	rails.txt	/*g:rails_default_file*
 g:rails_expensive	rails.txt	/*g:rails_expensive*
 g:rails_gnu_screen	rails.txt	/*g:rails_gnu_screen*
-g:rails_mappings	rails.txt	/*g:rails_mappings*
 g:rails_history_size	rails.txt	/*g:rails_history_size*
+g:rails_mappings	rails.txt	/*g:rails_mappings*
 g:rails_menu	rails.txt	/*g:rails_menu*
 g:rails_modelines	rails.txt	/*g:rails_modelines*
 g:rails_statusline	rails.txt	/*g:rails_statusline*

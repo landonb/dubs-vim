@@ -274,9 +274,12 @@ set foldlevelstart=20
 
 " Start Big
 " --------------------------------
-" Start with a reasonably sized window
-set columns=111
-set lines=44
+" Start with a reasonably sized window for GUIs
+" (ignore for CLI so we don't change terminal size)
+if has("gui_running")
+  set columns=111
+  set lines=44
+endif
 " NOTE To start maximized:
 "      au GUIEnter * simalt ~x
 
@@ -416,17 +419,35 @@ map <silent> __ :call <SID>SimplBuffrListr()<CR>
 "  window, among other things.)
 " TODO Make height settable or at least 
 "      remember/restore between toggles
-let g:jah_Quickfix_Win_Height=12
+let g:jah_Quickfix_Win_Height=14
 command -bang -nargs=? QFix 
   \ :call <SID>QFixToggle(<bang>0)
 function! <SID>QFixToggle(forced)
-  if exists("g:qfix_win") && a:forced == 0
+  "if exists("g:qfix_win") && a:forced == 0
+  if s:IsQuickFixShowing()
+    let save_winnr = winnr()
+    execute "CMiniBufExplorer"
     cclose
+    execute "MiniBufExplorer"
+    "execute 1."wincmd k"
+    execute save_winnr . 'wincmd w'
   else
+    let save_winnr = winnr()
+    " TODO MiniBufExpl...
+    execute "CMiniBufExplorer"
     execute "copen " . g:jah_Quickfix_Win_Height
+    " TODO MiniBufExpl...
+    execute "MiniBufExplorer"
+    " Move cursor above each?
+    "execute 2."wincmd k"
+    execute save_winnr . 'wincmd w'
   endif
 endfunction
-" used to track the quickfix window
+" Used to track the quickfix window
+" [lb] Not sure where I got this from, but 
+"      BufWinLeave doesn't always execute, 
+"      causing QFixToggle to jam and forcing 
+"      the user to :copen manually
 augroup <SID>QFixToggle
   autocmd!
   autocmd BufWinEnter quickfix 
@@ -437,6 +458,22 @@ augroup <SID>QFixToggle
     \   unlet! g:qfix_win | 
     \ endif
 augroup END
+" 2010.02.24 Switching to simpler/more realiable
+function! s:IsQuickFixShowing()
+  let is_showing = 0
+  let i = 1
+  let currBufNr = winbufnr(i)
+  while (currBufNr != -1)
+    " If the buffer in window i is the quickfix buffer.
+    if (getbufvar(currBufNr, "&buftype") == "quickfix")
+      let is_showing = 1
+      break
+    endif
+    let i = i + 1
+    let currBufNr = winbufnr(i)
+  endwhile
+  return is_showing
+endfunction
 
 " Toggle Annoyance
 " --------------------------------
@@ -483,6 +520,15 @@ onoremap <C-h> <C-C>:nohlsearch<CR>
 " NOTE .,$ searches from the cursor to end of 
 "      file; that's probably the best default...
 :noremap <Leader>s "sy:.,$s/<C-r>s//gc<Left><Left><Left>
+
+" Grep Selection Under Cursor
+" --------------------------------
+" Starts a grep command on whatever
+" the cursor's on.
+" Usage: Highlight some text
+"        Type Ctrl-o \g
+" FIXME TODO This path is hard-coded
+:noremap <Leader>g "sy:gr! "<C-r>s" "/export/scratch/landonb/cp/"
 
 " Use Cygwin's grep (not Windows' findstr)
 " --------------------------------
@@ -799,3 +845,83 @@ command! -nargs=0 Lorem :normal iLorem ipsum dolor sit amet, consectetur
 
 " ------------------------------------------
 " ----------------------------------- EOF --
+
+
+
+" TODO
+" http://vim.wikia.com/wiki/Highlight_long_lines
+" Search
+"  /\%>80v.\+
+" Highlight
+:match ErrorMsg '\%>80v.\+'
+" Clear w/ :match none
+" Replace
+"  :g/\%>79v/norm 77|gElC...
+
+" ------------------------------------------
+
+" http://vim.wikia.com/wiki/Always_keep_quickfix_window_at_specified_height
+
+" Maximize the window after entering it, be sure to keep the quickfix window
+" at the specified height.
+"au WinEnter * call MaximizeAndResizeQuickfix(12)
+
+" Maximize current window and set the quickfix window to the specified height.
+function MaximizeAndResizeQuickfix(quickfixHeight)
+  " Redraw after executing the function.
+  let s:restore_lazyredraw = getbufvar("%", "&lazyredraw")
+  set lazyredraw
+  " Ignore WinEnter events for now.
+  "let s:restore_eventignore = getbufvar("%", "&ei")
+  set ei=WinEnter
+  " Maximize current window.
+  wincmd _
+  " If the current window is the quickfix window
+  if (getbufvar(winbufnr(winnr()), "&buftype") == "quickfix")
+    " Maximize previous window, and resize the quickfix window to the
+    " specified height.
+    wincmd p
+    resize
+    wincmd p
+    exe "resize " . a:quickfixHeight
+  else
+    " Current window isn't the quickfix window, loop over all windows to
+    " find it (if it exists...)
+    let i = 1
+    let currBufNr = winbufnr(i)
+    while (currBufNr != -1)
+      " If the buffer in window i is the quickfix buffer.
+      if (getbufvar(currBufNr, "&buftype") == "quickfix")
+        " Go to the quickfix window, set height to quickfixHeight, and jump to the previous
+        " window.
+        exe i . "wincmd w"
+        exe "resize " . a:quickfixHeight
+        wincmd p
+        break
+      endif
+      let i = i + 1
+      let currBufNr = winbufnr(i)
+    endwhile
+  endif
+  "set nolazyredraw
+  set ei-=WinEnter
+  if (!s:restore_lazyredraw)
+    set nolazyredraw
+  endif
+  " this isn't working...
+  "set ei=s:restore_eventignore
+endfunction
+
+" Remap ,m to make and open error window if there are any errors. If there
+" weren't any errors, the current window is maximized.
+"map <silent> ,m :mak<CR><CR>:cw<CR>:call MaximizeIfNotQuickfix()<CR>
+
+" Maximizes the current window if it is not the quickfix window.
+function MaximizeIfNotQuickfix()
+  if (getbufvar(winbufnr(winnr()), "&buftype") != "quickfix")
+    wincmd _
+  endif
+endfunction
+
+" ------------------------------------------
+

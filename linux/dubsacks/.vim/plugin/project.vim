@@ -1191,6 +1191,8 @@ function! s:Project(filename) " <<<
         nnoremap <buffer> <silent> <LocalLeader>g \|:call <SID>GrepAll(0, line('.'), "")<CR>
         nnoremap <buffer> <silent> <LocalLeader>G \|:call <SID>GrepAll(1, line('.'), "")<CR>
         nnoremap <buffer> <silent> <2-LeftMouse>   \|:call <SID>DoFoldOrOpenEntry('', 'e')<CR>
+      " LB
+      inoremap <buffer> <silent> <2-LeftMouse>   <C-O>:call <SID>DoFoldOrOpenEntry('', 'e')<CR>
         nnoremap <buffer> <silent> <S-2-LeftMouse> \|:call <SID>DoFoldOrOpenEntry('', 'sp')<CR>
         nnoremap <buffer> <silent> <M-2-LeftMouse> <M-CR>
         nnoremap <buffer> <silent> <S-LeftMouse>   <LeftMouse>
@@ -1287,6 +1289,9 @@ if exists('g:proj_flags') && (match(g:proj_flags, '\Cg') != -1)
         nmap <silent> <F12> <Plug>ToggleProject
     endif
 endif
+
+" [lb] 2010.02.24
+command ToggleProject call <SID>DoToggleProject()
 
 finish
 

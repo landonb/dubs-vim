@@ -1,6 +1,6 @@
 " This file is part of Dubsacks.
 " --------------------------------
-" Dubsacks is Copyright Â© 2009, 2010 Landon Bouma.
+" Dubsacks is Copyright © 2009, 2010 Landon Bouma.
 " 
 " Dubsacks is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by

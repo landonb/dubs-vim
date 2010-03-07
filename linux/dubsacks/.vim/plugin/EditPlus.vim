@@ -1,6 +1,6 @@
 " This file is part of Dubsacks.
 " --------------------------------
-" Dubsacks is Copyright Â© 2009, 2010 Landon Bouma.
+" Dubsacks is Copyright © 2009, 2010 Landon Bouma.
 " 
 " Dubsacks is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -682,10 +682,27 @@ inoremap <M-#> <C-O>:NERDTreeToggle<CR>
 " a Project menu. This is similar. But 
 " better. =)
 " NOTE noremap does not work
-nmap <silent> <M-$> <Plug>ToggleProject
-imap <silent> <M-$> <C-O><Plug>ToggleProject
+nmap <silent> <M-$> <Plug>ToggleProject_Wrapper
+imap <silent> <M-$> <C-O><Plug>ToggleProject_Wrapper
 "cmap <silent> <M-$> <C-C><Plug>ToggleProject
 "omap <silent> <M-$> <C-C><Plug>ToggleProject
+
+map <silent> <unique> <script> 
+  \ <Plug>ToggleProject_Wrapper 
+  \ :call <SID>ToggleProject_Wrapper()<CR>
+"   2. Thunk the <Plug>
+function s:ToggleProject_Wrapper()
+  let save_winnr = winnr()
+  if !exists('g:proj_running') || bufwinnr(g:proj_running) == -1
+    " the Project adds itself as the first window, so
+    let save_winnr = save_winnr + 1
+  else
+    let save_winnr = save_winnr - 1
+  endif
+  execute "ToggleProject"
+  " Move cursor back to window it was just in
+  execute save_winnr . 'wincmd w'
+endfunction
 
 " Alt-Shift-5 // Toggle HTML Char Table
 " --------------------------------
@@ -699,6 +716,13 @@ imap <M-%> <C-O><Plug>HCT_ToggleLookup<ESC>
 "cmap <M-%> <C-C><Plug>HCT_ToggleLookup<ESC>
 "omap <M-%> <C-C><Plug>HCT_ToggleLookup<ESC>
 
+" Alt-Shift-6 // Toggle Tag List
+" --------------------------------
+nmap <M-^> :TlistToggle<CR>
+imap <M-^> <C-O>:TlistToggle<CR>
+"cmap <M-^> <C-C>TlistToggle<ESC>
+"omap <M-^> <C-C>TlistToggle<ESC>
+
 " Alt-Shift-7 // Toggle Mini Buffer Explorer
 " --------------------------------
 " First, configure MiniBufExplorer
@@ -709,6 +733,9 @@ let g:miniBufExplSplitBelow=1
 " I get distracted opening the second buffer
 let g:miniBufExplorerMoreThanOne=1
 " Start w/ minibufexpl off
+" TODO BROKEN It starts with Command-line Vim, whaddup...?
+"      (Meaning you gotta :q twice to exit, since the first 
+"       :q just closes the MiniBufExpl window)
 let s:MiniBufExplFile = "textile.rb"
 let s:MiniBufExplPath = ""
 let s:MiniBufExplLoaded = -1
@@ -750,4 +777,11 @@ imap <M-&> <C-O><Plug>TMiniBufExplorer
 
 " ------------------------------------------
 " ----------------------------------- EOF --
+
+" http://www.moolenaar.net/habits.html
+" * Use % to jump from an open brace to its matching closing brace. Or from a "#if" to the matching "#endif". Actually, % can jump to many different matching items. It is very useful to check if () and {} constructs are balanced properly.
+" * Use [{ to jump back to the "{" at the start of the current code block.
+" * Use gd to jump from the use of a variable to its local declaration.
+" Very often you will want to change one word into another. If this is to be done in the whole file, you can use the :s (substitute) command. If only a few locations needs changing, a quick method is to use the *  command to find the next occurrence of the word and use cw  to change the word. Then type n to find the next word and .  (dot) to repeat the cw command.
+
 
