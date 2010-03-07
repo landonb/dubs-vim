@@ -50,8 +50,9 @@ echo 'Copying dubsacks vim files'
 cp -R dubsacks/.vim* ~/
 
 # Fix the .vimprojects file
-CYCLOPATH_PATH = /export/scratch/landonb/cp
-sed 's/%CYCLOPATH_PATH%/$CYCLOPATH_PATH/g' ~/.vimprojects
+#export CYCLOPATH_PATH=/export/scratch/landonb/cp
+sed 's/%CYCLOPATH_PATH%/\/export\/scratch\/landonb\/cp/g' ~/.vimprojects > ~/.vimprojects2
+mv ~/.vimprojects2 ~/.vimprojects
 
 # All done!
 echo 'Enjoy!'
