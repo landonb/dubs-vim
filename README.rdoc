@@ -17,7 +17,7 @@ Download and run http://github.com/downloads/landonb/dubsacks/dubsacks-v0.0.1.ex
 
 = License
 
-Dubsacks is Copyright © 2009, 2010 Landon Bouma.
+Dubsacks is Copyright &Copy; 2009, 2010 Landon Bouma.
 
 Dubsacks is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
