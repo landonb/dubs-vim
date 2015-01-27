@@ -1,0 +1,171 @@
+*dubsacks.txt*	For Vim version 7.4.	Last change: 2015 Jan 23	*dubs*
+
+DUBSACKS REFERENCE MANUAL~
+
+Dubsacks IDE Reference					*dubs-reference*
+
+1. About Dubsacks			|dubs-online|
+2. Dubsacks Plugins (Lots More Help)	|dubs-plugins|
+3. Alt-Shift Special Window Togglers	|dubs-togglers|
+4. Differences from Vim			|dubs-diff-vim|
+5. OS Workflow Tips and Tricks		|dubs-tips-n-tricks|
+
+==============================================================================
+1. About Dubsacks					*dubs-online*
+
+Dubsacks is just one developer's IDE.~
+
+Project page: https://github.com/landonb/dubsacks
+
+See USING.rst for more detailed help on the commands listed below.
+
+==============================================================================
+2. Dubsacks Plugins (Lots More Help)			*dubs-plugins*
+
+This plugin isn't really a plugin — it's a collection of plugins.
+
+|dubs-buffer-fun|: Manage Buffers and Windows.
+|dubs-file-finder|: Find and Open Files.
+|dubs-project-tray|: Project plugin wrapper.
+|dubs-quickfix-wrap|: Elegant Quickfix wrapper.
+|dubs-grep-steady|: Clever Text Search including Replace.
+|dubs-edit-juice|: Powerful Text Editing commands.
+|dubs-html-entities|: HTML Entity table.
+|dubs-syntastic-wrap|: Syntastic wrapper.
+|dubs-style-guard|: Automatically set whitespace and line-length settings.
+|dubs-toggle-textwrap|: Simple text wrapping wrapper.
+|dubs-appearance|: Configure basic Vim look n' feel.
+|dubs-ftype-mess|: Filetype-specific features, like syntax highlighters, etc.
+|dubs-cycloplan|: Cycloplan-specific IDE features.
+
+See each of the linked help files for all the nitty-gritty details.
+
+And some Dubsacks features wrap third-party plugins.
+
+|command-t|: Command-T (fuzzy opener used by dubs-file-finder, <Ctrl-D>).
+|syntastic|: Syntax checker (wrapped by dubs-syntastic-wrap, <Ctrl-e>).
+|taglist.txt|: Source code browser (<Ctrl-]>, <Alt-]>, <Alt-Shift-6>).
+|bufsurf|: Buffer navigation, "webbrowser style" (<Ctrl-J> and <Ctrl-K>).
+|minibufexpl|: Mini Buffer Explorer (mapped to <Alt-Shift-2>).
+
+==============================================================================
+3. Alt-Shift Special Window Togglers			*dubs-togglers*
+
+A summary of the alt-shift commands defined by the plugins.
+Each command shows/hides a special window.
+
+				*<Shift-Alt-1>* *<M-!>* *<S-M-1>* *<S-A-1>* *<Leader>ct* *\ct*
+<Shift-Alt-1>		Toggle ASCII character table.
+
+				*<Shift-Alt-2>* *<M-@>* *<S-M-2>* *<S-A-2>* *:TMiniBufExplorer* *:MBEToggle*
+<Shift-Alt-2>		Toggle MiniBufExplorer.
+
+				*<Shift-Alt-3>* *<M-#>* *<S-M-3>* *<S-A-3>* *:QFix(0)*
+<Shift-Alt-3>		Toggle QuickFix window.
+
+				*<Shift-Alt-4>* *<M-$>* *<S-M-4>* *<S-A-4>* {ToggleProject_Wrapper}
+<Shift-Alt-4>		Toggle Project tray.
+
+				*<Shift-Alt-5>* *<M-%>* *<S-M-5>* *<S-A-5>* {HCT_ToggleLookup}
+<Shift-Alt-5>		Toggle HTML character entity table.
+
+				*<Shift-Alt-6>* *<M-^>* *<S-M-6>* *<S-A-6>* *:TlistToggle_*
+<Shift-Alt-6>		Toggle Tag list.
+
+==============================================================================
+4. Differences from Vim					*dubs-diff-vim*
+
+A list of key mappings and a comparison of the new
+Dubsacks behavior compared to the original Vim behavior.
+
+<Ctrl-V>		Dubs:	Paste.
+			Vim:	Start Visual mode blockwise.
+
+				In Dubsacks, you can do blockwise select
+				using <Ctrl-Q><Shift-Click>.
+
+<Alt-f>c		Dubs:	Closes the file and removes its buffer.
+			Vim: 	Closes the window (if two or more are open),
+				and shows a new buffer, but does not remove
+				the old buffer from the buffer list.
+
+<Alt-f>e		Dubs:	Closes all buffer and deletes
+					~/.vim/Session.vim
+			Vim:	Closes the window (if two or more are open),
+				and shows a new buffer, but does not remove
+				the old buffer from the buffer list nor
+				remove the session file, so when you restart
+				Vim, it'll load your files from last time and
+				it won't re-read your ~/.vim files (so changes
+				you made to your Vim source won't be used).
+
+<Alt-f>l		Dubs:	Save All Buffers.
+			Vim:	Does a Split Open using a modal file dialog.
+
+				In Dubsacks, you can do Split Open
+				using <Alt-f>t.
+
+<Alt-f>n		Dubs:	Open New Buffer.
+			Vim:	??
+
+<Alt-w>n		Dubs:	Open New Buffer in New Window Above.
+			Vim:	??
+
+<Alt-PageUp>	and
+<Alt-PageDown>		Dubs:	Switch tabs (if you use tabs, which are weird).
+			Vim:	??
+
+<Ctrl-Tab>	and
+<Shift-Ctrl-Tab>	Dubs:	Walk buffer list by order buffers were loaded.
+			Vim:	Move the cursor between windows.
+
+				In Dubsacks, move the cursor between windows
+				using <Ctrl-Shift-Up> and <Ctrl-Shift-Down>.
+
+==============================================================================
+5. OS Workflow Tips and Tricks				*dubs-tips-n-tricks*
+
+Bash Aliases~
+
+If you want to open files from the command line and want them
+to open in the same instance of gVim, you'll have to use the same
+``--servername`` name, otherwise a new gVim is started for
+each file you open.
+
+One strategy is to create bash aliases and to call the bash alias
+to open files. E.g., >
+
+   alias fa='gvim --servername ALPHA --remote-silent'
+   alias fs='gvim --servername SAMPI --remote-silent'
+   alias fd='gvim --servername DELTA --remote-silent'
+   alias ff='gvim --servername DIGAMMA --remote-silent'
+<
+Then just type, e.g., 'fs <filename>', to open files from bash.
+
+Global Keyboard Shortcut~
+
+Using the ``xdotool`` and Keyboard Shortcuts, you can map,
+e.g., <Super-~> (Windows key + ~) to a function that brings
+gVim to the foreground.
+
+See USING.rst for more complete instructions.
+
+Here's an example of how to set this up in Linux Mint MATE,
+assuming there are no existing Keyboard Shortcuts (so that
+'custom0' doesn't already exist). >
+
+   sudo apt-get install -y gconf-editor dconf-cli xdotool
+
+   gsettings set com.linuxmint.mintmenu hot-key '<Super>Shift_L'
+
+   dconf write /org/mate/desktop/keybindings/custom0/action \
+      "'xdotool search --name SAMPI windowactivate'"
+   dconf write /org/mate/desktop/keybindings/custom0/binding \
+      "'<Mod4>grave'"
+   dconf write /org/mate/desktop/keybindings/custom0/name \
+      "'gVim [fs]'"
+
+    ______ _     _______ ______________________     ________
+    |     \|     ||_____]|______|_____||      |____/ |______
+    |_____/|_____||_____]______||     ||_____ |    \_______|
+<                 vim:tw=78:ts=8:ft=help:norl:
