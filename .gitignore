@@ -1,4 +1,16 @@
 .netrwhist
-doc/tags
 spell
+tags
+# Auto-generated symlinks.
+bundle/dubs_all/cmdt_paths
+bundle/dubs_all/dubs_cuts
+bundle/dubs_all/dubs_projects.vim
+bundle/dubs_all/dubs_tagpaths.vim
+bundle/dubs_core
+# Personal files.
+bundle/dubs_all/.vimprojects
+# Misc.
+bundle/dubs_all/one_time_setup.sh
+bundle/dubs_all/plugin-info.json
+README-FIXME.rst
 
