@@ -16,4 +16,22 @@ bundle/dubs_all/plugin-info.json
 README-FIXME.rst
 # Actual plugin code (actual git modules).
 bundle_
+# If you want to checkout the dubsacks_vim project and also all of
+# the plugins themselves as source and not just as submodules, you
+# have to deal with some conflict, since you'll have two copies of
+# every plugin (one of the source and one of the submodule). First,
+# mkdir ~/.vim/bundle_ and git clone all the plugins therein. Next,
+# make a copy of .vimrc, name it bundle/dubs_all/.vimrc.bundle_,
+# and infect bundle_/{} rather than bundle/{}. Link it from
+# ~/.vimrc. With this setup, ~/.vim/.git is the dubsacks_vim
+# repository, ~/.vim/bundle is a ton of submodules from github, and
+# ~/.vim/bundle_ is a bunch of git clones of the same submodules
+# found in ~/.vim/bundle. That way, Vim will load the real source
+# under ~/.vim/bundle_ -- and you'll edit the same source when
+# tweaking Vim -- but you're also able to maintain the ~/.vim/.git
+# uber plugin that manages everything as submodules. So you can
+# really just ignore everything under ~/.vim/bundle and concentrate
+# on ~/.vim/bundle_ instead, except for the ~/.vim/bundle/dubs_all
+# directory, which is part of dubsacks_vim (~/.vim/.git).
+bundle/dubs_all/.vimrc.bundle_
 
