@@ -13,4 +13,6 @@ bundle/dubs_all/.vimprojects
 bundle/dubs_all/one_time_setup.sh
 bundle/dubs_all/plugin-info.json
 README-FIXME.rst
+# Actual plugin code (actual git modules).
+bundle_
 
