@@ -29,7 +29,7 @@ developers who've made and continue to make Vim such a cool tool.
 Feature Overview
 ----------------
 
-See `Dubsacks Vim Reference <USING.rst>`__
+See `Dubsacks Vim Reference <README-USING.rst>`__
 for a complete list of features, or browse
 the more terse online help, ``:help dubsacks``.
 
@@ -163,7 +163,7 @@ Next Steps
 Read the documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-See `Dubsacks Vim Reference <USING.rst>`__
+See `Dubsacks Vim Reference <README-USING.rst>`__
 for a list of commands and keyboard shortcuts.
 The online help, ``:h dubs``, is an abbreviated
 list of the same.
@@ -239,7 +239,7 @@ normal commands defined by the plugin, but Dubsacks also
 remaps and wraps calls to third-party plugins to make them
 more seamless and easy to access.
 
-See the `Dubsacks Vim Reference <USING.rst>`__
+See the `Dubsacks Vim Reference <README-USING.rst>`__
 for a list of all Dubsacks commands, including
 those provided by other people's plugins.
 
@@ -250,7 +250,7 @@ Dubsacks mostly adds new key bindings not already mapped by
 standard Vim or changed by MS-Windows mode (``behave mswin``).
 However, a few standard key bindings have been remapped.
 You probably won't notice the changes, but you might.
-See `Differences from Vim <USING.rst#Differences_from_Vim>`__
+See `Differences from Vim <README-USING.rst#Differences_from_Vim>`__
 for the list of binding differences.
 
 Contributing
