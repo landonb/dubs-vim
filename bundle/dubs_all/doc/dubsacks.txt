@@ -40,13 +40,23 @@ This plugin isn't really a plugin — it's a collection of plugins.
 
 See each of the linked help files for all the nitty-gritty details.
 
-And some Dubsacks features wrap third-party plugins.
+Some Dubsacks features wrap third-party plugins.
 
 |command-t|: Command-T (fuzzy opener used by dubs-file-finder, <Ctrl-D>).
 |syntastic|: Syntax checker (wrapped by dubs-syntastic-wrap, <Ctrl-e>).
 |taglist.txt|: Source code browser (<Ctrl-]>, <Alt-]>, <Alt-Shift-6>).
-|bufsurf|: Buffer navigation, "webbrowser style" (<Ctrl-J> and <Ctrl-K>).
+|vim-bufsurf|: Buffer navigation, "webbrowser style" (<Ctrl-J> and <Ctrl-K>).
 |minibufexpl|: Mini Buffer Explorer (mapped to <Alt-Shift-2>).
+
+And if you install the complete Dubsacks Vim you'll also get these plugins.
+
+|ctrlp.vim|: "Full path fuzzy file, buffer, mru, tag, ... finder."
+|The NERD Tree|: Filesystem explorer.
+|TeTrIs|: Mapped to `<Leader>te` or most like `\te`.
+|tlib_vim|: tomtom's utility function library.
+|viki_vim|: tomtom's personal wiki for Vim.
+|vim-wakatime|: "Vim plugin for analytics about your programming."
+|vim-rails|: tpope's Ruby on Rails power tools.
 
 ==============================================================================
 3. Alt-Shift Special Window Togglers			*dubs-togglers*
