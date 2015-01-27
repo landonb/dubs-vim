@@ -1,8 +1,9 @@
+**********************
 Dubsacks Vim Reference
 **********************
 
-Project Reference
-=================
+Dubsacks Vim Reference
+======================
 
 See the
 `Dubsacks installation instructions <README.rst#Installation>`__
@@ -79,7 +80,6 @@ brief description of the feature and then more detailed notes.
 ..
 .. and instead we'll assemble this file from a script, readme-using.make.sh.
 
-=========================
 Dubsacks Vim — Buffer Fun
 =========================
 
@@ -233,7 +233,6 @@ These are tab commands custom to Dubsacks.
  ``<Alt-PageDown>``           Switch Tabs                   The opposite of ``<Alt-PageUp>``; changes to previous tab.
 ===========================  ============================  ==============================================================================
 
-==========================
 Dubsacks Vim — File Finder
 ==========================
 
@@ -346,7 +345,6 @@ methods of finding and opening files, including:
                                                             the quickfix window so you can easily jump to specific lines of files.
 ===========================  ============================  ==============================================================================
 
-===========================
 Dubsacks Vim — Project Tray
 ===========================
 
@@ -408,7 +406,6 @@ Key Mappings
                                                             file; basically, use ``\c`` to add a new project).
 ===========================  ============================  ==============================================================================
 
-===============================
 Dubsacks Vim — Quickfix Wrapper
 ===============================
 
@@ -448,7 +445,6 @@ Key Mapping                         Description                         Notes
                                                                         listed in the quickfix window.
 ==================================  ==================================  ==============================================================================
 
-==========================
 Dubsacks Vim — Grep Steady
 ==========================
 
@@ -523,7 +519,6 @@ Key Mapping                  Description                   Notes
 ``:gr! "<regex>" "<dir>"``   Search in Any Location        To search locations that are not in the project list, use the raw grep command.
 ===========================  ============================  ==============================================================================================
 
-=========================
 Dubsacks Vim — Edit Juice
 =========================
 
@@ -1073,7 +1068,6 @@ The alt-shift commands show and hide special windows.
                                                             see ``dubs_file_finder/dubs_projects.vim``, which you can customize.
 ===========================  ============================  ==============================================================================
 
-===========================================
 Dubsacks Vim — HTML Character Entity Lookup
 ===========================================
 
@@ -1191,7 +1185,6 @@ If you're using all the Dubsacks, the HTML entity table is already mapped.
                               Character Entity Table        You can switch between decimal, hexadecimal, and friendly names.
 ===========================  ============================  ==============================================================================
 
-================================
 Dubsacks Vim — Syntastic Wrapper
 ================================
 
@@ -1359,7 +1352,6 @@ Key Mapping                         Description                         Notes
                                                                         whether or not the current window has a location list or not.
 ==================================  ==================================  ==============================================================================
 
-==========================
 Dubsacks Vim — Style Guard
 ==========================
 
@@ -1443,7 +1435,6 @@ Key Mappings
                                     too-wide text                       if you've enabled long-line highlighting.
 =================================  ==================================  ==============================================================================
 
-=========================
 Dubsacks Vim — ToggleWrap
 =========================
 
@@ -1519,7 +1510,6 @@ Key Mappings
                                                                         and fixes associated settings.
 =================================  ==================================  ==============================================================================
 
-================================
 Dubsacks Vim — Appearance Plugin
 ================================
 
@@ -1547,7 +1537,6 @@ Appearance Commands
 
 This script does not define any commands.
 
-=============================
 Dubsacks Vim — Filetype Hacks
 =============================
 
@@ -1659,7 +1648,6 @@ Key Mapping                         Description                         Notes
 \```                                Start hyperlink                     Type three backticks in a row to insert hyperlink boilerplate.
 ==================================  ==================================  ==============================================================================
 
-============================
 Dubsacks Vim — Cycloplan IDE
 ============================
 
