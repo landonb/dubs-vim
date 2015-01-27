@@ -31,3 +31,42 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/dubs_appearance"]
+	path = bundle/dubs_appearance
+	url = https://github.com/landonb/dubs_appearance.git
+[submodule "bundle/dubs_buffer_fun"]
+	path = bundle/dubs_buffer_fun
+	url = https://github.com/landonb/dubs_buffer_fun.git
+[submodule "bundle/dubs_cycloplan"]
+	path = bundle/dubs_cycloplan
+	url = https://github.com/landonb/dubs_cycloplan.git
+[submodule "bundle/dubs_edit_juice"]
+	path = bundle/dubs_edit_juice
+	url = https://github.com/landonb/dubs_edit_juice.git
+[submodule "bundle/dubs_file_finder"]
+	path = bundle/dubs_file_finder
+	url = https://github.com/landonb/dubs_file_finder.git
+[submodule "bundle/dubs_ftype_mess"]
+	path = bundle/dubs_ftype_mess
+	url = https://github.com/landonb/dubs_ftype_mess.git
+[submodule "bundle/dubs_grep_steady"]
+	path = bundle/dubs_grep_steady
+	url = https://github.com/landonb/dubs_grep_steady.git
+[submodule "bundle/dubs_html_entities"]
+	path = bundle/dubs_html_entities
+	url = https://github.com/landonb/dubs_html_entities.git
+[submodule "bundle/dubs_project_tray"]
+	path = bundle/dubs_project_tray
+	url = https://github.com/landonb/dubs_project_tray.git
+[submodule "bundle/dubs_quickfix_wrap"]
+	path = bundle/dubs_quickfix_wrap
+	url = https://github.com/landonb/dubs_quickfix_wrap.git
+[submodule "bundle/dubs_style_guard"]
+	path = bundle/dubs_style_guard
+	url = https://github.com/landonb/dubs_style_guard.git
+[submodule "bundle/dubs_syntastic_wrap"]
+	path = bundle/dubs_syntastic_wrap
+	url = https://github.com/landonb/dubs_syntastic_wrap.git
+[submodule "bundle/dubs_toggle_textwrap"]
+	path = bundle/dubs_toggle_textwrap
+	url = https://github.com/landonb/dubs_toggle_textwrap.git
