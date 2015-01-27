@@ -1,9 +1,8 @@
-**********************
 Dubsacks Vim Reference
 **********************
 
-Dubsacks Vim Reference
-======================
+Project Reference
+=================
 
 See the
 `Dubsacks installation instructions <README.rst#Installation>`__
