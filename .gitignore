@@ -35,3 +35,9 @@ bundle_
 # directory, which is part of dubsacks_vim (~/.vim/.git).
 bundle/dubs_all/.vimrc.bundle_
 
+# Weird. `git status` showing 'bundle/vim-wakatime (modified content)'.
+# Probably the doc/tags file. And we've specified 'tags' in this file.
+# And even adding 'bundle/vim-wakatime' herein doesn't work, either.
+# So, either as Wakatime to add the doc/tags ignore rule, or you yourself
+# just have to live with an unclean `git status` on your ~/.vim project....
+
