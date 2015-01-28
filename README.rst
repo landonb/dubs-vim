@@ -108,13 +108,7 @@ Vim package manager.
    mkdir -p ~/.vim/autoload ~/.vim/bundle
    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-Add the pathogen wiring command to your ``.vimrc`` or equivalent:
-
-.. code-block:: vim
-
-   execute pathogen#infect()
-
-2. Download and install Dubsacks.
+3. Download and install Dubsacks.
 
 Download Dubsacks from
 `github <http://github.com/landonb/dubsacks>`__
@@ -124,7 +118,7 @@ and install to the Pathogen space.
 
    git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
 
-3. Download all the Submodules.
+4. Download all the Submodules.
 
 .. code-block:: bash
 
@@ -132,7 +126,7 @@ and install to the Pathogen space.
 
    git submodules update
 
-4. Update your infection string.
+5. Update your infection string.
 
    In ``~/.vimrc``, or wherever you've got it, add the new ``bundle`` path.
 
@@ -140,7 +134,7 @@ and install to the Pathogen space.
 
    execute pathogen#infect('bundle/{}', 'bundle/dubsacks_vim/bundle/{}')
 
-5. Restart Vim.
+6. Restart Vim.
 
 Quit Vim if it's running, delete the session file if it exists
 (so that Vim reloads its runtime), and restart Vim.
@@ -151,7 +145,7 @@ Quit Vim if it's running, delete the session file if it exists
    /bin/rm -f ~/.vim/Session.vim
    gvim
 
-6. Build Documentation.
+7. Build Documentation.
 
 From within Vim, build documentation.
 
