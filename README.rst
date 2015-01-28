@@ -57,7 +57,7 @@ E.g., on Ubuntu, run
 .. code-block:: bash
 
    sudo apt-get install -y \
-      silversearcher-ag exuberant-ctags par
+      silversearcher-ag exuberant-ctags par ruby-dev
 
 If you need a little more guidance, read on.
 
@@ -74,7 +74,8 @@ Longform Install
           If you're installing on Fedora, replace
           ``sudo apt-get install`` with ``sudo yum install``
           and fix any package names (such as changing
-          ``exuberant-ctags`` to ``ctags-etags``).
+          ``exuberant-ctags`` to ``ctags-etags``,
+          and possible ``ruby-dev`` to ``ruby-devel``).
 
 ..          Dubsacks also works on Windows, but unless you're
 ..          installing in `Cygwin <https://www.cygwin.com/>`__
@@ -91,7 +92,8 @@ Install at least gVim. Include the other packages to access more features.
       vim-gtk \
       silversearcher-ag \
       exuberant-ctags \
-      par
+      par \
+      ruby-dev
 
 - See below for a description of the additional packages.
 
@@ -217,6 +219,10 @@ Following is an explanation of the optional
 ``aptitude`` packages that can be installed
 to enable more features:
 
+- `The Silver Searcher <http://geoff.greer.fm/ag/>`__
+  is a nice alternative to the built-in `grep` family
+  of commands, especially since it honors `.gitignore` files.
+
 - `Exuberant Ctags <http://ctags.sourceforge.net/>`__
   lets you jump to function definitions using ``Ctrl-]``.
   (You'll have to run ``ctags`` on your source
@@ -227,6 +233,9 @@ to enable more features:
   lets you reformat text to a preset width (e.g., press ``Shift-F2``
   to intelligently resize a selected text block of code to 80
   characters wide, preserving indents, prefixes and postfixes).
+
+- We include the `ruby-dev` library so we can build
+  the Command-T binary.
 
 Third-party Vim Plugins
 -----------------------

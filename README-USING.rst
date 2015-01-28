@@ -50,7 +50,7 @@ This plugin includes the following plugins:
 Comprehensive Feature List
 --------------------------
 
-See each plugin's README.rst is reproduced herein, to give a nice,
+Each plugin's README.rst is reproduced herein to give a nice,
 comprehensive (albeit lengthy) list of all the features.
 
 Most of the features and key mappings are specific to Dubsacks,
@@ -61,8 +61,8 @@ Features are grouped into categories and are identified by
 their keyboard mapping or ``:command`` name, followed by a
 brief description of the feature and then more detailed notes.
 
-.. NOTE: For security reasons, the include directive does not work on github.
-..       As such, this following will not work...
+.. NOTE: For security reasons, the include directive does not
+..       work on github. As such, this following will not work...
 ..
 .. .. include:: https://github.com/landonb/dubs_buffer_fun/README.rst
 .. .. include:: https://github.com/landonb/dubs_file_finder/README.rst
@@ -78,7 +78,7 @@ brief description of the feature and then more detailed notes.
 .. .. include:: https://github.com/landonb/dubs_ftype_mess/README.rst
 .. .. include:: https://github.com/landonb/dubs_cycloplan/README.rst
 ..
-.. and instead we'll assemble this file from a script, readme-using.make.sh.
+.. so instead we'll assemble this file from a script, readme-using.make.sh.
 
 Dubsacks Vim — Buffer Fun
 =========================
@@ -95,7 +95,29 @@ This plugin defines a few automatic commands:
 
 - Enable ``hidden`` so buffers are not unloaded when abandoned.
 
-Project page: https://github.com/landonb/dubs_buffer_fun
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_buffer_fun.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_buffer_fun.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-buffer-fun
 
 Buffer and Window Commands
 --------------------------
@@ -118,14 +140,12 @@ in the history stack.
                                                             Loads the last loaded buffer in the current window (think ``:e #``).
                                                             I.e., if you hit ``<F2>`` twice, you'll be looking at the same buffer.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-J>``                 Traverse Buffer History       Traverses the buffer history forwards;
-                                                            much more powerful than ``<F2>`` since it ignores the Project
-                                                            buffer.
-                                                            Hint: If you find yourself down a rabbit hole and can't remember
-                                                            what you were doing, hit ``<Ctrl-J>`` to crawl out of it.
+ ``<Ctrl-J>``                 Traverse Buffer History       Traverses the buffer history backwards.
+                                                            Hint: If you find yourself down a rabbit hole, opening file after file,
+                                                            and you can't remember what you were doing, hit ``<Ctrl-J>`` to crawl out of it.
                                                             Caveat: Splitting and Closing windows can mess up the buffer history, 'natch.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-K>``                 Reverse Traverse History      Traverses the buffer history backwards; opposite of ``<Ctrl-J>``.
+ ``<Ctrl-K>``                 Forward Traverse History      Traverses the buffer history forwards; opposite of ``<Ctrl-J>``.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<Ctrl-Tab>``               Traverse BufList              ``<Ctrl-Tab>`` and ``<Ctrl-Shift-Tab>``
                                                             are similar to ``<Ctrl-J>`` and ``<Ctrl-K>``
@@ -247,7 +267,46 @@ so it's available from ``<Ctrl-D>`` and so you can
 invoke Command-T without needing to supply any
 directory paths.
 
-Project page: https://github.com/landonb/dubs_file_finder
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_file_finder.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_file_finder.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-file-finder
+
+Install Command-T
+^^^^^^^^^^^^^^^^^
+
+After installing the Command-T plugin, you'll have to build it.
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/wincent/command-t.git
+   # Or add as a submodule if ~/.vim under revision control, e.g.:
+   #   git submodule add https://github.com/wincent/command-t.git
+
+   cd ~/.vim/bundle/command-t/ruby/command-t
+   sudo apt-get install -y ruby-dev
+   ruby extconf.rb
+   make
 
 File Finder Commands
 --------------------
@@ -367,6 +426,30 @@ Additional features:
 - Enjoy a few small usability tweaks to the original
   Project plugin.
 
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_project_tray.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_project_tray.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-project-tray
+
 Usage
 -----
 
@@ -422,7 +505,29 @@ The quickfix window is nifty but has a few limitations:
 - When hiding the quickfix, it affects other windows'
   heights, which this script stops from happening.
 
-Project page: https://github.com/landonb/dubs_quickfix_wrap
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_quickfix_wrap.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_quickfix_wrap.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-quickfix-wrap
 
 Quickfix Wrapper Commands
 -------------------------
@@ -453,7 +558,29 @@ About This Plugin
 
 This plugin sets up a powerful text search utility.
 
-Project page: https://github.com/landonb/dubs_grep_steady
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_grep_steady.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_grep_steady.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-grep-steady
 
 Prerequisities
 ^^^^^^^^^^^^^^
@@ -525,7 +652,7 @@ Dubsacks Vim — Edit Juice
 About This Plugin
 -----------------
 
-This file maps a bunch of editing-related features
+This plugin maps a bunch of editing-related features
 to key combinations to help delete text, select text,
 edit text, move the cursor around the buffer, and
 perform single-key text searches within the buffer.
@@ -535,43 +662,35 @@ This script originally started to make Vim emulate
 but it's grown considerably since then to
 just make Vim a more comfortable editor all around.
 
-Project page: https://github.com/landonb/dubs_edit_juice
+Installation
+------------
 
-Automatic/Transparent Features
-------------------------------
+Standard Pathogen installation:
 
-These features run automatically.
+.. code-block:: bash
 
-Dubsacks Features
-^^^^^^^^^^^^^^^^^
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_edit_juice.git
 
-- Recover from accidental Ctrl-U
+Or, Standard submodule installation:
 
-  - See: http://vim.wikia.com/wiki/Recover_from_accidental_Ctrl-U
+.. code-block:: bash
 
-Included Vendor Plugins
-^^^^^^^^^^^^^^^^^^^^^^^
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_edit_juice.git
 
-This plugin includes the following third-party plugins.
+Online help:
 
-Smart Tabs
-~~~~~~~~~~
+.. code-block:: vim
 
-- The
-  `Smart Tabs
-  <https://github.com/vim-scripts/Smart-Tabs/blob/master/plugin/ctab.vim>`__
-  feature, located in ``dubs_edit_juice/plugin/ctab.vim``,
-  translates tabs to spaces if you're tabbing but not indenting, i.e.,
-  if only spaces precede the cursor to the start of the line, then tabs
-  are added when <tab> is pressed, otherwise <spaces> are inserted instead.
-  (See also, `Indent with tabs, align with spaces
-  <http://vim.wikia.com/wiki/Indent_with_tabs,_align_with_spaces>`__.)
+   :Helptags
+   :help dubs-edit-juice
 
 Optional Vendor Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can enable additional functionality by installing the following
-third-party plugins.
+You can enable additional functionality by
+installing the following third-party plugins.
 
 AutoAdapt
 ~~~~~~~~~
@@ -588,7 +707,7 @@ will "automatically adapt timestamps, copyright notices, etc."
     become "2009, 2011-2015" or "2009, 2001-2014, 2016" depending
     on if the current year is 2015 or 2016. This might seem a little
     pretentious, but if you don't publish something some year, you
-    can't claim a copyright on it that year. ALTMU.
+    can't claim a copyright on it that year. ALTMLU.
 
   - The match is also tightened so that it'll only occur if it
     matches at the beginning of the line, optionally after the
@@ -597,7 +716,7 @@ will "automatically adapt timestamps, copyright notices, etc."
 To install AutoAdapt and also a necessary support library,
 `ingo-library <http://www.vim.org/scripts/script.php?script_id=4433>`__,
 grab the latest Vimballs and let 'em loose. Be sure to specify
-a install directory so we can install to the Pathogen directory.
+an install directory so we can install to the Pathogen directory.
 
 Download the support library to a new Pathogen location.
 
@@ -615,7 +734,7 @@ Install from Vim.
 
    :UseVimball ~/.vim/bundle/ingo-library
 
-Download the metadata-update-on-save program to a new Pathogen location.
+Download AutoAdapt to a new Pathogen location.
 
 .. code-block:: bash
 
@@ -651,6 +770,33 @@ To unlock the tag list feature, install the `taglist` plugin.
    wget -N http://downloads.sourceforge.net/project/vim-taglist/vim-taglist/4.6/taglist_46.zip
    unzip taglist_46.zip
    /bin/rm taglist_46.zip
+
+Always-On Features (Not Mapped to Any Keys)
+-------------------------------------------
+
+Smart Tabs
+^^^^^^^^^^
+
+- The
+  `Smart Tabs
+  <https://github.com/vim-scripts/Smart-Tabs/blob/master/plugin/ctab.vim>`__
+  feature, located in ``dubs_edit_juice/plugin/ctab.vim``,
+  translates tabs to spaces if you're tabbing but not indenting, i.e.,
+  if only spaces precede the cursor to the start of the line, then tabs
+  are added when <tab> is pressed, otherwise <spaces> are inserted instead.
+  (See also, `Indent with tabs, align with spaces
+  <http://vim.wikia.com/wiki/Indent_with_tabs,_align_with_spaces>`__.)
+
+Recover from accidental Ctrl-U
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Basically, break the undo block (`<Ctrl-g>u`) before undoing so
+insertions consist of more than a single modification. This avoids
+a problem where undoing in insert mode and then undoing in command
+mode loses deleted text that cannot be recovered (i.e., isn't
+part of any undo block).
+
+- See: http://vim.wikia.com/wiki/Recover_from_accidental_Ctrl-U
 
 Features Bound to Key Commands
 ------------------------------
@@ -1078,8 +1224,6 @@ This plugin helps the developer convert ASCII to
 HTML Character Entities (a/k/a Special Characters)
 using either an interactive table or a prompt.
 
-Project page: https://github.com/landonb/dubs_html_entities
-
 This code is a reworking of Christian Habermann's awesome
 chartab.vim, which displays an interactive list of ASCII
 character values. Check it out here:
@@ -1111,6 +1255,30 @@ I lifted the list of HTML4 Character Entities from TNT Luoma:
           surprise yourself sometimes after a backspace.
 
           Hint: Try ``:TabMessage digraph`` to copy and paste digraphs.
+
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_html_entities.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_html_entities.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-html-entities
 
 Entity Table Commands
 ---------------------
@@ -1196,10 +1364,32 @@ A simple wrapper around the fantastic
 plugin, which checks your code for syntax and style errors
 when you open and save source files, or on demand.
 
-Project page: https://github.com/landonb/dubs_syntastic_wrap
+Install Plugin
+--------------
 
-Prerequisites
--------------
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_syntastic_wrap.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_syntastic_wrap.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-syntastic-wrap
+
+Install Checkers
+----------------
 
 You'll need to install syntax checkers to use this tool.
 
@@ -1384,7 +1574,29 @@ specially, like all help files. To edit it, just type
 to help, type ``\E`` and the modeline will be re-read
 (caveat: most help files use modelines, but not all of them).
 
-Project page: https://github.com/landonb/dubs_style_guard
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_style_guard.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_style_guard.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-style-guard
 
 Modeline and Modeline Files
 ---------------------------
@@ -1444,14 +1656,36 @@ About This Plugin
 ToggleWrap is a Vim plugin to make working 
 with and without text wrapping more pleasant.
 
-Project page: https://github.com/landonb/dubs_toggle_textwrap
-
 This plugin was inspired by
 `code by Harold Giménez
 <http://awesomeful.net/posts/57-small-collection-of-useful-vim-tricks>`__.
 See also his
 `vimrc on github
 <http://github.com/hgimenez/vimfiles/blob/c07ac584cbc477a0619c435df26a590a88c3e5a2/vimrc#L72-122>`__.
+
+Install Plugin
+--------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_toggle_textwrap.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_toggle_textwrap.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-toggle-textwrap
 
 Usage
 -----
@@ -1530,7 +1764,29 @@ some menu item shortcuts.
 
 Please see the source for all the settings and more comments.
 
-Project page: https://github.com/landonb/dubs_appearance
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_appearance.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_appearance.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-appearance
 
 Appearance Commands
 ---------------------
@@ -1547,14 +1803,51 @@ This plugin customizes filetype-specific behavior,
 mostly by adding syntax highlighting for non-standard
 filetypes.
 
-Project page: https://github.com/landonb/dubs_ftype_mess
+Installation
+------------
 
-Automatic/Transparent Features
-------------------------------
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_ftype_mess.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_ftype_mess.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-ftype-mess
+
+Key Mappings
+------------
+
+Filetype-Specific Commands
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+reStructured Text
+~~~~~~~~~~~~~~~~~
+
+==================================  ==================================  ==============================================================================
+Key Mapping                         Description                         Notes
+==================================  ==================================  ==============================================================================
+\```                                Start hyperlink                     Type three backticks in a row to insert hyperlink boilerplate.
+==================================  ==================================  ==============================================================================
+
+Other Features
+--------------
 
 - Fix syntax highlighting bug:
 
-  - Sometimes -- especially w/ the Actionscript syntax 
+  - Sometimes -- especially with the ActionScript syntax 
     highlighter -- files look like all-comments or all-text
     (e.g., the text is all pink) because the syntax parser started
     from the top of the window or thereabouts and not from the
@@ -1565,7 +1858,7 @@ Automatic/Transparent Features
     from the start of the file.
 
 - Tell Vim to automatically load ``ftplugin/*.vim`` files
-  (but specifying ``filetype plugin on``).
+  (by specifying ``filetype plugin on``).
 
   - By default, Vim doesn't load filetype plugins.
 
@@ -1578,7 +1871,6 @@ Automatic/Transparent Features
 
   - Applies to the following filetypes:
     Vim, Python, Shell (Bash), SQL, ActionScript, and MXML.
-    (FIXME: More to follow?)
 
 - Fix smartindent's handling of octothorpes in Python files:
   by default, smartindent assumes ``#`` is used just for C-style macros,
@@ -1586,8 +1878,8 @@ Automatic/Transparent Features
   and the start of the line (effectively removing all indentation).
   For Python files, we want to be able to write comments wherever.
 
-  - Also, for shell files, ``smartindent`` is completely disabled,
-    otherwise Vim won't tab your octothorpes.
+  - Also, for shell files, ``smartindent`` is completely
+    disabled, otherwise Vim won't tab your octothorpes.
     E.g., select multiple lines, hit Tab, and pounded lines stay put.
 
 - Miscellaneous features:
@@ -1633,21 +1925,6 @@ Automatic/Transparent Features
 
   - Wikipedia  
 
-Key Mappings
-------------
-
-Filetype-Specific Commands
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-reStructured Text
-~~~~~~~~~~~~~~~~~
-
-==================================  ==================================  ==============================================================================
-Key Mapping                         Description                         Notes
-==================================  ==================================  ==============================================================================
-\```                                Start hyperlink                     Type three backticks in a row to insert hyperlink boilerplate.
-==================================  ==================================  ==============================================================================
-
 Dubsacks Vim — Cycloplan IDE
 ============================
 
@@ -1658,7 +1935,29 @@ Cycloplan is a geowiki, route finder, and planner analysis tool.
 
 Project page: https://github.com/landonb/cycloplan
 
-Within Vim, try ``:help dubs-cycloplan``.
+Installation
+------------
+
+Standard Pathogen installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git clone https://github.com/landonb/dubs_cycloplan.git
+
+Or, Standard submodule installation:
+
+.. code-block:: bash
+
+   cd ~/.vim/bundle/
+   git submodule add https://github.com/landonb/dubs_cycloplan.git
+
+Online help:
+
+.. code-block:: vim
+
+   :Helptags
+   :help dubs-cycloplan
 
 Cycloplan Developer Commands
 ----------------------------

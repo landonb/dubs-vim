@@ -50,7 +50,7 @@ This plugin includes the following plugins:
 Comprehensive Feature List
 --------------------------
 
-See each plugin's README.rst is reproduced herein, to give a nice,
+Each plugin's README.rst is reproduced herein to give a nice,
 comprehensive (albeit lengthy) list of all the features.
 
 Most of the features and key mappings are specific to Dubsacks,
@@ -61,8 +61,8 @@ Features are grouped into categories and are identified by
 their keyboard mapping or ``:command`` name, followed by a
 brief description of the feature and then more detailed notes.
 
-.. NOTE: For security reasons, the include directive does not work on github.
-..       As such, this following will not work...
+.. NOTE: For security reasons, the include directive does not
+..       work on github. As such, this following will not work...
 ..
 .. .. include:: https://github.com/landonb/dubs_buffer_fun/README.rst
 .. .. include:: https://github.com/landonb/dubs_file_finder/README.rst
@@ -78,5 +78,5 @@ brief description of the feature and then more detailed notes.
 .. .. include:: https://github.com/landonb/dubs_ftype_mess/README.rst
 .. .. include:: https://github.com/landonb/dubs_cycloplan/README.rst
 ..
-.. and instead we'll assemble this file from a script, readme-using.make.sh.
+.. so instead we'll assemble this file from a script, readme-using.make.sh.
 
