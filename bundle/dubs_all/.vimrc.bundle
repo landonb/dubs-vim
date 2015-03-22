@@ -1,6 +1,6 @@
 " File: ~/.vimrc
 " Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
-" Last Modified: 2015.01.26
+" Last Modified: 2015.02.28
 " Project Page: https://github.com/landonb/dubsacks_vim
 " Summary: Platform-agnostic Vim startup script
 " License: GPLv3
@@ -103,11 +103,21 @@ endif
 "  Let's Get Infected
 " ----------------------------------------
 
-" If Dubsacks is installed as a submodule, i.e.,
-"  git clone ... ~/.vim/bundle/dubsacks_vim
-" Then you'll want to add its bundle path to your infection, e.g.,
-"  execute pathogen#infect('bundle/{}', 'bundle/dubsacks_vim/bundle/{}')
+" There are at least three ways you might be infected.
 "
-" But if Dubsacks was checkout out as ~/.vim, there's no need.
+" 1. Dubsacks is installed as a submodule. I.e., you ran
+"      git clone ... ~/.vim/bundle/dubsacks_vim
+"    Then add its bundle path to your infection, e.g.,
+"      execute pathogen#infect('bundle/{}', 'bundle/dubsacks_vim/bundle/{}')
+"
+" 2. Dubsacks is pulled as ~/.vim, and bundle/ is all the submodules.
+"      execute pathogen#infect('bundle/{}')
+"
+" 3. Dubsacks is pulled as ~/.vim, bundle/ is all the submodules,
+"    and bundle_ pulled all the submodules on their own (so you can push).
+"      execute pathogen#infect('bundle_/{}')
+"
+" If this file is symlinked from ~/.vimrc, you're rolling as (2.),
+" and Dubsacks is all under bundle/.
 execute pathogen#infect('bundle/{}')
 
