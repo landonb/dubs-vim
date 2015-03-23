@@ -1,7 +1,8 @@
 " File: taglist.vim
 " Author: Yegappan Lakshmanan (yegappan AT yahoo DOT com)
-" Version: 4.6
-" Last Modified: Feb 26, 2013
+" Version: 4.6.lb
+" Last Modified: Feb 23, 2015 [lb] (one change; search [lb])
+" Last Modifi'd: Feb 26, 2013 [yl]
 " Copyright: Copyright (C) 2002-2013 Yegappan Lakshmanan
 "            Permission is hereby granted to use and distribute this code,
 "            with or without modifications, provided that this copyright
@@ -99,8 +100,10 @@ if !exists('loaded_taglist')
         elseif executable('tags')
             let Tlist_Ctags_Cmd = 'tags'
         else
-            echomsg 'Taglist: Exuberant ctags (http://ctags.sf.net) ' .
-                        \ 'not found in PATH. Plugin is not loaded.'
+            " 2015.02.23: [lb] comments this out...
+            " It'd be nice to not have to hack this file, but oh well.
+            "echomsg 'Taglist: Exuberant ctags (http://ctags.sf.net) ' .
+            "            \ 'not found in PATH. Plugin is not loaded.'
             " Skip loading the plugin
             let loaded_taglist = 'no'
             let &cpo = s:cpo_save
