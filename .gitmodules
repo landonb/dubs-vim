@@ -1,3 +1,6 @@
+[submodule "bundle/AutoAdapt"]
+	path = bundle/AutoAdapt
+	url = https://github.com/vim-scripts/AutoAdapt.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/command-t.git
@@ -46,6 +49,9 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "bundle/ingo-library"]
+	path = bundle/ingo-library
+	url = https://github.com/vim-scripts/ingo-library.git
 [submodule "bundle/minibufexpl.vim"]
 	path = bundle/minibufexpl.vim
 	url = https://github.com/fholgado/minibufexpl.vim.git
@@ -82,9 +88,3 @@
 [submodule "bundle/vim-wakatime"]
 	path = bundle/vim-wakatime
 	url = https://github.com/wakatime/vim-wakatime.git
-[submodule "bundle/AutoAdapt"]
-	path = bundle/AutoAdapt
-	url = https://github.com/vim-scripts/AutoAdapt.git
-[submodule "bundle/ingo-library"]
-	path = bundle/ingo-library
-	url = https://github.com/vim-scripts/ingo-library.git
