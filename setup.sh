@@ -2,11 +2,14 @@
 
 # File: setup.sh
 # Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
-# Last Modified: 2015.01.27
+# Last Modified: 2015.03.02
 # Project Page: https://github.com/landonb/dubsacks_vim
 # License: GPLv3
 
-DUBS_VIMRC="./bundle/dubs_all/.vimrc"
+# Use .vimrc.bundle if you checked out dubsacks to ~/.vim/bundle.
+DUBS_VIMRC="./bundle/dubs_all/.vimrc.bundle"
+# Use .vimrc.bundle if you develop dubsacks from ~/.vim/bundle_.
+#DUBS_VIMRC="./bundle/dubs_all/.vimrc.bundle_"
 
 # Exit on error.
 set -e
