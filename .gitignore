@@ -16,6 +16,7 @@ bundle/dubs_all/plugin-info.json
 README-FIXME.rst
 # Actual plugin code (actual git modules).
 bundle_
+!bundle_/generate_links.sh
 # If you want to checkout the dubsacks_vim project and also all of
 # the plugins themselves as source and not just as submodules, you
 # have to deal with some conflict, since you'll have two copies of
