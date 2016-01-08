@@ -3,20 +3,51 @@
 .git/*
 doc/tags2
 spell/
-bundle
+
+# We make bundle_ the active one, but
+# we symlink dubs vims from its own dir.
+
+bundle/
+#bundle-dubs/
+bundle-OFF/
+
+# Non-dubs dirs.
+
+bundle_/
+#
+bundle_/AutoAdapt/
 bundle_/command-t/
 bundle_/ctrlp.vim/
-bundle_/dubs_ftype_mess/autoload/xml/
-bundle_/dubs_ftype_mess/syntax/actionscript.vim
-bundle_/syntastic/
+bundle_/editorconfig-vim/
+bundle_/ingo-library/
 bundle_/minibufexpl.vim/
 bundle_/nerdtree/
 bundle_/syntastic/
 bundle_/taglist/
+bundle_/TeTrIs.vim/
 bundle_/tlib_vim/
 bundle_/viki_vim/
 bundle_/vim-bufsurf/
+bundle_/vim-gnupg/
+bundle_/vim-misc/
 bundle_/vim-rails/
 bundle_/vim-wakatime/
-bundle_/wakatime.OFF/
+
+# Avoid recursive directory issues
+
+*dubs_all/cmdt_paths/
+*dubs_core/cmdt_paths/
+*dubs_all/dubs_cuts/
+*dubs_core/dubs_cuts/
+*dubs_file_finder/cmdt_paths/
+*dubs_project_tray/dubs_cuts/
+
+# Cyclopath...
+
+#  specific:
+bundle_/dubs_core/cmdt_paths/cyclopath/
+bundle_/dubs_file_finder/cmdt_paths/cyclopath/
+#  lazy:
+*cyclopath/*
+*Cyclopath*
 
