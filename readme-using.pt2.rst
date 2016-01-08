@@ -138,7 +138,7 @@ Note: This list is incomplete. Sorry!
                                                             so it's easier to just ``<Alt-Tab>`` to a terminal and touch a blank file and go from there).
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<Alt-PageUp/-PageDown>``   Switch Tabs                   I [lb] almost never uses tabs in Vim
-                                                            (maybe with the exception of ``:TabMessage`` which I rarely use).
+                                                            (with the exception of ``:TabMessage`` which is often the only way to copy the output of a Vim command).
                                                             But if you do, ``<Alt-PageUp>`` and ``<Alt-PageDown>`` can be used to iterate
                                                             through the list of tabs.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
