@@ -2,21 +2,44 @@ Session.vim
 .netrwhist
 spell
 tags
-# Auto-generated symlinks.
+
+# The bulk of the bundle/ directory is populated by submodule cloning.
+# Except for dubs_all, which is part of the main dubsacks_vim project.
+#
+# Ignore generated symlinks.
 bundle/dubs_all/cmdt_paths
 bundle/dubs_all/dubs_cuts
 bundle/dubs_all/dubs_projects.vim
 bundle/dubs_all/dubs_tagpaths.vim
 bundle/dubs_core
-# Personal files.
+# Ignore personal files.
 bundle/dubs_all/.vimprojects
-# Misc.
+# Ignore misc.
 bundle/dubs_all/one_time_setup.sh
 bundle/dubs_all/plugin-info.json
 README-FIXME.rst
-# Actual plugin code (actual git modules).
+
+# To develop the complete dubsacks_vim and also the individual
+# dubsacks submodules requires a bit of finesse.
+#
+# The bundle_/ directory contains the individually-cloned
+# dubsacks_vim projects (not submoduled) and symlinks to
+# the third-party submodules we populated in bundle/.
+#
+# To see what dubsacks code is dirty, use git_status_all, e.g.,
+#
+#  cd ~/.vim/bundle_ ; git_st_all
+#
+# So we can ignore bundle_/.
 bundle_
-!bundle_/generate_links.sh
+# And bundle-dubs/ is just symlinks to the dubsacks_vim projects
+# to make grepping easier (i.e., ignore third-party Vim project).
+bundle-dubs
+# And bundle-OFF is stuff I still just haven't /bin/rm'ed.
+bundle-OFF
+
+# Here's a long-winded explanation of the chay-os.
+#
 # If you want to checkout the dubsacks_vim project and also all of
 # the plugins themselves as source and not just as submodules, you
 # have to deal with some conflict, since you'll have two copies of
@@ -29,10 +52,10 @@ bundle_
 # ~/.vim/bundle_ is a bunch of git clones of the same submodules
 # found in ~/.vim/bundle. That way, Vim will load the real source
 # under ~/.vim/bundle_ -- and you'll edit the same source when
-# tweaking Vim -- but you're also able to maintain the ~/.vim/.git
+# tweaking Vim -- but you're also be able to maintain the ~/.vim/.git
 # uber plugin that manages everything as submodules. So you can
 # really just ignore everything under ~/.vim/bundle and concentrate
-# on ~/.vim/bundle_, except for the ~/.vim/bundle/dubs_all directory,
-# which is part of dubsacks_vim (~/.vim/.git).
+# on ~/.vim/bundle_ instead, except for the ~/.vim/bundle/dubs_all
+# directory, which is part of dubsacks_vim (~/.vim/.git). Git it?
 bundle/dubs_all/.vimrc.bundle_
 
