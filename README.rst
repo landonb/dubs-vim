@@ -197,7 +197,7 @@ You can also do this manually, e.g.,
 
 Open the file ``dubs_all/dubs_projects.vim``
 and add your project paths to the list of
-projects. This list is display when your search
+projects. This list is displayed when your search
 with either ``\g`` or the ``F4`` mappings.
 
 3. Hack away.
