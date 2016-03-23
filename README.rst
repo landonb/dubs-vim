@@ -124,7 +124,13 @@ and install to the Pathogen space.
 
    cd ~/.vim/bundle/dubsacks_vim
 
-   git submodules update
+   git submodule update
+   # FIXME: Use?: --init --remote
+   #        I'm getting detached heads...
+   #git submodule update --init --remote
+
+   # NOTE: Also run `git submodule update` to update the submodules,
+   #       if you ever `git pull`, `git ci`, etc., from within them.
 
 5. Update your infection string.
 
@@ -205,6 +211,19 @@ with either ``\g`` or the ``F4`` mappings.
 Like most things Vim, after reading the docs and
 testing a new plugin, you'll want to get your hands
 dirty. Happy hacking!
+
+Occasionally Pull the Latest Codes
+----------------------------------
+
+.. code-block:: bash
+
+    cd ~/.vim
+    # FIXME: Which is the right one?
+    #        I had to fix all my branches...
+    #           cd ~/.vim/bundle/dubs_*
+    #           git co master
+    #git submodule foreach git pull
+    #git submodule update --init --remote
 
 Third-Party Package Descriptions
 --------------------------------
