@@ -13,9 +13,6 @@
 [submodule "bundle/dubs_buffer_fun"]
 	path = bundle/dubs_buffer_fun
 	url = https://github.com/landonb/dubs_buffer_fun.git
-[submodule "bundle/dubs_cycloplan"]
-	path = bundle/dubs_cycloplan
-	url = https://github.com/landonb/dubs_cycloplan.git
 [submodule "bundle/dubs_edit_juice"]
 	path = bundle/dubs_edit_juice
 	url = https://github.com/landonb/dubs_edit_juice.git
@@ -73,9 +70,6 @@
 [submodule "bundle/vim-bufsurf"]
 	path = bundle/vim-bufsurf
 	url = https://github.com/ton/vim-bufsurf.git
-[submodule "bundle/vim-easytags"]
-	path = bundle/vim-easytags
-	url = https://github.com/xolox/vim-easytags.git
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
@@ -85,6 +79,3 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule "bundle/vim-wakatime"]
-	path = bundle/vim-wakatime
-	url = https://github.com/wakatime/vim-wakatime.git
