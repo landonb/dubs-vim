@@ -8,13 +8,19 @@ Why You Might Care
 ------------------
 
 Are you newish to Vim? Dubsacks is a well-documented, curated IDE.
-It includes what I think are some of the best plugins, and it
-includes a number of custom features to fill in the gaps.
-It's also easy to hack away and to make it your own.
 
-Are you oldish to Vim? Then you're probably just doing what
-I like to do, which is to peek at other people's vims.
-You never know what you might find.
+- It includes what I think are some of the best plugins.
+
+- It includes a number of custom features to fill in the gaps.
+
+- It's also easy to hack away and to make it your own.
+
+Are you oldish to Vim?
+
+- Then you're probably just doing what I like to do,
+  which is to peek at other people's vims.
+
+- You never know what you might find.
 
 Dubsacks uses a lot of third-party scripts and bundles,
 and all custom Dubsacks code is also packaged as modules,
@@ -45,11 +51,19 @@ file, are restart Vim.
 .. code-block:: bash
 
    git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
+
+   # Checkout all the submodules.
+   pushd ~/.vim/bundle/dubsacks_vim
+   git submodule update --init
+   popd
+
    # Make sure Vim is dead before zapping the Session file.
    /bin/rm -f ~/.vim/Session.vim
+
+   # Run Dubsacks Vim.
    gvim
 
-And then run ``:Helptags`` to rebuild all the docs.
+To build all the inline help docs, run ``:Helptags``.
 
 If you want access to the best features, install additional packages.
 E.g., on Ubuntu, run
@@ -124,10 +138,7 @@ and install to the Pathogen space.
 
    cd ~/.vim/bundle/dubsacks_vim
 
-   git submodule update
-   # FIXME: Use?: --init --remote
-   #        I'm getting detached heads...
-   #git submodule update --init --remote
+   git submodule update --init
 
    # NOTE: Also run `git submodule update` to update the submodules,
    #       if you ever `git pull`, `git ci`, etc., from within them.
@@ -218,12 +229,7 @@ Occasionally Pull the Latest Codes
 .. code-block:: bash
 
     cd ~/.vim
-    # FIXME: Which is the right one?
-    #        I had to fix all my branches...
-    #           cd ~/.vim/bundle/dubs_*
-    #           git co master
-    #git submodule foreach git pull
-    #git submodule update --init --remote
+    git submodule update --init --remote
 
 Third-Party Package Descriptions
 --------------------------------
