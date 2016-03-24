@@ -55,7 +55,7 @@ fi
 
 cd ./bundle
 
-# Note that `git submodule foreach git pull` dies on bundle/AutoAdapt
-#  and asks for a branch name, but update --init --remote seems to work.
+# Note that `git submodule foreach git pull` dies if it needs a
+# branch name, but update --init --remote seems to always work.
 git submodule update --init --remote
 
