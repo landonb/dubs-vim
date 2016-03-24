@@ -2,7 +2,7 @@
 
 # File: setup.sh
 # Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
-# Last Modified: 2015.03.02
+# Last Modified: 2016.03.24
 # Project Page: https://github.com/landonb/dubsacks_vim
 # License: GPLv3
 
@@ -55,5 +55,7 @@ fi
 
 cd ./bundle
 
-git submodule update
+# Note that `git submodule foreach git pull` dies on bundle/AutoAdapt
+#  and asks for a branch name, but update --init --remote seems to work.
+git submodule update --init --remote
 
