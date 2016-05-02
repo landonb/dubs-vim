@@ -42,6 +42,8 @@ bundle_/vim-wakatime/
 *dubs_file_finder/cmdt_paths/
 *dubs_project_tray/dubs_cuts/
 
+*dubs_ftype_mess/autoload/xml/*
+
 # Cyclopath...
 
 #  specific:
