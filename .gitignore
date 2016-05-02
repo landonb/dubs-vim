@@ -1,6 +1,16 @@
+# Session.vim is just Vim's session-to-session cookie.
 Session.vim
+
+# "netrw is a kind of vim plugin/script which supports reading and writing
+# files across networks. .netrwhist is a history file which maintains all
+# the directories that were modified."
+#   https://stackoverflow.com/questions/9850360/what-is-netrwhist
 .netrwhist
+
+# Spell is stored in ~/.waffle since it's user-personal and user-private.
 spell
+
+# tags is generated, 'natch.
 tags
 
 # The bulk of the bundle/ directory is populated by submodule cloning.
