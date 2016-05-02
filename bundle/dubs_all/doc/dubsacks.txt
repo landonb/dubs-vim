@@ -55,7 +55,6 @@ And if you install the complete Dubsacks Vim you'll also get these plugins.
 |TeTrIs|: Mapped to `<Leader>te` or most like `\te`.
 |tlib_vim|: tomtom's utility function library.
 |viki_vim|: tomtom's personal wiki for Vim.
-|vim-wakatime|: "Vim plugin for analytics about your programming."
 |vim-rails|: tpope's Ruby on Rails power tools.
 
 ==============================================================================
