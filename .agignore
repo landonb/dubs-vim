@@ -31,7 +31,6 @@ bundle_/vim-bufsurf/
 bundle_/vim-gnupg/
 bundle_/vim-misc/
 bundle_/vim-rails/
-bundle_/vim-wakatime/
 
 # Avoid recursive directory issues
 

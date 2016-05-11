@@ -21,7 +21,6 @@ remove_dirs () {
   mv vim-gnupg
   mv vim-misc
   mv vim-rails old_bundle
-  mv vim-wakatime old_bundle
 }
 
 make_links () {
@@ -47,7 +46,6 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-gnupg
   /bin/ln -sf ${bdir}/vim-misc
   /bin/ln -sf ${bdir}/vim-rails
-  /bin/ln -sf ${bdir}/vim-wakatime
 }
 
 make_links
