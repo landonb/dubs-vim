@@ -41,6 +41,17 @@ bundle_/vim-rails/
 *dubs_file_finder/cmdt_paths/
 *dubs_project_tray/dubs_cuts/
 
+# 2016-09-26: How have I not had a problem with this until terpsichore?
+#             From ~/.vim/bundle-dubs, don't precede with a *
+#             (I think Silver Searcher doesn't match * to ^?
+#             Or maybe it's not really *, but .+ ?)
+dubs_all/cmdt_paths/
+dubs_core/cmdt_paths/
+dubs_all/dubs_cuts/
+dubs_core/dubs_cuts/
+dubs_file_finder/cmdt_paths/
+dubs_project_tray/dubs_cuts/
+
 *dubs_ftype_mess/autoload/xml/*
 
 # Cyclopath...
