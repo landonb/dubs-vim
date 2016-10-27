@@ -51,6 +51,10 @@ dubs_all/dubs_cuts/
 dubs_core/dubs_cuts/
 dubs_file_finder/cmdt_paths/
 dubs_project_tray/dubs_cuts/
+# 2016-10-27: Seeing dubs_all/dubs_preloads.vim showing up twice.
+#             Because dubs_core just a symlink to dubs_all.
+*dubs_core/
+dubs_core/
 
 *dubs_ftype_mess/autoload/xml/*
 
