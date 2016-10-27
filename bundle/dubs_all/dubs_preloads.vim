@@ -1,11 +1,11 @@
 " File: .vim/dubs_preloads.vim
 " Author: Landon Bouma (dubsacks &#x40; retrosoft &#x2E; com)
-" Last Modified: 2015.01.26
+" Last Modified: 2016.10.27
 " Project Page: https://github.com/landonb/dubsacks_vim
 " Summary: Pre-System Vim startup script
 " License: GPLv3
 " -------------------------------------------------------------------
-" Copyright © 2015 Landon Bouma.
+" Copyright © 2015-2016 Landon Bouma.
 " 
 " This file is part of Dubsacks.
 " 
@@ -82,8 +82,8 @@ let g:rst_syntax_code_list = [
 " Re: bash syntax defined by sh.vim, so to make it work
 " so you don't have to do, e.g., .. code-block:: sh
 " we made a symlink, i.e.,
-" ln -s /usr/share/vim/vim74/syntax/sh.vim \
-"       $HOME/.vim/bundle/dubs_ftype_mess/syntax/bash.vim
+"   cd $HOME/.vim/bundle/dubs_ftype_mess/syntax/
+"   /bin/ln -s sh.vim bash.vim
 
 " ------------------------------------------------------
 " Mini Buffer Explorer
