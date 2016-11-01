@@ -1,6 +1,6 @@
 " File: .vim/dubs_preloads.vim
 " Author: Landon Bouma (dubsacks &#x40; retrosoft &#x2E; com)
-" Last Modified: 2016.10.27
+" Last Modified: 2016.11.01
 " Project Page: https://github.com/landonb/dubsacks_vim
 " Summary: Pre-System Vim startup script
 " License: GPLv3
@@ -58,6 +58,7 @@
 
 " Note that you cannot add 'rst' to this list without
 " causing errors probably due to recursivenosity.
+" NOTE: Add to this list to add languages to the .. code-block:: recognizer.
 let g:rst_syntax_code_list = [
   \ 'bash',
   \ 'sh',
@@ -77,6 +78,7 @@ let g:rst_syntax_code_list = [
   \ 'yaml',
   \ 'diff',
   \ 'make',
+  \ 'lua',
   \ ]
 
 " Re: bash syntax defined by sh.vim, so to make it work
