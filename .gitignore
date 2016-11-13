@@ -29,6 +29,8 @@ bundle/dubs_all/one_time_setup.sh
 bundle/dubs_all/plugin-info.json
 README-FIXME.rst
 
+bundle/_last_update
+
 # To develop the complete dubsacks_vim and also the individual
 # dubsacks submodules requires a bit of finesse.
 #
