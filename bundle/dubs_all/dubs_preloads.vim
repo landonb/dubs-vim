@@ -1,6 +1,6 @@
 " File: .vim/dubs_preloads.vim
 " Author: Landon Bouma (dubsacks &#x40; retrosoft &#x2E; com)
-" Last Modified: 2016.11.01
+" Last Modified: 2016.11.17
 " Project Page: https://github.com/landonb/dubsacks_vim
 " Summary: Pre-System Vim startup script
 " License: GPLv3
@@ -61,14 +61,17 @@
 " NOTE: Add to this list to add languages to the .. code-block:: recognizer.
 let g:rst_syntax_code_list = [
   \ 'bash',
+  \ 'dtd',
+  \ 'go',
+  \ 'hjson',
+  \ 'javascript',
+  \ 'python',
   \ 'sh',
   \ 'vim',
-  \ 'python',
   \ 'java',
   \ 'cpp',
   \ 'c',
   \ 'sql',
-  \ 'javascript',
   \ 'html',
   \ 'css',
   \ 'svg',
@@ -79,7 +82,14 @@ let g:rst_syntax_code_list = [
   \ 'diff',
   \ 'make',
   \ 'lua',
+  \ 'json',
   \ ]
+"  \ 'actionscript',
+"  \ 'mkd',
+"  \ 'mxml',
+"  \ 'textile',
+"  \ 'wikipedia',
+"  \ 'wp',
 
 " Re: bash syntax defined by sh.vim, so to make it work
 " so you don't have to do, e.g., .. code-block:: sh
