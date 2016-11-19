@@ -82,14 +82,16 @@ let g:rst_syntax_code_list = [
   \ 'diff',
   \ 'make',
   \ 'lua',
-  \ 'json',
   \ ]
-"  \ 'actionscript',
-"  \ 'mkd',
-"  \ 'mxml',
-"  \ 'textile',
-"  \ 'wikipedia',
-"  \ 'wp',
+  " E484: Can't open file syntax/json.vim
+  " \ 'json',
+  " 2016-11-17: One of these causes the line numbers to be inverse color.
+  "  \ 'actionscript',
+  "  \ 'mkd',
+  "  \ 'mxml',
+  "  \ 'textile',
+  "  \ 'wikipedia',
+  "  \ 'wp',
 
 " Re: bash syntax defined by sh.vim, so to make it work
 " so you don't have to do, e.g., .. code-block:: sh
