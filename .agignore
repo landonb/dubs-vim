@@ -67,3 +67,6 @@ bundle_/dubs_file_finder/cmdt_paths/cyclopath/
 *cyclopath/*
 *Cyclopath*
 
+dubs_grep_steady/dubs_projects.vim
+#dubs_all/dubs_projects.vim
+
