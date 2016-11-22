@@ -1,6 +1,6 @@
 " File: .vim/dubs_preloads.vim
 " Author: Landon Bouma (dubsacks &#x40; retrosoft &#x2E; com)
-" Last Modified: 2016.11.17
+" Last Modified: 2016.11.22
 " Project Page: https://github.com/landonb/dubsacks_vim
 " Summary: Pre-System Vim startup script
 " License: GPLv3
@@ -61,27 +61,28 @@
 " NOTE: Add to this list to add languages to the .. code-block:: recognizer.
 let g:rst_syntax_code_list = [
   \ 'bash',
+  \ 'c',
+  \ 'cpp',
+  \ 'css',
+  \ 'diff',
   \ 'dtd',
   \ 'go',
   \ 'hjson',
-  \ 'javascript',
-  \ 'python',
-  \ 'sh',
-  \ 'vim',
-  \ 'java',
-  \ 'cpp',
-  \ 'c',
-  \ 'sql',
   \ 'html',
-  \ 'css',
-  \ 'svg',
-  \ 'php',
-  \ 'perl',
+  \ 'java',
+  \ 'javascript',
   \ 'lisp',
-  \ 'yaml',
-  \ 'diff',
-  \ 'make',
   \ 'lua',
+  \ 'make',
+  \ 'perl',
+  \ 'php',
+  \ 'python',
+  \ 'ruby',
+  \ 'sh',
+  \ 'sql',
+  \ 'svg',
+  \ 'vim',
+  \ 'yaml',
   \ ]
   " E484: Can't open file syntax/json.vim
   " \ 'json',
