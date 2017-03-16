@@ -22,6 +22,7 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-bufsurf
   #/bin/ln -sf ${bdir}/vim-easytags
   /bin/ln -sf ${bdir}/vim-gnupg
+  /bin/ln -sf ${bdir}/vim-markdown
   /bin/ln -sf ${bdir}/vim-misc
   /bin/ln -sf ${bdir}/vim-rails
 }
