@@ -75,7 +75,7 @@ Each command shows/hides a special window.
 				*<Shift-Alt-4>* *<M-$>* *<S-M-4>* *<S-A-4>* {ToggleProject_Wrapper}
 <Shift-Alt-4>		Toggle Project tray.
 
-				*<Shift-Alt-5>* *<M-%>* *<S-M-5>* *<S-A-5>* {HCT_ToggleLookup}
+				*<Shift-Alt-5>* *<M-%>* *<S-M-5>* *<S-A-5>* {ToggleLookup}
 <Shift-Alt-5>		Toggle HTML character entity table.
 
 				*<Shift-Alt-6>* *<M-^>* *<S-M-6>* *<S-A-6>* *:TlistToggle_*

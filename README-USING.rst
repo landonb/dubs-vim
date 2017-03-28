@@ -1339,7 +1339,7 @@ To map the toggle function to, e.g.,
 ``<Alt-Shift-5>`` (or ``<Alt-%>``), add the
 following to your vim environment:
 
-``nmap <M-%> <Plug>HCT_ToggleLookup``
+``nmap <M-%> <Plug>DubsHtmlEntities_ToggleLookup``
 
 Core Dubsacks Key Mappings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
