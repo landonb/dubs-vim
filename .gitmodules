@@ -82,3 +82,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git@github.com:landonb/vim-markdown.git
+[submodule "bundle/vim-speeddating"]
+	path = bundle/vim-speeddating
+	url = git@github.com:tpope/vim-speeddating.git
