@@ -32,30 +32,6 @@ bundle_/vim-gnupg/
 bundle_/vim-misc/
 bundle_/vim-rails/
 
-# Avoid recursive directory issues
-
-*dubs_all/cmdt_paths/
-*dubs_core/cmdt_paths/
-*dubs_all/dubs_cuts/
-*dubs_core/dubs_cuts/
-*dubs_file_finder/cmdt_paths/
-*dubs_project_tray/dubs_cuts/
-
-# 2016-09-26: How have I not had a problem with this until terpsichore?
-#             From ~/.vim/bundle-dubs, don't precede with a *
-#             (I think Silver Searcher doesn't match * to ^?
-#             Or maybe it's not really *, but .+ ?)
-dubs_all/cmdt_paths/
-dubs_core/cmdt_paths/
-dubs_all/dubs_cuts/
-dubs_core/dubs_cuts/
-dubs_file_finder/cmdt_paths/
-dubs_project_tray/dubs_cuts/
-# 2016-10-27: Seeing dubs_all/dubs_preloads.vim showing up twice.
-#             Because dubs_core just a symlink to dubs_all.
-*dubs_core/
-dubs_core/
-
 *dubs_ftype_mess/autoload/xml/*
 
 # Cyclopath...
@@ -69,4 +45,26 @@ bundle_/dubs_file_finder/cmdt_paths/cyclopath/
 
 dubs_grep_steady/dubs_projects.vim
 #dubs_all/dubs_projects.vim
+
+# Avoid recursive directory issues
+*dubs_all/cmdt_paths/
+*dubs_core/cmdt_paths/
+*dubs_file_finder/cmdt_paths/
+*dubs_all/dubs_cuts/
+*dubs_core/dubs_cuts/
+*dubs_project_tray/dubs_cuts/
+# 2016-09-26: How have I not had a problem with this until terpsichore?
+#             From ~/.vim/bundle-dubs, don't precede with a *
+#             (I think Silver Searcher doesn't match * to ^?
+#             Or maybe it's not really *, but .+ ?)
+dubs_all/cmdt_paths/
+dubs_core/cmdt_paths/
+dubs_file_finder/cmdt_paths/
+dubs_all/dubs_cuts/
+dubs_core/dubs_cuts/
+dubs_project_tray/dubs_cuts/
+# 2016-10-27: Seeing dubs_all/dubs_preloads.vim showing up twice.
+#             Because dubs_core just a symlink to dubs_all.
+*dubs_core/
+dubs_core/
 
