@@ -68,3 +68,10 @@ dubs_project_tray/dubs_cuts/
 *dubs_core/
 dubs_core/
 
+# 2017-06-06: Still happening.
+#   user@mach:.vim ⚓ $ find -L . -name "dubs_buffer_fun.vim"
+#   ./bundle_/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
+#   ./bundle/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
+#   ./bundle-dubs/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
+bundle-dubs/dubs_buffer_fun
+
