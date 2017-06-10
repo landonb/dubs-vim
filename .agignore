@@ -8,7 +8,11 @@ spell/
 # we symlink dubs vims from its own dir.
 
 bundle/
-#bundle-dubs/
+
+# 2017-06-10: How long ago did I add bundle-dubs/ to #9 .dubs_projects.vim?
+#   So I should ignore it here to skip duplicates.
+bundle-dubs/
+
 bundle-OFF/
 
 # Non-dubs dirs.
@@ -73,5 +77,6 @@ dubs_core/
 #   ./bundle_/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
 #   ./bundle/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
 #   ./bundle-dubs/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
-bundle-dubs/dubs_buffer_fun
+# 2017-06-10: Commenting out, since I added bundle-dubs/, above.
+#bundle-dubs/dubs_buffer_fun
 
