@@ -17,24 +17,8 @@ bundle-OFF/
 
 # Non-dubs dirs.
 
-bundle_/
-#
-bundle_/AutoAdapt/
-bundle_/command-t/
-bundle_/ctrlp.vim/
-bundle_/editorconfig-vim/
-bundle_/ingo-library/
-bundle_/minibufexpl.vim/
-bundle_/nerdtree/
-bundle_/syntastic/
-bundle_/taglist/
-bundle_/TeTrIs.vim/
-bundle_/tlib_vim/
-bundle_/viki_vim/
-bundle_/vim-bufsurf/
-bundle_/vim-gnupg/
-bundle_/vim-misc/
-bundle_/vim-rails/
+# Ignore subdirectories, but not the generate_links.sh.
+bundle_/*/
 
 *dubs_ftype_mess/autoload/xml/*
 

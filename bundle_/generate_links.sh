@@ -24,11 +24,12 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-bufsurf
   #/bin/ln -sf ${bdir}/vim-easytags
   /bin/ln -sf ${bdir}/vim-gnupg
-
+  # 2017-09-18: Thank you, pangloss.
+  /bin/ln -sf ${bdir}/vim-javascript
+  /bin/ln -sf ${bdir}/vim-jsx
   # 2017-03-16: Using my own fork of vim-markdown.
   # 2017-04-01: Uncommented this...
   /bin/ln -sf ${bdir}/vim-markdown
-
   /bin/ln -sf ${bdir}/vim-misc
   /bin/ln -sf ${bdir}/vim-rails
   /bin/ln -sf ${bdir}/vim-speeddating
