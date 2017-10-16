@@ -26,7 +26,8 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-gnupg
   # 2017-09-18: Thank you, pangloss.
   /bin/ln -sf ${bdir}/vim-javascript
-  /bin/ln -sf ${bdir}/vim-jsx
+  # 2017-10-16: Using my own fork of vim-jsx.
+  #/bin/ln -sf ${bdir}/vim-jsx
   # 2017-03-16: Using my own fork of vim-markdown.
   # 2017-04-01: Uncommented this...
   # 2017-09-18: Recommented this...?
