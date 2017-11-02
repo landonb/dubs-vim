@@ -14,7 +14,8 @@ make_links () {
   /bin/ln -sf ${bdir}/ingo-library
   # Skipping:
   #  /bin/ln -sf ${bdir}/_last_update
-  /bin/ln -sf ${bdir}/minibufexpl.vim
+  # 2017-11-02: Removed minibufexpl.vim.
+  #/bin/ln -sf ${bdir}/minibufexpl.vim
   /bin/ln -sf ${bdir}/nerdtree
   /bin/ln -sf ${bdir}/syntastic
   /bin/ln -sf ${bdir}/taglist
@@ -36,6 +37,7 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-rails
   /bin/ln -sf ${bdir}/vim-speeddating
   /bin/ln -sf ${bdir}/vim-surround
+  /bin/ln -sf ${bdir}/vim-vinegar
 }
 
 make_links

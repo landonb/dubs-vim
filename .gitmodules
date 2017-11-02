@@ -49,9 +49,6 @@
 [submodule "bundle/ingo-library"]
 	path = bundle/ingo-library
 	url = https://github.com/vim-scripts/ingo-library.git
-[submodule "bundle/minibufexpl.vim"]
-	path = bundle/minibufexpl.vim
-	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -94,3 +91,6 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = git@github.com:landonb/vim-jsx.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git@github.com:tpope/vim-vinegar.git
