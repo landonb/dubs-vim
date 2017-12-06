@@ -4,6 +4,9 @@ make_links () {
 
   local bdir=../bundle
 
+  # Remove existing links.
+  find . -maxdepth 1 -type l -exec /bin/rm {} +
+
   /bin/ln -sf ${bdir}/dubs_all
   /bin/ln -sf ${bdir}/dubs_core
 
@@ -12,6 +15,7 @@ make_links () {
   /bin/ln -sf ${bdir}/ctrlp.vim
   /bin/ln -sf ${bdir}/editorconfig-vim
   /bin/ln -sf ${bdir}/ingo-library
+  /bin/ln -sf ${bdir}/jellybeans.vim
   # Skipping:
   #  /bin/ln -sf ${bdir}/_last_update
   # 2017-11-02: Removed minibufexpl.vim.
@@ -25,6 +29,7 @@ make_links () {
   /bin/ln -sf ${bdir}/viki_vim
   /bin/ln -sf ${bdir}/vim-bufsurf
   #/bin/ln -sf ${bdir}/vim-easytags
+  /bin/ln -sf ${bdir}/vim-fugitive
   /bin/ln -sf ${bdir}/vim-gnupg
   # 2017-09-18: Thank you, pangloss.
   /bin/ln -sf ${bdir}/vim-javascript
