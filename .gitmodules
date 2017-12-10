@@ -109,3 +109,6 @@
 [submodule "bundle/dubs_after_dark"]
 	path = bundle/dubs_after_dark
 	url = git@github.com:landonb/dubs_after_dark.git
+[submodule "bundle/dubs_mescaline"]
+	path = bundle/dubs_mescaline
+	url = git@github.com:landonb/dubs_mescaline.git
