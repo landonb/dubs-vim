@@ -1759,9 +1759,6 @@ For instance, I like a white background; Courier New 9 font;
 Ctrl-C to work in Command mode; using a green color to highlight
 search matches; always showing the status line; etc.
 
-This plugin also enables so-called MS-DOS mode and configures
-some menu item shortcuts.
-
 Please see the source for all the settings and more comments.
 
 Installation
