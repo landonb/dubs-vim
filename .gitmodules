@@ -1,111 +1,111 @@
 [submodule "bundle/AutoAdapt"]
 	path = bundle/AutoAdapt
-	url = https://github.com/vim-scripts/AutoAdapt.git
+	url = git@github.com:vim-scripts/AutoAdapt.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = https://github.com/wincent/command-t.git
+	url = git@github.com:wincent/command-t.git
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
+	url = git@github.com:kien/ctrlp.vim.git
 [submodule "bundle/dubs_appearance"]
 	path = bundle/dubs_appearance
-	url = https://github.com/landonb/dubs_appearance.git
+	url = git@github.com:landonb/dubs_appearance.git
 [submodule "bundle/dubs_buffer_fun"]
 	path = bundle/dubs_buffer_fun
-	url = https://github.com/landonb/dubs_buffer_fun.git
+	url = git@github.com:landonb/dubs_buffer_fun.git
 [submodule "bundle/dubs_edit_juice"]
 	path = bundle/dubs_edit_juice
-	url = https://github.com/landonb/dubs_edit_juice.git
+	url = git@github.com:landonb/dubs_edit_juice.git
 [submodule "bundle/dubs_file_finder"]
 	path = bundle/dubs_file_finder
-	url = https://github.com/landonb/dubs_file_finder.git
+	url = git@github.com:landonb/dubs_file_finder.git
 [submodule "bundle/dubs_ftype_mess"]
 	path = bundle/dubs_ftype_mess
-	url = https://github.com/landonb/dubs_ftype_mess.git
+	url = git@github.com:landonb/dubs_ftype_mess.git
 [submodule "bundle/dubs_grep_steady"]
 	path = bundle/dubs_grep_steady
-	url = https://github.com/landonb/dubs_grep_steady.git
+	url = git@github.com:landonb/dubs_grep_steady.git
 [submodule "bundle/dubs_html_entities"]
 	path = bundle/dubs_html_entities
-	url = https://github.com/landonb/dubs_html_entities.git
+	url = git@github.com:landonb/dubs_html_entities.git
 [submodule "bundle/dubs_project_tray"]
 	path = bundle/dubs_project_tray
-	url = https://github.com/landonb/dubs_project_tray.git
+	url = git@github.com:landonb/dubs_project_tray.git
 [submodule "bundle/dubs_quickfix_wrap"]
 	path = bundle/dubs_quickfix_wrap
-	url = https://github.com/landonb/dubs_quickfix_wrap.git
+	url = git@github.com:landonb/dubs_quickfix_wrap.git
 [submodule "bundle/dubs_style_guard"]
 	path = bundle/dubs_style_guard
-	url = https://github.com/landonb/dubs_style_guard.git
+	url = git@github.com:landonb/dubs_style_guard.git
 [submodule "bundle/dubs_syntastic_wrap"]
 	path = bundle/dubs_syntastic_wrap
-	url = https://github.com/landonb/dubs_syntastic_wrap.git
+	url = git@github.com:landonb/dubs_syntastic_wrap.git
 [submodule "bundle/dubs_toggle_textwrap"]
 	path = bundle/dubs_toggle_textwrap
-	url = https://github.com/landonb/dubs_toggle_textwrap.git
+	url = git@github.com:landonb/dubs_toggle_textwrap.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
+	url = git@github.com:editorconfig/editorconfig-vim.git
 [submodule "bundle/ingo-library"]
 	path = bundle/ingo-library
-	url = https://github.com/vim-scripts/ingo-library.git
+	url = git@github.com:vim-scripts/ingo-library.git
 [submodule "bundle/jellybeans.vim"]
 	path = bundle/jellybeans.vim
-	url = https://github.com/nanotech/jellybeans.vim.git
+	url = git@github.com:nanotech/jellybeans.vim.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = git@github.com:scrooloose/nerdtree.git
 [submodule "bundle/nord-vim"]
 	path = bundle/nord-vim
-	url = https://github.com/arcticicestudio/nord-vim.git
+	url = git@github.com:arcticicestudio/nord-vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/TeTrIs.vim"]
 	path = bundle/TeTrIs.vim
-	url = https://github.com/vim-scripts/TeTrIs.vim.git
+	url = git@github.com:vim-scripts/TeTrIs.vim.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
-	url = https://github.com/tomtom/tlib_vim.git
+	url = git@github.com:tomtom/tlib_vim.git
 [submodule "bundle/viki_vim"]
 	path = bundle/viki_vim
-	url = https://github.com/tomtom/viki_vim.git
+	url = git@github.com:tomtom/viki_vim.git
 [submodule "bundle/vim-bufsurf"]
 	path = bundle/vim-bufsurf
-	url = https://github.com/ton/vim-bufsurf.git
+	url = git@github.com:ton/vim-bufsurf.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+	url = git@github.com:tpope/vim-fugitive.git
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
-	url = https://github.com/jamessan/vim-gnupg.git
+	url = git@github.com:jamessan/vim-gnupg.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
+	url = git@github.com:pangloss/vim-javascript.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = https://github.com/landonb/vim-markdown.git
+	url = git@github.com:landonb/vim-markdown.git
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
-	url = https://github.com/xolox/vim-misc.git
+	url = git@github.com:xolox/vim-misc.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
-	url = https://github.com/tpope/vim-rails.git
+	url = git@github.com:tpope/vim-rails.git
 [submodule "bundle/vim-speeddating"]
 	path = bundle/vim-speeddating
-	url = https://github.com/tpope/vim-speeddating.git
+	url = git@github.com:tpope/vim-speeddating.git
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
-	url = https://github.com/landonb/vim-jsx.git
+	url = git@github.com:landonb/vim-jsx.git
 [submodule "bundle/vim-vinegar"]
 	path = bundle/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar.git
+	url = git@github.com:tpope/vim-vinegar.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = https://github.com/landonb/vim-surround.git
+	url = git@github.com:landonb/vim-surround.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired.git
+	url = git@github.com:tpope/vim-unimpaired.git
 [submodule "bundle/dubs_after_dark"]
 	path = bundle/dubs_after_dark
 	url = git@github.com:landonb/dubs_after_dark.git
