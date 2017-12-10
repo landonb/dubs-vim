@@ -106,3 +106,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/dubs_after_dark"]
+	path = bundle/dubs_after_dark
+	url = git@github.com:landonb/dubs_after_dark.git
