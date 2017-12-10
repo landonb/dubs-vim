@@ -22,6 +22,7 @@ make_links () {
   #/bin/ln -sf ${bdir}/minibufexpl.vim
   /bin/ln -sf ${bdir}/nerdtree
   /bin/ln -sf ${bdir}/nord-vim
+  /bin/ln -sf ${bdir}/QFEnter
   /bin/ln -sf ${bdir}/syntastic
   /bin/ln -sf ${bdir}/taglist
   /bin/ln -sf ${bdir}/TeTrIs.vim

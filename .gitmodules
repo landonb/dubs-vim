@@ -112,3 +112,6 @@
 [submodule "bundle/dubs_mescaline"]
 	path = bundle/dubs_mescaline
 	url = git@github.com:landonb/dubs_mescaline.git
+[submodule "bundle/QFEnter"]
+	path = bundle/QFEnter
+	url = git@github.com:yssl/QFEnter.git
