@@ -82,6 +82,9 @@
 [submodule "bundle/vim-bufsurf"]
 	path = bundle/vim-bufsurf
 	url = git@github.com:ton/vim-bufsurf.git
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = git@github.com:tpope/vim-endwise.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
@@ -106,12 +109,18 @@
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = git@github.com:landonb/vim-jsx.git
-[submodule "bundle/vim-vinegar"]
-	path = bundle/vim-vinegar
-	url = git@github.com:tpope/vim-vinegar.git
+[submodule "bundle/vim-scriptease"]
+	path = bundle/vim-scriptease
+	url = git@github.com:tpope/vim-scriptease.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git@github.com:landonb/vim-surround.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git@github.com:tpope/vim-vinegar.git
+[submodule "bundle/vim-vividchalk"]
+	path = bundle/vim-vividchalk
+	url = git@github.com:tpope/vim-vividchalk.git
