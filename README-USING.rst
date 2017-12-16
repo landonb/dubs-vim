@@ -497,7 +497,7 @@ Finding and Opening Files (Other Methods)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In addition to using the methods described above to find and open
-files or using the Project plugin, there are obviously other 
+files or using the Project plugin, there are obviously other
 methods of finding and opening files, including:
 
 ===========================  ============================  ==============================================================================
@@ -939,7 +939,7 @@ Commands for searching for text within a file.
  ``/``                              Start a buffer search               Press the forward slash key to start a buffer search in the window
                                                                         wherein your cursor lies. The cursor will jump to matches as you type;
                                                                         hit Enter when you're done typing the search command.
-                                                                        
+
                                                                         Hint: If you type lowercase characters only, the search is
                                                                         case-insensitive, but if you use one or more uppercase characters,
                                                                         the search is case sensitive.
@@ -948,14 +948,14 @@ Commands for searching for text within a file.
                                     Search Matches                      to search forward through the buffer,
                                                                         and use ``<Shift-F3>`` and ``N`` (i.e., Shift-'n')
                                                                         to search backwards through the buffer.
-                                                                        
+
                                                                         Hint: The search wraps at the end of the buffer;
                                                                         when it wraps, you'll see the scroll bar elevator jump and
                                                                         you'll see a message highlighted in red in the status window
                                                                         that reads, "search hit TOP, continuing at BOTTOM", or,
                                                                         conversely, "search hit BOTTOM, continuing at TOP".
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Shift-F3>``                     Backward Search Match               Like ``<F3>``, but go to the previous result, 
+ ``<Shift-F3>``                     Backward Search Match               Like ``<F3>``, but go to the previous result,
                                                                         possibly wrapping at the start of the file and continuing from
                                                                         the end, back up to the cursor.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
@@ -965,11 +965,11 @@ Commands for searching for text within a file.
  ``<F1>``                           Search Buffer for                   If there's a selection, searches the buffer for that,
                                     Word Under Cursor                   otherwise selects the word under the cursor and searches for that.
                                                                         This is a shortcut to ``/`` in a sense.
-                                                                        
+
                                                                         Hint: To start searching a buffer for a term,
                                                                         put the cursor on that term,
                                                                         hit ``<F1>`` and then use ``<F3>`` to continue searching the file.
-                                                                        
+
                                                                         Caveat: If the search term is lowercase,
                                                                         you'll get case-insensitive matches,
                                                                         but if the search term is mixed- or upper-case,
@@ -994,7 +994,7 @@ Commands for searching for text within a file.
                                                                         The set of word delimiters is obviously customizable.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``#``                              Restrictive Search                  Like ``*`` search, but backward through the buffer.
-                                    in Reverse                         
+                                    in Reverse
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``<Ctrl-H>``                       Hide Search Highlights              After you initiate a search,
                                                                         the matching words in the buffers are highlighted.
@@ -1011,25 +1011,25 @@ Commands for searching for text within a file.
                                     in Buffer                           replace and hit backslash and then 's'. You'll see a partially-completed
                                                                         command ready for you to type the replacement text. Hit return,
                                                                         and then hit 'y' to confirm each replacement or hit 'a' to do 'em all.
-                                                                        
+
                                                                         Caveat: the search-and-replace starts at the cursor and continues until the
                                                                         end of the file but it doesn't wrap around.
-                                                                        
+
                                                                         Hint: You'll notice that you are completing a builtin Vim search-n-replace command;
                                                                         if you'd like to do case-sensitive matching, add an 'I' to the end of the search,
                                                                         i.e., ``:.,$s/Find_Me/Replace_Me/gcI``
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``\S``                             Search and Replace                  This is similar to ``\s`` but it searches and replaces text in all of the files
                                     in All Files                        listed in the quickfix window.
-                                    Listed in Quickfix                  
+                                    Listed in Quickfix
                                                                         - Hint: Do an ``<F4>`` or ``\g`` search to populate the Quickfix window
                                                                           (these two commands are part of
                                                                           `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__).
-                                                                        
+
                                                                         - Double-click the first entry in the Quickfix search results to open that buffer.
-                                                                        
+
                                                                         - Highlight the text you want to replace and then hit ``\`` and then ``S``.
-                                                                        
+
                                                                         - Type the replacement text and hit return, and dubsacks will find and replace
                                                                           in all of the files in the Quickfix list.
 
@@ -1065,11 +1065,11 @@ Editing and Formatting Text
  ``<Ctrl-Q><Shift-Click>``          Block Select                        When you select text normally, you select a sequence of characters.
                                                                         But if your text file is pretty-printed (with well-formatted columns
                                                                         and whatnot) you can select text as a "block".
-                                                                        
+
                                                                         First, enter command mode, then hit ``<Ctrl-Q>`` and then ``<Shift-Click>``
                                                                         elsewhere to make a block selection.
                                                                         You can copy, paste and cut block selections like you can normal sequence selections.
-                                                                        
+
                                                                         (Note: In default Vim, this command is mapped to Ctrl-V, but Ctrl-V is paste, yo! =)
                                                                         so we've remapped Vim's Ctrl-V to Ctrl-Q so we can use Ctrl-V for paste
                                                                         (and since we're using Ctrl-Q for block select, if you want to quit, try ``<Alt-f>x``).)
@@ -1086,18 +1086,18 @@ Editing and Formatting Text
                                                                         This wouldn't be so special if dubsacks hadn't had to change Vim's default:
                                                                         in default Vim, when in select mode, Ctrl-Z lowercases what's selected.
                                                                         But in dubsacks, even when text is selected, Ctrl-Z just undoes what was dud.
-                                                                        
+
                                                                         Hint: If you pine for the lowercase operation, select text and then type ``<Ctrl-o>gu<DOWN>``
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``f/`` and ``f\``                  Change Slashes                      Use ``f/`` and ``f\`` to change the direction of slashes.
-                                                                        
+
                                                                         Press ``f/`` to change every backslash to a forward slash in the current line;
                                                                         use ``f \`` to do the opposite.
-                                                                        
+
                                                                         Hint: This is useful for converting Windows OS directory paths to Linux/Mac, and vice versa.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``qq`` and ``q`` and ``Q``         Record and Playback                 This is a shortcut to playback the recording in the q register.
-                                    Keystrokes                          
+                                    Keystrokes
                                                                         1. Start recording with ``qq``.
 
                                                                         2. End recording with ``q`` (or with ``<Ctrl-o>q`` if in Insert mode).
@@ -1156,7 +1156,7 @@ Editing and Formatting Text
  ``<Tab>`` and ``<Shift-Tab>``      Indent and Undent                   Select some text in one or more lines and use ``<Tab>`` and ``<Shift-Tab>``
                                     Selected Text                       to indent and undent the text according to the current tab width
                                                                         (and using tabs or spaces as appropriate).
-                                                                        
+
                                                                         Caveat: Cindent is too smart and won't shift octothorpes
                                                                         that are in the first column
                                                                         (because it thinks they're pre-compilation macros);
@@ -1164,7 +1164,7 @@ Editing and Formatting Text
                                                                         but he likes the other things that Cindent is good for.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``<Ctrl-P>`` and ``<Ctrl-L>``      Swap Paragraphs                     ``<Ctrl-P>`` swaps the paragraph under the cursor with the paragraph above.
-                                                                        
+
                                                                         ``<Ctrl-L>`` swaps in with the paragraph below.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``\O``                             Open hyperlink under cursor
@@ -1229,7 +1229,7 @@ Highlights:
 - Map ``<Ctlr-]>`` to work in Insert and Visual modes (by default,
   jumping to the tag under the cursor or selected text only
   works in Normal mode).
-  
+
   - Also map ``<Alt-]>`` to jump back to the last tag, since
     another Dubsacks plugin overrides the built-in ``<Ctrl-t>``
     to be transpose.
@@ -1243,7 +1243,7 @@ Highlights:
  Key Mapping                        Description                         Notes
 =================================  ==================================  ==============================================================================
  ``<Ctrl-]>``                       Jump to Definition                  Jumps to the definition of the function named under the cursor.
-                                                                        
+
                                                                         Hint: You can return to the tag from which you jumped using ``<Alt-]>``.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``<Alt-]>``                        Jump to Last Tag                    Jumps to the tag used by the last ``<Ctrl-]>`` command.
@@ -1417,12 +1417,12 @@ Interactive Entity Table
 interactive entity list in the current window.
 
 You can double-click entities to copy-and-paste
-them back to the buffer you were just 
-working on, or you can just position the cursor 
-over an entity and press ``r`` (or ``<Enter>``) to do 
+them back to the buffer you were just
+working on, or you can just position the cursor
+over an entity and press ``r`` (or ``<Enter>``) to do
 the same.
 
-Press ``b`` or ``B`` to cycle forwards or backwards 
+Press ``b`` or ``B`` to cycle forwards or backwards
 through the set of available bases.
 
 HTML recognizes three entity formats, e.g.,
@@ -1431,8 +1431,8 @@ HTML recognizes three entity formats, e.g.,
 | ``hexadecimal:           &#x3D6;``
 | ``entity/friendly name:  &piv;``
 
-Use ``q`` or ``<ESC>`` to quit the buffer. It will 
-be destroyed and the last working buffer will 
+Use ``q`` or ``<ESC>`` to quit the buffer. It will
+be destroyed and the last working buffer will
 be displayed instead.
 
 Interactive Entity Lookup
@@ -1780,7 +1780,7 @@ Dubsacks Vim — ToggleWrap
 About This Plugin
 -----------------
 
-ToggleWrap is a Vim plugin to make working 
+ToggleWrap is a Vim plugin to make working
 with and without text wrapping more pleasant.
 
 This plugin was inspired by
@@ -1830,7 +1830,7 @@ boundaries.
 Why ":set wrap" Isn't Enough
 ----------------------------
 
-The ``wrap`` option does exactly what it says -- 
+The ``wrap`` option does exactly what it says --
 it visually wraps text that otherwise would
 extend past the right edge of a window.
 
@@ -1840,25 +1840,25 @@ notice something -- using ``<Up>``, ``<Down>``,
 ``<Home>``, and ``<End>`` keys applies to the
 logical text line, not to the visual line.
 
-E.g., suppose a long line is wrapped and now 
-spans four visual lines in a window; if you 
-put the cursor at the start of the line of 
-text and then press ``<Down>``, rather than moving 
-the cursor down by one visual line, the 
-cursor instead jumps four visuals lines down 
-to the next actual line in the document (i.e., 
+E.g., suppose a long line is wrapped and now
+spans four visual lines in a window; if you
+put the cursor at the start of the line of
+text and then press ``<Down>``, rather than moving
+the cursor down by one visual line, the
+cursor instead jumps four visuals lines down
+to the next actual line in the document (i.e.,
 past the next newline it finds).
 
-Another e.g., if you press ``<Home>``, the cursor 
-jumps to the logical start of the line, which 
+Another e.g., if you press ``<Home>``, the cursor
+jumps to the logical start of the line, which
 may be on a visual line above the current one.
 
-Fortunately, Vim supports visual line 
+Fortunately, Vim supports visual line
 navigation as well as logical line navigation.
 So now, when in wrap mode, we remap ``<Up>`` and
 ``<Down>`` to move the cursor by one visual line
 rather than by one logical line, and ``<Home>``
-and ``<End>`` move the cursor to the start and end 
+and ``<End>`` move the cursor to the start and end
 of the current visual line, respectively.
 
 Key Mappings
@@ -1971,7 +1971,7 @@ Other Features
 
 - Fix syntax highlighting bug:
 
-  - Sometimes -- especially with the ActionScript syntax 
+  - Sometimes -- especially with the ActionScript syntax
     highlighter -- files look like all-comments or all-text
     (e.g., the text is all pink) because the syntax parser started
     from the top of the window or thereabouts and not from the
@@ -2047,7 +2047,7 @@ Other Features
 
   - Textile (Markup language)
 
-  - Wikipedia  
+  - Wikipedia
 
 Dubsacks Vim — Cycloplan IDE
 ============================
@@ -2152,19 +2152,19 @@ with your pointer or middle finger.
 ===========================  ============================  ==============================================================================
  ``<Shift-Alt-1>``            Toggle ASCII                  Decimal and Hexadecimal 8-bit character set
                               Character Table               (based on `CharTab <http://www.vim.org/scripts/script.php?script_id=898>`__).
-                                                            
+
                                                             *Hint:* Hit ``b`` to toggle between bases (radices).
                                                             To return to the previous buffer, hit ``q``, ``<ESC>`` or ``<Shift-Alt-1>``.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<Shift-Alt-2>``            Toggle                        Show/Hide the
                               MiniBufExplorer               `MiniBuf Explorer <http://www.vim.org/scripts/script.php?script_id=159>`__
                                                             window.
-                                                            
+
                                                             Shows a compact list of open buffers, highlights the unsaved buffers,
                                                             and let's you double-click (or cursor-over and hit ``ENTER``) to load
                                                             buffers. It occupies the bottom of the screen, sitting above the
                                                             command line and beneath the quickfix window.
-                                                            
+
                                                             *Caveat:* Using the MiniBuf Explorer can be tedious, especially
                                                             if you've loaded a lot of buffers. There are easier ways to switch
                                                             buffers -- specifically, the ``Shift-F2`` command maps to the built-in
@@ -2177,7 +2177,7 @@ with your pointer or middle finger.
  ``<Shift-Alt-3>``            Toggle                        Show/Hide the
                               Quickfix Window               `QuickFix <http://vimdoc.sourceforge.net/htmldoc/quickfix.html>`__
                                                             window.
-                                                            
+
                                                             The QuickFix list shows search results, stack traces, and log file output.
                                                             It occupies the bottom part of the screen, above the command line
                                                             (or above the MiniBufExplorer, if that's showing).
@@ -2185,10 +2185,10 @@ with your pointer or middle finger.
  ``<Shift-Alt-4>``            Toggle                        Show/Hide the
                               Project Plugin Tray           `Project <http://www.vim.org/scripts/script.php?script_id=69>`__ window.
                                                             Also, position and resize side-by-side windows vertically (see below).
-                                                            
+
                                                             The project window shows all of your source files.
                                                             See ``:help project``.
-                                                            
+
                                                             *Hint:* If you know the name of the file you want to open, move your
                                                             cursor to the project window and type ``/`` to start a search, search
                                                             for the file, then click ``ENTER`` to open the file.
@@ -2199,9 +2199,9 @@ with your pointer or middle finger.
  ``<Shift-Alt-6>``            Toggle Tag list               Show/Hide the
                                                             `Tag List <http://www.vim.org/scripts/script.php?script_id=273>`__
                                                             window.
-                                                            
+
                                                             Calls ``:TlistToggle``. See ``:help taglist``.
-                                                            
+
                                                             *Hint:* Run ``ctags`` on your code to make a ``tags`` file first,
                                                             and then ``:set tags=<path,path,...>`` in Vim to point to the ``tags`` file.
                                                             You can setup different tags for different file types and projects;
