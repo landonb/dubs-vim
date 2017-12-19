@@ -2364,7 +2364,7 @@ Install ``xdotool``.
 
 .. code-block:: bash
 
-   sudo yum install xdotool
+   sudo yum install xdotool
 
 Now configure your window manager.
 
@@ -2458,39 +2458,39 @@ These steps worked for the author back in 2010.
 
 .. code-block:: bash
 
-   rpm --eval '%{_sourcedir}'
+   rpm --eval '%{_sourcedir}'
    /home/your_username/rpmbuild/SOURCES
 
-   mkdir -p ~/rpmbuild/SOURCES
-   pushd ~/rpmbuild/SOURCES
-   wget -N http://www.nicemice.net/par/Par152.tar.gz
-   wget -N http://www.nicemice.net/par/par-1.52-1.spec.gz
-   gunzip -v par-1.52-1.spec.gz``
+   mkdir -p ~/rpmbuild/SOURCES
+   pushd ~/rpmbuild/SOURCES
+   wget -N http://www.nicemice.net/par/Par152.tar.gz
+   wget -N http://www.nicemice.net/par/par-1.52-1.spec.gz
+   gunzip -v par-1.52-1.spec.gz``
 
-   rpmbuild -ba ~/rpmbuild/SOURCES/par-1.52-1.spec``
+   rpmbuild -ba ~/rpmbuild/SOURCES/par-1.52-1.spec``
 
 Look for the output:
 
 .. code-block:: bash
 
-   Wrote: /home/your_username/rpmbuild/SRPMS/par-1.52-1.src.rpm
-   Wrote: /home/your_username/rpmbuild/RPMS/x86_64/par-1.52-1.x86_64.rpm
-   Wrote: /home/your_username/rpmbuild/RPMS/x86_64/par-debuginfo-1.52-1.x86_64.rpm
+   Wrote: /home/your_username/rpmbuild/SRPMS/par-1.52-1.src.rpm
+   Wrote: /home/your_username/rpmbuild/RPMS/x86_64/par-1.52-1.x86_64.rpm
+   Wrote: /home/your_username/rpmbuild/RPMS/x86_64/par-debuginfo-1.52-1.x86_64.rpm
 
 Install the package:
 
 .. code-block:: bash
 
-   sudo rpm -Uvh ~/rpmbuild/RPMS/x86_64/par-1.52-1.x86_64.rpm
+   sudo rpm -Uvh ~/rpmbuild/RPMS/x86_64/par-1.52-1.x86_64.rpm
 
 NOTE: I did not try building par directly. You could try either:
 
 .. code-block:: bash
 
-   make -f protoMakefile
+   make -f protoMakefile
    # or
-   make -f protoMakefile \
-     CC="gcc -c -ansi -pedantic -O3 -DDONTFREE" LINK1="gcc -s"
+   make -f protoMakefile \
+     CC="gcc -c -ansi -pedantic -O3 -DDONTFREE" LINK1="gcc -s"
 
 GLib-GObject Errors
 ^^^^^^^^^^^^^^^^^^^

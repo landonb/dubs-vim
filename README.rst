@@ -50,7 +50,7 @@ file, are restart Vim.
 
 .. code-block:: bash
 
-   git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
+   git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
 
    # Checkout all the submodules.
    pushd ~/.vim/bundle/dubsacks_vim
@@ -86,7 +86,7 @@ Longform Install
           change ``vim-gtk`` to ``vim-gnome``.
 
           If you're installing on Fedora, replace
-          ``sudo apt-get install`` with ``sudo yum install``
+          ``sudo apt-get install`` with ``sudo yum install``
           and fix any package names (such as changing
           ``exuberant-ctags`` to ``ctags-etags``,
           and possible ``ruby-dev`` to ``ruby-devel``).
@@ -130,7 +130,7 @@ and install to the Pathogen space.
 
 .. code-block:: bash
 
-   git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
+   git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
 
 4. Download all the Submodules.
 
