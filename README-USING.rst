@@ -1373,12 +1373,11 @@ I lifted the list of HTML4 Character Entities from TNT Luoma:
 .. note:: Try the built-in, ``:digraph``, to list all the
           diacritical marks. See:
           http://vim.wikia.com/wiki/Entering_special_characters
-          To insert a digraph, press ``<Ctrl-K>`` followed by the two
-          character combination shown under ``:digraph``. Dubsacks
-          has ``<Ctrl-K>`` mapped to buffer-forward, so you can use
-          ``:set dg`` instead, which works after a backspace,
-          e.g., ``<Ctrl-K>a:`` could inѕtead be typed ``a<BS>:``
-          Be sure ato ``:set nodg`` when you're done, otherwise you'll
+          To insert a digraph, press ``<Ctrl-L>`` followed by the two
+          character combination shown under ``:digraph``. You can also
+          call ``:set dg``, and then you can use a backspace to make
+          digraphs, e.g., ``<Ctrl-K>a:`` could inѕtead be typed ``a<BS>:``
+          Be sure to ``:set nodg`` when you're done, otherwise you'll
           surprise yourself sometimes after a backspace.
 
           Hint: Try ``:TabMessage digraph`` to copy and paste digraphs.
