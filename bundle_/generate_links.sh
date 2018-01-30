@@ -42,6 +42,7 @@ make_links () {
   #/bin/ln -sf ${bdir}/vim-markdown
   /bin/ln -sf ${bdir}/vim-misc
   /bin/ln -sf ${bdir}/vim-rails
+  /bin/ln -sf ${bdir}/vim-restructuredtext/
   /bin/ln -sf ${bdir}/vim-speeddating
   /bin/ln -sf ${bdir}/vim-unimpaired
   /bin/ln -sf ${bdir}/vim-vinegar

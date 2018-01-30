@@ -124,3 +124,6 @@
 [submodule "bundle/vim-vividchalk"]
 	path = bundle/vim-vividchalk
 	url = git@github.com:tpope/vim-vividchalk.git
+[submodule "bundle/vim-restructuredtext"]
+	path = bundle/vim-restructuredtext
+	url = ssh://git@github.com/marshallward/vim-restructuredtext.git
