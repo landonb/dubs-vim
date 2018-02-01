@@ -42,7 +42,12 @@ make_links () {
   #/bin/ln -sf ${bdir}/vim-markdown
   /bin/ln -sf ${bdir}/vim-misc
   /bin/ln -sf ${bdir}/vim-rails
-  /bin/ln -sf ${bdir}/vim-restructuredtext/
+  # 2018-02-01: The new reST plugin makes editing sluggish.
+  # And (2) when I use \s to find-replace <TAB>s, it only works
+  # on the first line of matches, and then it exits replace mode,
+  # and you see "xx matches on xx lines" message like you would
+  # with \S find-replace-multi-files command. So weird. So disabled!
+  #/bin/ln -sf ${bdir}/vim-restructuredtext/
   /bin/ln -sf ${bdir}/vim-speeddating
   /bin/ln -sf ${bdir}/vim-unimpaired
   /bin/ln -sf ${bdir}/vim-vinegar
