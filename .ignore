@@ -64,5 +64,6 @@ dubs_core/
 # 2017-06-10: Commenting out, since I added bundle-dubs/, above.
 #bundle-dubs/dubs_buffer_fun
 
-dubs_after_dark/colors/after-dark.vim
+# 2018-02-01 19:51: Why was this? Commenting out!
+#dubs_after_dark/colors/after-dark.vim
 
