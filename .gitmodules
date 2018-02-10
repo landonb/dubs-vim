@@ -124,3 +124,6 @@
 [submodule "bundle/vim-vividchalk"]
 	path = bundle/vim-vividchalk
 	url = git@github.com:tpope/vim-vividchalk.git
+[submodule "bundle/vim-istanbul"]
+	path = bundle/vim-istanbul
+	url = git@github.com:juanpabloaj/vim-istanbul.git

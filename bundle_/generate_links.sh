@@ -32,6 +32,7 @@ make_links () {
   #/bin/ln -sf ${bdir}/vim-easytags
   /bin/ln -sf ${bdir}/vim-fugitive
   /bin/ln -sf ${bdir}/vim-gnupg
+  /bin/ln -sf ${bdir}/vim-istanbul
   # 2017-09-18: Thank you, pangloss.
   /bin/ln -sf ${bdir}/vim-javascript
   # 2017-10-16: Using my own fork of vim-jsx.
