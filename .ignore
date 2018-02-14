@@ -1,69 +1,22 @@
-.agignore
 .gitmodules
 .git/*
-doc/tags2
 spell/
 
-# We make bundle_ the active one, but
-# we symlink dubs vims from its own dir.
-
+# If you install the master Dubsacks Vim repo,
+# all its submodules install to bundle/. If you
+# then clone each of the Dubsacks plugins so you
+# can develop on them, check'em out to bundle_,
+# and symlink from bundle what you don't care to
+# work on. We won't bother searching either place.
 bundle/
-
-# 2017-06-10: How long ago did I add bundle-dubs/ to #9 .dubs_projects.vim?
-#   So I should ignore it here to skip duplicates.
-bundle-dubs/
-
-bundle-OFF/
-
-# Non-dubs dirs.
-
 # Ignore subdirectories, but not the generate_links.sh.
 bundle_/*/
-
-*dubs_ftype_mess/autoload/xml/*
-
-# Cyclopath...
-
-#  specific:
-bundle_/dubs_core/cmdt_paths/cyclopath/
-bundle_/dubs_file_finder/cmdt_paths/cyclopath/
-#  lazy:
-*cyclopath/*
-*Cyclopath*
-
-dubs_grep_steady/dubs_projects.vim
-#dubs_all/dubs_projects.vim
-
-# Avoid recursive directory issues
-*dubs_all/cmdt_paths/
-*dubs_core/cmdt_paths/
-*dubs_file_finder/cmdt_paths/
-*dubs_all/dubs_cuts/
-*dubs_core/dubs_cuts/
-*dubs_project_tray/dubs_cuts/
-# 2016-09-26: How have I not had a problem with this until terpsichore?
-#             From ~/.vim/bundle-dubs, don't precede with a *
-#             (I think Silver Searcher doesn't match * to ^?
-#             Or maybe it's not really *, but .+ ?)
-dubs_all/cmdt_paths/
-dubs_core/cmdt_paths/
-dubs_file_finder/cmdt_paths/
-dubs_all/dubs_cuts/
-dubs_core/dubs_cuts/
-dubs_project_tray/dubs_cuts/
-# 2016-10-27: Seeing dubs_all/dubs_preloads.vim showing up twice.
-#             Because dubs_core just a symlink to dubs_all.
-*dubs_core/
-dubs_core/
-
-# 2017-06-06: Still happening.
-#   user@mach:.vim ⚓ $ find -L . -name "dubs_buffer_fun.vim"
-#   ./bundle_/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
-#   ./bundle/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
-#   ./bundle-dubs/dubs_buffer_fun/plugin/dubs_buffer_fun.vim
-# 2017-06-10: Commenting out, since I added bundle-dubs/, above.
-#bundle-dubs/dubs_buffer_fun
-
-# 2018-02-01 19:51: Why was this? Commenting out!
-#dubs_after_dark/colors/after-dark.vim
+# Then, if you want to make a searchable subset of
+# what's under bundle_, create a subset of symlinks
+# under a third directory!
+bundle-dubs/
+# The author also sometimes disables plugins without
+# deleting them (for testing and developing). Ignore
+# this directory, too.
+bundle-OFF/
 
