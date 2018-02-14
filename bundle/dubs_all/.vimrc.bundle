@@ -1,11 +1,11 @@
 " File: ~/.vimrc
 " Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
-" Last Modified: 2015.02.28
+" Last Modified: 2017.11.02
 " Project Page: https://github.com/landonb/dubsacks_vim
 " Summary: Platform-agnostic Vim startup script
 " License: GPLv3
 " -------------------------------------------------------------------
-" Copyright © 2009, 2015 Landon Bouma.
+" Copyright © 2009, 2015-2017 Landon Bouma.
 " 
 " This file is part of Dubsacks.
 " 
@@ -97,6 +97,26 @@ else
   "  call confirm(
   "   \ 'vimrc: Cannot find VIMRUNTIME''s vimrc, '
   "   \ . 'i.e., $VIMRUNTIME/../[\.|_]vimrc', 'OK')
+endif
+
+" ----------------------------------------
+"  Remake/Regenerate spelling dictionary
+" ----------------------------------------
+
+" FIXME: In Vim <= 7.3:
+"         E118: Too many arguments for function: glob
+"         E15: Invalid expression: glob('~/.vim/spell/*.add', 1, 1)
+"        The third argument, '1', tells glob to return a List, rather than
+"        a string of filenames separated by NLs. Rather than bother to fix
+"        this, we'll just disable this feature in older Vims.
+if v:version > 703
+  for vocab in glob('~/.vim/spell/*.add', 1, 1)
+    if
+        \ filereadable(vocab)
+        \ && (!filereadable(vocab . '.spl') || getftime(vocab) > getftime(vocab . '.spl'))
+      exec 'mkspell! ' . fnameescape(vocab)
+    endif
+  endfor
 endif
 
 " ----------------------------------------
