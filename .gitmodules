@@ -127,3 +127,6 @@
 [submodule "bundle/vim-istanbul"]
 	path = bundle/vim-istanbul
 	url = git@github.com:juanpabloaj/vim-istanbul.git
+[submodule "bundle/vim-colorschemes"]
+	path = bundle/vim-colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git

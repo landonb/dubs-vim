@@ -29,6 +29,7 @@ make_links () {
   /bin/ln -sf ${bdir}/tlib_vim
   /bin/ln -sf ${bdir}/viki_vim
   /bin/ln -sf ${bdir}/vim-bufsurf
+  /bin/ln -sf ${bdir}/vim-colorschemes
   #/bin/ln -sf ${bdir}/vim-easytags
   /bin/ln -sf ${bdir}/vim-fugitive
   /bin/ln -sf ${bdir}/vim-gnupg
