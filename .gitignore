@@ -71,3 +71,6 @@ bundle-OFF
 # directory, which is part of dubsacks_vim (~/.vim/.git). Git it?
 bundle/dubs_all/.vimrc.bundle_
 
+# mkview/loadview files.
+view/
+
