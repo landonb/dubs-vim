@@ -1,6 +1,8 @@
 .gitmodules
 .git/*
 spell/
+# mkview/loadview files are in view/.
+view/
 
 # If you install the master Dubsacks Vim repo,
 # all its submodules install to bundle/. If you
