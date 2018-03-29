@@ -28,6 +28,7 @@ make_links () {
   /bin/ln -sf ${bdir}/TeTrIs.vim
   /bin/ln -sf ${bdir}/tlib_vim
   /bin/ln -sf ${bdir}/viki_vim
+  /bin/ln -sf ${bdir}/vim-abolish
   /bin/ln -sf ${bdir}/vim-bufsurf
   /bin/ln -sf ${bdir}/vim-colorschemes
   #/bin/ln -sf ${bdir}/vim-easytags
@@ -36,6 +37,7 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-istanbul
   # 2017-09-18: Thank you, pangloss.
   /bin/ln -sf ${bdir}/vim-javascript
+  /bin/ln -sf ${bdir}/vim-jdaddy
   # 2017-10-16: Using my own fork of vim-jsx.
   #/bin/ln -sf ${bdir}/vim-jsx
   # 2017-03-16: Using my own fork of vim-markdown.
