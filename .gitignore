@@ -1,5 +1,7 @@
-# Session.vim is just Vim's session-to-session cookie.
-Session.vim
+# Session.vim is Vim's session-to-session cookie. Er, workspace saver.
+# 2018-06-11 16:04: (lb): I replaced ~/.vim/Session.vim with
+#   --servername-specific ~/.vim/sessions/<servername>.vim files.
+sessions/
 
 # "netrw is a kind of vim plugin/script which supports reading and writing
 # files across networks. .netrwhist is a history file which maintains all
