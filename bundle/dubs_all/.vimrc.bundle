@@ -109,14 +109,24 @@ endif
 "        The third argument, '1', tells glob to return a List, rather than
 "        a string of filenames separated by NLs. Rather than bother to fix
 "        this, we'll just disable this feature in older Vims.
-if v:version > 703
-  for vocab in glob('~/.vim/spell/*.add', 1, 1)
-    if
-        \ filereadable(vocab)
-        \ && (!filereadable(vocab . '.spl') || getftime(vocab) > getftime(vocab . '.spl'))
-      exec 'mkspell! ' . fnameescape(vocab)
-    endif
-  endfor
+"
+" FIXME/2018-06-12: (lb): Why is this here and not in a function in a plugin?
+"
+" (lb): I cannot figure how to suppress the mkspell output, and its presence
+" blocks the start of Vim in the terminal -- I gotta dismiss the messages
+" first before the editor opens. In the GUI, I see some messages fly by on
+" startup, but there's no interaction. So save the spell build for the GUI.
+if has("gui_running")
+  if v:version > 703
+    for vocab in glob('~/.vim/spell/*.add', 1, 1)
+      if
+          \ filereadable(vocab)
+          \ && (!filereadable(vocab . '.spl') || getftime(vocab) > getftime(vocab . '.spl'))
+        exec 'mkspell! ' . fnameescape(vocab)
+      endif
+    endfor
+  endif
+  :exec 'mkspell! ' . fnameescape(vocab)
 endif
 
 " ----------------------------------------
