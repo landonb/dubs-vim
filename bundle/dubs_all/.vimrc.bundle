@@ -114,8 +114,9 @@ endif
 "
 " (lb): I cannot figure how to suppress the mkspell output, and its presence
 " blocks the start of Vim in the terminal -- I gotta dismiss the messages
-" first before the editor opens. In the GUI, I see some messages fly by on
-" startup, but there's no interaction. So save the spell build for the GUI.
+" first before the editor opens. In the GUI, there's a popup. Which is annoying,
+" but I don't open the GUI as often as I run Vim in the terminal
+" So save the spell build for the GUI.
 if has("gui_running")
   if v:version > 703
     for vocab in glob('~/.vim/spell/*.add', 1, 1)
