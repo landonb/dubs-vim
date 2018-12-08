@@ -1,6 +1,9 @@
-# Session.vim is Vim's session-to-session cookie. Er, workspace saver.
-# 2018-06-11 16:04: (lb): I replaced ~/.vim/Session.vim with
-#   --servername-specific ~/.vim/sessions/<servername>.vim files.
+# Ignore Session files (Vim's workspace saver): To track application sessions
+# between invocations, Vim uses either a ~/.vim/Session.vim file, or multiple
+# files under ~/.vim/sessions/<servername>.vim. Dubs uses the latter approach,
+# by using vim's --servername option. This has a few benefits, such as making
+# Vim development easier, as you can muck with code in one instance, and kill
+# and restart another gvim instance to test modifications.
 sessions/
 
 # "netrw is a kind of vim plugin/script which supports reading and writing
@@ -29,7 +32,6 @@ bundle/dubs_all/.vimprojects
 # Ignore misc.
 bundle/dubs_all/one_time_setup.sh
 bundle/dubs_all/plugin-info.json
-README-FIXME.rst
 
 bundle/_last_update
 
@@ -46,11 +48,6 @@ bundle/_last_update
 #
 # So we can ignore bundle_/.
 bundle_
-# And bundle-dubs/ is just symlinks to the dubsacks_vim projects
-# to make grepping easier (i.e., ignore third-party Vim project).
-bundle-dubs
-# And bundle-OFF is stuff I still just haven't /bin/rm'ed.
-bundle-OFF
 
 # Here's a long-winded explanation of the chay-os.
 #
