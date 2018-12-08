@@ -11,8 +11,12 @@ view/
 # and symlink from bundle what you don't care to
 # work on. We won't bother searching either place.
 bundle/
+
 # Ignore subdirectories, but not the generate_links.sh.
-bundle_/*/
+# 2018-12-06: What about search ~/.vim from Dubsacks?
+#bundle_/*/
+
+
 # Then, if you want to make a searchable subset of
 # what's under bundle_, create a subset of symlinks
 # under a third directory!
