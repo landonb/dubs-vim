@@ -61,28 +61,8 @@
 " NOTE: Add to this list to add languages to the .. code-block:: recognizer.
 let g:rst_syntax_code_list = [
   \ 'bash',
-  \ 'c',
-  \ 'cpp',
-  \ 'css',
-  \ 'diff',
-  \ 'dtd',
-  \ 'go',
-  \ 'hjson',
-  \ 'html',
-  \ 'java',
   \ 'javascript',
-  \ 'lisp',
-  \ 'lua',
-  \ 'make',
-  \ 'perl',
-  \ 'php',
   \ 'python',
-  \ 'ruby',
-  \ 'sh',
-  \ 'sql',
-  \ 'svg',
-  \ 'vim',
-  \ 'yaml',
   \ ]
   " E484: Can't open file syntax/json.vim
   " \ 'json',
@@ -93,6 +73,29 @@ let g:rst_syntax_code_list = [
   "  \ 'textile',
   "  \ 'wikipedia',
   "  \ 'wp',
+  " 2018-12-07: On 7K file, each code-block lang. costs 0.05 secs. of 3.75 total.
+  " Meh.
+  "  \ 'dtd',
+  "  \ 'java',
+  "  \ 'lisp',
+  "  \ 'lua',
+  "  \ 'make',
+  "  \ 'perl',
+  "  \ 'php',
+  "  \ 'svg',
+  " Suppose Meh.
+  "  \ 'c',
+  "  \ 'cpp',
+  "  \ 'css',
+  "  \ 'diff',
+  "  \ 'go',
+  "  \ 'hjson',
+  "  \ 'html',
+  "  \ 'ruby',
+  "  \ 'sh',
+  "  \ 'sql',
+  "  \ 'vim',
+  "  \ 'yaml',
 
 " Re: bash syntax defined by sh.vim, so to make it work
 " so you don't have to do, e.g., .. code-block:: sh
