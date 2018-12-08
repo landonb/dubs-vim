@@ -136,3 +136,6 @@
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
 	url = git@github.com:tpope/vim-abolish.git
+[submodule "bundle/dubs_rest_fold"]
+	path = bundle/dubs_rest_fold
+	url = https://github.com/landonb/dubs_rest_fold.git
