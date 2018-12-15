@@ -10,9 +10,28 @@ make_links () {
   /bin/ln -sf ${bdir}/dubs_all
   /bin/ln -sf ${bdir}/dubs_core
 
+  /bin/ln -sf ${bdir}/ansible-vim
   /bin/ln -sf ${bdir}/AutoAdapt
   /bin/ln -sf ${bdir}/command-t
   /bin/ln -sf ${bdir}/ctrlp.vim
+  # Dubs Vim:
+  #  dubs_after_dark/
+  #  dubs_all/
+  #  dubs_appearance/
+  #  dubs_buffer_fun/
+  #  dubs_core  # ->  # dubs_all/
+  #  dubs_edit_juice/
+  #  dubs_file_finder/
+  #  dubs_ftype_mess/
+  #  dubs_grep_steady/
+  #  dubs_html_entities/
+  #  dubs_mescaline/
+  #  dubs_project_tray/
+  #  dubs_quickfix_wrap/
+  #  dubs_rest_fold/
+  #  dubs_style_guard/
+  #  dubs_syntastic_wrap/
+  #  dubs_toggle_textwrap/
   /bin/ln -sf ${bdir}/editorconfig-vim
   /bin/ln -sf ${bdir}/ingo-library
   /bin/ln -sf ${bdir}/jellybeans.vim

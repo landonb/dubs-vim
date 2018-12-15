@@ -139,3 +139,6 @@
 [submodule "bundle/dubs_rest_fold"]
 	path = bundle/dubs_rest_fold
 	url = https://github.com/landonb/dubs_rest_fold.git
+[submodule "bundle/ansible-vim"]
+	path = bundle/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim.git
