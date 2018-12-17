@@ -10,7 +10,7 @@ make_links () {
   /bin/ln -sf ${bdir}/dubs_all
   /bin/ln -sf ${bdir}/dubs_core
 
-  /bin/ln -sf ${bdir}/ansible-vim
+  #ansible-vim  # Forked!
   /bin/ln -sf ${bdir}/AutoAdapt
   /bin/ln -sf ${bdir}/command-t
   /bin/ln -sf ${bdir}/ctrlp.vim
