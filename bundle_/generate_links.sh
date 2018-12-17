@@ -50,6 +50,7 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-abolish
   /bin/ln -sf ${bdir}/vim-bufsurf
   /bin/ln -sf ${bdir}/vim-colorschemes
+  /bin/ln -sf ${bdir}/vim-endwise
   #/bin/ln -sf ${bdir}/vim-easytags
   /bin/ln -sf ${bdir}/vim-fugitive
   /bin/ln -sf ${bdir}/vim-gnupg
@@ -74,6 +75,9 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-speeddating
   /bin/ln -sf ${bdir}/vim-unimpaired
   /bin/ln -sf ${bdir}/vim-vinegar
+  # 2018-12-13: A colorscheme I looked at, for inspiration,
+  # but ultimately dubs_after_dark is too hot.
+  #/bin/ln -sf ${bdir}/vim-vividchalk
 }
 
 make_links
