@@ -1,5 +1,5 @@
 .gitmodules
-.git/*
+.git/
 spell/
 # mkview/loadview files are in view/.
 view/
