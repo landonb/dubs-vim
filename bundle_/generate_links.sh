@@ -32,6 +32,7 @@ make_links () {
   #  dubs_style_guard/
   #  dubs_syntastic_wrap/
   #  dubs_toggle_textwrap/
+  #  dubs_web_hatch/
   /bin/ln -sf ${bdir}/editorconfig-vim
   /bin/ln -sf ${bdir}/ingo-library
   /bin/ln -sf ${bdir}/jellybeans.vim

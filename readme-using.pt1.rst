@@ -33,19 +33,22 @@ List of Dubsacks Plugins
 
 This plugin includes the following plugins:
 
+| `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__: Compelling light on dark color scheme.
+| `dubs_appearance <https://github.com/landonb/dubs_appearance>`__: Configure basic Vim look n' feel.
 | `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun>`__: Manage Buffers and Windows.
+| `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__: Powerful Text Editing commands.
 | `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__: Find and Open Files.
+| `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__: Filetype-specific features, like syntax highlighters, etc.
+| `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__: Clever Text Search including Replace.
+| `dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__: HTML Entity table.
+| `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__: Simple, elegant status line.
 | `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__: Project plugin wrapper.
 | `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__: Elegant Quickfix wrapper.
-| `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__: Clever Text Search including Replace.
-| `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__: Powerful Text Editing commands.
-| `dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__: HTML Entity table.
-| `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__: Syntastic wrapper.
+| `dubs_rest_fold <https://github.com/landonb/dubs_rest_fold>`__: reStructuredText power folder.
 | `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__: Automatically set whitespace and line-length settings.
+| `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__: Syntastic wrapper.
 | `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__: Simple text wrapping wrapper.
-| `dubs_appearance <https://github.com/landonb/dubs_appearance>`__: Configure basic Vim look n' feel.
-| `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__: Filetype-specific features, like syntax highlighters, etc.
-| `dubs_cycloplan <https://github.com/landonb/dubs_cycloplan>`__: Cycloplan-specific IDE features.
+| `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__: sensible-browser mappings.
 
 Comprehensive Feature List
 --------------------------
@@ -64,19 +67,22 @@ brief description of the feature and then more detailed notes.
 .. NOTE: For security reasons, the include directive does not
 ..       work on github. As such, this following will not work...
 ..
+.. .. include:: https://github.com/landonb/dubs_after_dark/README.rst
+.. .. include:: https://github.com/landonb/dubs_appearance/README.rst
 .. .. include:: https://github.com/landonb/dubs_buffer_fun/README.rst
+.. .. include:: https://github.com/landonb/dubs_edit_juice/README.rst
 .. .. include:: https://github.com/landonb/dubs_file_finder/README.rst
+.. .. include:: https://github.com/landonb/dubs_ftype_mess/README.rst
+.. .. include:: https://github.com/landonb/dubs_grep_steady/README.rst
+.. .. include:: https://github.com/landonb/dubs_html_entities/README.rst
+.. .. include:: https://github.com/landonb/dubs_mescaline/README.rst
 .. .. include:: https://github.com/landonb/dubs_project_tray/README.rst
 .. .. include:: https://github.com/landonb/dubs_quickfix_wrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_grep_steady/README.rst
-.. .. include:: https://github.com/landonb/dubs_edit_juice/README.rst
-.. .. include:: https://github.com/landonb/dubs_html_entities/README.rst
 .. .. include:: https://github.com/landonb/dubs_syntastic_wrap/README.rst
+.. .. include:: https://github.com/landonb/dubs_rest_fold/README.rst
 .. .. include:: https://github.com/landonb/dubs_style_guard/README.rst
 .. .. include:: https://github.com/landonb/dubs_toggle_textwrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_appearance/README.rst
-.. .. include:: https://github.com/landonb/dubs_ftype_mess/README.rst
-.. .. include:: https://github.com/landonb/dubs_cycloplan/README.rst
+.. .. include:: https://github.com/landonb/dubs_web_hatch/README.rst
 ..
 .. so instead we'll assemble this file from a script, readme-using.make.sh.
 

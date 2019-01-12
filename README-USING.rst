@@ -33,7 +33,7 @@ List of Dubsacks Plugins
 
 This plugin includes the following Dubsacks plugins (by this author):
 
-.. | `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__: Light on dark/black color scheme.
+.. | `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__: Compelling light on dark/black color scheme.
 .. | `dubs_appearance <https://github.com/landonb/dubs_appearance>`__: Configure basic Vim look n' feel.
 .. | `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun>`__: Manage Buffers and Windows.
 .. | `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__: Powerful Text Editing commands.
@@ -44,9 +44,11 @@ This plugin includes the following Dubsacks plugins (by this author):
 .. | `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__: Choice Status Line.
 .. | `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__: Project plugin wrapper.
 .. | `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__: Elegant Quickfix wrapper.
+.. | `dubs_rest_fold <https://github.com/landonb/dubs_rest_fold>`__: reStructuredText power folder.
 .. | `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__: Automatically set whitespace and line-length settings.
 .. | `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__: Syntastic wrapper.
 .. | `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__: Simple text wrapping wrapper.
+.. | `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__: sensible-browser mappings.
 
 ====================================================================================    =============================================================================================================================================================
 `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__                        Light on dark/black color scheme.
@@ -71,11 +73,15 @@ This plugin includes the following Dubsacks plugins (by this author):
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__                  Elegant Quickfix wrapper.
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+`dubs_rest_fold <https://github.com/landonb/dubs_rest_fold>`__                          reStructuredText power folder.
+------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__                      Automatically set whitespace and line-length settings.
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__                Syntastic wrapper.
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__              Simple text wrapping wrapper.
+------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+`dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__                          sensible-browser mappings.
 ====================================================================================    =============================================================================================================================================================
 
 List of Third-party Plugins
