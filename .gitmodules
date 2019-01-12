@@ -142,3 +142,6 @@
 [submodule "bundle/ansible-vim"]
 	path = bundle/ansible-vim
 	url = https://github.com/landonb/ansible-vim.git
+[submodule "bundle/dubs_web_hatch"]
+	path = bundle/dubs_web_hatch
+	url = git@github.com:landonb/dubs_web_hatch.git
