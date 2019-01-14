@@ -4,26 +4,19 @@ spell/
 # mkview/loadview files are in view/.
 view/
 
-# If you install the master Dubsacks Vim repo,
-# all its submodules install to bundle/. If you
-# then clone each of the Dubsacks plugins so you
-# can develop on them, check'em out to bundle_,
-# and symlink from bundle what you don't care to
-# work on. We won't bother searching either place.
+# If you've install the master Dubs Vim repo (that contains this .ignore),
+# all its submodules install to bundle/. If you then checkout each of the
+# Dubsacks plugins so you can develop on them: clone them each under
+# bundle_/, and symlink from bundle/ any submodules you did not clone.
+# Finally, ban *grep from searching either location.
 bundle/
-
 # Ignore subdirectories, but not the generate_links.sh.
-# 2018-12-06: What about search ~/.vim from Dubsacks?
-#bundle_/*/
-
-
-# Then, if you want to make a searchable subset of
-# what's under bundle_, create a subset of symlinks
-# under a third directory!
+bundle_/*/
+# Then, if you want to make a searchable subset of what's under bundle_/,
+# create a subset of symlinks under a third directory!
 bundle-dubs/
-# The author also sometimes disables plugins without
-# deleting them (for testing and developing). Ignore
-# this directory, too.
+# The author also sometimes "disables" plugins without deleting them -- to
+# test and develop -- by moving the plugin off-path. Ignore this directory.
 bundle-OFF/
 
 # 2019-01-10 23:11...
