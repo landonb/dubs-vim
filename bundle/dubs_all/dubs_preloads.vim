@@ -7,7 +7,7 @@
 " -------------------------------------------------------------------
 " Copyright © 2015-2016 Landon Bouma.
 " 
-" This file is part of Dubsacks.
+" This file is part of Dubs Vim.
 " 
 " Dubsacks is free software: you can redistribute it and/or
 " modify it under the terms of the GNU General Public License
