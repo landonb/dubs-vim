@@ -1,7 +1,7 @@
 " File: ~/.vimrc
 " Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
 " Last Modified: 2017.11.02
-" Project Page: https://github.com/landonb/dubsacks_vim
+" Project Page: https://github.com/landonb/dubs-vim
 " Summary: Platform-agnostic Vim startup script
 " License: GPLv3
 " -------------------------------------------------------------------
@@ -9,18 +9,18 @@
 " 
 " This file is part of Dubs Vim.
 " 
-" Dubsacks is free software: you can redistribute it and/or
+" Dubs Vim is free software: you can redistribute it and/or
 " modify it under the terms of the GNU General Public License
 " as published by the Free Software Foundation, either version
 " 3 of the License, or (at your option) any later version.
 " 
-" Dubsacks is distributed in the hope that it will be useful,
+" Dubs Vim is distributed in the hope that it will be useful,
 " but WITHOUT ANY WARRANTY; without even the implied warranty
 " of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
 " the GNU General Public License for more details.
 " 
 " You should have received a copy of the GNU General Public License
-" along with Dubsacks. If not, see <http://www.gnu.org/licenses/>
+" along with Dubs Vim. If not, see <http://www.gnu.org/licenses/>
 " or write Free Software Foundation, Inc., 51 Franklin Street,
 "                     Fifth Floor, Boston, MA 02110-1301, USA.
 " ===================================================================
@@ -29,7 +29,7 @@
 " About:
 
 " This cross-platform Vim startup script runs on Linux or Windows.
-" Though I haven't tried Dubsacks on Windows for a long time.
+" Though I have not tried Dubs Vim on Windows for a long time.
 
 " ------------------------------------------
 " Versions:
@@ -128,19 +128,19 @@ endfor
 
 " There are at least three ways you might be infected.
 "
-" 1. Dubsacks is installed as a submodule. I.e., you ran
-"      git clone ... ~/.vim/bundle/dubsacks_vim
+" 1. Dubs Vim is installed as a submodule. I.e., you ran
+"      git clone ... ~/.vim/bundle/dubs-vim
 "    Then add its bundle path to your infection, e.g.,
-"      execute pathogen#infect('bundle/{}', 'bundle/dubsacks_vim/bundle/{}')
+"      execute pathogen#infect('bundle/{}', 'bundle/dubs-vim/bundle/{}')
 "
-" 2. Dubsacks is pulled as ~/.vim, and bundle/ is all the submodules.
+" 2. Dubs Vim is pulled as ~/.vim, and bundle/ is all the submodules.
 "      execute pathogen#infect('bundle/{}')
 "
-" 3. Dubsacks is pulled as ~/.vim, bundle/ is all the submodules,
+" 3. Dubs Vim is pulled as ~/.vim, bundle/ is all the submodules,
 "    and bundle_ pulled all the submodules on their own (so you can push).
 "      execute pathogen#infect('bundle_/{}')
 "
 " If this file is symlinked from ~/.vimrc, you're rolling as (2.),
-" and Dubsacks is all under bundle/.
+" and Dubs Vim is all under bundle/.
 execute pathogen#infect('bundle/{}')
 

@@ -1,7 +1,7 @@
 
 Var assoc_cmds_bat_file_inst
 Var assoc_cmds_bat_file_uninst
-; This is a hack to indicate if it's okay to delete 
+; This is a hack to indicate if it's okay to delete
 ; the uninstaller and the application dir on uninstall
 Var components_removed
 !define uninstall_sections_no 2
@@ -30,13 +30,13 @@ Section "Windows gVim 32-bit"
 SectionEnd
 
 #   (The !bang just bolds the word it precedes)
-Section "!dubsacks gVim Scripts"
+Section "!dubsvim Scripts"
 
-  # install dubsacks configuration to user's directory, 
+  # install dubsvim configuration to user's directory,
   # e.g., C:\Documents and Settings\User
   setOutPath $PROFILE
 
-  File /r .\_staging.tmp\vimfiles_dubsacks\*.*
+  File /r .\_staging.tmp\vimfiles_dubsvim\*.*
 
 SectionEnd
 
@@ -119,7 +119,7 @@ SectionGroup /e "File Associations"
   #  FileWrite $0 "assoc ${__SECTION__}=${prodname_dotted}$\n"
   #SectionEnd
 
-# Vim cmd to convert list of 
+# Vim cmd to convert list of
 #   assoc .=gvim
 #   assoc .bash=gvim
 #   assoc .bashrc=gvim
@@ -406,9 +406,9 @@ SectionGroup /e "File Associations"
 
 SectionGroupEnd
 
-# Close the batch file and execute it 
-# (by not just running cmd.exe for each 
-#  Section we're preventing a gazillion 
+# Close the batch file and execute it
+# (by not just running cmd.exe for each
+#  Section we're preventing a gazillion
 #  Command windows from popping up)
 Section "-hidden SingleBatchIt-FinIt"
   FileClose $0

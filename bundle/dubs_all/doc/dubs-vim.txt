@@ -1,26 +1,26 @@
-*dubsacks.txt*	For Vim version 7.4.	Last change: 2015 Jan 23	*dubs*
+*dubs-vim.txt*	For Vim version 7.4.	Last change: 2015 Jan 23	*dubs*
 
-DUBSACKS REFERENCE MANUAL~
+DUBS VIM REFERENCE MANUAL~
 
-Dubsacks IDE Reference					*dubs-reference*
+Dubs Vim Reference					*dubs-reference*
 
-1. About Dubsacks			|dubs-online|
-2. Dubsacks Plugins (Lots More Help)	|dubs-plugins|
+1. About Dubs Vim			|dubs-online|
+2. Dubs Vim Plugins (Lots More Help)	|dubs-plugins|
 3. Alt-Shift Special Window Togglers	|dubs-togglers|
 4. Differences from Vim			|dubs-diff-vim|
 5. OS Workflow Tips and Tricks		|dubs-tips-n-tricks|
 
 ==============================================================================
-1. About Dubsacks					*dubs-online*
+1. About Dubs Vim					*dubs-online*
 
-Dubsacks is just one developer's IDE.~
+Dubs Vim is just one developer's IDE.~
 
-Project page: https://github.com/landonb/dubsacks
+Project page: https://github.com/landonb/dubs-vim
 
 See USING.rst for more detailed help on the commands listed below.
 
 ==============================================================================
-2. Dubsacks Plugins (Lots More Help)			*dubs-plugins*
+2. Dubs Vim Plugins (Lots More Help)			*dubs-plugins*
 
 This plugin isn't really a plugin — it's a collection of plugins.
 
@@ -40,7 +40,7 @@ This plugin isn't really a plugin — it's a collection of plugins.
 
 See each of the linked help files for all the nitty-gritty details.
 
-Some Dubsacks features wrap third-party plugins.
+Some Dubs Vim features wrap third-party plugins.
 
 |command-t|: Command-T (fuzzy opener used by dubs-file-finder, <Ctrl-D>).
 |syntastic|: Syntax checker (wrapped by dubs-syntastic-wrap, <Ctrl-e>).
@@ -48,7 +48,7 @@ Some Dubsacks features wrap third-party plugins.
 |vim-bufsurf|: Buffer navigation, "webbrowser style" (<Ctrl-J> and <Ctrl-K>).
 |minibufexpl|: Mini Buffer Explorer (mapped to <Alt-Shift-2>).
 
-And if you install the complete Dubsacks Vim you'll also get these plugins.
+And if you install the complete Dubs Vim you'll also get these plugins.
 
 |ctrlp.vim|: "Full path fuzzy file, buffer, mru, tag, ... finder."
 |The NERD Tree|: Filesystem explorer.
@@ -85,12 +85,12 @@ Each command shows/hides a special window.
 4. Differences from Vim					*dubs-diff-vim*
 
 A list of key mappings and a comparison of the new
-Dubsacks behavior compared to the original Vim behavior.
+Dubs Vim behavior compared to the original Vim behavior.
 
 <Ctrl-V>		Dubs:	Paste.
 			Vim:	Start Visual mode blockwise.
 
-				In Dubsacks, you can do blockwise select
+				In Dubs Vim, you can do blockwise select
 				using <Ctrl-Q><Shift-Click>.
 
 <Alt-f>c		Dubs:	Closes the file and removes its buffer.
@@ -111,7 +111,7 @@ Dubsacks behavior compared to the original Vim behavior.
 <Alt-f>l		Dubs:	Save All Buffers.
 			Vim:	Does a Split Open using a modal file dialog.
 
-				In Dubsacks, you can do Split Open
+				In Dubs Vim, you can do Split Open
 				using <Alt-f>t.
 
 <Alt-f>n		Dubs:	Open New Buffer.
@@ -128,7 +128,7 @@ Dubsacks behavior compared to the original Vim behavior.
 <Shift-Ctrl-Tab>	Dubs:	Walk buffer list by order buffers were loaded.
 			Vim:	Move the cursor between windows.
 
-				In Dubsacks, move the cursor between windows
+				In Dubs Vim, move the cursor between windows
 				using <Ctrl-Shift-Up> and <Ctrl-Shift-Down>.
 
 ==============================================================================

@@ -1,13 +1,13 @@
-=================
-Dubsack's Toolkit
-=================
+@@@@@@@@
+Dubs Vim
+@@@@@@@@
 
-Dubsacks Toolkit (DTK) is just one developer's Vim IDE.
+Dubs Vim is just one developer's Vim IDE, built upon the backs of plugins.
 
 Why You Might Care
 ------------------
 
-Are you newish to Vim? Dubsacks is a well-documented, curated IDE.
+Are you newish to Vim? Dubs Vim is a well-documented, curated IDE.
 
 - It includes what I think are some of the best plugins.
 
@@ -22,12 +22,12 @@ Are you oldish to Vim?
 
 - You never know what you might find.
 
-Dubsacks uses a lot of third-party scripts and bundles,
-and all custom Dubsacks code is also packaged as modules,
+Dubs Vim uses a lot of third-party scripts and bundles,
+and all custom Dubs Vim code is also packaged as modules,
 and includes online documentation, so it's easy to peel off
 any pieces you might like.
 
-Dubsacks is a full-featured Vim IDE designed to provide a fast,
+Dubs Vim is a full-featured Vim IDE designed to provide a fast,
 friendly development environment and to include the best Vim
 plugins. Many thanks to all of the brilliant and passionate
 developers who've made and continue to make Vim such a cool tool.
@@ -35,32 +35,32 @@ developers who've made and continue to make Vim such a cool tool.
 Feature Overview
 ----------------
 
-See `Dubsacks Vim Reference <README-USING.rst>`__
+See `Dubs Vim Reference <README-USING.rst>`__
 for a complete list of features, or browse
-the more terse online help, ``:help dubsacks``.
+the more terse online help, ``:help dubs-vim``.
 
 Quick Install
 -------------
 
-Pathogen makes installing Dubsacks a breeze.
+Pathogen makes installing Dubs Vim a breeze.
 
-If you're already using Pathogen, download Dubsacks to
+If you're already using Pathogen, download Dubs Vim to
 your ``bundle`` directory, quit Vim, zap your Session
 file, are restart Vim.
 
 .. code-block:: bash
 
-   git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
+   git clone git://github.com/landonb/dubs-vim.git ~/.vim/bundle
 
    # Checkout all the submodules.
-   pushd ~/.vim/bundle/dubsacks_vim
+   pushd ~/.vim/bundle/dubs-vim
    git submodule update --init
    popd
 
    # Make sure Vim is dead before zapping the Session file.
    /bin/rm -f ~/.vim/Session.vim
 
-   # Run Dubsacks Vim.
+   # Run Dubs Vim
    gvim
 
 To build all the inline help docs, run ``:Helptags``.
@@ -80,7 +80,7 @@ Longform Install
 
 .. note:: These instructions are for Linux Mint MATE.
 
-          Dubsacks is known to work on other \*nixes.
+          Dubs Vim is known to work on other \*nixes.
 
           In you're running Gnome but not MATE,
           change ``vim-gtk`` to ``vim-gnome``.
@@ -91,7 +91,7 @@ Longform Install
           ``exuberant-ctags`` to ``ctags-etags``,
           and possible ``ruby-dev`` to ``ruby-devel``).
 
-..          Dubsacks also works on Windows, but unless you're
+..          Dubs Vim also works on Windows, but unless you're
 ..          installing in `Cygwin <https://www.cygwin.com/>`__
 ..          you could `grab the MSI installer
 ..          (FIXME: update installer and add link) <FIXME>`__.
@@ -122,21 +122,21 @@ Vim package manager.
    mkdir -p ~/.vim/autoload ~/.vim/bundle
    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-3. Download and install Dubsacks.
+3. Download and install Dubs Vim.
 
-Download Dubsacks from
-`github <http://github.com/landonb/dubsacks>`__
+Download Dubs Vim from
+`github <http://github.com/landonb/dubs-vim>`__
 and install to the Pathogen space.
 
 .. code-block:: bash
 
-   git clone git://github.com/landonb/dubsacks_vim.git ~/.vim/bundle
+   git clone git://github.com/landonb/dubs-vim.git ~/.vim/bundle
 
 4. Download all the Submodules.
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/dubsacks_vim
+   cd ~/.vim/bundle/dubs-vim
 
    git submodule update --init
 
@@ -149,7 +149,7 @@ and install to the Pathogen space.
 
 .. code-block:: vim
 
-   execute pathogen#infect('bundle/{}', 'bundle/dubsacks_vim/bundle/{}')
+   execute pathogen#infect('bundle/{}', 'bundle/dubs-vim/bundle/{}')
 
 6. Restart Vim.
 
@@ -176,7 +176,7 @@ Next Steps
 Read the documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-See `Dubsacks Vim Reference <README-USING.rst>`__
+See `Dubs Vim Reference <README-USING.rst>`__
 for a list of commands and keyboard shortcuts.
 The online help, ``:h dubs``, is an abbreviated
 list of the same.
@@ -193,7 +193,7 @@ The ``<Ctrl-D>`` command pops up Command-T and points
 it at the first directory named ``cmdt_paths`` that
 it finds within the ``~/.vim`` folder.
 
-When you run Dubsacks for the first time, it'll make a
+When you run Dubs Vim for the first time, it'll make a
 copy of ``dubs_file_finder/cmdt_paths.template`` and link
 it from ``dubs_all/cmdt_paths``.
 
@@ -259,22 +259,22 @@ to enable more features:
 Third-party Vim Plugins
 -----------------------
 
-Dubsacks includes and incorporates
+Dubs Vim includes and incorporates
 a number of third-party Vim plugins.
 
 You can generally access each plugin's feature using the
-normal commands defined by the plugin, but Dubsacks also
+normal commands defined by the plugin, but Dubs Vim also
 remaps and wraps calls to third-party plugins to make them
 more seamless and easy to access.
 
-See the `Dubsacks Vim Reference <README-USING.rst>`__
-for a list of all Dubsacks commands, including
+See the `Dubs Vim Reference <README-USING.rst>`__
+for a list of all Dubs Vim commands, including
 those provided by other people's plugins.
 
 Disclaimer
 ----------
 
-Dubsacks mostly adds new key bindings not already mapped by
+Dubs Vim mostly adds new key bindings not already mapped by
 standard Vim or changed by MS-Windows mode (``behave mswin``).
 However, a few standard key bindings have been remapped.
 You probably won't notice the changes, but you might.
@@ -284,7 +284,7 @@ for the list of binding differences.
 Contributing
 ------------
 
-Dubsacks is just one developer's IDE, and it's pretty mature,
+Dubs Vim is just one developer's IDE, and it's pretty mature,
 so I can't imagine receiving pull requests. However, feel free
 to send one, or a note, or add a comment if you'd like to suggest
 any plugins to add or other changes to make. Though I might be
@@ -293,7 +293,7 @@ slow to respond.
 Licenses
 --------
 
-Custom Dubsacks code (in files with names beginning ``dubs``)
+Custom Dubs Vim code (in files with names beginning ``dubs``)
 is licensed under `GPLv3 <https://www.gnu.org/copyleft/gpl.html>`__.
 
 Third-party code is copyright by their respective authors

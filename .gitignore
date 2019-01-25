@@ -19,7 +19,7 @@ spell
 tags
 
 # The bulk of the bundle/ directory is populated by submodule cloning.
-# Except for dubs_all, which is part of the main dubsacks_vim project.
+# Except for dubs_all, which is part of the main dubs-vim project.
 #
 # Ignore generated symlinks.
 bundle/dubs_all/cmdt_paths
@@ -35,14 +35,14 @@ bundle/dubs_all/plugin-info.json
 
 bundle/_last_update
 
-# To develop the complete dubsacks_vim and also the individual
-# dubsacks submodules requires a bit of finesse.
+# To develop the complete dubs-vim and also the individual
+# Dubs Vim submodules requires a bit of finesse.
 #
 # The bundle_/ directory contains the individually-cloned
-# dubsacks_vim projects (not submoduled) and symlinks to
+# dubs-vim projects (not submoduled) and symlinks to
 # the third-party submodules we populated in bundle/.
 #
-# To see what dubsacks code is dirty, use git_status_all, e.g.,
+# To see what dubs-vim code is dirty, use git_status_all, e.g.,
 #
 #  cd ~/.vim/bundle_ ; git_st_all
 #
@@ -51,14 +51,14 @@ bundle_
 
 # Here's a long-winded explanation of the chay-os.
 #
-# If you want to checkout the dubsacks_vim project and also all of
+# If you want to checkout the dubs-vim project and also all of
 # the plugins themselves as source and not just as submodules, you
 # have to deal with some conflict, since you'll have two copies of
 # every plugin (one of the source and one of the submodule). First,
 # mkdir ~/.vim/bundle_ and git clone all the plugins therein. Next,
 # make a copy of .vimrc, name it bundle/dubs_all/.vimrc.bundle_,
 # and infect bundle_/{} rather than bundle/{}. Link it from
-# ~/.vimrc. With this setup, ~/.vim/.git is the dubsacks_vim
+# ~/.vimrc. With this setup, ~/.vim/.git is the dubs-vim
 # repository, ~/.vim/bundle is a ton of submodules from github, and
 # ~/.vim/bundle_ is a bunch of git clones of the same submodules
 # found in ~/.vim/bundle. That way, Vim will load the real source
@@ -67,7 +67,7 @@ bundle_
 # uber plugin that manages everything as submodules. So you can
 # really just ignore everything under ~/.vim/bundle and concentrate
 # on ~/.vim/bundle_ instead, except for the ~/.vim/bundle/dubs_all
-# directory, which is part of dubsacks_vim (~/.vim/.git). Git it?
+# directory, which is part of dubs-vim (~/.vim/.git). Git it?
 bundle/dubs_all/.vimrc.bundle_
 
 # mkview/loadview files.

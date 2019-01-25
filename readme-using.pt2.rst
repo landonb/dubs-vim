@@ -143,13 +143,13 @@ Note: This list is incomplete. Sorry!
                                                             through the list of tabs.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<[Shift-]Ctrl-Tab>``       Walk Buffer List              In stock Vim, ``<Ctrl-Tab>`` and ``<Shift-Ctrl-Tab>`` move the cursor between windows.
-                                                            In Dubsacks, they walk the buffer list by order the buffers were loaded.
+                                                            In Dubs Vim, they walk the buffer list by order the buffers were loaded.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<Ctrl-D>``                 Command-T Wrapper             In stock Vim, ``<Ctrl-D>`` scrolls the window downwards in the buffer.
-                                                            In Dubsacks, it triggers the Command-T wrapper feature.
+                                                            In Dubs Vim, it triggers the Command-T wrapper feature.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<Ctrl-E>``                 Syntastic Wrapper             In stock Vim, ``<Ctrl-E>`` scrolls the window downwards in the buffer.
-                                                            In Dubsacks, it triggers the Syntastic wrapper feature.
+                                                            In Dubs Vim, it triggers the Syntastic wrapper feature.
 ===========================  ============================  ==============================================================================
 
 Customizable Features
@@ -164,11 +164,11 @@ You can do this in a few different ways:
 
    - Use the ``:runtime! {file}`` command; or
 
-   - If you're running Dubsacks, release all buffers and
+   - If you're running Dubs Vim, release all buffers and
      quit, which will delete the Session file.
      Type ``<Alt-f>e`` to close all windows and then
      type ``<Alt-f>x`` to quit,
-     and Dubsacks will destroy Session.vim on its way out.
+     and Dubs Vim will destroy Session.vim on its way out.
 
 Non-Interactive Features
 ------------------------
@@ -176,7 +176,7 @@ Non-Interactive Features
 Silent Features
 ^^^^^^^^^^^^^^^
 
-Dubsacks uses a few plugins under the hood which
+Dubs Vim uses a few plugins under the hood which
 run seamlessly and with which you probably won't
 interact.
 
@@ -286,7 +286,7 @@ exist on your system. This example is for Linux Mint MATE.
 Influences
 ----------
 
-The first Dubsacks loosely followed popular keyboard mappings
+The first Dubs Vim loosely followed popular keyboard mappings
 used by the wonderful `EditPlus <https://www.editplus.com/>`__
 editor for Windows.
 
@@ -295,7 +295,7 @@ editor for Windows.
   results live), ``<Alt-Shift-4>`` opens the project tray,
   and ``<Ctrl-T>`` transposes characters, among other similarities.
 
-But that was years ago, and Dubsacks has evolved very much since then.
+But that was years ago, and Dubs Vim has evolved very much since then.
 
 More recent improvements and changes have been influenced
 by projects on which the author has worked, such as
@@ -391,5 +391,5 @@ To solve it, install the correct gVim:
 Happy Hacking!
 --------------
 
-Thanks for your interest in Dubsacks and all things Vim. Good luck!
+Thanks for your interest in Dubs Vim and all things Vim. Good luck!
 

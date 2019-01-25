@@ -6,7 +6,7 @@ view/
 
 # If you've install the master Dubs Vim repo (that contains this .ignore),
 # all its submodules install to bundle/. If you then checkout each of the
-# Dubsacks plugins so you can develop on them: clone them each under
+# Dubs Vim plugins so you can develop on them: clone them each under
 # bundle_/, and symlink from bundle/ any submodules you did not clone.
 # Finally, ban *grep from searching either location.
 bundle/

@@ -3,15 +3,15 @@
 # File: setup.sh
 # Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
 # Last Modified: 2016.11.13
-# Project Page: https://github.com/landonb/dubsacks_vim
+# Project Page: https://github.com/landonb/dubs-vim
 # License: GPLv3
 
 # Exit on error.
 set -e
 
-# Use .vimrc.bundle if you checked out dubsacks to ~/.vim/bundle.
+# Use .vimrc.bundle if you checked out Dubs Vim to ~/.vim/bundle.
 DUBS_VIMRC=".vim/bundle/dubs_all/.vimrc.bundle"
-# Use .vimrc.bundle if you develop dubsacks from ~/.vim/bundle_.
+# Use .vimrc.bundle if you develop Dubs Vim from ~/.vim/bundle_.
 # NOTE: This is setup from private ~/.curly via chase_and_face.
 #DUBS_VIMRC=".vim/bundle/dubs_all/.vimrc.bundle_"
 

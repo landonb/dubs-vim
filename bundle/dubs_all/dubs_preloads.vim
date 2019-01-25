@@ -1,7 +1,4 @@
-" File: .vim/dubs_preloads.vim
-" Author: Landon Bouma (dubsacks &#x40; retrosoft &#x2E; com)
-" Last Modified: 2016.11.22
-" Project Page: https://github.com/landonb/dubsacks_vim
+" Project Page: https://github.com/landonb/dubs-vim
 " Summary: Pre-System Vim startup script
 " License: GPLv3
 " -------------------------------------------------------------------
@@ -9,18 +6,18 @@
 " 
 " This file is part of Dubs Vim.
 " 
-" Dubsacks is free software: you can redistribute it and/or
+" Dubs Vim is free software: you can redistribute it and/or
 " modify it under the terms of the GNU General Public License
 " as published by the Free Software Foundation, either version
 " 3 of the License, or (at your option) any later version.
 " 
-" Dubsacks is distributed in the hope that it will be useful,
+" Dubs Vim is distributed in the hope that it will be useful,
 " but WITHOUT ANY WARRANTY; without even the implied warranty
 " of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
 " the GNU General Public License for more details.
 " 
 " You should have received a copy of the GNU General Public License
-" along with Dubsacks. If not, see <http://www.gnu.org/licenses/>
+" along with Dubs Vim. If not, see <http://www.gnu.org/licenses/>
 " or write Free Software Foundation, Inc., 51 Franklin Street,
 "                     Fifth Floor, Boston, MA 02110-1301, USA.
 " ===================================================================
@@ -30,7 +27,7 @@
 
 " If you want to set any g:global variables to override stock
 " Vim script behavior, you have to set the globals *before*
-" sourcing the shared Vim files. So the `.vimrc` for Dubsacks
+" sourcing the shared Vim files. So the `.vimrc` for Dubs Vim
 " sources this script before loading any system scripts.
 
 " ------------------------------------------------------------
@@ -46,7 +43,7 @@ endif
 " Extend the reST syntax highlighter's code vocabulary
 " by overriding the ``.. code-block:: <language>`` mapping.
 " ------------------------------------------------------------
-" SYNC_ME: Similar *.rst changes in dubs_preloads.vim and rst_dubsacks.vim.
+" SYNC_ME: Similar *.rst changes in dubs_preloads.vim and rst_dubsvim.vim.
 
 " See the Vim package file that takes care of reST syntax highlighting:
 "  /usr/share/vim/vim74/syntax/rst.vim
@@ -58,7 +55,7 @@ endif
 " but we can do better than that, eh?
 " Each language type is just bouced to another syntax file; see:
 "   ls /usr/share/vim/vim74/syntax
-" We could add them in ftplugin/rst_dubsacks.vim, but it's
+" We could add them in ftplugin/rst_dubsvim.vim, but it's
 "  a wee bit easier to setup the array that rst.vim uses.
 " See also :help initialization for Vim script load ordering;
 "  we could maybe set g: whenever and call runtime! to reload

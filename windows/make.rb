@@ -12,7 +12,7 @@ require 'open3'
 
 ##########
 
-class OptparseDubsacks
+class OptparseDubsVim
 
   #
   # Return a structure describing the options.
@@ -44,7 +44,7 @@ class OptparseDubsacks
               " " + options.uri_vim_runtime) do |uri|
         options.uri_vim_runtime = uri
       end
-      
+
       # GUI Executable
       opts.on("-e", "--executable URI",
               "The location of the gVim executable",
@@ -64,7 +64,7 @@ class OptparseDubsacks
         options.install_silently = true
       end
 
-      # Skip the download (even if the files already exist 
+      # Skip the download (even if the files already exist
       # it still takes time to check they're all there)
       opts.on("-D", "--skip-download",
               "Skips downloading the Vim zips (if you ",
@@ -100,17 +100,17 @@ class OptparseDubsacks
     options
   end # parse()
 
-end # class OptparseDubsacks
+end # class OptparseDubsVim
 
 ##########
 
-class DubsacksMsiBuilder
+class DubsVimMsiBuilder
 
   def self.make(options)
 
     @opts = options
 
-    # TODO Rather than always checking silently, how 
+    # TODO Rather than always checking silently, how
     #      about using a file handle like STDOUT or /dev/null
     unless @opts.install_silently
       print "\n"
@@ -146,7 +146,7 @@ class DubsacksMsiBuilder
     @dest_vim_runtime = File.join(@staging_dir, File::basename(@opts.uri_vim_runtime))
     @dest_gvim_exe = File.join(@staging_dir, File::basename(@opts.uri_gvim_exe))
 
-    #@vimfiles_user = "vimfiles_dubsacks"
+    #@vimfiles_user = "vimfiles_dubsvim"
     #@vimfiles_appl = "vimfiles_gvim"
 
   end # prepare_dir_paths()
@@ -157,7 +157,7 @@ class DubsacksMsiBuilder
     if File.directory?(@staging_dir)
       # TODO Not very DRY
       begin
-        FileUtils.rm_r File.join(@staging_dir, "vimfiles_dubsacks")
+        FileUtils.rm_r File.join(@staging_dir, "vimfiles_dubsvim")
       rescue Errno::ENOENT
         # whocares?
       end
@@ -282,12 +282,12 @@ class DubsacksMsiBuilder
 
   def self.prepare_vimfiles
 
-    vimfiles_dubsacks = "../../vimfiles_dubsacks"
+    vimfiles_dubsvim = "../../vimfiles_dubsvim"
     # TODO Pathname's .join not working?
     #user_dir = Pathname.new(@staging_dir)
-    #user_dir.join("vimfiles_dubsacks") # "vimfiles_dubsacks" is also in the .nsi file
-    user_dir = File.join(@staging_dir, "vimfiles_dubsacks")
-    copy_dir_to_staging("user vimfiles", vimfiles_dubsacks, user_dir)
+    #user_dir.join("vimfiles_dubsvim") # "vimfiles_dubsvim" is also in the .nsi file
+    user_dir = File.join(@staging_dir, "vimfiles_dubsvim")
+    copy_dir_to_staging("user vimfiles", vimfiles_dubsvim, user_dir)
 
     vimfiles_gvim = "../../vimfiles_gvim"
     gvim_dir = File.join(@staging_dir, "vimfiles_gvim")
@@ -307,34 +307,34 @@ class DubsacksMsiBuilder
 
   def self.create_installer
 
-    cmd = "\"C:/Program Files/NSIS/makensis.exe\" dubsacks.nsi"
+    cmd = "\"C:/Program Files/NSIS/makensis.exe\" dubsvim.nsi"
 
     unless @opts.install_silently
       print "Calling NSIS builder (#{cmd}).\n\n"
     end
 
     f = IO.popen(cmd)
-    puts f.readlines # p prints an array as ["an", "array"] 
+    puts f.readlines # p prints an array as ["an", "array"]
                      # puts prints one array element to a line
 
     # That was the non-block form; this is the block form
-    # TODO This doesn't print out to the console- 
+    # TODO This doesn't print out to the console-
     #        so how would you do that?
     #[stdin, stdout, stderr] = Open3.popen3(cmd)
     #Open3.popen3(cmd) { |stdin, stdout, stderr| }
 
   end # create_installer()
 
-end # class DubsacksMsiBuilder
+end # class DubsVimMsiBuilder
 
 ##########
 
 #debugger
 
-options = OptparseDubsacks.parse(ARGV)
+options = OptparseDubsVim.parse(ARGV)
 #pp options
 
-DubsacksMsiBuilder.make(options)
+DubsVimMsiBuilder.make(options)
 
 ##########
 ##########

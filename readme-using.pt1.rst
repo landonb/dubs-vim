@@ -1,34 +1,37 @@
-**********************
-Dubsacks Vim Reference
-**********************
+@@@@@@@@@@@@@@@@@@
+Dubs Vim Reference
+@@@@@@@@@@@@@@@@@@
 
-Dubsacks Vim Reference
-======================
+Dubs Vim Reference
+##################
+
+Dubs Vim Reference
+==================
 
 See the
-`Dubsacks installation instructions <README.rst#Installation>`__
-if you want to download and install Dubsacks Vim scripts.
+`Dubs Vim installation instructions <README.rst#Installation>`__
+if you want to download and install Dubs Vim scripts.
 
-About Dubsacks
+About Dubs Vim
 --------------
 
-Dubsacks is just one developer's IDE.
+Dubs Vim is one developer's Vim IDE, built upon the backs of plugins.
 
-Project page: https://github.com/landonb/dubsacks_vim
+Project page: https://github.com/landonb/dubs-vim
 
 See ``:help dubs`` for online help.
 
 About dubs_all Plugin
 ---------------------
 
-The Dubsacks VIM code is separated into multiple plugins
+The Dubs Vim code is separated into multiple plugins
 loosely grouped by functionality so that people can install
-subsets of Dubsacks if they want.
+subsets of Dubs Vim if they want.
 
 But if you want it all, use git to install this plugin,
-which includes all Dubsacks plugins as submodules.
+which includes all Dubs Vim plugins as submodules.
 
-List of Dubsacks Plugins
+List of Dubs Vim Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 This plugin includes the following plugins:
@@ -56,7 +59,7 @@ Comprehensive Feature List
 Each plugin's README.rst is reproduced herein to give a nice,
 comprehensive (albeit lengthy) list of all the features.
 
-Most of the features and key mappings are specific to Dubsacks,
+Most of the features and key mappings are specific to Dubs Vim,
 but a few commonly-used (or commonly-forgotten) Vim commands are
 also included.
 
