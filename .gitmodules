@@ -138,10 +138,10 @@
 	url = git@github.com:tpope/vim-abolish.git
 [submodule "bundle/dubs_rest_fold"]
 	path = bundle/dubs_rest_fold
-	url = https://github.com/landonb/dubs_rest_fold.git
+	url = git@github.com:landonb/dubs_rest_fold.git
 [submodule "bundle/ansible-vim"]
 	path = bundle/ansible-vim
-	url = https://github.com/landonb/ansible-vim.git
+	url = git@github.com:landonb/ansible-vim.git
 [submodule "bundle/dubs_web_hatch"]
 	path = bundle/dubs_web_hatch
 	url = git@github.com:landonb/dubs_web_hatch.git
