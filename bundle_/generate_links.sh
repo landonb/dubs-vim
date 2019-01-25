@@ -34,10 +34,12 @@ make_links () {
   #  dubs_toggle_textwrap/
   #  dubs_web_hatch/
   /bin/ln -sf ${bdir}/editorconfig-vim
+  /bin/ln -sf ${bdir}/goyo.vim
   /bin/ln -sf ${bdir}/ingo-library
   /bin/ln -sf ${bdir}/jellybeans.vim
   # Skipping:
   #  /bin/ln -sf ${bdir}/_last_update
+  /bin/ln -sf ${bdir}/limelight.vim
   # 2017-11-02: Removed minibufexpl.vim.
   #/bin/ln -sf ${bdir}/minibufexpl.vim
   /bin/ln -sf ${bdir}/nerdtree

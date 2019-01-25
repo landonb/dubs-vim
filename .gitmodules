@@ -145,3 +145,9 @@
 [submodule "bundle/dubs_web_hatch"]
 	path = bundle/dubs_web_hatch
 	url = git@github.com:landonb/dubs_web_hatch.git
+[submodule "bundle/goyo.vim"]
+	path = bundle/goyo.vim
+	url = git@github.com:junegunn/goyo.vim.git
+[submodule "bundle/limelight.vim"]
+	path = bundle/limelight.vim
+	url = git@github.com:junegunn/limelight.vim.git
