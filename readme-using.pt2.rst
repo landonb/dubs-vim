@@ -1,5 +1,9 @@
+################
+Additional Notes
+################
+
 The Alt-Shift Mappings (Revisited)
-----------------------------------
+==================================
 
 The alt-shift commands show and hide special windows.
 
@@ -73,7 +77,7 @@ with your pointer or middle finger.
 ===========================  ============================  ==============================================================================
 
 Differences from Vim
-^^^^^^^^^^^^^^^^^^^^
+====================
 
 Note: This list is incomplete. Sorry!
 (But it's probably not *that* incomplete.)
@@ -153,7 +157,7 @@ Note: This list is incomplete. Sorry!
 ===========================  ============================  ==============================================================================
 
 Customizable Features
----------------------
+=====================
 
 Some plugins are customizable, as discussed above.
 
@@ -171,10 +175,10 @@ You can do this in a few different ways:
      and Dubs Vim will destroy Session.vim on its way out.
 
 Non-Interactive Features
-------------------------
+========================
 
 Silent Features
-^^^^^^^^^^^^^^^
+---------------
 
 Dubs Vim uses a few plugins under the hood which
 run seamlessly and with which you probably won't
@@ -193,10 +197,10 @@ you no longer need to copy all plugins to your
 ``~/.vim/plugin`` directory.
 
 OS Workflow Tips and Tricks
----------------------------
+===========================
 
 Bash Aliases
-^^^^^^^^^^^^
+------------
 
 If you want to open files from the command line and want them
 to open in the same instance of gVim, you'll have to use the same
@@ -218,7 +222,7 @@ command line. Rarely, I use one of the other commands
 when I want to use a new instance to open a file.
 
 Global Keyboard Shortcut
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 Using the ``xdotool`` and Keyboard Shortcuts, you can
 map, e.g., ``Windows-~`` to your favorite gVim instance
@@ -284,7 +288,7 @@ exist on your system. This example is for Linux Mint MATE.
       "'gVim [fs]'"
 
 Influences
-----------
+==========
 
 The first Dubs Vim loosely followed popular keyboard mappings
 used by the wonderful `EditPlus <https://www.editplus.com/>`__
@@ -303,10 +307,10 @@ by projects on which the author has worked, such as
 incorporating more and more useful plugins into the project.
 
 Obsolete Help/Troubleshooting Installation
-------------------------------------------
+==========================================
 
 Install Par on Fedora
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 These are old instructions for building an ``rpm``
 installation package for ``par``, for Fedora.
@@ -357,7 +361,7 @@ NOTE: I did not try building par directly. You could try either:
      CC="gcc -c -ansi -pedantic -O3 -DDONTFREE" LINK1="gcc -s"
 
 GLib-GObject Errors
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 Make sure you install the correct ``vim-*`` GUI for your OS.
 
@@ -389,7 +393,7 @@ To solve it, install the correct gVim:
    sudo apt-get install vim-gtk
 
 Happy Hacking!
---------------
+==============
 
 Thanks for your interest in Dubs Vim and all things Vim. Good luck!
 
