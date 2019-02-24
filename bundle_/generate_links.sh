@@ -76,6 +76,7 @@ make_links () {
   # with \S find-replace-multi-files command. So weird. So disabled!
   #/bin/ln -sf ${bdir}/vim-restructuredtext/
   /bin/ln -sf ${bdir}/vim-speeddating
+  /bin/ln -sf ${bdir}/vim-toml
   /bin/ln -sf ${bdir}/vim-unimpaired
   /bin/ln -sf ${bdir}/vim-vinegar
   # 2018-12-13: A colorscheme I looked at, for inspiration,
