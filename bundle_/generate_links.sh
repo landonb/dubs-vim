@@ -53,7 +53,8 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-abolish
   /bin/ln -sf ${bdir}/vim-bufsurf
   /bin/ln -sf ${bdir}/vim-colorschemes
-  /bin/ln -sf ${bdir}/vim-endwise
+  # 2019-03-19: Disable: vim-endwise: it's frustrating me.
+  #  /bin/ln -sf ${bdir}/vim-endwise
   #/bin/ln -sf ${bdir}/vim-easytags
   /bin/ln -sf ${bdir}/vim-fugitive
   /bin/ln -sf ${bdir}/vim-gnupg
