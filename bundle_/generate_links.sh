@@ -1,7 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
-make_links () {
+VIM_BUNDLE__PATH="${HOME}/.vim/bundle_"
 
+vim_bundle__generate_links () {
   local bdir=../bundle
 
   # Remove existing links.
@@ -41,7 +42,7 @@ make_links () {
   #  /bin/ln -sf ${bdir}/_last_update
   /bin/ln -sf ${bdir}/limelight.vim
   # 2017-11-02: Removed minibufexpl.vim.
-  #/bin/ln -sf ${bdir}/minibufexpl.vim
+  #  /bin/ln -sf ${bdir}/minibufexpl.vim
   /bin/ln -sf ${bdir}/nerdtree
   /bin/ln -sf ${bdir}/nord-vim
   /bin/ln -sf ${bdir}/QFEnter
@@ -55,7 +56,8 @@ make_links () {
   /bin/ln -sf ${bdir}/vim-colorschemes
   # 2019-03-19: Disable: vim-endwise: it's frustrating me.
   #  /bin/ln -sf ${bdir}/vim-endwise
-  #/bin/ln -sf ${bdir}/vim-easytags
+  # 2019-10-25: From at latest 2016-11-13:
+  #  /bin/ln -sf ${bdir}/vim-easytags
   /bin/ln -sf ${bdir}/vim-fugitive
   /bin/ln -sf ${bdir}/vim-gnupg
   /bin/ln -sf ${bdir}/vim-istanbul
@@ -67,7 +69,7 @@ make_links () {
   # 2017-03-16: Using my own fork of vim-markdown.
   # 2017-04-01: Uncommented this...
   # 2017-09-18: Recommented this...?
-  #/bin/ln -sf ${bdir}/vim-markdown
+  #  /bin/ln -sf ${bdir}/vim-markdown
   /bin/ln -sf ${bdir}/vim-misc
   /bin/ln -sf ${bdir}/vim-rails
   # 2018-02-01: The new reST plugin makes editing sluggish.
@@ -75,15 +77,26 @@ make_links () {
   # on the first line of matches, and then it exits replace mode,
   # and you see "xx matches on xx lines" message like you would
   # with \S find-replace-multi-files command. So weird. So disabled!
-  #/bin/ln -sf ${bdir}/vim-restructuredtext/
+  #  /bin/ln -sf ${bdir}/vim-restructuredtext/
   /bin/ln -sf ${bdir}/vim-speeddating
   /bin/ln -sf ${bdir}/vim-toml
   /bin/ln -sf ${bdir}/vim-unimpaired
   /bin/ln -sf ${bdir}/vim-vinegar
   # 2018-12-13: A colorscheme I looked at, for inspiration,
   # but ultimately dubs_after_dark is too hot.
-  #/bin/ln -sf ${bdir}/vim-vividchalk
+  #  /bin/ln -sf ${bdir}/vim-vividchalk
 }
 
-make_links
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+main () {
+  local before_cd="$(pwd -L)"
+  cd "${VIM_BUNDLE__PATH}"
+
+  vim_bundle__generate_links
+
+  cd "${before_cd}"
+}
+
+main "$@"
 
