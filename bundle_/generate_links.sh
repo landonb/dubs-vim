@@ -1,12 +1,18 @@
 #!/bin/sh
+# vim:tw=0:ts=2:sw=2:et:norl:nospell:ft=sh
 
 VIM_BUNDLE__PATH="${HOME}/.vim/bundle_"
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+remove_existing_links () {
+  find . -maxdepth 1 -type l -exec /bin/rm {} +
+}
 
 vim_bundle__generate_links () {
   local bdir=../bundle
 
-  # Remove existing links.
-  find . -maxdepth 1 -type l -exec /bin/rm {} +
+  remove_existing_links
 
   /bin/ln -sf ${bdir}/dubs_all
   /bin/ln -sf ${bdir}/dubs_core
