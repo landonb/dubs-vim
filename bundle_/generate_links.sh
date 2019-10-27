@@ -104,5 +104,7 @@ main () {
   cd "${before_cd}"
 }
 
-main "$@"
+set -e
+
+main "${@}"
 
