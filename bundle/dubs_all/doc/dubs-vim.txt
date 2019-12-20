@@ -147,7 +147,6 @@ to open files. E.g., >
    alias fa='gvim --servername ALPHA --remote-silent'
    alias fs='gvim --servername SAMPI --remote-silent'
    alias fd='gvim --servername DELTA --remote-silent'
-   alias ff='gvim --servername DIGAMMA --remote-silent'
 <
 Then just type, e.g., 'fs <filename>', to open files from bash.
 

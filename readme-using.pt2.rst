@@ -215,7 +215,6 @@ instance, I alias a number of easily-typed commands.
    alias fa='gvim --servername ALPHA --remote-silent'
    alias fs='gvim --servername SAMPI --remote-silent'
    alias fd='gvim --servername DELTA --remote-silent'
-   alias ff='gvim --servername DIGAMMA --remote-silent'
 
 I usually type ``fs <filename>`` to open files from the
 command line. Rarely, I use one of the other commands
