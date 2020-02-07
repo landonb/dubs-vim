@@ -60,10 +60,11 @@ vim_bundle__generate_links () {
   /bin/ln -sf ${bdir}/vim-abolish
   /bin/ln -sf ${bdir}/vim-bufsurf
   /bin/ln -sf ${bdir}/vim-colorschemes
-  # 2019-03-19: Disable: vim-endwise: it's frustrating me.
-  #  /bin/ln -sf ${bdir}/vim-endwise
+  /bin/ln -sf ${bdir}/vim-easyescape
   # 2019-10-25: From at latest 2016-11-13:
   #  /bin/ln -sf ${bdir}/vim-easytags
+  # 2019-03-19: Disable: vim-endwise: it's frustrating me.
+  #  /bin/ln -sf ${bdir}/vim-endwise
   /bin/ln -sf ${bdir}/vim-fugitive
   /bin/ln -sf ${bdir}/vim-gnupg
   /bin/ln -sf ${bdir}/vim-istanbul
@@ -86,6 +87,7 @@ vim_bundle__generate_links () {
   #  /bin/ln -sf ${bdir}/vim-restructuredtext/
   /bin/ln -sf ${bdir}/vim-speeddating
   /bin/ln -sf ${bdir}/vim-toml
+  /bin/ln -sf ${bdir}/vim-tmux-navigator
   /bin/ln -sf ${bdir}/vim-unimpaired
   /bin/ln -sf ${bdir}/vim-vinegar
   # 2018-12-13: A colorscheme I looked at, for inspiration,
