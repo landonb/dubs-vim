@@ -154,3 +154,9 @@
 [submodule "bundle/vim-easyescape"]
 	path = bundle/vim-easyescape
 	url = https://github.com/zhou13/vim-easyescape.git
+[submodule "bundle/vim-jsx-pretty"]
+	path = bundle/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty
+[submodule "bundle/vim-js"]
+	path = bundle/vim-js
+	url = git@github.com:yuezk/vim-js
