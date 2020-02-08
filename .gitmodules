@@ -1,3 +1,6 @@
+[submodule "bundle/ansible-vim"]
+	path = bundle/ansible-vim
+	url = git@github.com:landonb/ansible-vim.git
 [submodule "bundle/AutoAdapt"]
 	path = bundle/AutoAdapt
 	url = git@github.com:vim-scripts/AutoAdapt.git
@@ -40,6 +43,9 @@
 [submodule "bundle/dubs_quickfix_wrap"]
 	path = bundle/dubs_quickfix_wrap
 	url = git@github.com:landonb/dubs_quickfix_wrap.git
+[submodule "bundle/dubs_rest_fold"]
+	path = bundle/dubs_rest_fold
+	url = git@github.com:landonb/dubs_rest_fold.git
 [submodule "bundle/dubs_style_guard"]
 	path = bundle/dubs_style_guard
 	url = git@github.com:landonb/dubs_style_guard.git
@@ -49,15 +55,24 @@
 [submodule "bundle/dubs_toggle_textwrap"]
 	path = bundle/dubs_toggle_textwrap
 	url = git@github.com:landonb/dubs_toggle_textwrap.git
+[submodule "bundle/dubs_web_hatch"]
+	path = bundle/dubs_web_hatch
+	url = git@github.com:landonb/dubs_web_hatch.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "bundle/goyo.vim"]
+	path = bundle/goyo.vim
+	url = git@github.com:junegunn/goyo.vim.git
 [submodule "bundle/ingo-library"]
 	path = bundle/ingo-library
 	url = git@github.com:vim-scripts/ingo-library.git
 [submodule "bundle/jellybeans.vim"]
 	path = bundle/jellybeans.vim
 	url = git@github.com:nanotech/jellybeans.vim.git
+[submodule "bundle/limelight.vim"]
+	path = bundle/limelight.vim
+	url = git@github.com:junegunn/limelight.vim.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
@@ -79,9 +94,18 @@
 [submodule "bundle/viki_vim"]
 	path = bundle/viki_vim
 	url = git@github.com:tomtom/viki_vim.git
+[submodule "bundle/vim-abolish"]
+	path = bundle/vim-abolish
+	url = git@github.com:tpope/vim-abolish.git
 [submodule "bundle/vim-bufsurf"]
 	path = bundle/vim-bufsurf
 	url = git@github.com:ton/vim-bufsurf.git
+[submodule "bundle/vim-colorschemes"]
+	path = bundle/vim-colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "bundle/vim-easyescape"]
+	path = bundle/vim-easyescape
+	url = https://github.com/zhou13/vim-easyescape.git
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = git@github.com:tpope/vim-endwise.git
@@ -91,9 +115,21 @@
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = git@github.com:jamessan/vim-gnupg.git
+[submodule "bundle/vim-istanbul"]
+	path = bundle/vim-istanbul
+	url = git@github.com:juanpabloaj/vim-istanbul.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/vim-jdaddy"]
+	path = bundle/vim-jdaddy
+	url = git@github.com:tpope/vim-jdaddy.git
+[submodule "bundle/vim-js"]
+	path = bundle/vim-js
+	url = git@github.com:yuezk/vim-js
+[submodule "bundle/vim-jsx-pretty"]
+	path = bundle/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git@github.com:landonb/vim-markdown.git
@@ -103,15 +139,18 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git@github.com:tpope/vim-rails.git
-[submodule "bundle/vim-speeddating"]
-	path = bundle/vim-speeddating
-	url = git@github.com:tpope/vim-speeddating.git
 [submodule "bundle/vim-scriptease"]
 	path = bundle/vim-scriptease
 	url = git@github.com:tpope/vim-scriptease.git
+[submodule "bundle/vim-speeddating"]
+	path = bundle/vim-speeddating
+	url = git@github.com:tpope/vim-speeddating.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git@github.com:landonb/vim-surround.git
+[submodule "bundle/vim-toml"]
+	path = bundle/vim-toml
+	url = git@github.com:cespare/vim-toml.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git@github.com:tpope/vim-unimpaired.git
@@ -121,42 +160,3 @@
 [submodule "bundle/vim-vividchalk"]
 	path = bundle/vim-vividchalk
 	url = git@github.com:tpope/vim-vividchalk.git
-[submodule "bundle/vim-istanbul"]
-	path = bundle/vim-istanbul
-	url = git@github.com:juanpabloaj/vim-istanbul.git
-[submodule "bundle/vim-colorschemes"]
-	path = bundle/vim-colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
-[submodule "bundle/vim-jdaddy"]
-	path = bundle/vim-jdaddy
-	url = git@github.com:tpope/vim-jdaddy.git
-[submodule "bundle/vim-abolish"]
-	path = bundle/vim-abolish
-	url = git@github.com:tpope/vim-abolish.git
-[submodule "bundle/dubs_rest_fold"]
-	path = bundle/dubs_rest_fold
-	url = git@github.com:landonb/dubs_rest_fold.git
-[submodule "bundle/ansible-vim"]
-	path = bundle/ansible-vim
-	url = git@github.com:landonb/ansible-vim.git
-[submodule "bundle/dubs_web_hatch"]
-	path = bundle/dubs_web_hatch
-	url = git@github.com:landonb/dubs_web_hatch.git
-[submodule "bundle/goyo.vim"]
-	path = bundle/goyo.vim
-	url = git@github.com:junegunn/goyo.vim.git
-[submodule "bundle/limelight.vim"]
-	path = bundle/limelight.vim
-	url = git@github.com:junegunn/limelight.vim.git
-[submodule "bundle/vim-toml"]
-	path = bundle/vim-toml
-	url = git@github.com:cespare/vim-toml.git
-[submodule "bundle/vim-easyescape"]
-	path = bundle/vim-easyescape
-	url = https://github.com/zhou13/vim-easyescape.git
-[submodule "bundle/vim-jsx-pretty"]
-	path = bundle/vim-jsx-pretty
-	url = git@github.com:MaxMEllon/vim-jsx-pretty
-[submodule "bundle/vim-js"]
-	path = bundle/vim-js
-	url = git@github.com:yuezk/vim-js
