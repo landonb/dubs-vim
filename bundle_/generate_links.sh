@@ -96,6 +96,7 @@ vim_bundle__generate_links () {
   # 2018-12-13: A colorscheme I looked at, for inspiration,
   # but ultimately dubs_after_dark is too hot.
   #  /bin/ln -sf ${bdir}/vim-vividchalk
+  /bin/ln -sf ${bdir}/yats.vim/
 }
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #

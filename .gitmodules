@@ -160,3 +160,6 @@
 [submodule "bundle/vim-vividchalk"]
 	path = bundle/vim-vividchalk
 	url = git@github.com:tpope/vim-vividchalk.git
+[submodule "bundle/yats.vim"]
+	path = bundle/yats.vim
+	url = git@github.com:HerringtonDarkholme/yats.vim.git
