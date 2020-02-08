@@ -17,16 +17,17 @@ vim_bundle__generate_links () {
   /bin/ln -sf ${bdir}/dubs_all
   /bin/ln -sf ${bdir}/dubs_core
 
-  #ansible-vim  # Forked!
+  # 2018-12-17: ansible-vim forked to tweak Yaml syntax engine.
+  #  /bin/ln -sf ${bdir}/ansible-vim
   /bin/ln -sf ${bdir}/AutoAdapt
   /bin/ln -sf ${bdir}/command-t
   /bin/ln -sf ${bdir}/ctrlp.vim
   # Dubs Vim:
   #  dubs_after_dark/
-  #  dubs_all/
+  #  dubs_all/  # -> ../bundle/dubs_all/
   #  dubs_appearance/
   #  dubs_buffer_fun/
-  #  dubs_core  # ->  # dubs_all/
+  #  dubs_core  # ->  # ../bundle/dubs_core/ -> ../bundle/dubs_all/
   #  dubs_edit_juice/
   #  dubs_file_finder/
   #  dubs_ftype_mess/
@@ -71,11 +72,10 @@ vim_bundle__generate_links () {
   # 2017-09-18: Thank you, pangloss.
   /bin/ln -sf ${bdir}/vim-javascript
   /bin/ln -sf ${bdir}/vim-jdaddy
-  # 2017-10-16: Using my own fork of vim-jsx.
-  #/bin/ln -sf ${bdir}/vim-jsx
-  # 2017-03-16: Using my own fork of vim-markdown.
-  # 2017-04-01: Uncommented this...
-  # 2017-09-18: Recommented this...?
+  # 2017-10-16: vim-jsx forked to avoid forward-slash triggering GetJsxIndent.
+  # 2020-02-08: vim-jsx deprecated b/c broke by pangloss/vim-javascript; replaced.
+  #  /bin/ln -sf ${bdir}/vim-jsx
+  # 2017-03-16: vim-markdown forked to fix issue of "white on white".
   #  /bin/ln -sf ${bdir}/vim-markdown
   /bin/ln -sf ${bdir}/vim-misc
   /bin/ln -sf ${bdir}/vim-rails
@@ -86,8 +86,11 @@ vim_bundle__generate_links () {
   # with \S find-replace-multi-files command. So weird. So disabled!
   #  /bin/ln -sf ${bdir}/vim-restructuredtext/
   /bin/ln -sf ${bdir}/vim-speeddating
+  # Forked vim-surround... but haven't actually tipped the code.
+  #  /bin/ln -sf ${bdir}/vim-surround
   /bin/ln -sf ${bdir}/vim-toml
-  /bin/ln -sf ${bdir}/vim-tmux-navigator
+  # 2020-02-08: vim-tmux-nav. forked to add Dubs' C-S-Up/-Down +/- pane mappings.
+  #  /bin/ln -sf ${bdir}/vim-tmux-navigator
   /bin/ln -sf ${bdir}/vim-unimpaired
   /bin/ln -sf ${bdir}/vim-vinegar
   # 2018-12-13: A colorscheme I looked at, for inspiration,

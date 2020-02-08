@@ -106,9 +106,6 @@
 [submodule "bundle/vim-speeddating"]
 	path = bundle/vim-speeddating
 	url = git@github.com:tpope/vim-speeddating.git
-[submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
-	url = git@github.com:landonb/vim-jsx.git
 [submodule "bundle/vim-scriptease"]
 	path = bundle/vim-scriptease
 	url = git@github.com:tpope/vim-scriptease.git
@@ -157,6 +154,3 @@
 [submodule "bundle/vim-easyescape"]
 	path = bundle/vim-easyescape
 	url = https://github.com/zhou13/vim-easyescape.git
-[submodule "bundle/vim-tmux-navigator"]
-	path = bundle/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
