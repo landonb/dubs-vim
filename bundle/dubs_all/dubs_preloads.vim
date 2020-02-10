@@ -40,6 +40,15 @@ if isdirectory(s:user_local_bin_path)
 endif
 
 " ------------------------------------------------------------
+" Add user gopath bin to path.
+" ------------------------------------------------------------
+
+let s:user_gopath_bin_path = $HOME . '/.gopath/bin'
+if isdirectory(s:user_gopath_bin_path)
+  let $PATH = $PATH . ':' . s:user_gopath_bin_path
+endif
+
+" ------------------------------------------------------------
 " Extend the reST syntax highlighter's code vocabulary
 " by overriding the ``.. code-block:: <language>`` mapping.
 " ------------------------------------------------------------
