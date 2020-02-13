@@ -166,3 +166,6 @@
 [submodule "bundle/yats.vim"]
 	path = bundle/yats.vim
 	url = git@github.com:HerringtonDarkholme/yats.vim.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar
