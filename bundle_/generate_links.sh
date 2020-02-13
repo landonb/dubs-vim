@@ -42,6 +42,7 @@ vim_bundle__generate_links () {
   #  dubs_toggle_textwrap
   #  dubs_web_hatch
   /bin/ln -sf ${bdir}/editorconfig-vim
+  /bin/ln -sf ${bdir}/fzf.vim
   /bin/ln -sf ${bdir}/goyo.vim
   /bin/ln -sf ${bdir}/ingo-library
   /bin/ln -sf ${bdir}/jellybeans.vim
