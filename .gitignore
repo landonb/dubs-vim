@@ -1,3 +1,7 @@
+# The repo contains .ignore.example, not .ignore,
+# so it's easier for each user to place their own.
+.ignore
+
 # Ignore Session files (Vim's workspace saver): To track application sessions
 # between invocations, Vim uses either a ~/.vim/Session.vim file, or multiple
 # files under ~/.vim/sessions/<servername>.vim. Dubs uses the latter approach,
