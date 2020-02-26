@@ -70,6 +70,28 @@ bundle_
 # directory, which is part of dubs-vim (~/.vim/.git). Git it?
 bundle/dubs_all/.vimrc.bundle_
 
+# Vim packages.
+# 2020-02-25: Rather than manage plugins (i.e., old-style packages)
+# by cloning submodules to ~/.vim/bundle, and then inter-symlinking
+# with ~/.vim/bundle_, so that some plugins can be developed locally,
+# use Vim's new packages feature (see: :help packages) and manually
+# install packages under ~/.vim/pack. To keep packages organized,
+# use subdirectories to manage packages by their author. E.g., for
+# a package you always want loaded, use a path such as, e.g.,
+#       ~/.vim/pack/<author>/start/<package>
+# - If you later want to disable a package, make it optional by
+#   moving the directory under 'opt', e.g.,
+#         ~/.vim/pack/<author>/opt/<package>
+#   and then should you want to load it, run, e.g.,:
+#         :packadd! <package>
+# - Because Dubs Vim is transitioning away from using submodules,
+#   you might be looking for a way to otherwise manage multiple
+#   git repositories. The author recommends myrepos:
+#       https://myrepos.branchable.com/
+#   paired with the author's myrepos extensions and actions.
+#       https://github.com/landonb/ohmyrepos
+pack/
+
 # mkview/loadview files.
 view/
 
