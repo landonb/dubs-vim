@@ -1,7 +1,9 @@
 .git/
-.gitmodules
 
-# You can keep track of your spell/en.utf-8.add using another repo.
+# Ignore the pack/ directory -- it's expected you'll enter it to search it.
+pack/
+
+# Keep track of your spell/en.utf-8.add using another repo (and symlink to it).
 spell/
 
 # mkview/loadview files are in view/.
