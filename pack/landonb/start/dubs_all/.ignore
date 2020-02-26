@@ -1,8 +1,0 @@
-# Ignore symlinks to personal files stored in other projects.
-dubs_projects.vim
-dubs_tagpaths.vim
-one_time_setup.sh
-plugin-info.json
-.vimprojects
-.vimrc.bundle_
-
