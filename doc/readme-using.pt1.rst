@@ -28,23 +28,28 @@ This document combines all the Dubs Vim plugin READMEs into one file.
 You'll find links to each plugin in the following lists,
 and you'll find documentation for *everything Dubs* below that!
 
-About this Plugin (``dubs_all``)
---------------------------------
+About this Project
+------------------
 
 This project is not a Vim plugin itself, but a collection of
 one developers favorite plugins, including their own plugins
-and other individuals' plugins, included as git submodules.
-Oh, and this README.
+and other individuals' plugins.
 
-You are obviously encouraged to follow the links below and
-to install whatever individual plugins appeal to you, but
-to not bother with this repository, though feel free to track
-it if you're curious what plugins this author uses.
+The plugins used to be included as git submodules, but submodules
+are a chore to manage. Fortunately Vim now makes it easier to use
+an external multiple repository manager (such as ``myrepos``) to
+manage your Vim packages and plugins. So now the plugins are just
+referenced from documentation; and it's up to you, the developer-
+user, to install and manage them yourself.
+
+tl;dr, you probably don't want to clone and install this project
+(e.g., to ``~/.vim``), but you may be curious what Vim plugins I
+use and recommend (and maintain).
 
 List of Dubs Vim Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This plugin includes the following plugins:
+These are plugins I've developed and continue to maintain:
 
 .. | `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__: Compelling light on dark color scheme.
 .. | `dubs_appearance <https://github.com/landonb/dubs_appearance>`__: Configure basic Vim look n' feel.
@@ -102,7 +107,7 @@ List of Third-party Plugins
 
 .. To generate list: grep url .gitmodules | sed 's/.*= //' | sort
 
-This plugin also includes these awesome third-party plugins:
+The are awesome third-party plugins I find useful or otherwise curious:
 
 | `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
     "Automatically adapt timestamps, copyright notices, etc."
@@ -214,24 +219,11 @@ their keyboard mapping or ``:command`` name, followed by a
 brief description of the feature and then more detailed notes.
 
 .. NOTE: For security reasons, the include directive does not
-..       work on github. As such, this following will not work...
+..       work on github. E.g., we cannot simply
 ..
-.. .. include:: https://github.com/landonb/dubs_after_dark/README.rst
-.. .. include:: https://github.com/landonb/dubs_appearance/README.rst
-.. .. include:: https://github.com/landonb/dubs_buffer_fun/README.rst
-.. .. include:: https://github.com/landonb/dubs_edit_juice/README.rst
-.. .. include:: https://github.com/landonb/dubs_file_finder/README.rst
-.. .. include:: https://github.com/landonb/dubs_ftype_mess/README.rst
-.. .. include:: https://github.com/landonb/dubs_grep_steady/README.rst
-.. .. include:: https://github.com/landonb/dubs_html_entities/README.rst
-.. .. include:: https://github.com/landonb/dubs_mescaline/README.rst
-.. .. include:: https://github.com/landonb/dubs_project_tray/README.rst
-.. .. include:: https://github.com/landonb/dubs_quickfix_wrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_syntastic_wrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_rest_fold/README.rst
-.. .. include:: https://github.com/landonb/dubs_style_guard/README.rst
-.. .. include:: https://github.com/landonb/dubs_toggle_textwrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_web_hatch/README.rst
+..        .. include:: https://github.com/landonb/dubs_after_dark/README.rst
+..        .. include:: ...
 ..
-.. so instead we'll assemble this file from a script, readme-using.make.sh.
+..       so instead we'll assemble this file from a script, readme-using.make.sh,
+..       which appends all the package docs to this file.
 

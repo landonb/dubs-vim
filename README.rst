@@ -1,182 +1,119 @@
-@@@@@@@@
+########
 Dubs Vim
-@@@@@@@@
+########
 
-Dubs Vim is just one developer's Vim IDE, built upon the backs of plugins.
+Dubs Vim is just one developer's Vim IDE (or very close to it).
 
-Why You Might Care
-------------------
+Project Overview
+================
 
-Are you newish to Vim? Dubs Vim is a well-documented, curated IDE.
+This project is essentially just the lightweight
+top-level ``~/.vim`` directory that I use.
 
-- It includes what I think are some of the best plugins.
+Almost all functionality is provided by installing other projects using
+the (newish) ``package`` mechanism, i.e., cloning repositories under
+``~/.vim/pack/<author>/start/<project>``.
 
-- It includes a number of custom features to fill in the gaps.
+Rather than hook projects as git submodules, each user is expected to
+manage their own repositories.
 
-- It's also easy to hack away and to make it your own.
+- This author recommends the excellent
+  `myrepos <https://myrepos.branchable.com/>`__
+  multiple repository manager, which pairs well
+  with this author's myrepos extensions and actions,
+  https://github.com/landonb/ohmyrepos
 
-Are you oldish to Vim?
+Project Highlights
+==================
 
-- Then you're probably just doing what I like to do,
-  which is to peek at other people's vims.
+If nothing else, hopefully you'll find the list of suggested third-party
+plugins to be useful. While not completely representative of all the best
+plugins -- it's by no means an inclusive Awesome List -- it represents
+some of the best plugins I've found, and that I still find to be useful.
 
-- You never know what you might find.
+I've also written dozen of plugins over the years, to fill in the gaps as
+necessary. Hopefully you'll find these plugins of interest, as well.
 
-Dubs Vim uses a lot of third-party scripts and bundles,
-and all custom Dubs Vim code is also packaged as modules,
-and includes online documentation, so it's easy to peel off
-any pieces you might like.
-
-Dubs Vim is a full-featured Vim IDE designed to provide a fast,
-friendly development environment and to include the best Vim
-plugins. Many thanks to all of the brilliant and passionate
-developers who've made and continue to make Vim such a cool tool.
+- For convenience, this project installs a help file compiled from all my
+  personally authored help docs, to provide a single point of reference
+  (as there are many, many commands and mappings defined).
 
 Feature Overview
-----------------
+================
 
-See `Dubs Vim Reference <README-USING.rst>`__
-for a complete list of features, or browse
-the more terse online help, ``:help dubs-vim``.
+See `Dubs Vim Reference <doc/README-USING.rst>`__
+for a complete list of features of my plugins,
+or browse the more terse online help, ``:help dubs-vim``.
 
-Quick Install
--------------
+Install as Normal Package
+=========================
 
-Pathogen makes installing Dubs Vim a breeze.
+If you plan to install the Dubs Vim plugins and want the single-page
+help, install this project, too.
 
-If you're already using Pathogen, download Dubs Vim to
-your ``bundle`` directory, quit Vim, zap your Session
-file, are restart Vim.
+Using the built-in packages feature, you can simply clone this project
+to a ``start`` directory under ``~/.vim/pack``, e.g.,
 
 .. code-block:: bash
 
-   git clone git://github.com/landonb/dubs-vim.git ~/.vim/bundle
-
-   # Checkout all the submodules.
-   pushd ~/.vim/bundle/dubs-vim
-   git submodule update --init
-   popd
-
-   # Make sure Vim is dead before zapping the Session file.
-   /bin/rm -f ~/.vim/Session.vim
-
-   # Run Dubs Vim
-   gvim
-
-To build all the inline help docs, run ``:Helptags``.
+   mkdir -p ~/.vim/pack/landonb/start
+   git clone git://github.com/landonb/dubs-vim.git ~/.vim/pack/landonb/start
 
 If you want access to the best features, install additional packages.
-E.g., on Ubuntu, run
+
+- On Ubuntu, one might run, e.g.,
 
 .. code-block:: bash
 
-   sudo apt-get install -y \
-      silversearcher-ag exuberant-ctags par ruby-dev
-
-If you need a little more guidance, read on.
-
-Longform Install
-----------------
-
-.. note:: These instructions are for Linux Mint MATE.
-
-          Dubs Vim is known to work on other \*nixes.
-
-          In you're running Gnome but not MATE,
-          change ``vim-gtk`` to ``vim-gnome``.
-
-          If you're installing on Fedora, replace
-          ``sudo apt-get install`` with ``sudo yum install``
-          and fix any package names (such as changing
-          ``exuberant-ctags`` to ``ctags-etags``,
-          and possible ``ruby-dev`` to ``ruby-devel``).
-
-..          Dubs Vim also works on Windows, but unless you're
-..          installing in `Cygwin <https://www.cygwin.com/>`__
-..          you could `grab the MSI installer
-..          (FIXME: update installer and add link) <FIXME>`__.
-
-1. Install platform packages.
-
-Install at least gVim. Include the other packages to access more features.
-
-.. code-block:: bash
-
-   sudo apt-get install -y \
+   sudo apt install -y \
       vim-gtk \
       silversearcher-ag \
       exuberant-ctags \
       par \
       ruby-dev
 
-- See below for a description of the additional packages.
+- Dubs Vim also works well with
+  `ripgrep <https://github.com/BurntSushi/ripgrep>`__
+  (which you can install yourself).
 
-2. Install Pathogen.
-
-Install the
-`Pathogen <https://github.com/tpope/vim-pathogen>`__
-Vim package manager.
-
-.. code-block:: bash
-
-   mkdir -p ~/.vim/autoload ~/.vim/bundle
-   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-3. Download and install Dubs Vim.
-
-Download Dubs Vim from
-`github <http://github.com/landonb/dubs-vim>`__
-and install to the Pathogen space.
-
-.. code-block:: bash
-
-   git clone git://github.com/landonb/dubs-vim.git ~/.vim/bundle
-
-4. Download all the Submodules.
-
-.. code-block:: bash
-
-   cd ~/.vim/bundle/dubs-vim
-
-   git submodule update --init
-
-   # NOTE: Also run `git submodule update` to update the submodules,
-   #       if you ever `git pull`, `git ci`, etc., from within them.
-
-5. Update your infection string.
-
-   In ``~/.vimrc``, or wherever you've got it, add the new ``bundle`` path.
-
-.. code-block:: vim
-
-   execute pathogen#infect('bundle/{}', 'bundle/dubs-vim/bundle/{}')
-
-6. Restart Vim.
-
-Quit Vim if it's running, delete the session file if it exists
-(so that Vim reloads its runtime), and restart Vim.
-
-.. code-block:: bash
-
-   # Quit Vim, then:
-   /bin/rm -f ~/.vim/Session.vim
-   gvim
-
-7. Build Documentation.
-
-From within Vim, build documentation.
+Once cloned and addition packages are installed,
+restart Vim and rebuild the inline help docs.
+From within Vim, run.
 
 .. code-block:: vim
 
    :Helptags
 
+Install as Top-level Vim Directory
+==================================
+
+If your user does not already have a ``~/.vim`` directory, you
+can clone the repository to your user's home directory, and then
+create a symlink at ``~/.vimrc``. E.g.,
+
+.. code-block:: bash
+
+   cd
+   git clone git://github.com/landonb/dubs-vim.git .vim
+   /bin/ln -s .vim/.vimrc .vimrc
+
 Next Steps
 ----------
+
+Install Dubs Vim packages
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. FIXME/2020-02-26: Document.
+
+Install third-party packages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. FIXME/2020-02-26: Document.
 
 Read the documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-See `Dubs Vim Reference <README-USING.rst>`__
+See `Dubs Vim Reference <doc/README-USING.rst>`__
 for a list of commands and keyboard shortcuts.
 The online help, ``:h dubs``, is an abbreviated
 list of the same.
@@ -193,9 +130,13 @@ The ``<Ctrl-D>`` command pops up Command-T and points
 it at the first directory named ``cmdt_paths`` that
 it finds within the ``~/.vim`` folder.
 
-When you run Dubs Vim for the first time, it'll make a
-copy of ``dubs_file_finder/cmdt_paths.template`` and link
-it from ``dubs_all/cmdt_paths``.
+When you run Dubs Vim for the first time, it'll copy the file,
+``pack/landonb/start/dubs_file_finder/cmdt_paths.template``,
+to ``cmdt_paths`` in the same directory.
+
+(You can move this directory somewhere private, to
+put it under your own revision control system; then
+symlink your path from ``dubs_file_finder/cmdt_paths``.)
 
 Look inside the copied directory and you'll find
 a ``generate_links.sh`` script that you can edit
@@ -212,10 +153,13 @@ You can also do this manually, e.g.,
 
 2. Make list of folders to be easily greppable.
 
-Open the file ``dubs_all/dubs_projects.vim``
-and add your project paths to the list of
-projects. This list is displayed when your search
-with either ``\g`` or the ``F4`` mappings.
+Open the file ``pack/landonb/start/dubs_grep_steady/dubs_projects.vim``
+and add your project paths to the list of projects. This list is displayed
+when your search with either ``\g`` or the ``F4`` mappings.
+
+(You can also move this file somewhere private, to
+put it under your own revision control system; then
+symlink that file from ``dubs_grep_steady/dubs_projects.vim``.)
 
 3. Hack away.
 
@@ -223,16 +167,8 @@ Like most things Vim, after reading the docs and
 testing a new plugin, you'll want to get your hands
 dirty. Happy hacking!
 
-Occasionally Pull the Latest Codes
-----------------------------------
-
-.. code-block:: bash
-
-    cd ~/.vim
-    git submodule update --init --remote
-
-Third-Party Package Descriptions
---------------------------------
+Third-Party Distro Package Descriptions
+---------------------------------------
 
 Following is an explanation of the optional
 ``aptitude`` packages that can be installed
@@ -242,11 +178,15 @@ to enable more features:
   is a nice alternative to the built-in `grep` family
   of commands, especially since it honors `.gitignore` files.
 
+- `ripgrep <https://github.com/BurntSushi/ripgrep>`__
+  is an even faster alternative to ``ag`` (and is may have
+  to be manually installed).
+
 - `Exuberant Ctags <http://ctags.sourceforge.net/>`__
   lets you jump to function definitions using ``Ctrl-]``.
   (You'll have to run ``ctags`` on your source
   to generate one or more ``tags`` files first;
-  edit the file ``dubs_all/dubs_tagpaths.vim``.)
+  it's best if you can wire this into your local CI.)
 
 - `Par <http://www.nicemice.net/par/>`__
   lets you reformat text to a preset width (e.g., press ``Shift-F2``
@@ -267,7 +207,7 @@ normal commands defined by the plugin, but Dubs Vim also
 remaps and wraps calls to third-party plugins to make them
 more seamless and easy to access.
 
-See the `Dubs Vim Reference <README-USING.rst>`__
+See the `Dubs Vim Reference <doc/README-USING.rst>`__
 for a list of all Dubs Vim commands, including
 those provided by other people's plugins.
 
@@ -278,37 +218,6 @@ Dubs Vim mostly adds new key bindings not already mapped by
 standard Vim or changed by MS-Windows mode (``behave mswin``).
 However, a few standard key bindings have been remapped.
 You probably won't notice the changes, but you might.
-See `Differences from Vim <README-USING.rst#Differences_from_Vim>`__
+See `Differences from Vim <doc/README-USING.rst#Differences_from_Vim>`__
 for the list of binding differences.
-
-Contributing
-------------
-
-Dubs Vim is just one developer's IDE, and it's pretty mature,
-so I can't imagine receiving pull requests. However, feel free
-to send one, or a note, or add a comment if you'd like to suggest
-any plugins to add or other changes to make. Though I might be
-slow to respond.
-
-Licenses
---------
-
-Custom Dubs Vim code (in files with names beginning ``dubs``)
-is licensed under `GPLv3 <https://www.gnu.org/copyleft/gpl.html>`__.
-
-Third-party code is copyright by their respective authors
-and licensed according to their own licenses, which are
-mostly Vim, or MIT- or GPL-like. See each Vendor's
-source file for the specific license.
-
-And "Vim is charityware. Its `license <http://www.vim.org/about.php>`__
-is GPL-compatible, so it's distributed freely, but we ask that if you
-find it useful you make a donation to help children in Uganda through the
-`ICCF <http://iccf-holland.org/>`__.
-The full license text can be found in the
-`documentation
-<http://vimdoc.sourceforge.net/htmldoc/uganda.html#license>`__.
-Much more information
-about charityware on
-`Charityware.info <http://charityware.info/>`__."
 

@@ -174,28 +174,6 @@ You can do this in a few different ways:
      type ``<Alt-f>x`` to quit,
      and Dubs Vim will destroy Session.vim on its way out.
 
-Non-Interactive Features
-========================
-
-Silent Features
----------------
-
-Dubs Vim uses a few plugins under the hood which
-run seamlessly and with which you probably won't
-interact.
-
-Most of these were already mentioned, save for the
-one that rules them all:
-
-`Pathogen <https://github.com/tpope/vim-pathogen>`__
-manages third-party plugins.
-It wires Vim's runtimepath so
-that multiple ``~/.vim``-like directories can live
-under ``~/.vim/bundle``, precluding you from having
-to move everything to the same directory, e.g.,
-you no longer need to copy all plugins to your
-``~/.vim/plugin`` directory.
-
 OS Workflow Tips and Tricks
 ===========================
 

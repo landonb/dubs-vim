@@ -18,80 +18,96 @@ spell
 # tags is generated, 'natch.
 tags
 
-# The bulk of the bundle/ directory is populated by submodule cloning.
-# Except for dubs_all, which is part of the main dubs-vim project.
-#
-# Ignore generated symlinks.
-bundle/dubs_all/cmdt_paths
-bundle/dubs_all/dubs_cuts
-bundle/dubs_all/dubs_projects.vim
-bundle/dubs_all/dubs_tagpaths.vim
-bundle/dubs_core
-# Ignore personal files.
-bundle/dubs_all/.vimprojects
-# Ignore misc.
-bundle/dubs_all/one_time_setup.sh
-bundle/dubs_all/plugin-info.json
+# mkview/loadview files.
+view/
 
-bundle/_last_update
-
-# To develop the complete dubs-vim and also the individual
-# Dubs Vim submodules requires a bit of finesse.
-#
-# The bundle_/ directory contains the individually-cloned
-# dubs-vim projects (not submoduled) and symlinks to
-# the third-party submodules we populated in bundle/.
-#
-# To see what dubs-vim code is dirty, use git_status_all, e.g.,
-#
-#  cd ~/.vim/bundle_ ; git_st_all
-#
-# So we can ignore bundle_/.
-bundle_
-
-# Here's a long-winded explanation of the chay-os.
-#
-# If you want to checkout the dubs-vim project and also all of
-# the plugins themselves as source and not just as submodules, you
-# have to deal with some conflict, since you'll have two copies of
-# every plugin (one of the source and one of the submodule). First,
-# mkdir ~/.vim/bundle_ and git clone all the plugins therein. Next,
-# make a copy of .vimrc, name it bundle/dubs_all/.vimrc.bundle_,
-# and infect bundle_/{} rather than bundle/{}. Link it from
-# ~/.vimrc. With this setup, ~/.vim/.git is the dubs-vim
-# repository, ~/.vim/bundle is a ton of submodules from github, and
-# ~/.vim/bundle_ is a bunch of git clones of the same submodules
-# found in ~/.vim/bundle. That way, Vim will load the real source
-# under ~/.vim/bundle_ -- and you'll edit the same source when
-# tweaking Vim -- but you're also be able to maintain the ~/.vim/.git
-# uber plugin that manages everything as submodules. So you can
-# really just ignore everything under ~/.vim/bundle and concentrate
-# on ~/.vim/bundle_ instead, except for the ~/.vim/bundle/dubs_all
-# directory, which is part of dubs-vim (~/.vim/.git). Git it?
-bundle/dubs_all/.vimrc.bundle_
-
-# Vim packages.
-# 2020-02-25: Rather than manage plugins (i.e., old-style packages)
-# by cloning submodules to ~/.vim/bundle, and then inter-symlinking
-# with ~/.vim/bundle_, so that some plugins can be developed locally,
-# use Vim's new packages feature (see: :help packages) and manually
-# install packages under ~/.vim/pack. To keep packages organized,
-# use subdirectories to manage packages by their author. E.g., for
-# a package you always want loaded, use a path such as, e.g.,
+# Use Vim's new(ish) packages feature (see: :help packages) and manually
+# install packages under ~/.vim/pack. To keep packages organized, use
+# subdirectories to manage packages by their author. E.g., for a package
+# you always want loaded, use a path such as, e.g.,
 #       ~/.vim/pack/<author>/start/<package>
 # - If you later want to disable a package, make it optional by
 #   moving the directory under 'opt', e.g.,
 #         ~/.vim/pack/<author>/opt/<package>
 #   and then should you want to load it, run, e.g.,:
 #         :packadd! <package>
-# - Because Dubs Vim is transitioning away from using submodules,
-#   you might be looking for a way to otherwise manage multiple
-#   git repositories. The author recommends myrepos:
+# - If you're looking for a way to manage multiple git repositories,
+#   the author recommends myrepos:
 #       https://myrepos.branchable.com/
-#   paired with the author's myrepos extensions and actions.
+#   paired with the author's myrepos extensions and actions:
 #       https://github.com/landonb/ohmyrepos
-pack/
 
-# mkview/loadview files.
-view/
+# Rather than just ignore everything, e.g.,
+#   pack/
+# Be deliberate instead, which is better form,
+# e.g., be notified if you accidentally clone
+# a new package but forget to register it with
+# myrepos (assuming you forgot to update this
+# file, .gitignore, as well).
+# HINT:
+#   ll -d ~/.vim/pack/*/*/*
+pack/arcticicestudio/start/nord-vim
+pack/cespare/start/vim-toml
+pack/ctrlpvim/start/ctrlp.vim
+pack/editorconfig/start/editorconfig-vim
+pack/flazz/start/vim-colorschemes
+pack/HerringtonDarkholme/start/yats.vim
+pack/jamessan/start/vim-gnupg
+pack/juanpabloaj/start/vim-istanbul
+pack/junegunn/start/fzf.vim
+pack/junegunn/start/goyo.vim
+pack/junegunn/start/limelight.vim
+pack/landonb/opt/dubs_cycloplan
+pack/landonb/opt/vim-jsx
+pack/landonb/start/ansible-vim
+pack/landonb/start/dubs_after_dark
+pack/landonb/start/dubs_appearance
+pack/landonb/start/dubs_buffer_fun
+pack/landonb/start/dubs_edit_juice
+pack/landonb/start/dubs_file_finder
+pack/landonb/start/dubs_ftype_mess
+pack/landonb/start/dubs_grep_steady
+pack/landonb/start/dubs_html_entities
+pack/landonb/start/dubs_mescaline
+pack/landonb/start/dubs_project_tray
+pack/landonb/start/dubs_quickfix_wrap
+pack/landonb/start/dubs_rest_fold
+pack/landonb/start/dubs_style_guard
+pack/landonb/start/dubs_syntastic_wrap
+pack/landonb/start/dubs_toggle_textwrap
+pack/landonb/start/dubs_web_hatch
+pack/landonb/start/vim-classic-taglist
+pack/landonb/start/vim-markdown
+pack/landonb/start/vim-select-mode-stopped-down
+pack/landonb/start/vim-surround
+pack/landonb/start/vim-tmux-navigator
+pack/majutsushi/start/tagbar
+pack/MaxMEllon/start/vim-jsx-pretty
+pack/nanotech/start/jellybeans.vim
+pack/pangloss/start/vim-javascript
+pack/scrooloose/start/nerdtree
+pack/scrooloose/start/syntastic
+pack/tomtom/start/tlib_vim
+pack/tomtom/start/viki_vim
+pack/ton/start/vim-bufsurf
+pack/tpope/opt/vim-endwise
+pack/tpope/opt/vim-pathogen
+pack/tpope/opt/vim-scriptease
+pack/tpope/opt/vim-vividchalk
+pack/tpope/start/vim-abolish
+pack/tpope/start/vim-fugitive
+pack/tpope/start/vim-jdaddy
+pack/tpope/start/vim-rails
+pack/tpope/start/vim-speeddating
+pack/tpope/start/vim-unimpaired
+pack/tpope/start/vim-vinegar
+pack/vim-scripts/start/AutoAdapt
+pack/vim-scripts/start/ingo-library
+pack/vim-scripts/start/TeTrIs.vim
+pack/vim-scripts/start/ZoomWin
+pack/wincent/start/command-t
+pack/xolox/start/vim-misc
+pack/yssl/start/QFEnter
+pack/yuezk/start/vim-js
+pack/zhou13/start/vim-easyescape
 
