@@ -52,6 +52,7 @@ view/
 #   ll -d ~/.vim/pack/*/*/*
 pack/arcticicestudio/start/nord-vim
 pack/cespare/start/vim-toml
+pack/chrisbra/start/improvedft
 pack/ctrlpvim/start/ctrlp.vim
 pack/editorconfig/start/editorconfig-vim
 pack/flazz/start/vim-colorschemes
