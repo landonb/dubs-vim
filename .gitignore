@@ -86,6 +86,7 @@ pack/landonb/start/vim-markdown
 pack/landonb/start/vim-select-mode-stopped-down
 pack/landonb/start/vim-surround
 pack/landonb/start/vim-tmux-navigator
+pack/landonb/start/vim-unimpaired
 pack/majutsushi/start/tagbar
 pack/MaxMEllon/start/vim-jsx-pretty
 pack/nanotech/start/jellybeans.vim
@@ -104,7 +105,6 @@ pack/tpope/start/vim-fugitive
 pack/tpope/start/vim-jdaddy
 pack/tpope/start/vim-rails
 pack/tpope/start/vim-speeddating
-pack/tpope/start/vim-unimpaired
 pack/tpope/start/vim-vinegar
 pack/vim-scripts/start/AutoAdapt
 pack/vim-scripts/start/ingo-library
