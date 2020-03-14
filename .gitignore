@@ -88,6 +88,7 @@ pack/landonb/start/vim-surround
 pack/landonb/start/vim-tmux-navigator
 pack/landonb/start/vim-unimpaired
 pack/majutsushi/start/tagbar
+pack/marshallward/opt/vim-restructuredtext
 pack/MaxMEllon/start/vim-jsx-pretty
 pack/nanotech/start/jellybeans.vim
 pack/pangloss/start/vim-javascript
