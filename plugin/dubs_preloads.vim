@@ -1,6 +1,6 @@
 " Vim startup script sourced before system scripts are loaded.
 " Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
-" Online: https://github.com/landonb/dubs-vim
+" Project: https://github.com/landonb/dubs-vim#🖖
 " License: https://creativecommons.org/publicdomain/zero/1.0/
 
 " ------------------------------------------

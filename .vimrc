@@ -1,7 +1,7 @@
 " One developer's Vim directory (dotfiles, etc.).
 " Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
-" Online: https://github.com/landonb/vim-select-mode-stopped-down
-" License: https://creativecommons.org/publicdomain/zero/1.0/
+" Project: https://github.com/landonb/dubs-vim#🖖
+" License: GPLv3
 
 " ========================================================================
 
