@@ -81,6 +81,7 @@ pack/landonb/start/dubs_style_guard
 pack/landonb/start/dubs_syntastic_wrap
 pack/landonb/start/dubs_toggle_textwrap
 pack/landonb/start/dubs_web_hatch
+pack/landonb/start/vim-bufsurf
 pack/landonb/start/vim-classic-taglist
 pack/landonb/start/vim-markdown
 pack/landonb/start/vim-select-mode-stopped-down
@@ -96,7 +97,6 @@ pack/scrooloose/opt/nerdtree
 pack/scrooloose/start/syntastic
 pack/tomtom/start/tlib_vim
 pack/tomtom/start/viki_vim
-pack/ton/start/vim-bufsurf
 pack/tpope/opt/vim-endwise
 pack/tpope/opt/vim-pathogen
 pack/tpope/opt/vim-scriptease
