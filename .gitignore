@@ -92,7 +92,7 @@ pack/marshallward/opt/vim-restructuredtext
 pack/MaxMEllon/start/vim-jsx-pretty
 pack/nanotech/start/jellybeans.vim
 pack/pangloss/start/vim-javascript
-pack/scrooloose/start/nerdtree
+pack/scrooloose/opt/nerdtree
 pack/scrooloose/start/syntastic
 pack/tomtom/start/tlib_vim
 pack/tomtom/start/viki_vim
