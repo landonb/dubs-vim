@@ -83,8 +83,12 @@ pack/landonb/start/dubs_toggle_textwrap
 pack/landonb/start/dubs_web_hatch
 pack/landonb/start/vim-bufsurf
 pack/landonb/start/vim-classic-taglist
+pack/landonb/start/vim-lcd-project-root/
 pack/landonb/start/vim-markdown
+pack/landonb/start/vim-netrw-cfg-split-explorer
+pack/landonb/start/vim-netrw-link-resolve
 pack/landonb/start/vim-select-mode-stopped-down
+pack/landonb/start/vim-source-reloader
 pack/landonb/start/vim-surround
 pack/landonb/start/vim-tmux-navigator
 pack/landonb/start/vim-unimpaired
