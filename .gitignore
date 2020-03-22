@@ -81,7 +81,7 @@ pack/landonb/start/dubs_style_guard
 pack/landonb/start/dubs_syntastic_wrap
 pack/landonb/start/dubs_toggle_textwrap
 pack/landonb/start/dubs_web_hatch
-pack/landonb/start/vim-bufsurf
+pack/landonb/start/vim-buffer-ring
 pack/landonb/start/vim-classic-taglist
 pack/landonb/start/vim-lcd-project-root/
 pack/landonb/start/vim-markdown

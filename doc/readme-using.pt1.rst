@@ -138,7 +138,7 @@ The are awesome third-party plugins I find useful or otherwise curious:
 | `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
     "Some utility functions for VIM"
       [`vs <http://www.vim.org/scripts/script.php?script_id=1863>`__]
-| `vim-bufsurf <https://github.com/ton/vim-bufsurf>`__:
+| `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__:
     "Vim plugin that enables surfing through buffers based on viewing history per window."
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."

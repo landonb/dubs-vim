@@ -45,7 +45,7 @@ Some Dubs Vim features wrap third-party plugins.
 |command-t|: Command-T (fuzzy opener used by dubs-file-finder, <Ctrl-D>).
 |syntastic|: Syntax checker (wrapped by dubs-syntastic-wrap, <Ctrl-e>).
 |taglist.txt|: Source code browser (<Ctrl-]>, <Alt-]>, <Alt-Shift-6>).
-|vim-bufsurf|: Buffer navigation, "webbrowser style" (<Ctrl-J> and <Ctrl-K>).
+|vim-buffer-ring|: Buffer navigation, "webbrowser style" (<Ctrl-J> and <Ctrl-K>).
 |minibufexpl|: Mini Buffer Explorer (mapped to <Alt-Shift-2>).
 
 And if you install the complete Dubs Vim you'll also get these plugins.
