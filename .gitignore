@@ -55,6 +55,7 @@ pack/cespare/start/vim-toml
 pack/chrisbra/start/improvedft
 pack/ctrlpvim/start/ctrlp.vim
 pack/editorconfig/start/editorconfig-vim
+pack/editorconfig/opt/vim-go
 pack/flazz/start/vim-colorschemes
 # pack/henrik/opt/vim-open-url
 pack/HerringtonDarkholme/start/yats.vim
