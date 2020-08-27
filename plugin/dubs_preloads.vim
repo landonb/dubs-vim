@@ -55,3 +55,12 @@ endif
 
 let g:vikiOpenFileWith_html  = "silent !firefox %{FILE}"
 
+" ------------------------------------------------------
+" MacVim Alt-key sequence mapping enablement
+" ------------------------------------------------------
+
+" FIXME/2020-08-26: Find a better spot for this.
+if has('macunix')
+  set macmeta
+endif
+
