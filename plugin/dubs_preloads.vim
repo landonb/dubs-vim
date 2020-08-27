@@ -62,5 +62,10 @@ let g:vikiOpenFileWith_html  = "silent !firefox %{FILE}"
 " FIXME/2020-08-26: Find a better spot for this.
 if has('macunix')
   set macmeta
+  "
+  let macvim_skip_colorscheme=1
+  let macvim_skip_cmd_opt_movement=1
+" a test:
+  let macvim_hig_shift_movement=1
 endif
 
