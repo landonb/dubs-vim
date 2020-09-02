@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 build_readme_using () {
   cd "${HOME}/.vim/doc"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
 # Project: https://github.com/landonb/dubs-vim#✌
