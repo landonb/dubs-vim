@@ -83,4 +83,3 @@ for vocab in glob('~/.vim/spell/*.add', 1, 1)
   endif
 endfor
 
-
