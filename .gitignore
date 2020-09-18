@@ -51,6 +51,7 @@ view/
 # HINT:
 #   ll -d ~/.vim/pack/*/*/*
 pack/arcticicestudio/start/nord-vim
+pack/autozimu/opt/LanguageClient-neovim
 pack/cespare/start/vim-toml
 pack/chrisbra/start/improvedft
 pack/ctrlpvim/start/ctrlp.vim
@@ -99,9 +100,16 @@ pack/landonb/start/vim-tmux-navigator
 pack/landonb/start/vim-unimpaired
 pack/majutsushi/start/tagbar
 pack/marshallward/opt/vim-restructuredtext
+pack/mattn/start/vim-lsp-settings
 pack/MaxMEllon/start/vim-jsx-pretty
 pack/nanotech/start/jellybeans.vim
 pack/pangloss/start/vim-javascript
+pack/prabirshrestha/start/async.vim
+pack/prabirshrestha/start/asyncomplete.vim
+pack/prabirshrestha/start/asyncomplete-lsp.vim
+pack/prabirshrestha/start/vim-lsp
+pack/ryanolsonx/start/vim-lsp-javascript
+pack/ryanolsonx/start/vim-lsp-typescript
 pack/scrooloose/opt/nerdtree
 pack/scrooloose/start/syntastic
 pack/tomtom/start/tlib_vim
