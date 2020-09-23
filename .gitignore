@@ -108,8 +108,8 @@ pack/prabirshrestha/start/async.vim
 pack/prabirshrestha/start/asyncomplete.vim
 pack/prabirshrestha/start/asyncomplete-lsp.vim
 pack/prabirshrestha/start/vim-lsp
-pack/ryanolsonx/start/vim-lsp-javascript
-pack/ryanolsonx/start/vim-lsp-typescript
+pack/ryanolsonx/opt/vim-lsp-javascript
+pack/ryanolsonx/opt/vim-lsp-typescript
 pack/scrooloose/opt/nerdtree
 pack/scrooloose/start/syntastic
 pack/tomtom/start/tlib_vim
