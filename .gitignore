@@ -67,8 +67,8 @@ pack/junegunn/start/goyo.vim
 pack/junegunn/start/limelight.vim
 pack/landonb/opt/dubs_cycloplan
 pack/landonb/opt/vim-jsx
-# 2020-09-01: parT added for Waddle Home (Bash, Vim, and Git orchestrator); also
-# seems like a reasonable place to stash the parT tool used by dubs_edit_juice.
+# 2020-09-01: parT added for Waffle Batter (Bash, Vim, and Git orchestrator);
+# also seems like reasonable place to stash parT tool used by dubs_edit_juice.
 pack/landonb/opt/parT
 pack/landonb/start/ansible-vim
 pack/landonb/start/dubs_after_dark
