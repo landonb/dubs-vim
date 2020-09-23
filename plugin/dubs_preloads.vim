@@ -21,6 +21,16 @@ if isdirectory(s:user_local_bin_path)
 endif
 
 " ------------------------------------------------------------
+" Add system usr local bin to path.
+" ------------------------------------------------------------
+
+" 2020-09-23: Added so Vim Coc can run Homebrew node.
+let s:usr_local_bin_path = '/usr/local/bin'
+if isdirectory(s:usr_local_bin_path)
+  let $PATH = $PATH . ':' . s:usr_local_bin_path
+endif
+
+" ------------------------------------------------------------
 " Add user gopath bin to path.
 " ------------------------------------------------------------
 
