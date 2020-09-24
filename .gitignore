@@ -138,7 +138,11 @@ pack/ryanolsonx/opt/vim-lsp-javascript
 pack/ryanolsonx/opt/vim-lsp-typescript
 
 # Coc and related LSP.
+# - Settings JSON. Symlink to Waffle Batter file.
 coc-settings.json
+# - Vim plugins from Waffer Batter OMR mrconfig.
 pack/neoclide/start/coc.nvim
 pack/neoclide/start/coc-tsserver
+# - Vim plugin from `:CocInstall coc-json`.
+pack/neoclide/start/coc-json
 
