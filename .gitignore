@@ -142,7 +142,6 @@ pack/ryanolsonx/opt/vim-lsp-typescript
 coc-settings.json
 # - Vim plugins from Waffer Batter OMR mrconfig.
 pack/neoclide/start/coc.nvim
-pack/neoclide/start/coc-tsserver
-# - Vim plugin from `:CocInstall coc-json`.
 pack/neoclide/start/coc-json
+pack/neoclide/start/coc-tsserver
 
