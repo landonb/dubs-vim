@@ -28,23 +28,28 @@ This document combines all the Dubs Vim plugin READMEs into one file.
 You'll find links to each plugin in the following lists,
 and you'll find documentation for *everything Dubs* below that!
 
-About this Plugin (``dubs_all``)
---------------------------------
+About this Project
+------------------
 
 This project is not a Vim plugin itself, but a collection of
 one developers favorite plugins, including their own plugins
-and other individuals' plugins, included as git submodules.
-Oh, and this README.
+and other individuals' plugins.
 
-You are obviously encouraged to follow the links below and
-to install whatever individual plugins appeal to you, but
-to not bother with this repository, though feel free to track
-it if you're curious what plugins this author uses.
+The plugins used to be included as git submodules, but submodules
+are a chore to manage. Fortunately Vim now makes it easier to use
+an external multiple repository manager (such as ``myrepos``) to
+manage your Vim packages and plugins. So now the plugins are just
+referenced from documentation; and it's up to you, the developer-
+user, to install and manage them yourself.
+
+tl;dr, you probably don't want to clone and install this project
+(e.g., to ``~/.vim``), but you may be curious what Vim plugins I
+use and recommend (and maintain).
 
 List of Dubs Vim Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This plugin includes the following plugins:
+These are plugins I've developed and continue to maintain:
 
 .. | `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__: Compelling light on dark color scheme.
 .. | `dubs_appearance <https://github.com/landonb/dubs_appearance>`__: Configure basic Vim look n' feel.
@@ -102,7 +107,7 @@ List of Third-party Plugins
 
 .. To generate list: grep url .gitmodules | sed 's/.*= //' | sort
 
-This plugin also includes these awesome third-party plugins:
+The are awesome third-party plugins I find useful or otherwise curious:
 
 | `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
     "Automatically adapt timestamps, copyright notices, etc."
@@ -133,7 +138,7 @@ This plugin also includes these awesome third-party plugins:
 | `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
     "Some utility functions for VIM"
       [`vs <http://www.vim.org/scripts/script.php?script_id=1863>`__]
-| `vim-bufsurf <https://github.com/ton/vim-bufsurf>`__:
+| `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__:
     "Vim plugin that enables surfing through buffers based on viewing history per window."
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."
@@ -214,26 +219,13 @@ their keyboard mapping or ``:command`` name, followed by a
 brief description of the feature and then more detailed notes.
 
 .. NOTE: For security reasons, the include directive does not
-..       work on github. As such, this following will not work...
+..       work on github. E.g., we cannot simply
 ..
-.. .. include:: https://github.com/landonb/dubs_after_dark/README.rst
-.. .. include:: https://github.com/landonb/dubs_appearance/README.rst
-.. .. include:: https://github.com/landonb/dubs_buffer_fun/README.rst
-.. .. include:: https://github.com/landonb/dubs_edit_juice/README.rst
-.. .. include:: https://github.com/landonb/dubs_file_finder/README.rst
-.. .. include:: https://github.com/landonb/dubs_ftype_mess/README.rst
-.. .. include:: https://github.com/landonb/dubs_grep_steady/README.rst
-.. .. include:: https://github.com/landonb/dubs_html_entities/README.rst
-.. .. include:: https://github.com/landonb/dubs_mescaline/README.rst
-.. .. include:: https://github.com/landonb/dubs_project_tray/README.rst
-.. .. include:: https://github.com/landonb/dubs_quickfix_wrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_syntastic_wrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_rest_fold/README.rst
-.. .. include:: https://github.com/landonb/dubs_style_guard/README.rst
-.. .. include:: https://github.com/landonb/dubs_toggle_textwrap/README.rst
-.. .. include:: https://github.com/landonb/dubs_web_hatch/README.rst
+..        .. include:: https://github.com/landonb/dubs_after_dark/README.rst
+..        .. include:: ...
 ..
-.. so instead we'll assemble this file from a script, readme-using.make.sh.
+..       so instead we'll assemble this file from a script, readme-using.make.sh,
+..       which appends all the package docs to this file.
 
 ##################################
 Dubs Vim |em_dash| Dubs After Dark
@@ -300,25 +292,46 @@ check out
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_after_dark.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_after_dark.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_after_dark.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_after_dark
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-after-dark
 
 ####################################
@@ -444,25 +457,46 @@ See the source for a few other settings and more comments.
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_appearance.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_appearance.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_appearance.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_appearance
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-appearance
 
 Appearance Commands
@@ -491,25 +525,46 @@ This plugin defines a few automatic commands:
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_buffer_fun.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_buffer_fun.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_buffer_fun.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_buffer_fun
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-buffer-fun
 
 Buffer and Window Commands
@@ -668,25 +723,46 @@ just make Vim a more comfortable editor all around.
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_edit_juice.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_edit_juice.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_edit_juice.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_edit_juice
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-edit-juice
 
 Optional Vendor Plugins
@@ -721,12 +797,12 @@ To install AutoAdapt and also a necessary support library,
 grab the latest Vimballs and let 'em loose. Be sure to specify
 an install directory so we can install to the Pathogen directory.
 
-Download the support library to a new Pathogen location.
+Download the support library to the appropriate ``packages`` directory.
 
 .. code-block:: bash
 
-   mkdir ~/.vim/bundle/ingo-library
-   cd ~/.vim/bundle/ingo-library
+   mkdir -p ~/.vim/pack/vim-scripts/start/ingo-library
+   cd ~/.vim/pack/vim-scripts/start/ingo-library
    wget -O ingo-library-1.022.vmb.gz \
       http://www.vim.org/scripts/download_script.php?src_id=22460
    gvim ingo-library-1.022.vmb.gz
@@ -735,14 +811,14 @@ Install from Vim.
 
 .. code-block:: vim
 
-   :UseVimball ~/.vim/bundle/ingo-library
+   :UseVimball ~/.vim/pack/vim-scripts/start/ingo-library
 
 Download AutoAdapt to a new Pathogen location.
 
 .. code-block:: bash
 
-   mkdir ~/.vim/bundle/AutoAdapt
-   cd ~/.vim/bundle/AutoAdapt
+   mkdir ~/.vim/pack/vim-scripts/start/AutoAdapt
+   cd ~/.vim/pack/vim-scripts/start/AutoAdapt
    wget -O AutoAdapt-1.10.vmb.gz \
       http://www.vim.org/scripts/download_script.php?src_id=21327
    # You can run gunzip first, or you can just run gvim.
@@ -752,14 +828,14 @@ Install from Vim.
 
 .. code-block:: vim
 
-   :UseVimball ~/.vim/bundle/AutoAdapt
+   :UseVimball ~/.vim/pack/vim-scripts/start/AutoAdapt
 
 Cleanup.
 
 .. code-block:: bash
 
-   rm ~/.vim/bundle/AutoAdapt/AutoAdapt-1.10.vmb.gz
-   rm ~/.vim/bundle/ingo-library/ingo-library-1.022.vmb.gz
+   rm ~/.vim/pack/vim-scripts/start/AutoAdapt/AutoAdapt-1.10.vmb.gz
+   rm ~/.vim/pack/vim-scripts/start/ingo-library/ingo-library-1.022.vmb.gz
 
 taglist
 -------
@@ -768,8 +844,8 @@ To unlock the tag list feature, install the `taglist` plugin.
 
 .. code-block:: bash
 
-   mkdir ~/.vim/bundle/taglist
-   cd ~/.vim/bundle/taglist
+   mkdir ~/.vim/pack/vim-scripts/start/taglist
+   cd ~/.vim/pack/vim-scripts/start/taglist
    wget -N http://downloads.sourceforge.net/project/vim-taglist/vim-taglist/4.6/taglist_46.zip
    unzip taglist_46.zip
    /bin/rm taglist_46.zip
@@ -1338,25 +1414,46 @@ directory paths.
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_file_finder.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_file_finder.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_file_finder.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_file_finder
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-file-finder
 
 Install Command-T
@@ -1366,12 +1463,11 @@ After installing the Command-T plugin, you'll have to build it.
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
+   mkdir -p ~/.vim/pack/wincent/start
+   cd ~/.vim/pack/wincent/start
    git clone https://github.com/wincent/command-t.git
-   # Or add as a submodule if ~/.vim under revision control, e.g.:
-   #   git submodule add https://github.com/wincent/command-t.git
 
-   cd ~/.vim/bundle/command-t/ruby/command-t
+   cd ~/.vim/pack/wincent/start/command-t/ruby/command-t
    sudo apt-get install -y ruby-dev
    ruby extconf.rb
    make
@@ -1488,25 +1584,46 @@ filetypes.
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_ftype_mess.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_ftype_mess.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_ftype_mess.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_ftype_mess
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-ftype-mess
 
 Key Mappings
@@ -1621,51 +1738,93 @@ This plugin sets up a powerful text search utility.
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_grep_steady.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_grep_steady.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_grep_steady.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_grep_steady
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-grep-steady
 
 Prerequisites
 -------------
 
-This script uses an external grep utility, preferably
-`The Silver Searcher <http://geoff.greer.fm/ag/>`__
-(``/usr/bin/ag``) but alternatively
-falls back on ``egrep``.
-The former is a tad faster and it honors ``.agignore``
-and ``.gitignore`` files, which makes it easy to filter
-out the cruft.
+This script uses an external grep utility.
 
-Run ``sudo apt-get install -y ag`` to install Silver Searcher.
+The author prefers
+`ripgrep <https://github.com/BurntSushi/ripgrep>`__
+(``rg``),
+but you can also use
+`The Silver Searcher <http://geoff.greer.fm/ag/>`__
+(``ag``),
+or, alternatively, if neither of those is installed,
+the plugin falls back on ``egrep``.
+
+Why ripgrep? It's blazing fast
+and does a good job honoring ``.ignore`` files.
+
+You can download and install ripgrep from the list of
+`ripgrep releases <https://github.com/BurntSushi/ripgrep/releases>`__
+(just add its binary to your ``$PATH``, or symlink it from a directory
+already on your user's path).
+
+This plugin also requires
+`Pathogen <https://github.com/tpope/vim-pathogen>`__
+(but just for the simple ``pathogen#split`` command;
+you're not expected to manage this plugin with Pathogen).
 
 Plugin Setup
 ------------
 
-After installing this plugin and first running Vim,
-Dubs Vim will copy the ``dubs_projects.vim.template``
-file to ``dubs_grep_steady/dubs_projects.vim``.
+You can search like normal, e.g.,::
 
-Find and open the file and follow the instructions therein.
-Basically, add your project paths to the file, and when you
-search, you'll be asked to choose one of the project paths
-you defined as the base of the search.
+  :grep "search-phrase" "path/to/search"
+
+And you can also wire frequently-searched locations,
+to make searching frequently-accessed projects quicker.
+
+- After installing this plugin and first running Vim,
+  Dubs Vim will copy the ``dubs_projects.vim.template``
+  file to ``dubs_grep_steady/dubs_projects.vim``.
+
+- Find and open the file and follow the instructions therein.
+  Basically, add your project paths to the file, and when you
+  search, you'll be asked to choose one of the project paths
+  you defined as the base of the search.
 
 You can still search any arbitrary directory when grepping,
 but if you find yourself searching the same project folders
@@ -1704,6 +1863,10 @@ Key Mapping                  Description                   Notes
                              Location Prompt               Caveat: You'll probably find yourself using ``\g`` more often than this command.
 ---------------------------  ----------------------------  ----------------------------------------------------------------------------------------------
 ``:gr! "<regex>" "<dir>"``   Search in Any Location        To search locations that are not in the project list, use the raw grep command.
+---------------------------  ----------------------------  ----------------------------------------------------------------------------------------------
+``\c``                       Toggle Alternative Casing     When enabled, searches alternative casings, e.g., a search for a camelCase
+                                                           word, such as ``fooBar``, would also includes results for that word in train-case,
+                                                           ``foo-bar``, as well as snake_case, ``foo_bar``.
 ===========================  ============================  ==============================================================================================
 
 Tips 'n Tricks
@@ -1732,6 +1895,24 @@ use the boundary identifiers, ``\<`` and ``\>.``
 
 For example, ``\<thing\>`` finds uses of the whole word, 'thing'.
 
+Find Alternative Casings
+------------------------
+
+You might find yourself working on codebases where similar
+constructs might be named the same except for casing,
+
+You can use ``\c`` to toggle between searching for exactly your search phrase,
+and searching on case mutations of the phrase (camelCase, snake_case, and train-case).
+
+Keeping Long Result Lines from the Quickfix
+-------------------------------------------
+
+Configure the ``DUBS_VIM_RG_MAX_COLS`` environment
+in ``bin/vim-grepprg-rg-sort`` to limit the length
+of search results when using ripgrep (``rg``).
+
+It defaults to 200, so that long results lines are kept out of the quickfix
+results, which this author finds makes scanning the results more difficult.
 
 ###############################################
 Dubs Vim |em_dash| HTML Character Entity Lookup
@@ -1780,25 +1961,46 @@ I lifted the list of HTML4 Character Entities from TNT Luoma:
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_html_entities.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_html_entities.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_html_entities.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_html_entities
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-html-entities
 
 Entity Table Commands
@@ -1916,25 +2118,46 @@ This plugin provides a simple, elegant status line:
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_mescaline.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_mescaline.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_mescaline.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_mescaline
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-mescaline
 
 ###############################
@@ -1964,25 +2187,46 @@ Additional features:
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_project_tray.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_project_tray.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_project_tray.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_project_tray
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-project-tray
 
 Usage
@@ -2091,25 +2335,46 @@ The quickfix window is nifty but has a few limitations:
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_quickfix_wrap.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_quickfix_wrap.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_quickfix_wrap.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_quickfix_wrap
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-quickfix-wrap
 
 Quickfix Wrapper Commands
@@ -2148,25 +2413,46 @@ built-in reST syntax highlighting and document section folding.
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_rest_fold.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_rest_fold.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_rest_fold.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_rest_fold
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-rest-fold
 
 Usage: Signify Fold Levels using Specific Punctuation
@@ -2399,25 +2685,46 @@ to help, type ``\E`` and the modeline will be re-read
 Installation
 ============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_style_guard.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_style_guard.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_style_guard.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_style_guard
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-style-guard
 
 Modeline and Modeline Files
@@ -2453,7 +2760,7 @@ Style-enforcers:
     - For the Vim plugin, download
       `EditorConfig Vim Plugin
       <https://github.com/editorconfig/editorconfig-vim>`__
-      to your ``~/.vim/bundle`` directory.
+      to, e.g., ``~/.vim/pack/editorconfig/start/editorconfig-vim``.
 
   - I recommend using
     `EditorConfig <http://editorconfig.org/>`__
@@ -2525,25 +2832,46 @@ when you open and save source files, or on demand.
 Install Plugin
 ==============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_syntastic_wrap.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_syntastic_wrap.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_syntastic_wrap.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_syntastic_wrap
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-syntastic-wrap
 
 Install Checkers
@@ -2722,25 +3050,46 @@ See also his
 Install Plugin
 ==============
 
-Standard Pathogen installation:
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_toggle_textwrap.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_toggle_textwrap.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_toggle_textwrap.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_toggle_textwrap
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-toggle-textwrap
 
 Usage
@@ -2811,35 +3160,388 @@ Simple web browser tab opener to search on or load definition of selected text.
 Usage
 =====
 
-``<Leader>W`` - Opens a browser tab and searches the word under the cursor
+``<Leader>W`` - Opens a new browser window and searches the word under the cursor
 (normal or insert mode) or the selected text (visual mode).
 
-``<Leader>D`` - Opens a browser tab and loads the definitions of the word
+``<Leader>D`` - Opens a new browser window and loads the definitions of the word
 under the cursor (normal or insert mode) or the selected text (visual mode).
 
-Installation
-============
+- Note that each command opens a new browser tab in new window.
 
-Standard Pathogen installation:
+  To instead prefer opening a new tab in an existing window,
+  set the following global variable to nonzero, e.g.,::
+
+    g:dubs_web_hatch_use_tab = 1
+
+Install
+=======
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git clone https://github.com/landonb/dubs_web_hatch.git
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
 
-Or, Standard submodule installation:
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
 
 .. code-block:: bash
 
-   cd ~/.vim/bundle/
-   git submodule add https://github.com/landonb/dubs_web_hatch.git
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
 
-Online help:
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/dubs_web_hatch.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! dubs_web_hatch
+
+Just once, tell Vim to build the online help:
 
 .. code-block:: vim
 
    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
    :help dubs-web-hatch
+
+##############################################
+Vim Plugin |em_dash| Nicer File Changed Prompt
+##############################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+About This Plugin
+=================
+
+This plugin makes two changes to the ``FileChangedShell`` prompt behavior:
+
+1. The default selected button is 'Load File', so you can just press
+   Return (or Space) to reload the file, which is usually the action
+   you want. (And it's easy to undo — Press `Ctrl-z` and the changes
+   are undone).
+
+2. The prompt is not shown for certain types of changes that you
+   shouldn't care about, like permissions changes.
+
+USE CASE: If you rebase source code often, you'll find yourself needing
+to fix conflicts, but when a file is changed outside of Vim, Vim prompts
+you, asking if you want to reload it, but defaulting the selected dialog
+button to not reloading the file. If you're tired of seeing this dialog,
+and then pressing Tab or using the mouse to select 'Load File' instead of
+'OK', then this plugin is for you!
+
+NOTE: On Linux, pressing Space or Enter will accept the default dialog
+choice ("Load File"), but on macOS (MacVim), you'll want to press Return
+(as pressing Space will "OK" the dialog, which does not reload the file).
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-nicer-file-changed-prompt.git
+
+If you installed to the optional path (``opt``), tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-nicer-file-changed-prompt
+
+otherwise Vim will automatically load the plugin when installed to ``start``.
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-nicer-file-changed-prompt
+
+############################################################
+One Vimmer's Maps |em_dash| <kj> or <jk> Escapes Insert Mode
+############################################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+About This Plugin
+=================
+
+This plugin makes it easy to escape from Insert mode to Normal mode
+simply by typing ``kj`` or ``jk``.
+
+Requirements
+============
+
+This plugin wires mappings to commands provided by another plugin,
+``vim-easyescape``, which you'll want to install.
+
+- See:
+
+  https://github.com/zhou13/vim-easyescape
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-ovm-easyescape-kj-jk.git
+
+If you installed to the optional path (``opt``), tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-ovm-easyescape-kj-jk
+
+otherwise Vim will automatically load the plugin when installed to ``start``.
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-ovm-easyescape-kj-jk
+
+##################################################################
+One Vimmer's Maps |em_dash| <Ctrl-Shift--> inserts ``-------\n\n``
+##################################################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+About This Plugin
+=================
+
+This plugin inserts seven dashes and two newlines when you press `Ctrl-Shift--`.
+
+This plugin is part of a larger suite of plugins the comprise features and
+mappings for maintaining notes files according to the `reSTfold` `method`.
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-ovm-seven-of-spines.git
+
+If you installed to the optional path (``opt``), tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-ovm-seven-of-spines
+
+otherwise Vim will automatically load the plugin when installed to ``start``.
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-ovm-seven-of-spines
+
+############################
+vim-select-mode-stopped-down
+############################
+
+Tweaked ``select-mode`` Ctrl-Shift-Left and Ctrl-Shift-Right motions,
+for ``behave mswin``.
+
+About This Plugin
+=================
+
+If you like to select text with shift-arrow motions,
+rather than using Vim's (admittedly more powerful)
+Visual mode commands, this plugin might be for you!
+
+When you call ``behave mswin``, Vim maps the Ctrl-Shift-Left
+and Ctrl-Shift-Right keys to selecting text by the word-full.
+
+But the default ``select-mode`` behavior |em_dash| at least in
+my opinion |em_dash| is not quite perfect. I find it works well
+in some situations, but for some uses, I usually need to modify
+my adjustments with single-character Shift-left or Shift-right keys.
+
+This plugin tweaks the Ctrl-Shift-Left and Ctrl-Shift-Right behavior
+to make smaller selections, stopping at more column positions than
+the default builtin functionality.
+
+Install
+=======
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-select-mode-stopped-down.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-select-mode-stopped-down
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-select-mode-stopped-down
+
+Overview
+========
+
+This plugin overrides how ``<Ctrl-Shift-Left>`` and ``<Ctrl-Shift-Right>`` behave.
+
+The following changes are applied to the default behavior:
+
+- The selection will stop before and after a line break,
+  whether selecting forward or selecting reverse.
+
+- The selection will stop between line-starting whitespace and
+  the first word on the line.
+
+- The selection will stop between the penultimate column and the
+  final column of the line if the second-to-last character is a
+  keyword character, and the final character is punctuation.
+  (Otherwise, e.g., selecting left on a line that reads like
+  ``this text. And this.`` from the final column would first
+  select ``this.``, then ``And this.``, then ``. And this.``, which
+  just doesn't feel right. So adds initial selection of just ``.``.
+
+- The selection handles exclusive/inclusive motions as appropriate.
+  E.g., by default, select is exclusive, so if the cursor is on the
+  final column of a line, selecting leftward excludes the final
+  character. But this plugin will assume that if you're selecting
+  leftward from the rightmost column, that you probably also want
+  to include the rightmost character.
+
+Configuration
+=============
+
+This plugin binds the ``<Ctrl-Shift-Left>`` and ``<Ctrl-Shift-Right>``
+key mappings by default.
+
+To provide your own bindings, set the no-mappings global,
+and then map the key bindings from your own code, e.g.,::
+
+  let g:vim_select_mode_stopped_down_no_mappings = 1
+
+  nnoremap <silent> <C-S-Left> :<C-U>call <SID>extend_selection_by_word_reverse('n')<CR>
+  inoremap <silent> <C-S-Left> <C-O>:<C-U>call <SID>extend_selection_by_word_reverse('i')<CR>
+  vnoremap <silent> <C-S-Left> :<C-U>call <SID>extend_selection_by_word_reverse('v')<CR>
+
+  nnoremap <silent> <C-S-Right> :<C-U>call <SID>extend_selection_by_word_forward('n')<CR>
+  inoremap <silent> <C-S-Right> <C-O>:<C-U>call <SID>extend_selection_by_word_forward('i')<CR>
+  vnoremap <silent> <C-S-Right> :<C-U>call <SID>extend_selection_by_word_forward('v')<CR>
 
 ################
 Additional Notes
@@ -3017,28 +3719,6 @@ You can do this in a few different ways:
      type ``<Alt-f>x`` to quit,
      and Dubs Vim will destroy Session.vim on its way out.
 
-Non-Interactive Features
-========================
-
-Silent Features
----------------
-
-Dubs Vim uses a few plugins under the hood which
-run seamlessly and with which you probably won't
-interact.
-
-Most of these were already mentioned, save for the
-one that rules them all:
-
-`Pathogen <https://github.com/tpope/vim-pathogen>`__
-manages third-party plugins.
-It wires Vim's runtimepath so
-that multiple ``~/.vim``-like directories can live
-under ``~/.vim/bundle``, precluding you from having
-to move everything to the same directory, e.g.,
-you no longer need to copy all plugins to your
-``~/.vim/plugin`` directory.
-
 OS Workflow Tips and Tricks
 ===========================
 
@@ -3057,8 +3737,7 @@ instance, I alias a number of easily-typed commands.
 
    alias fa='gvim --servername ALPHA --remote-silent'
    alias fs='gvim --servername SAMPI --remote-silent'
-   alias fd='gvim --servername DELTA --remote-silent'
-   alias ff='gvim --servername DIGAMMA --remote-silent'
+   # ...
 
 I usually type ``fs <filename>`` to open files from the
 command line. Rarely, I use one of the other commands
