@@ -50,107 +50,107 @@
 # file, .gitignore, as well).
 # HINT:
 #   ll -d ~/.vim/pack/*/*/*
-/pack/arcticicestudio/start/nord-vim
-/pack/autozimu/opt/LanguageClient-neovim
-/pack/cespare/start/vim-toml
-/pack/chrisbra/start/improvedft
-/pack/ctrlpvim/start/ctrlp.vim
-/pack/editorconfig/start/editorconfig-vim
-/pack/editorconfig/opt/vim-go
-/pack/flazz/start/vim-colorschemes
-# /pack/henrik/opt/vim-open-url
-/pack/HerringtonDarkholme/start/yats.vim
-/pack/jamessan/start/vim-gnupg
-/pack/juanpabloaj/start/vim-istanbul
-/pack/junegunn/start/fzf.vim
-/pack/junegunn/start/goyo.vim
-/pack/junegunn/start/limelight.vim
-/pack/landonb/opt/dubs_cycloplan
-/pack/landonb/opt/vim-jsx
+/pack/arcticicestudio/start/nord-vim/
+/pack/autozimu/opt/LanguageClient-neovim/
+/pack/cespare/start/vim-toml/
+/pack/chrisbra/start/improvedft/
+/pack/ctrlpvim/start/ctrlp.vim/
+/pack/editorconfig/start/editorconfig-vim/
+/pack/editorconfig/opt/vim-go/
+/pack/flazz/start/vim-colorschemes/
+# /pack/henrik/opt/vim-open-url/
+/pack/HerringtonDarkholme/start/yats.vim/
+/pack/jamessan/start/vim-gnupg/
+/pack/juanpabloaj/start/vim-istanbul/
+/pack/junegunn/start/fzf.vim/
+/pack/junegunn/start/goyo.vim/
+/pack/junegunn/start/limelight.vim/
+/pack/landonb/opt/dubs_cycloplan/
+/pack/landonb/opt/vim-jsx/
 # 2020-09-01: parT added for Waffle Batter (Bash, Vim, and Git orchestrator);
 # also seems like reasonable place to stash parT tool used by dubs_edit_juice.
-/pack/landonb/opt/parT
-/pack/landonb/start/ansible-vim
-/pack/landonb/start/dubs_after_dark
-/pack/landonb/start/dubs_appearance
-/pack/landonb/start/dubs_buffer_fun
-/pack/landonb/start/dubs_edit_juice
-/pack/landonb/start/dubs_file_finder
-/pack/landonb/start/dubs_ftype_mess
-/pack/landonb/start/dubs_grep_steady
-/pack/landonb/start/dubs_html_entities
-/pack/landonb/start/dubs_mescaline
-/pack/landonb/start/dubs_project_tray
-/pack/landonb/start/dubs_quickfix_wrap
-/pack/landonb/start/dubs_rest_fold
-/pack/landonb/start/dubs_style_guard
-/pack/landonb/start/dubs_syntastic_wrap
-/pack/landonb/start/dubs_toggle_textwrap
-/pack/landonb/start/dubs_web_hatch
-/pack/landonb/start/vim-buffer-ring
-/pack/landonb/start/vim-classic-taglist
+/pack/landonb/opt/parT/
+/pack/landonb/start/ansible-vim/
+/pack/landonb/start/dubs_after_dark/
+/pack/landonb/start/dubs_appearance/
+/pack/landonb/start/dubs_buffer_fun/
+/pack/landonb/start/dubs_edit_juice/
+/pack/landonb/start/dubs_file_finder/
+/pack/landonb/start/dubs_ftype_mess/
+/pack/landonb/start/dubs_grep_steady/
+/pack/landonb/start/dubs_html_entities/
+/pack/landonb/start/dubs_mescaline/
+/pack/landonb/start/dubs_project_tray/
+/pack/landonb/start/dubs_quickfix_wrap/
+/pack/landonb/start/dubs_rest_fold/
+/pack/landonb/start/dubs_style_guard/
+/pack/landonb/start/dubs_syntastic_wrap/
+/pack/landonb/start/dubs_toggle_textwrap/
+/pack/landonb/start/dubs_web_hatch/
+/pack/landonb/start/vim-buffer-ring/
+/pack/landonb/start/vim-classic-taglist/
 /pack/landonb/start/vim-lcd-project-root/
-/pack/landonb/start/vim-markdown
-/pack/landonb/start/vim-netrw-cfg-split-explorer
-/pack/landonb/start/vim-netrw-link-resolve
+/pack/landonb/start/vim-markdown/
+/pack/landonb/start/vim-netrw-cfg-split-explorer/
+/pack/landonb/start/vim-netrw-link-resolve/
 /pack/landonb/start/vim-nicer-file-changed-prompt/
 /pack/landonb/start/vim-ovm-easyescape-kj-jk/
 /pack/landonb/start/vim-ovm-seven-of-spines/
-/pack/landonb/start/vim-select-mode-stopped-down
-/pack/landonb/start/vim-source-reloader
-/pack/landonb/start/vim-surround
-/pack/landonb/start/vim-tmux-navigator
-/pack/landonb/start/vim-unimpaired
-/pack/majutsushi/start/tagbar
-/pack/marshallward/opt/vim-restructuredtext
-/pack/MaxMEllon/start/vim-jsx-pretty
-/pack/nanotech/start/jellybeans.vim
-/pack/pangloss/start/vim-javascript
-/pack/preservim/start/nerdcommenter
-/pack/scrooloose/opt/nerdtree
-/pack/scrooloose/start/syntastic
-/pack/tomtom/start/tlib_vim
-/pack/tomtom/start/viki_vim
+/pack/landonb/start/vim-select-mode-stopped-down/
+/pack/landonb/start/vim-source-reloader/
+/pack/landonb/start/vim-surround/
+/pack/landonb/start/vim-tmux-navigator/
+/pack/landonb/start/vim-unimpaired/
+/pack/majutsushi/start/tagbar/
+/pack/marshallward/opt/vim-restructuredtext/
+/pack/MaxMEllon/start/vim-jsx-pretty/
+/pack/nanotech/start/jellybeans.vim/
+/pack/pangloss/start/vim-javascript/
+/pack/preservim/start/nerdcommenter/
+/pack/scrooloose/opt/nerdtree/
+/pack/scrooloose/start/syntastic/
+/pack/tomtom/start/tlib_vim/
+/pack/tomtom/start/viki_vim/
 /pack/tpope/opt/vim-commentary/
-/pack/tpope/opt/vim-endwise
-/pack/tpope/opt/vim-pathogen
-/pack/tpope/opt/vim-scriptease
-/pack/tpope/opt/vim-vividchalk
-/pack/tpope/start/vim-abolish
-/pack/tpope/start/vim-fugitive
-/pack/tpope/start/vim-jdaddy
-/pack/tpope/start/vim-rails
-/pack/tpope/start/vim-speeddating
-/pack/tpope/start/vim-vinegar
-/pack/vim-scripts/start/AutoAdapt
-/pack/vim-scripts/start/ingo-library
-/pack/vim-scripts/start/TeTrIs.vim
-/pack/vim-scripts/start/ZoomWin
-/pack/wincent/start/command-t
-/pack/xolox/start/vim-misc
-/pack/yssl/start/QFEnter
-/pack/yuezk/start/vim-js
-/pack/zhou13/start/vim-easyescape
+/pack/tpope/opt/vim-endwise/
+/pack/tpope/opt/vim-pathogen/
+/pack/tpope/opt/vim-scriptease/
+/pack/tpope/opt/vim-vividchalk/
+/pack/tpope/start/vim-abolish/
+/pack/tpope/start/vim-fugitive/
+/pack/tpope/start/vim-jdaddy/
+/pack/tpope/start/vim-rails/
+/pack/tpope/start/vim-speeddating/
+/pack/tpope/start/vim-vinegar/
+/pack/vim-scripts/start/AutoAdapt/
+/pack/vim-scripts/start/ingo-library/
+/pack/vim-scripts/start/TeTrIs.vim/
+/pack/vim-scripts/start/ZoomWin/
+/pack/wincent/start/command-t/
+/pack/xolox/start/vim-misc/
+/pack/yssl/start/QFEnter/
+/pack/yuezk/start/vim-js/
+/pack/zhou13/start/vim-easyescape/
 
 # vim-lsp and related.
-/pack/prabirshrestha/opt/vim-lsp
-/pack/prabirshrestha/opt/async.vim
-/pack/prabirshrestha/opt/asyncomplete.vim
-/pack/prabirshrestha/opt/asyncomplete-lsp.vim
-/pack/mattn/opt/vim-lsp-settings
+/pack/prabirshrestha/opt/vim-lsp/
+/pack/prabirshrestha/opt/async.vim/
+/pack/prabirshrestha/opt/asyncomplete.vim/
+/pack/prabirshrestha/opt/asyncomplete-lsp.vim/
+/pack/mattn/opt/vim-lsp-settings/
 # Deprecated Language Servers (use vim-lsp-settings instead).
-/pack/ryanolsonx/opt/vim-lsp-javascript
-/pack/ryanolsonx/opt/vim-lsp-typescript
+/pack/ryanolsonx/opt/vim-lsp-javascript/
+/pack/ryanolsonx/opt/vim-lsp-typescript/
 
 # Coc and related LSP.
 # - Settings JSON. Symlink to Waffle Batter file.
 /coc-settings.json
 # - Vim plugins from Waffer Batter OMR mrconfig.
-/pack/neoclide/start/coc.nvim
-/pack/neoclide/start/coc-json
-/pack/neoclide/start/coc-tsserver
+/pack/neoclide/start/coc.nvim/
+/pack/neoclide/start/coc-json/
+/pack/neoclide/start/coc-tsserver/
 
 # The Waffle Batter project's Vim setup.
 # - LATER/2021-01-25: Most of this .gitignore should move to Waffle Batter.
-/pack/wafflbattr/start/waffle-batter-vim
+pack/wafflbattr/start/waffle-batter-vim
 
