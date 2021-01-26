@@ -150,3 +150,7 @@
 /pack/neoclide/start/coc-json
 /pack/neoclide/start/coc-tsserver
 
+# The Waffle Batter project's Vim setup.
+# - LATER/2021-01-25: Most of this .gitignore should move to Waffle Batter.
+/pack/wafflbattr/start/waffle-batter-vim
+
