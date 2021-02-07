@@ -30,6 +30,7 @@ build_readme_using () {
   cat ${startd}/dubs_web_hatch/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-buffer-ring/README.md >> ${target}
   # (forked) cat ${startd}/vim-classic-taglist/README.rst >> ${target}
+  cat ${startd}/vim-command-line-clock/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-lcd-project-root/README.md >> ${target}
   # (forked) cat ${startd}/vim-markdown/README.md >> ${target}
   # (not reST) cat ${startd}/vim-netrw-cfg-split-explorer/README.md >> ${target}
@@ -40,6 +41,7 @@ build_readme_using () {
   cat ${startd}/vim-select-mode-stopped-down/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-source-reloader/README.md >> ${target}
   # (forked) cat ${startd}/vim-surround/README.markdown >> ${target}
+  cat ${startd}/vim-title-bar-time-of-day/README.rst >> ${target}
   # (forked) cat ${startd}/vim-tmux-navigator/README.markdown >> ${target}
   # (forked) cat ${startd}/vim-unimpaired/README.markdown >> ${target}
 
