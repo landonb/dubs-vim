@@ -86,6 +86,7 @@
 /pack/landonb/start/dubs_syntastic_wrap/
 /pack/landonb/start/dubs_toggle_textwrap/
 /pack/landonb/start/dubs_web_hatch/
+/pack/landonb/start/QFEnter/
 /pack/landonb/start/vim-buffer-ring/
 /pack/landonb/start/vim-classic-taglist/
 /pack/landonb/start/vim-command-line-clock/
@@ -130,7 +131,6 @@
 /pack/vim-scripts/start/ZoomWin/
 /pack/wincent/start/command-t/
 /pack/xolox/start/vim-misc/
-/pack/yssl/start/QFEnter/
 /pack/yuezk/start/vim-js/
 /pack/zhou13/start/vim-easyescape/
 
