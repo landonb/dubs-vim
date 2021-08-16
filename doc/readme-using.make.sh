@@ -23,7 +23,6 @@ build_readme_using () {
   cat ${startd}/dubs_mescaline/README.rst >> ${target}
   cat ${startd}/dubs_project_tray/README.rst >> ${target}
   cat ${startd}/dubs_quickfix_wrap/README.rst >> ${target}
-  cat ${startd}/dubs_rest_fold/README.rst >> ${target}
   cat ${startd}/dubs_style_guard/README.rst >> ${target}
   cat ${startd}/dubs_syntastic_wrap/README.rst >> ${target}
   cat ${startd}/dubs_toggle_textwrap/README.rst >> ${target}
@@ -38,6 +37,10 @@ build_readme_using () {
   cat ${startd}/vim-nicer-file-changed-prompt/README.rst >> ${target}
   cat ${startd}/vim-ovm-easyescape-kj-jk/README.rst >> ${target}
   cat ${startd}/vim-ovm-seven-of-spines/README.rst >> ${target}
+  cat ${startd}/vim-reSTfold/README.rst >> ${target}
+  cat ${startd}/vim-reST-highdefs/README.rst >> ${target}
+  cat ${startd}/vim-reST-highfive/README.rst >> ${target}
+  cat ${startd}/vim-reST-highline/README.rst >> ${target}
   cat ${startd}/vim-select-mode-stopped-down/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-source-reloader/README.md >> ${target}
   # (forked) cat ${startd}/vim-surround/README.markdown >> ${target}

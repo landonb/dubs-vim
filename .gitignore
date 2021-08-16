@@ -81,7 +81,6 @@
 /pack/landonb/start/dubs_mescaline/
 /pack/landonb/start/dubs_project_tray/
 /pack/landonb/start/dubs_quickfix_wrap/
-/pack/landonb/start/dubs_rest_fold/
 /pack/landonb/start/dubs_style_guard/
 /pack/landonb/start/dubs_syntastic_wrap/
 /pack/landonb/start/dubs_toggle_textwrap/
@@ -97,6 +96,10 @@
 /pack/landonb/start/vim-nicer-file-changed-prompt/
 /pack/landonb/start/vim-ovm-easyescape-kj-jk/
 /pack/landonb/start/vim-ovm-seven-of-spines/
+/pack/landonb/start/vim-reSTfold/
+/pack/landonb/start/vim-reST-highdefs/
+/pack/landonb/start/vim-reST-highfive/
+/pack/landonb/start/vim-reST-highline/
 /pack/landonb/start/vim-select-mode-stopped-down/
 /pack/landonb/start/vim-source-reloader/
 /pack/landonb/start/vim-surround/

@@ -62,12 +62,12 @@ These are plugins I've developed and continue to maintain:
 .. | `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__: Simple, elegant status line.
 .. | `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__: Project plugin wrapper.
 .. | `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__: Elegant Quickfix wrapper.
-.. | `dubs_rest_fold <https://github.com/landonb/dubs_rest_fold>`__: reStructuredText power folder.
 .. | `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__: Automatically set whitespace and line-length settings.
 .. | `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__: Syntastic wrapper.
 .. | `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__: Simple text wrapping wrapper.
 .. | `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__: sensible-browser mappings.
 
+.. | `vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__: reStructuredText power folder.
 ====================================================================================    =============================================================================================================================================================
 `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__                        Compelling light on dark color scheme.
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -91,8 +91,6 @@ These are plugins I've developed and continue to maintain:
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__                  Elegant Quickfix wrapper.
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_rest_fold <https://github.com/landonb/dubs_rest_fold>`__                          reStructuredText power folder.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__                      Automatically set whitespace and line-length settings.
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__                Syntastic wrapper.
@@ -100,6 +98,8 @@ These are plugins I've developed and continue to maintain:
 `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__              Simple text wrapping wrapper.
 ------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
 `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__                          sensible-browser mappings.
+------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+`vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__                              reStructuredText power folder.
 ====================================================================================    =============================================================================================================================================================
 
 List of Third-party Plugins
