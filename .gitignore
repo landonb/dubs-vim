@@ -54,6 +54,7 @@
 /pack/autozimu/opt/LanguageClient-neovim/
 /pack/cespare/start/vim-toml/
 /pack/chrisbra/start/improvedft/
+/pack/chrisbra/start/matchit/
 /pack/ctrlpvim/start/ctrlp.vim/
 /pack/editorconfig/start/editorconfig-vim/
 /pack/editorconfig/opt/vim-go/
@@ -133,6 +134,7 @@
 /pack/vim-scripts/start/ingo-library/
 /pack/vim-scripts/start/TeTrIs.vim/
 /pack/vim-scripts/start/ZoomWin/
+/pack/voithos/start/vim-python-matchit/
 /pack/wincent/start/command-t/
 /pack/xolox/start/vim-misc/
 /pack/yuezk/start/vim-js/
