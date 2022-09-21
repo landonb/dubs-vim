@@ -49,69 +49,137 @@ use and recommend (and maintain).
 List of Dubs Vim Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. To generate the list of your plugs, copy-and-paste reST-ready:
+    cd ~/.vim/pack && tree -d -L 3 -f | \
+      grep -e '│       ├──' \
+           -e '│       └──' \
+           -e '│   │   ├──' \
+           -e '│   │   └──' \
+           -e '    │   ├──' \
+           -e '    │   └──' \
+           -e '        └──' \
+      | sed s'#[^.]\+\./\(.*\)#\1#' \
+      | sed s'#\([^/]\+\)/\([^/]\+\)/\([^/]\+\)#\2: \3: \`\3 <https://github.com/\1/\3>\`__#' \
+      | sort \
+      | less
+.. Using a `| wc -l` instead of `less` and I see: 96 plugins.
+
 These are plugins I've developed and continue to maintain:
 
-.. | `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__: Compelling light on dark color scheme.
-.. | `dubs_appearance <https://github.com/landonb/dubs_appearance>`__: Configure basic Vim look n' feel.
-.. | `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun>`__: Manage Buffers and Windows.
-.. | `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__: Powerful Text Editing commands.
-.. | `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__: Find and Open Files.
-.. | `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__: Filetype-specific features, like syntax highlighters, etc.
-.. | `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__: Clever Text Search including Replace.
-.. | `dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__: HTML Entity table.
-.. | `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__: Simple, elegant status line.
-.. | `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__: Project plugin wrapper.
-.. | `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__: Elegant Quickfix wrapper.
-.. | `dubs_rest_fold <https://github.com/landonb/dubs_rest_fold>`__: reStructuredText power folder.
-.. | `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__: Automatically set whitespace and line-length settings.
-.. | `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__: Syntastic wrapper.
-.. | `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__: Simple text wrapping wrapper.
-.. | `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__: sensible-browser mappings.
+.. FIXME/2021-08-15 20:25: You're missing a bunch of rebranded projects...
+.. | `vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__: reStructuredText power folder.
+.. | `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs>`__: ...
+.. | `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive>`__: ...
+.. | `vim-reST-highline <https://github.com/landonb/vim-reST-highline>`__: ...
 
-====================================================================================    =============================================================================================================================================================
-`dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__                        Compelling light on dark color scheme.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_appearance <https://github.com/landonb/dubs_appearance>`__                        Configure basic Vim look n' feel.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun>`__                        Manage Buffers and Windows.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__                        Powerful Text Editing commands.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__                      Find and Open Files.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__                        Filetype-specific features, like syntax highlighters, etc.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__                      Clever Text Search including Replace.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__                  HTML Entity table.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__                          Choice Status Line.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__                    Project plugin wrapper.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__                  Elegant Quickfix wrapper.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_rest_fold <https://github.com/landonb/dubs_rest_fold>`__                          reStructuredText power folder.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__                      Automatically set whitespace and line-length settings.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__                Syntastic wrapper.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__              Simple text wrapping wrapper.
-------------------------------------------------------------------------------------    -------------------------------------------------------------------------------------------------------------------------------------------------------------
-`dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__                          sensible-browser mappings.
-====================================================================================    =============================================================================================================================================================
+.. table::
+  :widths: 25 75
+
+  ============================================================================================  ==============================================================================================================
+  `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__                              Compelling light on dark color scheme (that uses true black).
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_appearance <https://github.com/landonb/dubs_appearance>`__                              Configure basic Vim look n' feel (that appeals to the author).
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun>`__                              Manage Buffers and Windows.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__                              Powerful Text Editing commands.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__                            Find and Open Files.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__                              Filetype-specific features, like syntax highlighters, etc.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__                            Clever Text Search including Replace.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__                        HTML Entity table.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__                                *Choice* Status Line.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__                          Project plugin wrapper.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__                        Elegant Quickfix wrapper.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__                            Automatically set whitespace and line-length settings.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__                      Syntastic wrapper.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__                    Simple text wrapping wrapper.
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__                                ``sensible-browser`` mappings (cross-platform hyperlink opener).
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-command-line-clock <https://github.com/landonb/vim-command-line-clock>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-netrw-cfg-split-explorer <https://github.com/landonb/vim-netrw-cfg-split-explorer>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-ovm-seven-of-spines <https://github.com/landonb/vim-ovm-seven-of-spines>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__                                    Innovative reStructuredText document folding (manage notes like a pro).
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-source-reloader <https://github.com/landonb/vim-source-reloader>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator>`__
+  ============================================================================================  ==============================================================================================================
+
+.. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/wafflbattr/waffle-batter-vim
+.. SKIPD/2022-09-21: DepoXy/vim-trap is private, but worth calling out: https://github.com/YOU/vim-trap
+
+List of Forked Plugins
+^^^^^^^^^^^^^^^^^^^^^^
+
+These are plugins I've forked to add value (but haven't bothered asking
+upstream to incorporate the changes, either because it wouldn't mesh
+with the upstream project's goals, or because I'm lazy):
+
+| `ansible-vim <https://github.com/landonb/ansible-vim>`__:
+    "A vim plugin for syntax highlighting Ansible's common filetypes."
+      (Upstream: `ansible-vim <https://github.com/pearofducks/ansible-vim>`__)
+| `QFEnter <https://github.com/landonb/QFEnter>`__:
+    "Open a Quickfix item in a window you choose."
+      (Upstream: `QFEnter <https://github.com/yssl/QFEnter>`__)
+| `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__:
+    "Surf through buffers based on viewing history per window."
+      (Upstream: `vim-bufsurf <https://github.com/ton/vim-bufsurf>`__)
+| `vim-jsx <https://github.com/landonb/vim-jsx>`__:
+    "React JSX syntax highlighting and indenting for Vim."
+      (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
+| `vim-markdown <https://github.com/landonb/vim-markdown>`__:
+    "Markdown for Vim."
+      (Upstream: `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
+| `vim-surround <https://github.com/landonb/vim-surround>`__:
+    "Quoting and parenthesizing made simple."
+      (Upstream: `vim script <http://www.vim.org/scripts/script.php?script_id=1697>`__,
+                 `vim-surround <https://github.com/tpope/vim-surround>`__)
+| `vim-unimpaired <https://github.com/landonb/vim-unimpaired>`__:
+    "Pairs of handy bracket mappings."
+      (Upstream: `vim script <http://www.vim.org/scripts/script.php?script_id=1590>`__,
+                 `vim-unimpaired <https://github.com/tpope/vim-unimpaired>`__)
 
 List of Third-party Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. To generate list: grep url .gitmodules | sed 's/.*= //' | sort
 
 The are awesome third-party plugins I find useful or otherwise curious:
 
 | `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
     "Automatically adapt timestamps, copyright notices, etc."
       [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
+| `coc-json <https://github.com/neoclide/coc-json>`__
+| `coc.nvim <https://github.com/neoclide/coc.nvim>`__
+| `coc-tsserver <https://github.com/neoclide/coc-tsserver>`__
 | `command-t <https://github.com/wincent/command-t>`__:
     "Fast file navigation for VIM"
 | `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
@@ -120,89 +188,120 @@ The are awesome third-party plugins I find useful or otherwise curious:
 | `editorconfig-vim <https://github.com/editorconfig/editorconfig-vim>`__:
     "EditorConfig plugin for Vim"
       [`more <http://editorconfig.org/>`__]
+| `fzf.vim <https://github.com/junegunn/fzf.vim>`__
 | `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
     "Distraction-free writing in Vim"
+| `improvedft <https://github.com/chrisbra/improvedft>`__
 | `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
     "Vimscript library of common functions."
-      [`v.s. <http://www.vim.org/scripts/script.php?script_id=4433>`__]
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4433>`__]
 | `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
     "|flashlight| All the world's indeed a stage and we are merely players"
-| `QFEnter <https://github.com/yssl/QFEnter>`__:
-    "Open a Quickfix item in a window you choose. (Vim plugin)"
+| `matchit <https://github.com/chrisbra/matchit>`__
+| `nerdcommenter <https://github.com/preservim/nerdcommenter>`__
 | `syntastic <https://github.com/scrooloose/syntastic>`__:
     "Syntax checking hacks for vim"
+| `tagbar <https://github.com/majutsushi/tagbar>`__
 | `tcomment_vim <https://github.com/tomtom/tcomment_vim>`__:
-    "An extensible & universal comment vim-plugin that also handles embedded filetypes"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=1173>`__]
-      [see also: `vim-commentary <https://github.com/tpope/vim-commentary>`__]
+    "An extensible & universal comment plugin"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1173>`__,
+       see also: `vim-commentary <https://github.com/tpope/vim-commentary>`__]
 | `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
     "Some utility functions for VIM"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=1863>`__]
-| `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__:
-    "Vim plugin that enables surfing through buffers based on viewing history per window."
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1863>`__]
+| `typescript-vim <https://github.com/leafgarland/typescript-vim>`__
+| `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`__
+| `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."
-  [`vs <http://www.vim.org/scripts/script.php?script_id=3645>`__]
+  [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
+| `vim-istanbul <https://github.com/juanpabloaj/vim-istanbul>`__
 | `vim-javascript <https://github.com/pangloss/vim-javascript>`__:
     "Vastly improved Javascript indentation and syntax support in Vim.
-      [`vs <http://www.vim.org/scripts/script.php?script_id=4452>`__]
-| `vim-jsx <https://github.com/landonb/vim-jsx>`__:
-    "React JSX syntax highlighting and indenting for vim."
-      (forked from `vim-jsx <https://github.com/mxw/vim-jsx>`__)
-| `vim-markdown <https://github.com/landonb/vim-markdown>`__:
-    "Markdown for Vim: a complete environment to create Markdown files
-    with a syntax highlight that doesn't suck!"
-      (forked from `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4452>`__]
+| `vim-js <https://github.com/yuezk/vim-js>`__
+| `vim-jsx-pretty <https://github.com/MaxMEllon/vim-jsx-pretty>`__
+| `vim-mergetool <https://github.com/samoshkin/vim-mergetool>`__
 | `vim-misc <https://github.com/xolox/vim-misc>`__:
     "Miscellaneous auto-load Vim scripts"
       [`more <https://peterodding.com/code/vim/misc/>`__]
+| `vim-python-matchit <https://github.com/voithos/vim-python-matchit>`__
+| `vim-toml <https://github.com/cespare/vim-toml>`__
+| `yats.vim <https://github.com/HerringtonDarkholme/yats.vim>`__
+| `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
 
 .. |flashlight| unicode:: 0x1F526 .. flashlight
 
-As well as these plugins from the venerable `Tim Pope <https://github.com/tpope>`__:
+List of Tim Pope Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-| `vim-endwise <https://github.com/tpope/vim-endwise>`__:
-    "endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script, etc"
-  [`vs <http://www.vim.org/scripts/script.php?script_id=2386>`__]
+These plugins are maintained by the venerable `Tim Pope <https://github.com/tpope>`__:
+
+| `vim-abolish <https://github.com/tpope/vim-abolish>`__
 | `vim-fugitive <https://github.com/tpope/vim-fugitive>`__:
     "fugitive.vim: a Git wrapper so awesome, it should be illegal"
-  [`vs <http://www.vim.org/scripts/script.php?script_id=2975>`__]
-| `vim-scriptease <https://github.com/tpope/vim-scriptease>`__:
-    "scriptease.vim: A Vim plugin for Vim plugins"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=4394>`__]
+  [`vim script <http://www.vim.org/scripts/script.php?script_id=2975>`__]
+| `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__
 | `vim-speeddating <https://github.com/tpope/vim-speeddating>`__:
     "speeddating.vim: use CTRL-A/CTRL-X to increment dates, times, and more"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=2120>`__]
-| `vim-surround <https://github.com/landonb/vim-surround>`__:
-    "surround.vim: quoting/parenthesizing made simple"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=1697>`__]
-      (forked from `vim-surround <https://github.com/tpope/vim-surround>`__)
-| `vim-unimpaired <https://github.com/tpope/vim-unimpaired>`__:
-    "unimpaired.vim: pairs of handy bracket mappings"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=1590>`__]
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=2120>`__]
 | `vim-vinegar <https://github.com/tpope/vim-vinegar>`__:
     "vinegar.vim: combine with netrw to create a delicious salad dressing"
-| `vim-vividchalk <https://github.com/tpope/vim-vividchalk>`__:
-    "vividchalk.vim: a colorscheme strangely reminiscent of Vibrant Ink for a certain OS X editor"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=1891>`__]
 
-And these plugins that I no longer use (or rarely use) but have yet to scrub:
+List of Less-used Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+These plugins that I no longer use (or rarely use) but that I still have installed:
 
 | `jellybeans.vim <https://github.com/nanotech/jellybeans.vim>`__:
     "A colorful, dark color scheme for Vim."
       [`vim.org <http://www.vim.org/scripts/script.php?script_id=2555>`__]
-| `nerdtree <https://github.com/scrooloose/nerdtree>`__:
-    "A tree explorer plugin for vim."
 | `nord-vim <https://github.com/arcticicestudio/nord-vim>`__:
     "An arctic, north-bluish clean and elegant Vim theme."
 | `TeTrIs.vim <https://github.com/vim-scripts/TeTrIs.vim>`__:
     "A tetris game in pure vim"
 | `viki_vim <https://github.com/tomtom/viki_vim>`__:
     "A personal wiki for Vim"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=861>`__]
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=861>`__]
 | `vim-rails <https://github.com/tpope/vim-rails>`__:
     "rails.vim: Ruby on Rails power tools"
-      [`vs <http://www.vim.org/scripts/script.php?script_id=1567>`__]
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1567>`__]
+
+List of Retired Plugins
+^^^^^^^^^^^^^^^^^^^^^^^
+
+For posterity, here are plugins that I used to use, but that I've since stopped using
+(this is not a judgement on their merits: sometimes I use certain plugins with certain
+technologies that I no longer use, or I maybe some functionality has since been 
+incorporated into Vim itself, or maybe I found a different plugin, who knows):
+
+| `asyncomplete-lsp.vim <https://github.com/prabirshrestha/asyncomplete-lsp.vim>`__
+| `asyncomplete.vim <https://github.com/prabirshrestha/asyncomplete.vim>`__
+| `async.vim <https://github.com/prabirshrestha/async.vim>`__
+| `nerdtree <https://github.com/scrooloose/nerdtree>`__:
+    "A tree explorer plugin for vim."
+| `vim-commentary <https://github.com/tpope/vim-commentary>`__
+| `vim-endwise <https://github.com/tpope/vim-endwise>`__:
+    "endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script, etc"
+  [`vim script <http://www.vim.org/scripts/script.php?script_id=2386>`__]
+| `vim-go <https://github.com/editorconfig/vim-go>`__
+| `vim-lsp-javascript <https://github.com/ryanolsonx/vim-lsp-javascript>`__
+| `vim-lsp-settings <https://github.com/mattn/vim-lsp-settings>`__
+| `vim-lsp-typescript <https://github.com/ryanolsonx/vim-lsp-typescript>`__
+| `vim-lsp <https://github.com/prabirshrestha/vim-lsp>`__
+| `vim-pathogen <https://github.com/tpope/vim-pathogen>`__
+| `vim-restructuredtext <https://github.com/marshallward/vim-restructuredtext>`__
+| `vim-scriptease <https://github.com/tpope/vim-scriptease>`__:
+    "scriptease.vim: A Vim plugin for Vim plugins"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4394>`__]
+| `vim-vividchalk <https://github.com/tpope/vim-vividchalk>`__:
+    "vividchalk.vim: a colorscheme strangely reminiscent of Vibrant Ink for a certain OS X editor"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1891>`__]
+
+Plugins that I used to develop or that I forked, but no longer use:
+
+| `dubs_cycloplan <https://github.com/landonb/dubs_cycloplan>`__
+| `vim-jsx <https://github.com/landonb/vim-jsx>`__
 
 Comprehensive Feature List
 --------------------------
@@ -219,7 +318,7 @@ their keyboard mapping or ``:command`` name, followed by a
 brief description of the feature and then more detailed notes.
 
 .. NOTE: For security reasons, the include directive does not
-..       work on github. E.g., we cannot simply
+..       work on GitHub. E.g., we cannot simply
 ..
 ..        .. include:: https://github.com/landonb/dubs_after_dark/README.rst
 ..        .. include:: ...
@@ -2398,255 +2497,6 @@ Key Mapping                         Description                         Notes
                                                                         listed in the quickfix window.
 ==================================  ==================================  ==============================================================================
 
-########################################
-Dubs Vim |em_dash| reST Document Folding
-########################################
-
-.. |em_dash| unicode:: 0x2014 .. em dash
-
-About This Plugin
-=================
-
-This plugin improves upon and fixes performance issues with Vim's
-built-in reST syntax highlighting and document section folding.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_rest_fold.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_rest_fold
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-rest-fold
-
-Usage: Signify Fold Levels using Specific Punctuation
-=====================================================
-
-The reST language is flexible when it comes to delimiting sections,
-allowing you to choose generally any ASCII non-alphanum as a delimiter,
-and then inferring the level of each section by the order in which the
-section delimiters are introduced in the document. You can also choose
-to use just an underscored delimiter, or you can add an overscore, too.
-
-For instance, both of the following documents will render the same:
-
-Document 1::
-
-  Level 1 Heading
-  ###############
-
-  ===============
-  Level 2 Heading
-  ===============
-
-and Document 2::
-
-  ===============
-  Level 1 Heading
-  ===============
-
-  Level 2 Heading
-  ---------------
-
-Obviously, this flexibility makes any parser more complex to write,
-and it might noticeably impact real-time application responsiveness.
-
-Accordingly, the ``dubs_rest_fold`` plugin imposes strict rules for
-section headers used for folding:
-
-- Only double-bordered reST sections will be folded.
-
-  E.g., this header with both an overscore and an underscore will be folded::
-
-    ###########################
-    This Section Will Be Folded
-    ###########################
-
-  but this header, with simply an underscore, will be ignored by the folding engine::
-
-    This Section Will Not Be Folded
-    ###############################
-
-- Fold levels are assigned in a specific, static order.
-
-  That is, as you use the command ``zr`` to collapse one level of folds,
-  or use ``zm`` to open a level of folds, or ``za`` to toggle the current
-  fold, the sections levels are determined based on the delimiter used:
-
-  - Level 1: ``@``
-
-  - Level 2: ``#``
-
-  - Level 3: ``=``
-
-  - Level 4: ``-``
-
-  For instance, this document has two Level 2 sections::
-
-    @@@@@@@@@@@@@@@@@@@@@@@
-    Document Section Header
-    @@@@@@@@@@@@@@@@@@@@@@@
-
-    #####################
-    One Top-Level Section
-    #####################
-
-    ===============
-    Level 3 Section
-    ===============
-
-    #########################
-    Another Top-Level Section
-    #########################
-
-    =======================
-    Another Level 3 Section
-    =======================
-
-    A Level 3 reST section, but ignored by folder
-    =============================================
-
-    ------------------------
-    Foldable Level 4 Section
-    ------------------------
-
-Usage: Press ``<F5>`` to Manually Recalculate Folds
-===================================================
-
-By default, Vim enables reST folding.
-
-But this can cause performance issues, e.g., every time you insert or
-remove a character from a buffer, Vim has to recalculate folds.
-
-To prevent performance issues, the user must explicitly generate folds.
-
-**Press <F5> to generate (and collapse all) folds.**
-
-Usage: Use ``<C-Up>`` and ``<C-Down>`` to Transpose Folds
-=========================================================
-
-In normal mode, with the cursor over a folded reST section,
-press ``<C-Up>`` to swap the fold under the cursor with the
-fold under the line above the cursor; press ``<C-Down>`` to
-swap with the fold on the line following the current fold.
-
-**Swap reST Sections (Transpose Folds) using ``<C-Up>`` and ``<C-Down>``.**
-
-Tips: Make Titles Pretty When Collapsed
-=======================================
-
-The reST section title that's sandwiched between the section delimiter
-lines is used for the folded view title.
-
-Because of this, you can design section titles that look good folded, too.
-
-For instance, consider the following, unfolded document::
-
-  ###########################################################
-  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-  ###########################################################
-
-  ###########################################################
-  ┣━━ // * TABLE_OF_CONTENTS * // ━━━━━━━━━━━━━━━━━━━━━━━━━━┨
-  ###########################################################
-
-  ###########################################################
-  ┃   ┏━━━━━━━━━━━━━┓                                       ┃
-  ###########################################################
-
-  ###########################################################
-  ┃   ┃ ☼ FOO BAR ☼ ┃                                       ┃
-  ###########################################################
-
-  ###########################################################
-  ┃ ┏━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┃
-  ###########################################################
-
-  ###########################################################
-  ┃ ┃ SECTION X: Blah blah blah                           ┃ ┃
-  ###########################################################
-
-  ###########################################################
-  ┃ ┃ SECTION Y: Blasé blasé blasé                        ┃ ┃
-  ###########################################################
-
-  ###########################################################
-  ┃ ┃ SECTION Z: Patati Patata                            ┃ ┃
-  ###########################################################
-
-  ###########################################################
-  ┃ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ┃
-  ###########################################################
-
-  ###########################################################
-  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-  ###########################################################
-
-Once folded (e.g., using ``<F5>``), it'll look like this::
-
-  1  +-- ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ---- |  4 lines |--
-  5  +-- ┣━━ // * TABLE_OF_CONTENTS * // ━━━━━━━━━━━━━━━━━━━━━━━━━━┨ ---- |  4 lines |--
-  9  +-- ┃   ┏━━━━━━━━━━━━━┓                                       ┃ ---- |  4 lines |--
-  13 +-- ┃   ┃ ☼ FOO BAR ☼ ┃                                       ┃ ---- |  4 lines |--
-  17 +-- ┃ ┏━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┃ ---- |  4 lines |--
-  21 +-- ┃ ┃ SECTION X: Blah blah blah                           ┃ ┃ ---- |  4 lines |--
-  25 +-- ┃ ┃ SECTION Y: Blasé blasé blasé                        ┃ ┃ ---- |  4 lines |--
-  29 +-- ┃ ┃ SECTION Z: Patati Patata                            ┃ ┃ ---- |  4 lines |--
-  33 +-- ┃ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ┃ ---- |  4 lines |--
-  37 +-- ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ---- |  4 lines |--
-
-Tips: Change 'redrawtime' for Very Large Documents
-==================================================
-
-Vim's default "redrawtime" (``:echo &rdt``) is "2000", or 2 seconds.
-
-If Vim runs longer than this during syntax matching, it cancels the operation
-and logs the message, "'redrawtime' exceeded, syntax highlighting disabled".
-
-You can set this value larger to tell Vim to run the parser longer,
-e.g., ``:set redrawtime=10000``, or, better yet, you can add a modeline
-(such as one read by https://github.com/landonb/dubs_style_guard)
-to any reST document that needs extra parsing time. E.g., at the top
-of a reST document, you could add::
-
-  .. vim:rdt=10000
-
 ##############################
 Dubs Vim |em_dash| Style Guard
 ##############################
@@ -2657,6 +2507,9 @@ About This Plugin
 =================
 
 This plugin senses a file's whitespace style and sets Vim accordingly.
+
+.. FIXME/2021-08-16 02:05: Shouldn't you mention the modeline feature, too?
+                           And what about Vim's built-in `modeline` option?
 
 Note: The check is very basic: the script uses grep to count the
 number of lines that start with spaces versus those that start with
@@ -3155,23 +3008,95 @@ Dubs Vim |em_dash| Web Hatch
 
 .. |em_dash| unicode:: 0x2014 .. em dash
 
-Simple web browser tab opener to search on or load definition of selected text.
+Simple URL opener with search and word definition options.
+
+At its core, opens a location in the default browser.
+
+Can also search the web or try to define something.
 
 Usage
 =====
 
-``<Leader>W`` - Opens a new browser window and searches the word under the cursor
-(normal or insert mode) or the selected text (visual mode).
+==============    =========================================================================
+Command           Description
+--------------    -------------------------------------------------------------------------
 
-``<Leader>D`` - Opens a new browser window and loads the definitions of the word
-under the cursor (normal or insert mode) or the selected text (visual mode).
+``gW``            Akin to Vim's builtin ``gf`` command, but for URLs (think: Go Web).
+                  Opens a new browser window with the location of the URL under the cursor.
+--------------    -------------------------------------------------------------------------
+``g!``            Like ``gW``, but opens location in an incognito (aka private) browser window.
+--------------    -------------------------------------------------------------------------
+``<Leader>W``     Opens a new browser window and searches (Google) for the word under the cursor
+                  (normal or insert mode), or for the selected text (visual mode).
+--------------    -------------------------------------------------------------------------
+``<Leader>D``     Opens a new browser window and loads the definition of the word under the cursor
+                  (normal or insert mode), or for the selected text (visual mode).
+==============    =========================================================================
 
-- Note that each command opens a new browser tab in new window.
+The ``gW`` and ``g!`` commands work from normal mode, and the
+leader commands from normal and insert modes, and on selections.
 
-  To instead prefer opening a new tab in an existing window,
+Configure
+=========
+
+Default Browser
+---------------
+
+On Linux (Debian), this plugin call ``sensible-browser --version`` to
+determine which browser to use.
+
+- Use the ``$BROWSER`` environ to set your default browser.
+
+  - E.g., include this in your ``~/.bashrc`` if you prefer Chrome::
+
+      export BROWSER=/usr/bin/google-chrome
+
+  - For the best documentation on ``sensible-browser``, see the source,
+    which you might find at::
+
+      /usr/bin/sensible-browser
+
+On macOS, this plugin reads the user's ``LaunchServices`` property list
+looking for the default browser to use.
+
+- Run the browser you want to be the default, and look for an option
+  within the browser to set it as the default.
+
+Please feel free to open a pull request to add support for additional OSes.
+
+Tab or Window
+-------------
+
+By default, each command opens a new browser tab in new window.
+
+- To instead prefer opening a new tab in an existing window,
   set the following global variable to nonzero, e.g.,::
 
     g:dubs_web_hatch_use_tab = 1
+
+User Profile
+------------
+
+By default, when Chrome is opened, the default user profile is used.
+
+- To instead open a window using the most recently used profile,
+  set the following global variable to nonzero, e.g.,::
+
+    g:dubs_web_hatch_mru_profile = 1
+
+Supported Browsers
+------------------
+
+This plugin works with the following browsers:
+
+- On Debian: Google Chrome, Chromium, and Mozilla Firefox.
+
+- On macOS: Google Chrome, Mozilla Firefox, and Apple Safari.
+
+Note that Safari does not accept command line arguments, so it does not
+respect tab vs. window, nor can it open a location in incognito mode.
+
+Please feel free to open a pull request to add support for additional browsers.
 
 Install
 =======
@@ -3375,7 +3300,7 @@ About This Plugin
 
 This plugin inserts seven dashes and two newlines when you press `Ctrl-Shift--`.
 
-This plugin is part of a larger suite of plugins the comprise features and
+This plugin is part of a larger suite of plugins that comprise features and
 mappings for maintaining notes files according to the `reSTfold` `method`.
 
 Installation
@@ -3424,6 +3349,602 @@ Then whenever you want to reference the help from Vim, run:
 .. code-block:: vim
 
    :help vim-ovm-seven-of-spines
+
+###############################################
+``vim-reSTfold`` |em_dash| reST Document Folder
+###############################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+About This Plugin
+=================
+
+This plugin adds advanced reST document section folding.
+
+Supercharge your notetaking and recordkeeping!
+
+Install this plugin to make it easier to manage
+notes in Vim using reStructuredText markup.
+
+Why You Might Want to Use This Plugin
+=====================================
+
+If you like to use Vim to organize your life (I do!),
+see how this plugin makes it easier to manage your notes.
+
+Consider the following document::
+
+  @@@@@@@@@@@@@@
+  reSTfold Notes
+  @@@@@@@@@@@@@@
+
+  ####################################
+  FIXME: Update reSTfold plugin README
+  ####################################
+
+  2021-07-12 21:39: Update reSTfold README with latest enhancements.
+
+  #######################################################
+  MAYBE: Publish Medium article to promote reSTfold usage
+  #######################################################
+
+  2021-07-13 12:04: Get some claps.
+  - Research what makes a good tech article.
+  - Devise a better example than this readme.
+  - Find a copy editor to review your work.
+
+  ######################
+  NOTES: Some more notes
+  ######################
+
+  Foo bar baz bat.
+
+This plugin lets you fold the reST headers, collapsing everything into
+essentially a high-level Table of Contents. You can then open individual
+sections to read or work on their contents.
+
+E.g., press ``<F5>`` to collapse all folds, and Vim will show::
+
+   1 @@@@@@@@@@@@@@
+   2 reSTfold Notes
+   3 @@@@@@@@@@@@@@
+   4
+   5  ┌─ FIXME: Update reSTfold plugin README                     ──┤  6 ll. ├─
+  11  ├─ MAYBE: Publish Medium article to promote reSTfold usage  ──┤  8 ll. ├─
+  19  └─ NOTES: Some more notes                                   ──┤  6 ll. ├─
+
+You can then use the normal Vim fold commands to open and close folds.
+
+For example, position the cursor over a fold title and type ``za`` to open it.
+
+Usage: Signify Fold Levels using Specific Punctuation
+=====================================================
+
+Generally, reST lets you choose any delimiters (ASCII punctuation)
+to use for the different heading levels, and the reST parser will
+infer the levels from their usage order within the document.
+
+You indicate a heading by underlining with the same punctuation
+character. The reST specification also lets you add an overline.
+
+For instance, both of these documents render the same:
+
+Document 1::
+
+  Level 1 Heading
+  ###############
+
+  ===============
+  Level 2 Heading
+  ===============
+
+and Document 2::
+
+  ===============
+  Level 1 Heading
+  ===============
+
+  Level 2 Heading
+  ---------------
+
+But this plugin is not as flexible.
+
+To use ``vim-reSTfold``, you'll need to follow a few guidelines.
+
+(These rules make the plugin less complex, and probably faster.)
+
+Rule #1: Only double-bordered headers will be folded
+----------------------------------------------------
+
+- Use a double-bordered reST heading for sections you want folded.
+
+- E.g., this header with both an overscore and an underscore will be folded::
+
+    ###########################
+    This Section Will Be Folded
+    ###########################
+
+  but this header, with only an underscore, will not be folded::
+
+    This Section Will Not Be Folded
+    ###############################
+
+**Use an underline and overline around the heading for each section you want folded.**
+
+Rule #2: Use these 4 characters for your headings
+-------------------------------------------------
+
+- Use the following characters for the heading levels indicated:
+
+  - Level 1: ``@``
+
+  - Level 2: ``#``
+
+  - Level 3: ``=``
+
+  - Level 4: ``-``
+
+(Note that characters used for the higher levels use more pixels per
+character than those in lower levels. So, visually, higher level
+headings appear darker.)
+
+- Note that each document must only have one Level 1 heading, at the top.
+
+  This section is never folded.
+
+- Use the normal Vim fold commands to open and close folds.
+
+  E.g., type ``zr`` (in Normal mode) to collapse one level of folds.
+
+  Or type ``zm`` to open one level of folds, or ``za`` to toggle the
+  current fold open and closed.
+
+- As an example, this document has two Level 2 sections::
+
+    @@@@@@@@@@@@@@
+    Document Title
+    @@@@@@@@@@@@@@
+
+    ###############
+    Level 2 Section
+    ###############
+
+    ===============
+    Level 3 Section
+    ===============
+
+    #######################
+    Another Level 2 Section
+    #######################
+
+    =======================
+    Another Level 3 Section
+    =======================
+
+    Another Level 3 section, but ignored by folder
+    ==============================================
+
+    --------------------------
+    A Foldable Level 4 Section
+    --------------------------
+
+**Use the 4 characters (@, #, =, and -) to signify the different heading levels.**
+
+Usage: Press ``<F5>`` to Manually Recalculate Folds
+===================================================
+
+By default, Vim enables reST folding.
+
+But this can cause performance issues, e.g., every time you insert or
+remove a character from a buffer, Vim has to recalculate folds.
+
+To prevent performance issues, the user must explicitly generate folds.
+
+**Press <F5> to generate (and collapse all) folds.**
+
+Usage: Use ``<C-Up>`` and ``<C-Down>`` to Transpose Folds
+=========================================================
+
+In normal mode, with the cursor over a folded reST section,
+press ``<Ctrl-Up>`` to swap the fold under the cursor with the
+fold under the line above the cursor; press ``<Ctrl-Down>`` to
+swap with the fold on the line following the current fold.
+
+**Swap reST Sections (Transpose Folds) using ``<C-Up>`` and ``<C-Down>``.**
+
+Tip: You Can Beautify Titles When Collapsed
+===========================================
+
+The reST section title that's sandwiched between the section delimiter
+lines is used for the folded view title.
+
+Because of this, you can design section titles that look good folded, too.
+
+For instance, consider the following, unfolded document::
+
+  @@@@@
+  NOTES
+  @@@@@
+
+  ###########################################################
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ###########################################################
+
+  ###########################################################
+  ┣━━ // * TABLE_OF_CONTENTS * // ━━━━━━━━━━━━━━━━━━━━━━━━━━┨
+  ###########################################################
+
+  ###########################################################
+  ┃   ┏━━━━━━━━━━━━━┓                                       ┃
+  ###########################################################
+
+  ###########################################################
+  ┃   ┃ ☼ FOO BAR ☼ ┃                                       ┃
+  ###########################################################
+
+  ###########################################################
+  ┃ ┏━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┃
+  ###########################################################
+
+  ###########################################################
+  ┃ ┃ SECTION X: Blah blah blah                           ┃ ┃
+  ###########################################################
+
+  Blah blah blah
+
+  ###########################################################
+  ┃ ┃ SECTION Y: Blasé blasé blasé                        ┃ ┃
+  ###########################################################
+
+  Blasé blasé blasé
+
+  ###########################################################
+  ┃ ┃ SECTION Z: Patati Patata                            ┃ ┃
+  ###########################################################
+
+  Patati Patata
+
+  ###########################################################
+  ┃ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ┃
+  ###########################################################
+
+  ###########################################################
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+  ###########################################################
+
+Once folded (e.g., press ``<F5>``), it'll look like this::
+
+   1 @@@@@
+   2 NOTES
+   3 @@@@@
+   4
+   5 │  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓      │  4 ll. │
+   9 │  ┣━━ // * TABLE_OF_CONTENTS * // ━━━━━━━━━━━━━━━━━━━━━━━━━━┨      │  4 ll. │
+  13 │  ┃   ┏━━━━━━━━━━━━━┓                                       ┃      │  4 ll. │
+  17 │  ┃   ┃ ☼ FOO BAR ☼ ┃                                       ┃      │  4 ll. │
+  21 │  ┃ ┏━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┃      │  4 ll. │
+  25 ├─ ┃ ┃ SECTION X: Blah blah blah                           ┃ ┃    ──┤  6 ll. ├─
+  31 ├─ ┃ ┃ SECTION Y: Blasé blasé blasé                        ┃ ┃    ──┤  6 ll. ├─
+  37 ├─ ┃ ┃ SECTION Z: Patati Patata                            ┃ ┃    ──┤  6 ll. ├─
+  43 │  ┃ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ┃      │  4 ll. │
+  47 │  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛      │  4 ll. │
+
+.. 2021-08-12: Here's what the folding used to look like, before overriding
+..             Vim's default folding markup:
+.. 
+..    1 +-- ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ---- |  4 lines |--
+..    5 +-- ┣━━ // * TABLE_OF_CONTENTS * // ━━━━━━━━━━━━━━━━━━━━━━━━━━┨ ---- |  4 lines |--
+..    9 +-- ┃   ┏━━━━━━━━━━━━━┓                                       ┃ ---- |  4 lines |--
+..   13 +-- ┃   ┃ ☼ FOO BAR ☼ ┃                                       ┃ ---- |  4 lines |--
+..   17 +-- ┃ ┏━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ ┃ ---- |  4 lines |--
+..   21 +-- ┃ ┃ SECTION X: Blah blah blah                           ┃ ┃ ---- |  6 lines |--
+..   27 +-- ┃ ┃ SECTION Y: Blasé blasé blasé                        ┃ ┃ ---- |  6 lines |--
+..   33 +-- ┃ ┃ SECTION Z: Patati Patata                            ┃ ┃ ---- |  6 lines |--
+..   39 +-- ┃ ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ┃ ---- |  4 lines |--
+..   43 +-- ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ ---- |  4 lines |--
+
+Tips: Change ``redrawtime`` for Very Large Documents
+====================================================
+
+Vim's default ``redrawtime`` (``:echo &rdt``) is "2000", or 2 seconds.
+
+If Vim runs longer than this during syntax matching, it cancels the operation
+and logs the message, "'redrawtime' exceeded, syntax highlighting disabled".
+
+You can set this value larger to tell Vim to run the parser longer,
+e.g., ``:set redrawtime=10000``, or, better yet, you can add a modeline
+(such as one read by https://github.com/landonb/dubs_style_guard)
+to any reST document that needs extra parsing time. E.g., at the top
+of a reST document, you could add::
+
+  .. vim:rdt=10000
+
+Tips: Related supercharged reST plugins
+=======================================
+
+Consider these complementary reST highlights plugins that pair
+well with this plugin to help you take notes in Vim:
+
+- Additional syntax highlight rules.
+
+  `https://github.com/landonb/vim-reST-highdefs#🎨
+  <https://github.com/landonb/vim-reST-highdefs#🎨>`__
+
+  Colorize email addresses and host names, and disable spell checking
+  on emails, hosts, and acronyms (all-capital words).
+
+- Special so-called *FIVER* syntax rules.
+
+  `https://github.com/landonb/vim-reST-highfive#🖐
+  <https://github.com/landonb/vim-reST-highfive#🖐>`__
+
+  Highlight action words.
+
+  E.g., "FIXME" is emphasized (in bright, bold yellow), and so is
+  "FIXED" (crossed-out and purple), and so are "MAYBE", "LEARN",
+  "ORDER", and "CHORE", and a few other choice five-letter words.
+
+  Why five letters? So that you can use action words in section
+  headers, and then the heading titles align nicely when folded.
+  (Really, it's only important that each action word is the same
+  width, and not necessarily that it's five long — but *FIXME* is
+  the ultimate developer action word, so might as well be five.)
+
+- Simple horizontal rule highlight.
+
+  `https://github.com/landonb/vim-reST-highline#➖
+  <https://github.com/landonb/vim-reST-highline#➖>`__
+
+  Repeat the same punctuation character 8 or more times on
+  a line, and it'll be highlighted.
+
+  Useful for adding a visual separation to your notes without
+  using a reST section heading.
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-reSTfold.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-reSTfold
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-reSTfold
+
+###############################################################
+``vim-reST-highdefs`` |em_dash| Extended reST Syntax Highlights
+###############################################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+About This Plugin
+=================
+
+This plugin extends reStructuredText file types with syntax
+highlights that this author finds useful.
+
+Install this plugin to make it easier to manage
+notes in Vim using reStructuredText markup.
+
+Why You Might Want to Use This Plugin
+=====================================
+
+If you manage (or want to manage) your notes in Vim using
+reStructuredText syntax, this plugin highlights commonly
+used items (like emails) and disables spell checking on
+items that shouldn't be spell checked (like emails!).
+
+Features: Extended Highlights
+=============================
+
+The following syntax is recognized by this plugin.
+
+Highlight: Email addresses
+--------------------------
+
+Email addresses are highlighted, and spell checking is disabled. E.g.::
+
+  foo@bar.com
+
+The email address domain must be one of::
+
+  .com | .org | .edu | .us | .io
+
+Edit the ``EmailNoSpell`` syntax rule if you'd like to add additional domains.
+
+Highlight: Host names
+---------------------
+
+I sometimes write host names in my notes, so any word that starts with
+an at sign is highlighted and not spell checked. E.g.,::
+
+  @bingo
+
+NoSpell: Acronyms
+-----------------
+
+I got tired of adding capitalized acronyms to the Vim dictionary, so
+I created a rule to disable spell checking on any all-caps alphanumeric
+word that's three or more characters long. E.g.,::
+
+  DONTSPELLCHECKMEBRO
+
+.. We'll see if I find that ref. funny the next time I review this doc.
+
+Highlight: Passwords
+--------------------
+
+Anything that looks like a long, strong password will be highlighted.
+We're talking 16 to 24 characters long, and contains at least one each
+of lowercase, uppercase, and numeric characters (I had punctuation in
+there at one point, but it makes the matching a lot slower). E.g.,::
+
+  abcdEFGH1234wxyz
+
+Note that you definitely don't want to store passwords in your notes,
+so this highlight can be used to warn you if you accidentally do.
+
+And you might also find this highlight useful if you've |wired-pass-edit|_
+to open `password store <https://www.passwordstore.org/>`__ entries in Vim.
+
+.. |wired-pass-edit| replace:: wired ``pass edit``
+.. _wired-pass-edit: https://github.com/landonb/password-store
+
+Highlight: Browser config hyperlinks
+------------------------------------
+
+Pretty basic. The following URLs will be highlighted::
+
+  chrome://<foo>
+
+  about:config
+
+Usage: Set ``redrawtime``, maybe
+================================
+
+This plugin has no configuration, but you might need to configure
+Vim's ``redrawtime``.
+
+For large reST documents, you might want to add a modeline that
+sets a higher timeout than the default (2000, or 2 seconds),
+otherwise highlighting is stopped when the timeout is reached.
+
+E.g., atop each reST file, add the commented modeline::
+
+  .. vim:rdt=10000
+
+You could also apply the setting globally from your ``~/.vimrc``
+or similar.
+
+Usage: Use magic ``redrawtime=4999`` to disable highlights
+==========================================================
+
+If you'd like to disable the extended highlights, set the
+``redrawtime`` to 4999 or below (but not the default, 2000).
+
+E.g., atop the reST file you'd like to disable the extra
+highlighting on, add the commented modeline::
+
+  .. vim:rdt=4999
+
+This will also disable a few of the standard reST syntax
+highlights that tend to take longer to process, including
+citation, footnote, and substitution references, and
+inline internal targets.
+
+Tips: Related supercharged reST plugins
+=======================================
+
+Consider these complementary reST highlights plugins that pair
+well with this plugin to help you take notes in Vim:
+
+- Advanced reST document section folder.
+
+  `https://github.com/landonb/vim-reSTfold#🙏
+  <https://github.com/landonb/vim-reSTfold#🙏>`__
+
+  Supercharge your notetaking and recordkeeping!
+
+  Add section folding to your reST notes so you can,
+  e.g., collapse a 10,000-line-long TODO file and get a
+  nice high-level view of all the things you wanna do.
+
+- Special so-called *FIVER* syntax rules.
+
+  `https://github.com/landonb/vim-reST-highfive#🖐
+  <https://github.com/landonb/vim-reST-highfive#🖐>`__
+
+  Highlight action words.
+
+  E.g., "FIXME" is emphasized (in bright, bold yellow), and so is
+  "FIXED" (crossed-out and purple), and so are "MAYBE", "LEARN",
+  "ORDER", and "CHORE", and a few other choice five-letter words.
+
+  Why five letters? So you can use action words in section headings,
+  and then the heading titles align nicely when folded.
+  (So, really, it's important that the action words are all the same
+  width, and not necessarily five in length, but *FIXME* is the
+  uttermost developer action word, so might as well be five.)
+
+- Simple horizontal rule highlight.
+
+  `https://github.com/landonb/vim-reST-highline#➖
+  <https://github.com/landonb/vim-reST-highline#➖>`__
+
+  Repeat the same punctuation character 8 or more times on
+  a line, and it'll be highlighted.
+
+  Useful for adding a visual separation to your notes without
+  using a reST section heading.
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package such that it automatically loads on Vim startup,
+use a ``start`` directory, e.g.,
+::
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+Or, if you want to test the package first, make it optional instead
+(see ``:help pack-add``)::
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Next, clone the project to the path you chose::
+
+    git clone https://github.com/landonb/vim-reST-highdefs.git
+
+If you installed to the optional path, tell Vim to load the package::
+
+   :packadd! vim-reST-highdefs
+
+Just once, tell Vim to build the online help::
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run::
+
+   :help vim-reST-highdefs
 
 ############################
 vim-select-mode-stopped-down
