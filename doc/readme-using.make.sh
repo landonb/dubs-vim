@@ -50,7 +50,7 @@ build_readme_using () {
   cat ${startd}/vim-reSTfold/README.rst >> ${target}
   cat ${startd}/vim-reST-highdefs/README.rst >> ${target}
   cat ${startd}/vim-reST-highfive/README.rst >> ${target}
-  # (not published) cat ${startd}/vim-reST-highline/README.rst >> ${target}
+  cat ${startd}/vim-reST-highline/README.rst >> ${target}
   cat ${startd}/vim-select-mode-stopped-down/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-source-reloader/README.md >> ${target}
   # (forked; not reST) cat ${startd}/vim-surround/README.markdown >> ${target}

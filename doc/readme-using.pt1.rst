@@ -66,9 +66,6 @@ List of Dubs Vim Plugins
 
 These are plugins I've developed and continue to maintain:
 
-.. FIXME/2021-08-15 20:25: LATER: Add once you've forked and published:
-.. | `vim-reST-highline <https://github.com/landonb/vim-reST-highline>`__: ...
-
 .. table::
   :widths: 25 75
 
@@ -124,6 +121,8 @@ These are plugins I've developed and continue to maintain:
   `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs>`__
   --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive>`__
+  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-reST-highline <https://github.com/landonb/vim-reST-highline>`__
   --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down>`__
   --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
