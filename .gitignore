@@ -67,7 +67,7 @@
 /pack/junegunn/start/limelight.vim/
 /pack/landonb/opt/dubs_cycloplan/
 /pack/landonb/opt/vim-jsx/
-# 2020-09-01: parT added for Waffle Batter (Bash, Vim, and Git orchestrator);
+# 2020-09-01: parT added for DepoXy Ambers (Bash, Vim, and Git orchestrator);
 # also seems like reasonable place to stash parT tool used by dubs_edit_juice.
 /pack/landonb/opt/parT/
 /pack/landonb/start/ansible-vim/
@@ -151,14 +151,14 @@
 /pack/ryanolsonx/opt/vim-lsp-typescript/
 
 # Coc and related LSP.
-# - Settings JSON. Symlink to Waffle Batter file.
+# - Settings JSON. Symlink to DepoXy Ambers file.
 /coc-settings.json
 # - Vim plugins from Waffer Batter OMR mrconfig.
 /pack/neoclide/start/coc.nvim/
 /pack/neoclide/start/coc-json/
 /pack/neoclide/start/coc-tsserver/
 
-# The Waffle Batter project's Vim setup.
-# - LATER/2021-01-25: Most of this .gitignore should move to Waffle Batter.
+# The DepoXy Ambers project's Vim setup.
+# - LATER/2021-01-25: Most of this .gitignore should move to DepoXy Ambers.
 pack/wafflbattr/start/waffle-batter-vim
 
