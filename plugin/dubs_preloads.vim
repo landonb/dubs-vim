@@ -54,6 +54,16 @@ if filereadable(s:plugin_dubs_ftyle_mess_preload)
   execute 'source ' . s:plugin_dubs_ftyle_mess_preload
 endif
 
+" ======================================================
+" ------------------------------------------------------
+" ======================================================
+
+" MAYBE/2022-12-07: The remainding config could be farmed out to another
+" plugin script, because it doesn't really fit in here. But the core of
+" Dubs Vim is pretty bare (99.9% of features are from plugins), and this
+" being the only ~/.vim/plugin/ file so far, and so long as from here to
+" the end of the file is just a few crumbs, well, I'll abide.
+
 " ------------------------------------------------------
 " Viki settings
 " ------------------------------------------------------
@@ -61,21 +71,36 @@ endif
 " This is a no-op unless you've installed Viki.
 " https://github.com/tomtom/viki_vim
 
-" MAYBE: Set VikiMinorMode? Anything else?
-
 let g:vikiOpenFileWith_html  = "silent !firefox %{FILE}"
 
 " ------------------------------------------------------
 " MacVim Alt-key sequence mapping enablement
 " ------------------------------------------------------
 
-" FIXME/2020-08-26: Find a better spot for this.
+" CXREF: /Applications/MacVim.app/Contents/Resources/vim/gvimrc
+
 if has('macunix')
+  " Enable Alt-key (aka Meta, aka Option) mappings (e.g., <M-a>).
   set macmeta
-  "
+
+  " Don't let MacVim call `colorscheme macvim`.
+  " - Dubs Vim sets its own colorscheme (see plugin
+  "   ~/.vim/pack/landonb/start/dubs_after_dark/).
+  " - CXREF: :h macvim-colorscheme
   let macvim_skip_colorscheme=1
+
+  " Glossary: HIG: Apple's Human interface Guidelines.
+
+  " Disable HIG Cmd and Option (Alt) movement mappings.
+  " - Dubs Vim makes its own mappings.
+  " - CXREF: :h alt-movement
   let macvim_skip_cmd_opt_movement=1
-" a test:
+
+  " Enable so-called HIG shift movement, which makes Vim a little more like
+  " GUI text editors, e.g., holding down Shift + a movement key will extend
+  " the selection.
+  " - Dubs Vim makes its own mappings.
+  " - CXREF: :h macvim-shift-movement
   let macvim_hig_shift_movement=1
 endif
 
