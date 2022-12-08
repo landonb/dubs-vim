@@ -71,7 +71,7 @@ endif
 " This is a no-op unless you've installed Viki.
 " https://github.com/tomtom/viki_vim
 
-let g:vikiOpenFileWith_html  = "silent !firefox %{FILE}"
+let g:vikiOpenFileWith_html = "silent !firefox %{FILE}"
 
 " ------------------------------------------------------
 " MacVim Alt-key sequence mapping enablement
