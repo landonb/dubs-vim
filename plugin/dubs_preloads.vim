@@ -104,3 +104,14 @@ if has('macunix')
   let macvim_hig_shift_movement=1
 endif
 
+" ------------------------------------------------------
+" NERDCommenter config
+" ------------------------------------------------------
+
+" 2022-12-07: AFAIK, we cannot control plugin load order, and I'm
+" seeing NERDCommenter loading (and setting its mappings, which I
+" don't want) before another plugin runs and disables the default
+" mappings setting. So guesswegotta do it here.
+
+let g:NERDCreateDefaultMappings = 0
+
