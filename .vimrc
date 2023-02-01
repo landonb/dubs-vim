@@ -48,6 +48,9 @@ elseif filereadable($VIMRUNTIME . "/../_vimrc")
   " This file exists and *must* be sourced 
   " for native Windows gVim to work properly.
   source $VIMRUNTIME/../_vimrc
+elseif filereadable($VIMRUNTIME . "/../vimrc")
+  " MacVim (Apple Silicon Homebrew).
+  source $VIMRUNTIME/../vimrc
 else
   " Well, we could complain, but in some
   " distros, the application startup file
