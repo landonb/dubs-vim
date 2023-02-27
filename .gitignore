@@ -27,7 +27,7 @@
 
 # Settings for CoC and related LSP plugins.
 # - If present, symlinks to a file managed by DepoXy Ambers:
-#     https://github.com/depoxy/depoxy#🍯
+#     https://github.com/DepoXy/depoxy#🍯
 # - So this file not technically part of this Vim project (you won't see
 #   it in the repo), but them's the breaks. Due to technical limitations,
 #   there's a wee bit of DepoXy bleed around, including this ignore rule.
