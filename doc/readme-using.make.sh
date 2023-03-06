@@ -58,6 +58,10 @@ build_readme_using () {
   # (forked; not reST) cat ${startd}/vim-tmux-navigator/README.markdown >> ${target}
   # (forked; not reST) cat ${startd}/vim-unimpaired/README.markdown >> ${target}
 
+  # local dxy_start="${HOME}/.vim/pack/DepoXy/start"
+  # (not reST) cat ${dxy_start}/vim-clip-expand-path/README.md >> ${target}
+  # (not reST) cat ${dxy_start}/vim-depoxy-coc-defaults/README.md >> ${target}
+
   cat readme-using.pt2.rst >> ${target}
 }
 
