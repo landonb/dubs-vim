@@ -40,6 +40,7 @@ build_readme_using () {
   # (not reST) cat ${startd}/vim-buffer-ring/README.md >> ${target}
   # (forked) cat ${startd}/vim-classic-taglist/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-command-line-clock/README.md >> ${target}
+  cat ${startd}/vim-fullscreen-toggle/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-lcd-project-root/README.md >> ${target}
   # (forked; not reST) cat ${startd}/vim-markdown/README.md >> ${target}
   # (not reST) cat ${startd}/vim-netrw-cfg-split-explorer/README.md >> ${target}
