@@ -23,7 +23,7 @@ create_user_home_vimrc_symlink () {
     echo
     echo "Remove it to continue."
     echo
-    echo "   /bin/rm ${HOME}/.vimrc"
+    echo "   command rm \"${HOME}/.vimrc\""
     exit 1
   fi
 
