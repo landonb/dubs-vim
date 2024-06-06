@@ -61,28 +61,3 @@ else
   "   \ . 'i.e., $VIMRUNTIME/../[\.|_]vimrc', 'OK')
 endif
 
-" ----------------------------------------
-"  Remake/Regenerate spelling dictionary
-" ----------------------------------------
-
-" FIXME: In Vim <= 7.3:
-"         E118: Too many arguments for function: glob
-"         E15: Invalid expression: glob('~/.vim/spell/*.add', 1, 1)
-"        The third argument, '1', tells glob to return a List, rather than
-"        a string of filenames separated by NLs. Rather than bother to fix
-"        this, we'll just disable this feature in older Vims.
-"
-" FIXME/2018-06-12: (lb): Why is this here and not in a function in a plugin?
-"   Make a new plugin. dubs_mkspell seems like it's self-explanatory.
-for vocab in glob('~/.vim/spell/*.add', 1, 1)
-  if
-      \ filereadable(vocab)
-      \ && (!filereadable(vocab . '.spl') || getftime(vocab) > getftime(vocab . '.spl'))
-    " HINT: To see the contents of this command from the 'a' registrer after Vim starts:
-    "   "ap
-    redir @a
-    silent execute 'mkspell! ' . fnameescape(vocab)
-    redir END
-  endif
-endfor
-

@@ -43,6 +43,7 @@ build_readme_using () {
   cat ${startd}/vim-fullscreen-toggle/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-lcd-project-root/README.md >> ${target}
   # (forked; not reST) cat ${startd}/vim-markdown/README.md >> ${target}
+  cat ${startd}/vim-mkspell-when-stale/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-netrw-cfg-split-explorer/README.md >> ${target}
   # (not reST) cat ${startd}/vim-netrw-link-resolve/README.md >> ${target}
   cat ${startd}/vim-nicer-file-changed-prompt/README.rst >> ${target}
