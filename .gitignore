@@ -1,3 +1,7 @@
+# Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
+# Project: https://github.com/landonb/dubs-vim#✌
+# License: GPLv3
+
 # The repo contains .ignore.example, not .ignore,
 # so it's easier for each user to place their own.
 /.ignore
