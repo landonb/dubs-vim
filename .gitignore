@@ -20,7 +20,9 @@
 #   https://stackoverflow.com/questions/9850360/what-is-netrwhist
 /.netrwhist
 
-# Spell is stored in ~/.waffle since it's user-personal and user-private.
+# The user is expected to manage personal spell file on their own.
+# - For help on how you might manage your spell file, see:
+#   https://github.com/DepoXy/spellfile.txt#🧙
 /spell/
 
 # tags is generated, 'natch.
