@@ -41,7 +41,7 @@ necessary. Hopefully you'll find these plugins of interest, as well.
 Feature Overview
 ================
 
-See `Dubs Vim Reference <doc/README-USING.rst>`__
+See `Dubs Vim Reference <README-USING.rst>`__
 for a complete list of features of my plugins,
 or browse the more terse online help, ``:help dubs-vim``.
 
@@ -113,7 +113,7 @@ Install third-party packages
 Read the documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-See `Dubs Vim Reference <doc/README-USING.rst>`__
+See `Dubs Vim Reference <README-USING.rst>`__
 for a list of commands and keyboard shortcuts.
 The online help, ``:h dubs``, is an abbreviated
 list of the same.
@@ -207,7 +207,7 @@ normal commands defined by the plugin, but Dubs Vim also
 remaps and wraps calls to third-party plugins to make them
 more seamless and easy to access.
 
-See the `Dubs Vim Reference <doc/README-USING.rst>`__
+See the `Dubs Vim Reference <README-USING.rst>`__
 for a list of all Dubs Vim commands, including
 those provided by other people's plugins.
 
@@ -218,6 +218,6 @@ Dubs Vim mostly adds new key bindings not already mapped by
 standard Vim or changed by MS-Windows mode (``behave mswin``).
 However, a few standard key bindings have been remapped.
 You probably won't notice the changes, but you might.
-See `Differences from Vim <doc/README-USING.rst#Differences_from_Vim>`__
+See `Differences from Vim <README-USING.rst#Differences_from_Vim>`__
 for the list of binding differences.
 
