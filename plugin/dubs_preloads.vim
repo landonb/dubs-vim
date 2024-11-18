@@ -12,6 +12,17 @@
 " sources this script before loading any system scripts.
 
 " ------------------------------------------------------------
+" Inhibit multiple sourcings.
+" ------------------------------------------------------------
+" This script called twice from ~/.vim/.vimrc and a third time
+" from Vim after .vimrc sourced.
+
+if exists("g:loaded_vim_plugin_dubs_preloads") || &cp
+  finish
+endif
+let g:loaded_vim_plugin_dubs_preloads = 1
+
+" ------------------------------------------------------------
 " Add user local bin to path.
 " ------------------------------------------------------------
 
