@@ -79,7 +79,7 @@ let g:vikiOpenFileWith_html = "silent !firefox %{FILE}"
 
 " CXREF: /Applications/MacVim.app/Contents/Resources/vim/gvimrc
 
-if has('macunix')
+if has('macunix') && has('gui_macvim')
   " Enable Alt-key (aka Meta, aka Option) mappings (e.g., <M-a>).
   set macmeta
 
@@ -102,6 +102,12 @@ if has('macunix')
   " - Dubs Vim makes its own mappings.
   " - CXREF: :h macvim-shift-movement
   let macvim_hig_shift_movement=1
+elseif has('macunix')
+  " Avoid `set macmeta` from Apple Vim/Vi, which prints an error:
+  "   'E518: Unknown option: macmeta'
+  " also the macvim vars. won't matter. So print custom error instead.
+  " - Note that `has('gui_macvim')` applies to MacVim's GVim, Vim, and Vi.
+  echom "ALERT: Please install MacVim for a better experience"
 endif
 
 " ------------------------------------------------------
