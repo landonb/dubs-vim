@@ -176,7 +176,7 @@ with the upstream project's goals, or because I'm lazy):
 List of Third-party Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The are awesome third-party plugins I find useful or otherwise curious:
+These are awesome third-party plugins I find useful or otherwise curious:
 
 | `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
     "Automatically adapt timestamps, copyright notices, etc."
