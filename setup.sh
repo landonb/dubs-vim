@@ -29,7 +29,7 @@ create_user_home_vimrc_symlink () {
 
   # Link to our vimrc.
   # --symbolic --relative --force
-  /bin/ln -sf ${DUBS_VIMRC} .vimrc
+  command ln -sf -- "${DUBS_VIMRC}" ".vimrc"
 
   cd "${before_cd}"
 }
