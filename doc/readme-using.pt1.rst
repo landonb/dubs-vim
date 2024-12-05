@@ -110,6 +110,8 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-fullscreen-toggle <https://github.com/DepoXy/vim-fullscreen-toggle#💯>`__                     Press <F11> to cycle through a few different Vim window dimensions.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-goto-file <https://github.com/thirsty-vim/vim-goto-file#🚕>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root#🥔>`__                      Sets the working directory when editing a new buffer to the file's Git project root.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-mkspell-when-stale <https://github.com/landonb/vim-mkspell-when-stale#🥖>`__                  Automatically rebuild the Vim spell file on startup.
