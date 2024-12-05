@@ -95,7 +95,7 @@ create a symlink at ``~/.vimrc``. E.g.,
 
    cd
    git clone git://github.com/landonb/dubs-vim.git .vim
-   /bin/ln -s .vim/.vimrc .vimrc
+   ln -s .vim/.vimrc .vimrc
 
 Next Steps
 ----------
