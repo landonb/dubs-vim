@@ -98,6 +98,8 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch#🐣>`__                                  ``sensible-browser`` mappings (cross-platform hyperlink opener).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist#🏛>`__                        Clone of http://vim-taglist.sourceforge.net/
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-clip-expand-path <https://github.com/DepoXy/vim-clip-expand-path#👣>`__                       Press ``<Leader>J`` to copy full file path to clipboard, or ``<Leader>j`` to copy relative path.
@@ -155,9 +157,6 @@ with the upstream project's goals, or because I'm lazy):
 | `QFEnter <https://github.com/landonb/QFEnter>`__:
     "Open a Quickfix item in a window you choose."
       (Upstream: `QFEnter <https://github.com/yssl/QFEnter>`__)
-| `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__:
-    "Surf through buffers based on viewing history per window."
-      (Upstream: `vim-bufsurf <https://github.com/ton/vim-bufsurf>`__)
 | `vim-jsx <https://github.com/landonb/vim-jsx>`__:
     "React JSX syntax highlighting and indenting for Vim."
       (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
