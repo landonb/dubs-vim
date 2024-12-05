@@ -27,7 +27,9 @@ build_readme_using () {
   cat ${startd}/dubs_appearance/README.rst >> ${target}
   cat ${startd}/dubs_buffer_fun/README.rst >> ${target}
   cat ${startd}/dubs_edit_juice/README.rst >> ${target}
-  cat ${startd}/dubs_file_finder/README.rst >> ${target}
+  # ISOFF/2024-12-05: The landonb/dubs_file_finder plugin
+  # is now deprecated.
+  #  cat ${HOME}/.vim/pack/landonb/opt/dubs_file_finder/README.rst >> ${target}
   cat ${startd}/dubs_ftype_mess/README.rst >> ${target}
   cat ${startd}/dubs_grep_steady/README.rst >> ${target}
   cat ${startd}/dubs_html_entities/README.rst >> ${target}

@@ -36,38 +36,11 @@ create_user_home_vimrc_symlink () {
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
-# Compile Command-T extension.
-build_command_t_ext () {
-  local before_cd="$(pwd -L)"
-  cd "${HOME}"
-
-  cd "${HOME}/.vim/pack/wincent/start/command-t/ruby/command-t/ext/command-t"
-
-  # FIXME/MEH: Making command-t should probably happen any time submodule is
-  #            updated... could add to myrepos fetch-and-ff task.
-  if [ ! -e ext.so ]; then
-    echo "Making command-t..."
-    if command -v chruby > /dev/null; then
-      chruby system
-    fi
-    ruby extconf.rb
-    make
-  else
-    echo "Skipping command-t"
-  fi
-
-  cd "${before_cd}"
-}
-
-# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
-
 main () {
   # Exit on error.
   set -e
 
   create_user_home_vimrc_symlink
-
-  build_command_t_ext
 }
 
 main "$@"

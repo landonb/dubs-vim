@@ -78,8 +78,6 @@ These are plugins I've developed and continue to maintain:
   --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__                              Powerful Text Editing commands.
   --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__                            Find and Open Files.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__                              Filetype-specific features, like syntax highlighters, etc.
   --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__                            Clever Text Search including Replace.
@@ -307,6 +305,8 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
 Plugins that I used to develop or that I forked, but no longer use:
 
 | `dubs_cycloplan <https://github.com/landonb/dubs_cycloplan>`__
+| `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__
+    Find and open files quickly using ``:CommandT`` and ``:CtrlP`` plugins.
 | `vim-jsx <https://github.com/landonb/vim-jsx>`__
 
 Comprehensive Feature List

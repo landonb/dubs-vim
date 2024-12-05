@@ -124,34 +124,37 @@ Configure, personalize, dismantle, etc.
 There are a few features you'll need to prime before
 they'll be of any utility.
 
-1. Make project symlinks for Command-T wrapper.
+.. ISOFF/2024-12-05: The landonb/dubs_file_finder plugin
+.. is now deprecated.
+..
+..   1. Make project symlinks for Command-T wrapper.
+..
+..   The ``<Ctrl-D>`` command pops up Command-T and points
+..   it at the first directory named ``cmdt_paths`` that
+..   it finds within the ``~/.vim`` folder.
+..
+..   When you run Dubs Vim for the first time, it'll copy the file,
+..   ``pack/landonb/start/dubs_file_finder/cmdt_paths.template``,
+..   to ``cmdt_paths`` in the same directory.
+..
+..   (You can move this directory somewhere private, to
+..   put it under your own revision control system; then
+..   symlink your path from ``dubs_file_finder/cmdt_paths``.)
+..
+..   Look inside the copied directory and you'll find
+..   a ``generate_links.sh`` script that you can edit
+..   and run to populate the folder.
+..   Currently, it just adds links to your Vim files.
+..
+..   You can also do this manually, e.g.,
+..
+..   .. code-block:: bash
+..
+..      ln -s /path/to/projectA /path/to/cmdt_paths
+..      ln -s /path/to/projectB /path/to/cmdt_paths
+..      ...
 
-The ``<Ctrl-D>`` command pops up Command-T and points
-it at the first directory named ``cmdt_paths`` that
-it finds within the ``~/.vim`` folder.
-
-When you run Dubs Vim for the first time, it'll copy the file,
-``pack/landonb/start/dubs_file_finder/cmdt_paths.template``,
-to ``cmdt_paths`` in the same directory.
-
-(You can move this directory somewhere private, to
-put it under your own revision control system; then
-symlink your path from ``dubs_file_finder/cmdt_paths``.)
-
-Look inside the copied directory and you'll find
-a ``generate_links.sh`` script that you can edit
-and run to populate the folder.
-Currently, it just adds links to your Vim files.
-
-You can also do this manually, e.g.,
-
-.. code-block:: bash
-
-   /bin/ln -s /path/to/projectA /path/to/cmdt_paths
-   /bin/ln -s /path/to/projectB /path/to/cmdt_paths
-   ...
-
-2. Make list of folders to be easily greppable.
+1. Make list of folders to be easily greppable.
 
 Open the file ``pack/landonb/start/dubs_grep_steady/dubs_projects.vim``
 and add your project paths to the list of projects. This list is displayed
@@ -161,7 +164,7 @@ when your search with either ``\g`` or the ``F4`` mappings.
 put it under your own revision control system; then
 symlink that file from ``dubs_grep_steady/dubs_projects.vim``.)
 
-3. Hack away.
+2. Hack away.
 
 Like most things Vim, after reading the docs and
 testing a new plugin, you'll want to get your hands
