@@ -9,6 +9,8 @@ build_readme_using () {
 
   local startd="${HOME}/.vim/pack/landonb/start"
 
+  local thirsty="${HOME}/.vim/pack/thirsty-vim/start"
+
   # PARITY: See directories under ~/.vim/pack/landonb/start
   # OHWELL: Ideally, I'd convert README.md → README.rst (and ensure
   #         README-USING.rst includes all my plugs), but I've been
@@ -41,6 +43,7 @@ build_readme_using () {
   # (forked) cat ${startd}/vim-classic-taglist/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-command-line-clock/README.md >> ${target}
   cat ${startd}/vim-fullscreen-toggle/README.rst >> ${target}
+  cat ${thirsty}/vim-goto-file-sh/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-lcd-project-root/README.md >> ${target}
   # (forked; not reST) cat ${startd}/vim-markdown/README.md >> ${target}
   cat ${startd}/vim-mkspell-when-stale/README.rst >> ${target}
