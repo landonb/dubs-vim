@@ -181,18 +181,17 @@ These are awesome third-party plugins I find useful or otherwise curious:
 | `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
     "Automatically adapt timestamps, copyright notices, etc."
       [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
-| `coc-json <https://github.com/neoclide/coc-json>`__
-| `coc.nvim <https://github.com/neoclide/coc.nvim>`__
-| `coc-tsserver <https://github.com/neoclide/coc-tsserver>`__
-| `command-t <https://github.com/wincent/command-t>`__:
-    "Fast file navigation for VIM"
-| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
-    "Fuzzy file, buffer, mru, tag, etc finder."
-      [`deets <https://kien.github.io/ctrlp.vim/>`__]
+| `coc-json <https://github.com/neoclide/coc-json>`__:
+    JSON LSP server
+| `coc.nvim <https://github.com/neoclide/coc.nvim>`__:
+    LSP (Language Server Protocol) plugin
+| `coc-tsserver <https://github.com/neoclide/coc-tsserver>`__:
+    TypeScript LSP server
 | `editorconfig-vim <https://github.com/editorconfig/editorconfig-vim>`__:
     "EditorConfig plugin for Vim"
       [`more <http://editorconfig.org/>`__]
-| `fzf.vim <https://github.com/junegunn/fzf.vim>`__
+| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
+    Fuzzy-find plugin
 | `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
     "Distraction-free writing in Vim"
 | `improvedft <https://github.com/chrisbra/improvedft>`__
@@ -202,7 +201,8 @@ These are awesome third-party plugins I find useful or otherwise curious:
 | `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
     "|flashlight| All the world's indeed a stage and we are merely players"
 | `matchit <https://github.com/chrisbra/matchit>`__
-| `nerdcommenter <https://github.com/preservim/nerdcommenter>`__
+| `nerdcommenter <https://github.com/preservim/nerdcommenter>`__:
+    Easily add and remove comment leaders
 | `syntastic <https://github.com/scrooloose/syntastic>`__:
     "Syntax checking hacks for vim"
 | `tagbar <https://github.com/majutsushi/tagbar>`__
@@ -282,6 +282,11 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
 | `asyncomplete-lsp.vim <https://github.com/prabirshrestha/asyncomplete-lsp.vim>`__
 | `asyncomplete.vim <https://github.com/prabirshrestha/asyncomplete.vim>`__
 | `async.vim <https://github.com/prabirshrestha/async.vim>`__
+| `command-t <https://github.com/wincent/command-t>`__:
+    "Fast file navigation for VIM"
+| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
+    "Fuzzy file, buffer, mru, tag, etc finder."
+      [`deets <https://kien.github.io/ctrlp.vim/>`__]
 | `nerdtree <https://github.com/scrooloose/nerdtree>`__:
     "A tree explorer plugin for vim."
 | `vim-commentary <https://github.com/tpope/vim-commentary>`__
