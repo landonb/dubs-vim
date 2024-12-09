@@ -19,6 +19,8 @@ Project page: https://github.com/landonb/dubs-vim
 
 See USING.rst for more detailed help on the commands listed below.
 
+BWARE: This help doc. is severly outdated! [2024-12-08]
+
 ==============================================================================
 2. Dubs Vim Plugins (Lots More Help)			*dubs-plugins*
 
