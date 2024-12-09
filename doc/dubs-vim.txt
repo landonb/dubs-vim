@@ -52,7 +52,7 @@ And if you install the complete Dubs Vim you'll also get these plugins.
 
 |ctrlp.vim|: "Full path fuzzy file, buffer, mru, tag, ... finder."
 |The NERD Tree|: Filesystem explorer.
-|TeTrIs|: Mapped to `<Leader>te` or most like `\te`.
+|TeTrIs|: Play by running `:Tetris`.
 |tlib_vim|: tomtom's utility function library.
 |viki_vim|: tomtom's personal wiki for Vim.
 |vim-rails|: tpope's Ruby on Rails power tools.
