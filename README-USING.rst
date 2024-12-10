@@ -66,76 +66,84 @@ List of Dubs Vim Plugins
 
 These are plugins I've developed and continue to maintain:
 
-.. FIXME/2021-08-15 20:25: You're missing a bunch of rebranded projects...
-.. | `vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__: reStructuredText power folder.
-.. | `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs>`__: ...
-.. | `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive>`__: ...
-.. | `vim-reST-highline <https://github.com/landonb/vim-reST-highline>`__: ...
-
 .. table::
   :widths: 25 75
 
-  ============================================================================================  ==============================================================================================================
-  `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__                              Compelling light on dark color scheme (that uses true black).
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_appearance <https://github.com/landonb/dubs_appearance>`__                              Configure basic Vim look n' feel (that appeals to the author).
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun>`__                              Manage Buffers and Windows.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__                              Powerful Text Editing commands.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__                            Find and Open Files.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__                              Filetype-specific features, like syntax highlighters, etc.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__                            Clever Text Search including Replace.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__                        HTML Entity table.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__                                *Choice* Status Line.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__                          Project plugin wrapper.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__                        Elegant Quickfix wrapper.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__                            Automatically set whitespace and line-length settings.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap>`__                      Syntastic wrapper.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__                    Simple text wrapping wrapper.
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch>`__                                ``sensible-browser`` mappings (cross-platform hyperlink opener).
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-command-line-clock <https://github.com/landonb/vim-command-line-clock>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-netrw-cfg-split-explorer <https://github.com/landonb/vim-netrw-cfg-split-explorer>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-ovm-seven-of-spines <https://github.com/landonb/vim-ovm-seven-of-spines>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__                                    Innovative reStructuredText document folding (manage notes like a pro).
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-source-reloader <https://github.com/landonb/vim-source-reloader>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day>`__
-  --------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator>`__
-  ============================================================================================  ==============================================================================================================
+  ================================================================================================  ==============================================================================================================
+  `dubs_after_dark <https://github.com/landonb/dubs_after_dark#🌃>`__                                Compelling light on dark color scheme (that uses true black).
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_appearance <https://github.com/landonb/dubs_appearance#💅>`__                                Configure basic Vim look n' feel (that appeals to the author).
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun#🎲>`__                                Manage Buffers and Windows.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice#🧃>`__                                Powerful Text Editing commands.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess#🧹>`__                                Filetype-specific features, like syntax highlighters, etc.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady#🤹>`__                              Clever Text Search including Replace.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_html_entities <https://github.com/landonb/dubs_html_entities#👽>`__                          HTML Entity table.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_mescaline <https://github.com/landonb/dubs_mescaline#🍄>`__                                  *Choice* Status Line.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_project_tray <https://github.com/landonb/dubs_project_tray#🗂>`__                            Project plugin wrapper.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap#🌯>`__                          Elegant Quickfix wrapper.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_style_guard <https://github.com/landonb/dubs_style_guard#💂>`__                              Automatically set whitespace and line-length settings.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-async-mapper <https://github.com/embrace-vim/vim-async-mapper#જ⁀➴>`__                         Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist#🏛>`__                        Clone of http://vim-taglist.sourceforge.net/
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-clip-expand-path <https://github.com/DepoXy/vim-clip-expand-path#👣>`__                       Press ``<Leader>J`` to copy full file path to clipboard, or ``<Leader>j`` to copy relative path.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-command-line-clock <https://github.com/landonb/vim-command-line-clock#🕰>`__                  Shows the date and clock time in the command line when no other output is displayed.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-depoxy-coc-defaults <https://github.com/DepoXy/vim-depoxy-coc-defaults#🥥>`__                 Sensible coc.nvim defaults and maps.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-fullscreen-toggle <https://github.com/DepoXy/vim-fullscreen-toggle#💯>`__                     Press <F11> to cycle through a few different Vim window dimensions.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-goto-file <https://github.com/embrace-vim/vim-goto-file#🚕>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root#🥔>`__                      Sets the working directory when editing a new buffer to the file's Git project root.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-mkspell-when-stale <https://github.com/landonb/vim-mkspell-when-stale#🥖>`__                  Automatically rebuild the Vim spell file on startup.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-netrw-cfg-split-explorer <https://github.com/landonb/vim-netrw-cfg-split-explorer#🌐>`__      Sensible ``:netrw`` defaults.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve#🧩>`__                  Reopens files opened with `netrw` at their resolved path to avoid a file-exists error on save.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt#🗯>`__    Skip Vim alert when file modification changed but not content, useful if you git-rebase a lot.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk#🧼>`__              Quickly ype ``jk`` or ``kj`` in Insert mode to switch to Normal mode.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-ovm-seven-of-spines <https://github.com/landonb/vim-ovm-seven-of-spines#🦴>`__                Press <Ctrl-minus> to insert an hrule into reST docs.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-reSTfold <https://github.com/landonb/vim-reSTfold#🙏>`__                                      Innovative reStructuredText document folding (manage notes like a pro).
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs#🎨>`__                            A plethora of reStructuredText syntax highlights to make maintaining reST notes files beautiful.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive#🖐>`__                            Add *FIVER* highlighting to reStructuredText notes files.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-reST-highline <https://github.com/landonb/vim-reST-highline#➖>`__                            Highlight lines of repeated characters in reStructuredText notes files, to use as a colorful hrule.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down#🛑>`__      Tweaked ``select-mode`` Ctrl-Shift-Left and Ctrl-Shift-Right motions, for ``behave mswin``.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-source-reloader <https://github.com/landonb/vim-source-reloader#🔃>`__                        Press <F9> to reload VimL source files.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day#⌚>`__            Shows the date and clock time in the titlebar, useful if you hide the macOS menubar.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator#🧭>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-web-hatch <https://github.com/embrace-vim/vim-web-hatch#🐣>`__                                Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
+  ================================================================================================  ==============================================================================================================
 
-.. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/depoxy/???
+.. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/DepoXy/depoxy/tree/release/home/.vim/pack/DepoXy/start/vim-depoxy
 .. SKIPD/2022-09-21: DepoXy/vim-trap is private, but worth calling out: https://github.com/YOU/vim-trap
 
 List of Forked Plugins
@@ -147,150 +155,178 @@ with the upstream project's goals, or because I'm lazy):
 
 | `ansible-vim <https://github.com/landonb/ansible-vim>`__:
     "A vim plugin for syntax highlighting Ansible's common filetypes."
+    Fork inhibits ``ansible-vim`` from changing ``isfname`` and ``path``,
+    tweaks Yaml indent behavior, and disables ``indentexpr``.
       (Upstream: `ansible-vim <https://github.com/pearofducks/ansible-vim>`__)
 | `QFEnter <https://github.com/landonb/QFEnter>`__:
     "Open a Quickfix item in a window you choose."
+    Fork restores quickfix cursor position after opening error, and it
+    avoids opening file in any window showing a special buffer.
       (Upstream: `QFEnter <https://github.com/yssl/QFEnter>`__)
-| `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__:
-    "Surf through buffers based on viewing history per window."
-      (Upstream: `vim-bufsurf <https://github.com/ton/vim-bufsurf>`__)
-| `vim-jsx <https://github.com/landonb/vim-jsx>`__:
-    "React JSX syntax highlighting and indenting for Vim."
-      (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
-| `vim-markdown <https://github.com/landonb/vim-markdown>`__:
+| `vim-markdown <https://github.com/landonb/vim-markdown#👇>`__:
     "Markdown for Vim."
+    Fork fixes issues seeing XML tags and content being white on white
+    (though might be specific to my Vim environment).
       (Upstream: `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
-| `vim-surround <https://github.com/landonb/vim-surround>`__:
-    "Quoting and parenthesizing made simple."
-      (Upstream: `vim script <http://www.vim.org/scripts/script.php?script_id=1697>`__,
-                 `vim-surround <https://github.com/tpope/vim-surround>`__)
-| `vim-unimpaired <https://github.com/landonb/vim-unimpaired>`__:
+| `vim-unimpaired <https://github.com/landonb/vim-unimpaired#👿>`__:
     "Pairs of handy bracket mappings."
+    Fork adds ``[om`` and ``[om`` to show/hide menubar (for Linux users).
       (Upstream: `vim script <http://www.vim.org/scripts/script.php?script_id=1590>`__,
                  `vim-unimpaired <https://github.com/tpope/vim-unimpaired>`__)
 
-List of Third-party Plugins
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+List of LSP Plugins
+^^^^^^^^^^^^^^^^^^^
 
-The are awesome third-party plugins I find useful or otherwise curious:
+These are `LSP <https://langserver.org/>`__ client and server plugins,
+which empower Vim to be a great choice for all your development needs
+(they integrate features like auto completion, go to definition, etc.).
 
-| `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
-    "Automatically adapt timestamps, copyright notices, etc."
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
-| `coc-json <https://github.com/neoclide/coc-json>`__
-| `coc.nvim <https://github.com/neoclide/coc.nvim>`__
-| `coc-tsserver <https://github.com/neoclide/coc-tsserver>`__
-| `command-t <https://github.com/wincent/command-t>`__:
-    "Fast file navigation for VIM"
-| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
-    "Fuzzy file, buffer, mru, tag, etc finder."
-      [`deets <https://kien.github.io/ctrlp.vim/>`__]
+| `coc-json <https://github.com/neoclide/coc-json>`__:
+    JSON LSP server
+| `coc.nvim <https://github.com/neoclide/coc.nvim>`__:
+    LSP (Language Server Protocol) plugin
+| `coc-tsserver <https://github.com/neoclide/coc-tsserver>`__:
+    TypeScript LSP server
+
+List of Motion Plugins
+^^^^^^^^^^^^^^^^^^^^^^
+
+Note that many of these plugins each redefine or improve upon the
+built-in ``f``, ``F``, ``t``, ``T``, ``;``, and ``,`` commands,
+so generally you want to choose one of these to use. (The others
+you'll find under ``opt/``.)
+
+One nicety about ``vim-easymotion`` is that all its features are *opt-in*,
+so you can leave it under its ``start/`` directory and it won't wire
+anything unless you add wiring from your config (as opposed to, say,
+``improveft``, which adds its maps (e.g., to ``s``) when it loads).
+
+| `improvedft <https://github.com/chrisbra/improvedft>`__
+| `vim-easymotion <https://github.com/easymotion/vim-easymotion>`__
+| `vim-sneak <https://github.com/justinmk/vim-sneak>`__
+
+Motion plugins that implement two-character jumpers:
+
+| `vim-easymotion <https://github.com/easymotion/vim-easymotion>`__:
+    The pinnacle of motion plugins, it seems
+| `vim-sneak <https://github.com/justinmk/vim-sneak>`__:
+    Jump to any location specified by two characters;
+    "minimalist alternative to *EasyMotion*"
+| `hop.nvim <https://github.com/smoka7/hop.nvim>`__:
+    *EasyMotion*-like plugin for Neovim
+| `leap.nvim <https://github.com/ggandor/leap.nvim>`__:
+    Neovim vim-sneak fork with target label previews
+| `vim-seek <https://github.com/goldfeld/vim-seek>`__
+| `vim-smalls <https://github.com/t9md/vim-smalls>`__:
+    grays out doc to highlight cursor and matches
+
+Motion plugins that implement single-character `f`, `F`, `t`, and `T`
+improvements, e.g., multiline, smart case, repeat with `;` and `,`,
+and highlighting:
+
+| `improvedft <https://github.com/chrisbra/improvedft>`__
+| `clever-f.vim <https://github.com/rhysd/clever-f.vim>`__
+| `vim-extended-ft <https://github.com/svermeulen/vim-extended-ft>`__
+| `vim-fanfingtastic <https://github.com/dahu/vim-fanfingtastic>`__
+| `flash.nvim <https://github.com/folke/flash.nvim>`__ (Neovim)
+
+List of Window-related Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
+    "|flashlight| All the world's indeed a stage and we are merely players"
+| `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
+
+List of Programming and Language Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+General:
+
 | `editorconfig-vim <https://github.com/editorconfig/editorconfig-vim>`__:
     "EditorConfig plugin for Vim"
       [`more <http://editorconfig.org/>`__]
-| `fzf.vim <https://github.com/junegunn/fzf.vim>`__
-| `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
-    "Distraction-free writing in Vim"
-| `improvedft <https://github.com/chrisbra/improvedft>`__
-| `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
-    "Vimscript library of common functions."
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=4433>`__]
-| `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
-    "|flashlight| All the world's indeed a stage and we are merely players"
 | `matchit <https://github.com/chrisbra/matchit>`__
-| `nerdcommenter <https://github.com/preservim/nerdcommenter>`__
-| `syntastic <https://github.com/scrooloose/syntastic>`__:
-    "Syntax checking hacks for vim"
+    `matchit docs <https://github.com/chrisbra/matchit/blob/master/doc/matchit.txt>`__
+| `nerdcommenter <https://github.com/preservim/nerdcommenter>`__:
+    Easily add and remove comment leaders
 | `tagbar <https://github.com/majutsushi/tagbar>`__
-| `tcomment_vim <https://github.com/tomtom/tcomment_vim>`__:
-    "An extensible & universal comment plugin"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=1173>`__,
-       see also: `vim-commentary <https://github.com/tpope/vim-commentary>`__]
-| `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
-    "Some utility functions for VIM"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=1863>`__]
-| `typescript-vim <https://github.com/leafgarland/typescript-vim>`__
-| `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`__
-| `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__
-| `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
-    "transparent editing of gpg encrypted files."
-  [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
+
+Coverage:
+
 | `vim-istanbul <https://github.com/juanpabloaj/vim-istanbul>`__
-| `vim-javascript <https://github.com/pangloss/vim-javascript>`__:
-    "Vastly improved Javascript indentation and syntax support in Vim.
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=4452>`__]
-| `vim-js <https://github.com/yuezk/vim-js>`__
-| `vim-jsx-pretty <https://github.com/MaxMEllon/vim-jsx-pretty>`__
-| `vim-mergetool <https://github.com/samoshkin/vim-mergetool>`__
-| `vim-misc <https://github.com/xolox/vim-misc>`__:
-    "Miscellaneous auto-load Vim scripts"
-      [`more <https://peterodding.com/code/vim/misc/>`__]
-| `vim-python-matchit <https://github.com/voithos/vim-python-matchit>`__
-| `vim-toml <https://github.com/cespare/vim-toml>`__
-| `yats.vim <https://github.com/HerringtonDarkholme/yats.vim>`__
-| `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
 
-.. |flashlight| unicode:: 0x1F526 .. flashlight
+Git:
 
-List of Tim Pope Plugins
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-These plugins are maintained by the venerable `Tim Pope <https://github.com/tpope>`__:
-
-| `vim-abolish <https://github.com/tpope/vim-abolish>`__
 | `vim-fugitive <https://github.com/tpope/vim-fugitive>`__:
     "fugitive.vim: a Git wrapper so awesome, it should be illegal"
   [`vim script <http://www.vim.org/scripts/script.php?script_id=2975>`__]
+| `vim-mergetool <https://github.com/samoshkin/vim-mergetool>`__
+
+JSON:
+
 | `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__
-| `vim-speeddating <https://github.com/tpope/vim-speeddating>`__:
-    "speeddating.vim: use CTRL-A/CTRL-X to increment dates, times, and more"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=2120>`__]
-| `vim-vinegar <https://github.com/tpope/vim-vinegar>`__:
-    "vinegar.vim: combine with netrw to create a delicious salad dressing"
 
-List of Less-used Plugins
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Python:
 
-These plugins that I no longer use (or rarely use) but that I still have installed:
+| `vim-python-matchit <https://github.com/voithos/vim-python-matchit>`__
 
-| `jellybeans.vim <https://github.com/nanotech/jellybeans.vim>`__:
-    "A colorful, dark color scheme for Vim."
-      [`vim.org <http://www.vim.org/scripts/script.php?script_id=2555>`__]
-| `nord-vim <https://github.com/arcticicestudio/nord-vim>`__:
-    "An arctic, north-bluish clean and elegant Vim theme."
-| `TeTrIs.vim <https://github.com/vim-scripts/TeTrIs.vim>`__:
-    "A tetris game in pure vim"
-| `viki_vim <https://github.com/tomtom/viki_vim>`__:
-    "A personal wiki for Vim"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=861>`__]
+Ruby:
+
 | `vim-rails <https://github.com/tpope/vim-rails>`__:
     "rails.vim: Ruby on Rails power tools"
       [`vim script <http://www.vim.org/scripts/script.php?script_id=1567>`__]
 
-List of Retired Plugins
-^^^^^^^^^^^^^^^^^^^^^^^
+TOML:
 
-For posterity, here are plugins that I used to use, but that I've since stopped using
-(this is not a judgement on their merits: sometimes I use certain plugins with certain
-technologies that I no longer use, or I maybe some functionality has since been 
-incorporated into Vim itself, or maybe I found a different plugin, who knows):
+| `vim-toml <https://github.com/cespare/vim-toml>`__
 
-| `asyncomplete-lsp.vim <https://github.com/prabirshrestha/asyncomplete-lsp.vim>`__
-| `asyncomplete.vim <https://github.com/prabirshrestha/asyncomplete.vim>`__
-| `async.vim <https://github.com/prabirshrestha/async.vim>`__
-| `nerdtree <https://github.com/scrooloose/nerdtree>`__:
-    "A tree explorer plugin for vim."
-| `vim-commentary <https://github.com/tpope/vim-commentary>`__
+TypeScript/JavaScript:
+
+| `vim-javascript <https://github.com/pangloss/vim-javascript>`__:
+    "Vastly improved JavaScript indentation and syntax support in Vim.
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4452>`__]
+| `vim-js <https://github.com/yuezk/vim-js>`__
+| `vim-jsx-pretty <https://github.com/MaxMEllon/vim-jsx-pretty>`__
+| `yats.vim <https://github.com/HerringtonDarkholme/yats.vim>`__
+
+List of Tim Pope Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+These plugins are maintained by the venerable `Tim Pope <https://github.com/tpope>`__
+(and that are not included in the lists above):
+
+| `vim-abolish <https://github.com/tpope/vim-abolish>`__
+| `vim-fugitive <https://github.com/tpope/vim-fugitive>`__ (see above)
+| `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__ (see above)
+| `vim-rails <https://github.com/tpope/vim-rails>`__ (see above)
+| `vim-repeat <https://github.com/tpope/vim-repeat>`__
+| `vim-surround <https://github.com/landonb/vim-surround#🔄>`__:
+    "Quoting and parenthesizing made simple."
+    (Inspired by `a vim script <http://www.vim.org/scripts/script.php?script_id=1697>`__)
+| `vim-speeddating <https://github.com/tpope/vim-speeddating>`__:
+    "speeddating.vim: use CTRL-A/CTRL-X to increment dates, times, and more"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=2120>`__]
+| `vim-unimpaired <https://github.com/tpope/vim-unimpaired>`__ (see above)
+| `vim-vinegar <https://github.com/tpope/vim-vinegar>`__:
+    "vinegar.vim: combine with netrw to create a delicious salad dressing"
+
+Tim Pope plugins I've tried but don't currently use:
+
+| `vim-commentary <https://github.com/tpope/vim-commentary>`__:
+    I use `NERD Commenter <https://github.com/preservim/nerdcommenter>`__;
+    see also `tcomment.vim <https://github.com/tomtom/tcomment_vim>`__
 | `vim-endwise <https://github.com/tpope/vim-endwise>`__:
-    "endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script, etc"
+    "endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script, etc";
+    I tried but found it disruptive (I'm not a huge fan of auto-completion...)
   [`vim script <http://www.vim.org/scripts/script.php?script_id=2386>`__]
-| `vim-go <https://github.com/editorconfig/vim-go>`__
-| `vim-lsp-javascript <https://github.com/ryanolsonx/vim-lsp-javascript>`__
-| `vim-lsp-settings <https://github.com/mattn/vim-lsp-settings>`__
-| `vim-lsp-typescript <https://github.com/ryanolsonx/vim-lsp-typescript>`__
-| `vim-lsp <https://github.com/prabirshrestha/vim-lsp>`__
-| `vim-pathogen <https://github.com/tpope/vim-pathogen>`__
-| `vim-restructuredtext <https://github.com/marshallward/vim-restructuredtext>`__
+| `vim-obsession <https://github.com/tpope/vim-obsession>`__:
+    *obsession.vim: continuously updated session files*;
+    see instead `my approach
+    <https://github.com/landonb/dubs_appearance/blob/release/plugin/session_file_boss.vim>`__
+| `vim-pathogen <https://github.com/tpope/vim-pathogen>`__:
+    I use the `myrepos <https://myrepos.branchable.com/>`__ and
+    `Oh, My Repos! <https://github.com/landonb/ohmyrepos>`__ to
+    manage Vim plugins as a group of managed Git repositories
 | `vim-scriptease <https://github.com/tpope/vim-scriptease>`__:
     "scriptease.vim: A Vim plugin for Vim plugins"
       [`vim script <http://www.vim.org/scripts/script.php?script_id=4394>`__]
@@ -298,10 +334,210 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
     "vividchalk.vim: a colorscheme strangely reminiscent of Vibrant Ink for a certain OS X editor"
       [`vim script <http://www.vim.org/scripts/script.php?script_id=1891>`__]
 
+See below for `Other Tim Pope plugins to consider`_.
+
+List of Other Plugins
+^^^^^^^^^^^^^^^^^^^^^
+
+These are other awesome third-party plugins I find useful or otherwise
+curious (though some I rarely use, I'll admit):
+
+| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
+    Fuzzy-find plugin
+| `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
+    "transparent editing of gpg encrypted files."
+  [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
+
+.. |flashlight| unicode:: 0x1F526 .. flashlight
+
+List of Color Scheme Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The author created the ``dubs_after_dark`` color scheme because I wanted a true
+black background and vibrant foreground colors, and most (none?) of the other
+color schemes that I demoed use true black (most dark themes uses a darkish grey).
+
+These plugins are installed under ``pack/*/opt/`` paths, so you can load them
+first via ``:packadd {plugin-name}`` and then run ``colorscheme {scheme-name}``
+to try out different color schemes.
+
+| `jellybeans.vim <https://github.com/nanotech/jellybeans.vim>`__:
+    "A colorful, dark color scheme for Vim."
+      [`vim.org <http://www.vim.org/scripts/script.php?script_id=2555>`__]
+| `nord-vim <https://github.com/arcticicestudio/nord-vim>`__:
+    "An arctic, north-bluish clean and elegant Vim theme."
+| `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`__
+| `vim-vividchalk <https://github.com/tpope/vim-vividchalk>`__ (see above)
+
+List of Retired or Optional Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For posterity, here are plugins that I used to use, but that I've since stopped using
+(this is not a judgement on their merits: sometimes I use certain plugins with certain
+technologies that I no longer use, or I maybe some functionality has since been 
+incorporated into Vim itself, or maybe I found a different plugin, who knows).
+
+Note that many of these plugins I simply moved under their related ``opt/``
+directory, so you can load them on-demand. (E.g., there's no reason to
+always load *TeTrIs*, but if you want to try it, run ``:packadd TeTrIs.vim``
+and then ``\te``.)
+
+| `asyncomplete-lsp.vim <https://github.com/prabirshrestha/asyncomplete-lsp.vim>`__
+| `asyncomplete.vim <https://github.com/prabirshrestha/asyncomplete.vim>`__
+| `async.vim <https://github.com/prabirshrestha/async.vim>`__
+| `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
+    "Automatically adapt timestamps, copyright notices, etc."
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
+| `command-t <https://github.com/wincent/command-t>`__:
+    "Fast file navigation for VIM"
+| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
+    "Fuzzy file, buffer, mru, tag, etc finder."
+      [`deets <https://kien.github.io/ctrlp.vim/>`__]
+| `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
+    "Distraction-free writing in Vim"
+| `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
+    "Vimscript library of common functions."
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4433>`__]
+| `nerdtree <https://github.com/scrooloose/nerdtree>`__:
+    "A tree explorer plugin for vim."
+| `syntastic <https://github.com/scrooloose/syntastic>`__:
+    "Syntax checking hacks for vim"
+| `tcomment_vim <https://github.com/tomtom/tcomment_vim>`__:
+    "An extensible & universal comment plugin"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1173>`__,
+       see also: `vim-commentary <https://github.com/tpope/vim-commentary>`__]
+| `TeTrIs.vim <https://github.com/vim-scripts/TeTrIs.vim>`__:
+    "A tetris game in pure vim"
+| `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
+    "Some utility functions for VIM"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1863>`__]
+| `typescript-vim <https://github.com/leafgarland/typescript-vim>`__:
+    Circa TypeScript 1.0, since superseded by Vim's
+    `typescript.vim <https://github.com/vim/vim/blob/master/runtime/syntax/typescript.vim>`__
+    and `YATS <https://github.com/HerringtonDarkholme/yats.vim>`__.
+| `viki_vim <https://github.com/tomtom/viki_vim>`__:
+    "A personal wiki for Vim"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=861>`__]
+| `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__
+| `vim-go <https://github.com/editorconfig/vim-go>`__
+| `vim-lsp-javascript <https://github.com/ryanolsonx/vim-lsp-javascript>`__
+| `vim-lsp-settings <https://github.com/mattn/vim-lsp-settings>`__
+| `vim-lsp-typescript <https://github.com/ryanolsonx/vim-lsp-typescript>`__
+| `vim-lsp <https://github.com/prabirshrestha/vim-lsp>`__
+| `vim-misc <https://github.com/xolox/vim-misc>`__:
+    "Miscellaneous auto-load Vim scripts"
+      [`more <https://peterodding.com/code/vim/misc/>`__]
+| `vim-restructuredtext <https://github.com/marshallward/vim-restructuredtext>`__
+
 Plugins that I used to develop or that I forked, but no longer use:
 
 | `dubs_cycloplan <https://github.com/landonb/dubs_cycloplan>`__
-| `vim-jsx <https://github.com/landonb/vim-jsx>`__
+| `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__
+    Find and open files quickly using ``:CommandT`` and ``:CtrlP`` plugins.
+| `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap#🤸>`__:
+    Syntastic wrapper.
+| `vim-jsx <https://github.com/landonb/vim-jsx>`__:
+    "React JSX syntax highlighting and indenting for Vim."
+      (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
+
+Other Tim Pope plugins to consider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Other Tim Pope plugins to consider (that author has not tried; listed
+here just to be sure you're not missing anything useful):
+
+| `vim-dadbod <https://github.com/tpope/vim-dadbod>`__:
+    "dadbod.vim: Modern database interface for Vim",
+    e.g., ``:DB postgresql:///foobar``
+| `vim-eunuch <https://github.com/tpope/vim-eunuch>`__:
+    "eunuch.vim: Helpers for UNIX",
+    e.g., ``:Chmod``
+| `vim-projectionist <https://github.com/tpope/vim-projectionist>`__:
+    "projectionist.vim: Granular project configuration",
+    helps work with boilerplate or similarly-configured projects
+| `vim-git <https://github.com/tpope/vim-git>`__:
+    "syntax, indent, and filetype plugin files for git, gitcommit, gitconfig, gitrebase, and gitsendemail",
+    "earlier versions of these files are shipped with Vim"
+    [`vim script <https://www.vim.org/scripts/script.php?script_id=1654>`__]
+| `vim-sleuth <https://github.com/tpope/vim-sleuth>`__:
+    "sleuth.vim: Heuristically set buffer options",
+    "automatically adjusts ``shiftwidth`` and ``expandtab`` heuristically based on the current file",
+    "Modelines and EditorConfig are also consulted"
+| `vim-haml <https://github.com/tpope/vim-haml>`__:
+    "Vim runtime files for Haml, Sass, and SCSS",
+    "You only need it if you want the very latest updates."
+| `vim-dispatch <https://github.com/tpope/vim-dispatch>`__:
+    "dispatch.vim: Asynchronous build and test dispatcher"
+| `vim-salve <https://github.com/tpope/vim-salve>`__:
+    "salve.vim: Static Vim support for Leiningen, Boot, and the Clojure CLI"
+| `vim-sensible <https://github.com/tpope/vim-sensible>`__:
+    "sensible.vim: Defaults everyone can agree on"
+    (`plugin/sensible.vim <https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim>`__)
+| `vim-markdown <https://github.com/tpope/vim-markdown>`__:
+    "Vim Markdown runtime files",
+    "you don't need to install these if you are running a recent version of Vim"
+| `vim-rvm <https://github.com/tpope/vim-rvm>`__:
+    "rvm.vim: Switch Ruby versions from inside Vim"
+| `vim-cucumber <https://github.com/tpope/vim-cucumber>`__:
+    "Vim Cucumber runtime files",
+    "development version of Vim's included runtime files for the Ruby acceptance testing framework Cucumber"
+| `rbenv-ctags <https://github.com/tpope/rbenv-ctags>`__:
+    "Automatically generate ctags for rbenv Ruby stdlibs"
+| `vim-rake <https://github.com/tpope/vim-rake>`__:
+    "rake.vim: it's like rails.vim without the rails",
+    leverages "projectionist.vim to enable you to use all those parts of
+    rails.vim that you wish you could use on your other Ruby projects"
+| `mta-settings <https://github.com/tpope/mta-settings>`__:
+    "Configure ActionMailer or Mail delivery settings based on the environment",
+    Ruby gem "enables transparent MTA (mail transport agent) configuration from the environment
+    for both `ActionMailer <https://github.com/rails/rails/tree/main/actionmailer>`__
+    and `Mail <https://github.com/mikel/mail>`__
+| `vim-bundler <https://github.com/tpope/vim-bundler>`__:
+    "bundler.vim: Lightweight support for Ruby's Bundler"
+| `vim-flagship <https://github.com/tpope/vim-flagship>`__:
+    "flagship.vim: Configurable and extensible tab line and status line",
+    "Vim status line and tab line that are both easily customizable by the user and extensible by other plugins"
+| `vim-capslock <https://github.com/tpope/vim-capslock>`__:
+    "capslock.vim: Software caps lock",
+    "Press ``<C-G>c`` in insert mode to toggle a temporary software caps lock,
+    or ``gC`` in normal mode to toggle a slightly more permanent one"
+| `vim-rhubarb <https://github.com/tpope/vim-rhubarb>`__:
+    "rhubarb.vim: GitHub extension for fugitive.vim",
+    "If fugitive.vim is the Git, rhubarb.vim is the Hub",
+    e.g., ``:GBrowse`` to open GitHub URLs
+| `vim-rsi <https://github.com/tpope/vim-rsi>`__:
+    "rsi.vim: Readline style insertion",
+    "C-a, C-b, C-d, C-e, C-f, C-t, M-b, M-d, M-f, M-n, and M-p are provided"
+    (`plugin/rsi.vim <https://github.com/tpope/vim-rsi/blob/master/plugin/rsi.vim>`__)
+| `vim-tbone <https://github.com/tpope/vim-tbone>`__:
+    "tbone.vim: tmux basics"
+| `vim-sexp-mappings-for-regular-people <https://github.com/tpope/vim-sexp-mappings-for-regular-people>`__:
+    "`vim-sexp <https://github.com/guns/vim-sexp>`__ mappings for regular people"
+| `vim-ragtag <https://github.com/tpope/vim-ragtag>`__:
+    "ragtag.vim: ghetto HTML/XML mappings (formerly allml.vim)"
+| `vim-heroku <https://github.com/tpope/vim-heroku>`__:
+    "heroku.vim: Heroku CLI wrapper"
+| `vim-dotenv <https://github.com/tpope/vim-dotenv>`__:
+    "dotenv.vim: Basic support for ``.env`` and ``Procfile``"
+| `vim-liquid <https://github.com/tpope/vim-liquid>`__:
+    "Vim `Liquid <https://jekyllrb.com/docs/liquid/>`__ runtime files
+    with `Jekyll <https://jekyllrb.com/>`__ enhancements"
+| `vim-apathy <https://github.com/tpope/vim-apathy>`__:
+    "apathy.vim: Set the 'path' option for miscellaneous file types",
+    "sets the five path searching options — ``path``, ``suffixesadd``,
+    ``include``, ``includeexpr``, and ``define``
+| `vim-classpath <https://github.com/tpope/vim-classpath>`__:
+    "classpath.vim: Set 'path' from the Java class path"
+| `vim-haystack <https://github.com/tpope/vim-haystack>`__:
+    "haystack.vim: fuzzy matching algorithm",
+    "a fuzzy matching algorithm for use by other Vim plugins"
+| `vim-afterimage <https://github.com/tpope/vim-afterimage>`__:
+    "afterimage.vim: edit binary files by converting them to text equivalents",
+    "Edit ICO, PNG, and GIF icons. No really. They're converted with ImageMagick to XPM,
+    a plain text image format with beautiful syntax highlighting in GUI versions of Vim"
+| `vim-flatfoot <https://github.com/tpope/vim-flatfoot>`__:
+    "flatfoot.vim: experimental enhancement of "f" and "t" keys"
+    (`plugin/flatfoot.vim <https://github.com/tpope/vim-flatfoot/blob/master/plugin/flatfoot.vim>`__)
 
 Comprehensive Feature List
 --------------------------
@@ -477,9 +713,7 @@ This plugin configures the appearance of Vim.
 - Enable ``modeline``: Vim will read modelines at the head or tail,
   like ``vim:tw=78:ts=8:ft=help:norl:``, and set itself accordingly.
 
-- Enable ``:autoindent`` and ``:smartindent``.
-
-  - And enable loading ``indent/`` files.
+- Enable ``:autoindent``, and loading ``indent/`` files.
 
 - Enable ``:wildmenu``, a/k/a, Vim command line tab completion.
 
@@ -729,12 +963,7 @@ which is mapped to ``<Ctrl-D>`` (see later section).
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``__``                       Show buffer list prompt       Similar to ``<Shift-F2>``, but simpler.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Shift-Alt-2>``            Toggle                        This toggles the MiniBuf Explorer window, but this buffer explorer
-                              MiniBufExplorer               loses its utility as the number of open buffers grows.
-                                                            You might find something like :CommandT
-                                                            (mapped to ``<Ctrl-D>`` in
-                                                            `dubs_file_finder <https://github.com/landonb/dubs_buffer_fun>`__)
-                                                            more useful.
+ ``<Shift-Alt-2>``            Toggle ``:netrw``             This toggles the ``:netrw`` Explorer window.
 ===========================  ============================  ==============================================================================
 
 Dubs Vim Window Commands
@@ -947,7 +1176,7 @@ To unlock the tag list feature, install the `taglist` plugin.
    cd ~/.vim/pack/vim-scripts/start/taglist
    wget -N http://downloads.sourceforge.net/project/vim-taglist/vim-taglist/4.6/taglist_46.zip
    unzip taglist_46.zip
-   /bin/rm taglist_46.zip
+   command rm taglist_46.zip
 
 Always-On Features (Not Mapped to Any Keys)
 ===========================================
@@ -958,7 +1187,7 @@ Smart Tabs
 - The
   `Smart Tabs
   <https://github.com/vim-scripts/Smart-Tabs/blob/master/plugin/ctab.vim>`__
-  feature, located in ``dubs_edit_juice/plugin/ctab.vim``,
+  feature, located in ``dubs_edit_juice/plugin/smart-tabs.vim``,
   translates tabs to spaces if you're tabbing but not indenting, i.e.,
   if only spaces precede the cursor to the start of the line, then tabs
   are added when <tab> is pressed, otherwise <spaces> are inserted instead.
@@ -1051,7 +1280,7 @@ Commands for searching for text within a file.
                                                                         the matching words in the buffers are highlighted.
                                                                         To disable the highlight, type ``<Ctrl-H>``
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\vl``                            Toggle ``*`` Whitespace             ``VeryLiteral`` defaults to off, such that selecting text with trailing
+ ``\ds``                            Toggle ``*`` Whitespace             ``VeryLiteral`` defaults to off, such that selecting text with trailing
                                     Behavior                            whitespace and then pressing ``*`` to start a match matches the same text
                                                                         but ignores whitespace, e.g., "it " (with a space) matches "it" (without a space).
                                                                         You probably won't ever use this command, since you'll normally use ``*``
@@ -1075,7 +1304,7 @@ Commands for searching for text within a file.
                                     Listed in Quickfix
                                                                         - Hint: Do an ``<F4>`` or ``\g`` search to populate the Quickfix window
                                                                           (these two commands are part of
-                                                                          `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__).
+                                                                          `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady#🧐>`__).
 
                                                                         - Double-click the first entry in the Quickfix search results to open that buffer.
 
@@ -1318,7 +1547,7 @@ Highlights:
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``gd``                             Jump to a Declaration               Jumps from the use of a variable to its local definition.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\tab``                           Toggle Tab Highlighting             Type backslash and then ``t`` ``a`` ``b`` to enable or disable
+ ``\dt``                            Toggle Tab Highlighting             Type backslash and then ``t`` ``a`` ``b`` to enable or disable
                                                                         tab highlighting. When enabled, tabs will be shown with a solid blue underline.
 =================================  ==================================  ==============================================================================
 
@@ -1338,10 +1567,16 @@ Obscure (Rarely Used) But Useful Commands
                                                             Use ``:TabMessage`` to execute a command and copy the output
                                                             to a new Tab window, where you can peruse and copy it freely.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``::``                       Run Highlighted Text          Starts the highlighted text as a Vim command,
-                              as Vim Command                i.e., type 'help', highlight it, hit ':', hit Enter, and you'll see the Vim help window.
+ ``::``                       Use Highlighted Text          Starts the highlighted text as a Vim command,
+                              to start Vim Command          i.e., type 'help', highlight it, hit '::', hit Enter, and you'll see the Vim help window.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``:?``                       Immediately open Vim          Immediately runs ``:help {selected-text}`` on the selected text.
+                              Help on Selected Text
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``:Lorem``                   Lorum Ipsum Dump              Pastes the first paragraph of Lorum Ipsum at the prompt.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``:Foobar``                  Foo Bar Baz Bat... Dump       Pastes a list of
+                                                            `metasyntactic jargon terms <https://en.wikipedia.org/wiki/Metasyntactic_variable#General_usage>`__.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<Ctrl-o>g<Ctrl-g>``        Count Selected Characters
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
@@ -1349,6 +1584,12 @@ Obscure (Rarely Used) But Useful Commands
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``:DiffOrig``                Diff Buffer Against File      See the difference between the current buffer and the file it was loaded from,
                                                             thus the changes you've made since you last saved.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Leader>da``               Toggle ASCII                  Decimal and Hexadecimal 8-bit character set
+                              Character Table               (based on `CharTab <http://www.vim.org/scripts/script.php?script_id=898>`__).
+
+                                                            *Hint:* Hit ``b`` to toggle between bases (radices).
+                                                            To return to the previous buffer, hit ``q``, ``<ESC>`` or ``<Shift-Alt-1>``.
 ===========================  ============================  ==============================================================================
 
 The Alt-Shift Mappings
@@ -1359,13 +1600,7 @@ The alt-shift commands show and hide special windows.
 ===========================  ============================  ==============================================================================
  Key Mapping                  Description                   Notes
 ===========================  ============================  ==============================================================================
- ``<Shift-Alt-1>``            Toggle ASCII                  Decimal and Hexadecimal 8-bit character set
-                              Character Table               (based on `CharTab <http://www.vim.org/scripts/script.php?script_id=898>`__).
-
-                                                            *Hint:* Hit ``b`` to toggle between bases (radices).
-                                                            To return to the previous buffer, hit ``q``, ``<ESC>`` or ``<Shift-Alt-1>``.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Shift-Alt-6>``            Toggle Tag list               Show/Hide the
+ ``<Shift-Alt-1>``            Toggle Tag list               Show/Hide the
                                                             `Tag List <http://www.vim.org/scripts/script.php?script_id=273>`__
                                                             window.
 
@@ -1374,7 +1609,7 @@ The alt-shift commands show and hide special windows.
                                                             *Hint:* Run ``ctags`` on your code to make a ``tags`` file first,
                                                             and then ``:set tags=<path,path,...>`` in Vim to point to the ``tags`` file.
                                                             You can setup different tags for different file types and projects;
-                                                            see ``dubs_file_finder/dubs_projects.vim``, which you can customize.
+                                                            see ``dubs_grep_steady/dubs_projects.vim``, which you can customize.
 ===========================  ============================  ==============================================================================
 
 Hints, Tricks, and Step Throughs
@@ -1493,183 +1728,14 @@ And you can dig into your own font file, e.g.,::
 
 See ``:help digraph`` for the list of defined digraphs.
 
-##############################
-Dubs Vim |em_dash| File Finder
-##############################
-
-.. |em_dash| unicode:: 0x2014 .. em dash
-
-**Or, Just a Command-T Wrapper**
-
-About This Plugin
-=================
-
-This script wraps
-`Command-T <https://github.com/wincent/Command-T>`__
-so it's available from ``<Leader>t`` and so you can
-invoke Command-T without needing to supply any
-directory paths.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_file_finder.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_file_finder
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-file-finder
-
-Install Command-T
------------------
-
-After installing the Command-T plugin, you'll have to build it.
-
-.. code-block:: bash
-
-   mkdir -p ~/.vim/pack/wincent/start
-   cd ~/.vim/pack/wincent/start
-   git clone https://github.com/wincent/command-t.git
-
-   cd ~/.vim/pack/wincent/start/command-t/ruby/command-t
-   sudo apt-get install -y ruby-dev
-   ruby extconf.rb
-   make
-
-File Finder Commands
-====================
-
-The short of it:
-
-1. Find the ``cmdt_paths`` directory in your Vim folder.
-| It'll be under ``dubs_file_finder``.
-
-2. Populate the directory with symlinks.
-
-3. Press ``<Ctrl-D>``.
-
-The long of it:
-
-This script doesn't require you to enter a
-target directory when invoking the file finder.
-It'll search all the projects linked to from a
-special folder.
-
-- The plugin will automatically create the ``cmdt_paths``
-  directory for you. Check under this
-  project's directory, ``dubs_file_finder``.
-
-In this manner, it's just one key-combo to invoke Command-T,
-and you don't have to specify the directory to scan. You might
-be concerned that listing all projects' files together will make
-it harder to find the file you want, but Command-T is such a great
-tool that even with thousands of source files, it's still a cinch to
-find and open files.
-
-You can instead access Command-T directly
-using ``:CommandT {some_dir}``.
-
-Compare to `CtrlP <https://github.com/kien/ctrlp.vim>`__
-and `NERDTree <https://github.com/scrooloose/nerdtree>`__,
-two other plugins that help you find files.
-
-Key Mappings
-============
-
-Finding and Opening Files (Trendy Methods)
-------------------------------------------
-
-===========================  ============================  ==============================================================================
- Key Mapping                  Description                   Notes
-===========================  ============================  ==============================================================================
- ``Ctrl-D``                   Calls Command-T to            Calls ``:CommandT dubs_file_finder/cmdt_paths`` so you can use a fuzzy autocomplete
-                              Fuzzy-find by filename        algorithm to type part of a filename and open it.
-                                                            The ``cmdt_paths`` directory is just a collection of symlinks
-                                                            to project folders whose files you want Command-T to list for you.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``:CtrlP <somedir>``         Use CtrlP to find files       The `CtrlP <https://kien.github.io/ctrlp.vim/>`__
-                                                            plugin is nifty, but I like Command-T better,
-                                                            so I didn't bind this command to an easy key combination.
-                                                            It's included anyway so you can try different find-and-open-file
-                                                            techniques and decide which one you like best.
-===========================  ============================  ==============================================================================
-
-Finding and Opening Files (Other Methods)
------------------------------------------
-
-In addition to using the methods described above to find and open
-files or using the Project plugin, there are obviously other
-methods of finding and opening files, including:
-
-===========================  ============================  ==============================================================================
- Key Mapping                  Description                   Notes
-===========================  ============================  ==============================================================================
- ``:NERDTreeToggle``          Toggle NERD Tree tray         `The NERD Tree <https://github.com/scrooloose/nerdtree>`__
-                                                            is similar to the Project tray, but it shows your whole filesystem
-                                                            (so you don't have to prime it, e.g., edit ``.vimprojects``, to use it).
-                                                            It's a nice plugin, but if you use the Command-T or the Project tray,
-                                                            you probably won't ever use NERDTree.
-                                                            Dubs Vim includes this plugin.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``:Explore``                 Vim command similar           See ``:help explore``.
-                              to NERD Tree
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``:tabedit``, etc.           Vim built-ins                 Vim has a lot of ways to open new or existing files,
-                                                            and to specify whether to open them in the current
-                                                            window, a new window, or a new tab.
-                                                            See ``:help`` for such commands as
-                                                            ``:edit``, ``:new``, ``:tabedit``, and ``:tabnew``.
-                                                            See also the Wikia article,
-                                                            `Open file under cursor <http://vim.wikia.com/wiki/Open_file_under_cursor>`__.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``$ gvim ...``               From the terminal             Use, e.g., ``$ gvim --servername ABC --remote-silent <filename>``
-                                                            to open files in the same gVim instance
-                                                            by specifying the ``servername`` switch.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- Quickfix window              Search and error output       You can search files using ``\g`` and double-click or <enter> on entries
-                                                            in the quickfix window to open files.
-                                                            Other commands that show log and error files can also be loaded into
-                                                            the quickfix window so you can easily jump to specific lines of files.
-===========================  ============================  ==============================================================================
-
 #################################
 Dubs Vim |em_dash| Filetype Hacks
 #################################
+
+.. FIXME/2022-12-11 22:39: Finish promoting to individual plugins... maybe:
+..
+..    vim-synsible-ftplugin-*#*
+
 
 .. |em_dash| unicode:: 0x2014 .. em dash
 
@@ -2108,7 +2174,7 @@ Entity Table Commands
 Interactive Entity Table
 ------------------------
 
-``<Leader>ht`` (usually ``\ht``) displays an
+``<Leader>dh`` (usually ``\dh``) displays an
 interactive entity list in the current window.
 
 You can double-click entities to copy-and-paste
@@ -2133,20 +2199,21 @@ be displayed instead.
 Interactive Entity Lookup
 -------------------------
 
-``<Leader>hT`` (usually ``\hT``) invokes the QuickLookup,
-which asks you to type an ASCII character which will be
-converted to another representation and pasted in place.
+``<Leader>dH`` (usually ``\dH``) prompts you for an
+ASCII character, which will be converted to its HTML
+representation and pasted in place.
 
 In the command window, you should see:
 
 ``>> Please enter a character:``
 
-Type just the single character you want
-translated (i.e., ``&``)
+Type just the single character you want translated
 and its entity reference will be inserted into
-your working buffer at the cursor. And note
+your working buffer at the cursor. (And note
 that you don't have to hit return after typing
 the character to be translated).
+
+- E.g., if you enter ``&``, it'll insert ``&amp;``.
 
 Toggle Entity List Visibility
 -----------------------------
@@ -2213,6 +2280,9 @@ This plugin provides a simple, elegant status line:
 
   `lightline
   <https://github.com/itchyny/lightline.vim>`__
+
+- See also Tim Pope's
+  `vim-flagship <https://github.com/tpope/vim-flagship>`__
 
 Installation
 ============
@@ -2506,34 +2576,57 @@ Dubs Vim |em_dash| Style Guard
 About This Plugin
 =================
 
-This plugin senses a file's whitespace style and sets Vim accordingly.
+This plugin senses a file's whitespace style and sets up Vim accordingly.
 
-.. FIXME/2021-08-16 02:05: Shouldn't you mention the modeline feature, too?
-                           And what about Vim's built-in `modeline` option?
+- The check is very basic: the script uses grep to count the
+  number of lines that start with spaces versus those that start with
+  tabs. The script does not attempt to discern how many spaces per tab
+  are used when space-indenting, nor how many spaces-per-tab are assumed
+  when tab-indenting.
 
-Note: The check is very basic: the script uses grep to count the
-number of lines that start with spaces versus those that start with
-tabs. The script does not attempt to discern how many spaces per tab
-are used when space-indenting, nor how many spaces-per-tab are assumed
-when tab-indenting.
+This plugin also adds a command makes it easy to switch between common
+whitespace styles: type ``\e`` to cycle through a number of preset styles.
 
-This plugin makes it easy to switch between common whitespace styles:
-type ``\e`` to cycle through a number of preset styles.
+- There are three styles it'll cycle between:
 
-You can also cycle between common long-line styles:
-type ``\r`` to cycle through a number of preset styles.
-Some styles simply highlight long lines, while other
-styles use ``textwidth`` to forcefully wrap a long line
-as it's being typed.
+  - *Tab and auto-indent using 2 spaces per tab*;
 
-The plugin prevents itself from running on special buffers,
-like the Quickfix and Location lists.
+  - *Tab and auto-indent using a 4-character-wide tab*; and
 
-Hint: When you first open a Vim *help* file, it'll be displayed
-specially, like all help files. To edit it, just type
-``set ft=text`` and start editing. To reset the style back
-to help, type ``\E`` and the modeline will be re-read
-(caveat: most help files use modelines, but not all of them).
+  - *Tab and auto-indent using a 2-character-wide tab*.
+
+- Note that the author long ago settled on using 2 spaces per tab,
+  i.e., ``expandtab``, ``shitfwidth=2``, and ``tabstop=2``.
+
+You can also cycle between common long-line styles, which will either
+automatically wrap long lines as you type, and/or show a different color
+in columns on the right, so you can manually wrap as you see fit.
+Simply type ``\r`` to cycle through a number of preset styles.
+
+- There are three long-ling styles it'll cycle between:
+
+  - ``textwidth=0 colorcolumn=``
+
+  - ``textwidth=0 colorcolumn=77,78,79``
+
+  - ``textwidth=79 colorcolumn=77,78,79``
+
+- Note that the author prefers a *colorcolumn* without *textwidth*
+  enforcement.
+
+Note that this plugin prevents itself from running on special buffers,
+such as within the Quickfix buffer.
+
+Hint: When you first open a Vim *help* file (``ft=help``), it'll
+be formatted specially. But if you want to edit it, you can type
+``set ft=text``, and then it'll be formatted like a normal text file.
+
+- To reset the style back to a help file, type ``\E``, and the
+  modeline will be re-read, and the file will reappear as a help file.
+  (Note that most of the core Vim help files have a modeline at the
+  bottom of the file, which specifies ``ft=help``.) You can also use
+  Vim's built-in ``:e`` command to re-read an open buffer and reset
+  its editing settings.
 
 Installation
 ============
@@ -2583,19 +2676,34 @@ Then whenever you want to reference the help from Vim, run:
 Modeline and Modeline Files
 ===========================
 
-Modelines are common to Vim, but they're generally only
-read for help files. Dubs Vim always looks for them in
-the first five or last five lines of a file.
+Vim has built-in support for modelines (refer to ``:help modeline``).
 
-Dubs Vim also searches up the directory hierarchy for a
-special modeline file, ``.dubs_style.vim``, that can
-contain a list of filetypes and modelines, so you can
-easily define the style for different projects and for
-different filetypes within projects.
+By default, Vim checks the first 5 and list 5 lines of a file for
+a modeline (see the ``modelines`` setting).
 
-For more help on the special modeline file, look at the
-file of the same name in the source, in the same directory
-as this readme.
+- For an example, open any core Vim help file, and you'll typically
+  find a modeline on the last line of the file.
+
+This plugins also checks for a modeline. (2022-09-21: But the author
+does not remember why this plugin duplicates functionality that Vim
+implements. Perhaps, over a decade ago when I originally wrote this
+plugin, Vim didn't read the modeline? I don't recall.)
+
+This plugin also searches up the directory hierarchy for a special
+modeline file, ``.dubs_style.vim``, that can contain a list of
+filetypes and modelines. So you can easily define the style for
+different projects and for different filetypes within projects.
+
+- See the example ``.dubs_style.vim`` modeline file in
+  the same directory as this README.
+
+Note, however, that there are better style rule solutions.
+
+- The author prefers the *EditorConfig* plugin, described next, to
+  manage style rules. It works with other editors, and not just Vim.
+  So if you collaborate with other developers, you'll benefit from a
+  better solution, such as *EditorConfig*, that all team members can
+  use, regardless of their preferred editor.
 
 Similar Plugins
 ===============
@@ -2619,16 +2727,19 @@ Style-enforcers:
     `EditorConfig <http://editorconfig.org/>`__
     if you have a large team and not everyone
     has grown into Vim yet.
+
     But the ``.dubs_style.vim`` solution is nice because
-    it uses the standard modeline syntax -- whereas EditorConfig
+    it uses the standard modeline syntax -- whereas *EditorConfig*
     uses its own INI-style format -- so if you're already a Vimmer,
     it's quick 'n easy to make a ``.dubs_style.vim`` file and stuff
-    a modeline in't.
+    a modeline inside.
 
-    - Also, the ``dubs_style`` plugin has a few other features:
-      it has a nice style sleuther
-      and the ``\e`` and ``\E`` macros make it easy to cycle through and
-      reset the style (based on the current modeline or sluethed answer).
+    - Also, the ``dubs_style_guard`` plugin has a few other features:
+
+      - It'll tries to sleuth the style, if there's no modeline;
+
+      - And the ``\e`` and ``\E`` macros make it easy to cycle through
+        different styles and to reset the style.
 
 Whitespace-detectors:
 
@@ -2667,219 +2778,6 @@ Key Mappings
  ``:match none``                    Hide highlighted                    Use the command ``:match none`` to disable highlighting,
                                     too-wide text                       if you've enabled long-line highlighting.
 =================================  ==================================  ==============================================================================
-
-####################################
-Dubs Vim |em_dash| Syntastic Wrapper
-####################################
-
-.. |em_dash| unicode:: 0x2014 .. em dash
-
-About This Plugin
-=================
-
-A simple wrapper around the fantastic
-`Syntastic <https://github.com/scrooloose/syntastic>`__
-plugin, which checks your code for syntax and style errors
-when you open and save source files, or on demand.
-
-Install Plugin
-==============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_syntastic_wrap.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_syntastic_wrap
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-syntastic-wrap
-
-Install Checkers
-================
-
-You'll need to install syntax checkers to use this tool.
-
-And you'll want to be selective about which checkers you
-choose, so the following is not a recommendation of any
-specific tools, it's just an example.
-
-Example Checker Installation: Pylint
-------------------------------------
-
-Installing the Python linter,
-`Pylint <http://www.pylint.org/>`__,
-is simple.
-
-.. code-block:: bash
-
-   sudo apt-get install -y pylint
-
-Example Checker Installation: Jshint
-------------------------------------
-
-Installing the JavaScript syntax checker,
-`jshint <http://jshint.com/>`__, which runs atop
-`Node.js <http://nodejs.org/>`__,
-is a tad more complicated.
-
-Start with node's package manager,
-`npm <https://www.npmjs.com/>`__.
-
-.. code-block:: bash
-
-   sudo apt-get install -y npm
-
-Next, download and compile ``node``.
-
-.. code-block:: bash
-
-   cd path/to/your/opt/.downloads/
-   wget -N http://nodejs.org/dist/v0.10.35/node-v0.10.35.tar.gz
-   tar -xvzf node-v0.10.35.tar.gz
-   cd node-v0.10.35
-   ./configure
-   make
-
-Install node.
-And install from root, lest ``sudo make install`` leaves
-your node files unaccessible to the general user population.
-
-.. code-block:: bash
-
-   sudo su -
-   cd path/to/your/opt/.downloads/node-v0.10.35
-   make install
-
-Finally, use ``npm`` to install ``jshint``.
-
-.. code-block:: bash
-
-   sudo su -
-   npm install -g jshint
-
-Painfully Easy Usage
-====================
-
-In a Vim window, type ``<Ctrl-e>`` to run Syntastic on the buffer
-and open the location list if their are errors, and type
-Ctrl-e again to close the location list.
-
-* Note that nothing happens if there are no errors,
-  or if the filetype is not associated with any checkers.
-
-* Also, if you use the quickfix window, closing it can
-  cause the height of the Syntastic location list to grow.
-  The Dubs Vim plugin, ``dubs_quickfix_wrap``, makes sure to
-  resize the location list window when the quickfix window is
-  closed, otherwise the height of the location list increases
-  relative to the height of the quickfix window that was closed.
-
-Other Configuration
--------------------
-
-The plugin also configures Syntastic to the author's liking:
-
-.. code-block:: vim
-
-   " Auto-open :Error(s) window when errors are detected.
-   let g:syntastic_auto_loc_list = 1
-   " Stick detected errors into location-list.
-   let g:syntastic_always_populate_loc_list = 1
-
-   " Automatically check files on open and save,
-   " but only in 'active' mode (set next).
-   let g:syntastic_check_on_open = 1
-   let g:syntastic_check_on_wq = 1
-
-   " If you don't like files being automatically linted when opened or
-   " saved, it's easy to use Ctrl-e to run the checker and then again
-   " to hide its output, so we indicate all filetypes as passive.
-   let g:syntastic_mode_map = {
-         \ "mode": "passive",
-         \ "active_filetypes": [],
-         \ "passive_filetypes": ["python", "javascript", "html", "rst"] }
-
-Note: I've only got a few checkers setup; you'll probably want to add more.
-
-Hint: Use ``:SyntasticToggleMode`` to switch between 'active' and 'passive'.
-
-I assume most people will like the previous setup.
-
-However, if you feel strongly that a file should be checked whenever
-it's saved, I suggest that (a) you're not saving as often
-as you should (or maybe you're not used to the days
-of power outages equaling data loss), (b) showing the
-Syntastic error window is disruptive, and (c) alternatively
-leaving the error window showing consumes valuable screen
-real estate or at least is distracting.
-
-The remaining configuration is less universal;
-you may find yourself wanting to change or expand
-this configuration.
-
-- I've remapped the Python executable to use Python3.
-
-.. code-block:: vim
-
-   let g:syntastic_python_python_exec = "/usr/bin/python3"
-
-(I know this isn't ideal; it's on my list to find or write
-a plugin that'll set ``g:syntastic_python_python_exec``
-based on the project in which a file resides.)
-
-- I've changed a few of the default checkers.
-  Mostly to use a checker that's less strict
-  and to just check syntax errors,
-  and to not care so much about style.
-
-.. code-block:: vim
-
-   let g:syntastic_python_checkers = ['python']
-   let g:syntastic_javascript_checkers = ['jshint']
-
-Features Bound to Key Commands
-==============================
-
-==================================  ==================================  ==============================================================================
-Key Mapping                         Description                         Notes
-==================================  ==================================  ==============================================================================
- ``<Ctrl-E>``                       Toggle Syntastic checker            Toggles the `Syntastic <https://github.com/scrooloose/syntastic>`__ plugin.
-                                                                        Calls either ``:SyntasticCheck`` or ``:SyntasticReset``, depending on
-                                                                        whether or not the current window has a location list or not.
-==================================  ==================================  ==============================================================================
 
 #############################
 Dubs Vim |em_dash| ToggleWrap
@@ -3002,104 +2900,1021 @@ Key Mappings
                                                                         and fixes associated settings.
 =================================  ==================================  ==============================================================================
 
-############################
-Dubs Vim |em_dash| Web Hatch
-############################
+###########################################
+Asynchronous, non-blocking insert mode maps
+###########################################
 
-.. |em_dash| unicode:: 0x2014 .. em dash
+Use ``vim-async-mapper`` to add non-blocking insert mode maps using
+“regular” characters.
 
-Simple URL opener with search and word definition options.
+- Instead of using a ``<Leader>`` combination or modifiers (e.g.,
+  ``<Ctrl>``) to wire insert mode maps, you can wire normal character
+  sequences (such as ``gf``) without disrupting the normal user
+  experience.
 
-At its core, opens a location in the default browser.
+This ``vim-easyescape`` fork adds arbitrary command support, and more
+=====================================================================
 
-Can also search the web or try to define something.
+This project forks
+`vim-easyescape <https://github.com/zhou13/vim-easyescape>`__ and makes
+the following changes:
+
+- Supports multiple sequences for arbitrary commands.
+
+  - `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__ only
+    supports one key sequence — and it adds all permutations of it,
+    e.g., if you map ``kj``, then ``jk`` will also work.
+
+  - `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__ only
+    supports one map command, ``<ESC>``.
+
+  - This fork, in contrast, supports more than one key sequence, and it
+    does not wire any any permutations unless you want them.
+
+  - This fork supports any map command you want to run, e.g., ``gf``.
+
+  - This forks supports both insert mode and normal mode maps.
+
+- Avoids editing the buffer.
+
+  - After typing the key sequence,
+    `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__ uses
+    ``<Backspace>`` to remove what you typed, but this leaves the buffer
+    edited.
+
+    - And then you have to ``:undo`` or save, or you’ll be prompted when
+      you try to close the file.
+
+  - This plugin uses ``:undo`` when possible to clear the typed
+    sequence, so that the file buffer remains unchanged.
+
+Details
+=======
+
+``vim-async-mapper`` lets you add nondisruptive insert mode maps.
+
+- A normal, naïve insert map pauses input between keypresses, e.g., if
+  you wanted to be able to use ``gf`` to open file paths from insert
+  mode, you could add a basic ``imap``, e.g.,
+
+  ::
+
+     inoremap gf <C-O>gf
+
+  But this will degrade your user experience — now when you type a
+  ``g``, instead of inserting the character, Vim will show a ``g`` over
+  the next character, and it won’t insert the ``g`` until a timeout, or
+  until you hit a character other than ``f``.
+
+  - E.g., assume the cursor is before ‘s’ on the following line:
+
+  ::
+
+     this is some text
+             ↑ cursor
+
+  When you press ``g``, you’ll see this:
+
+  ::
+
+     this is gome text
+             ↑ cursor
+
+  And not until a timeout occurs, or until you press another key (other
+  than ``f``) will the insert happen.
+
+  And you’ll finally see, e.g.,
+
+  ::
+
+     this is gsome text
+              ↑ cursor
+
+- So instead of adding multiple-character mappings, ``vim-async-mapper``
+  adds single-character mappings and then monitors input to see if it
+  matches any sequence that you’ve registered with it.
+
+  - Considering the previous example, if you wanted to add a ``gf``
+    mapping, this plugin will monitor ``g`` and ``f`` separately (by
+    creating two maps, ``inoremap g`` and ``inoremap f``).
+
+    Then, when it sees a ``g``, it’ll remember this, and if the next
+    keypress is an ``f``, it sees that you’ve typed a sequence, and it
+    will run the command you’ve registered for that sequence.
+
+Common usage — map insert mode ``jk`` and ``kj`` to ``<ESC>``
+=============================================================
+
+The most common use case is to replace ``vim-easyescape``:
+
+::
+
+   let timeout_msec = 100
+
+   call g:embrace#amapper#register_insert_mode_map("kj", "\<ESC>", timeout_msec)
+   call g:embrace#amapper#register_insert_mode_map("jk", "\<ESC>", timeout_msec)
+
+If you also wanted ``kj`` and ``jk`` to work from command mode, you
+could add two simple maps:
+
+::
+
+   cnoremap kj <ESC>
+   cnoremap jk <ESC>
+
+Taking it even further, you could also add the same maps to normal mode
+to toggle *back* to insert mode, and it won’t interfere with the
+built-in ``j`` or ``k`` commands, e.g.,
+
+::
+
+   let timeout_msec = 100
+
+   call g:embrace#amapper#register_normal_mode_map("kj", "ji", timeout_msec)
+   call g:embrace#amapper#register_normal_mode_map("jk", "ki", timeout_msec)
+
+- So if you type ``kj``, the ``k`` moves the cursor up one row, and the
+  ``j`` triggers the map command. And then the map command runs ``j`` to
+  move the cursor back down one row (to restore its position), and then
+  ``i`` to enter insert mode.
+
+- Beware that the plugin cannot detect when the user “breaks” a normal
+  mode sequence. E.g., if the user registers ``jk`` but then types
+  ``juk``, if less than timeout msecs. pass between the ``j`` and the
+  ``k``, this plugin will assume that ``jk`` was pressed.
+
+  - This does not affect insert mode maps because the plugin monitors
+    the ``InsertCharPre`` event and can detect when a non-sequence
+    character is pressed. But there is no equivalent event for normal
+    mode (and the plugin does not set a map for every possible character
+    — only those included in a sequence).
+
+  - However, if you use a short, 100 msec. timeout, you should not have
+    an issue. (E.g., it takes the author 115 msec. to type ``juk`` as
+    fast as they can.)
+
+(You can see a real-world implementation in
+https://github.com/landonb/vim-ovm-easyescape-kj-jk/blob/release/plugin/vim_ovm_easyescape_kj_jk.vim.)
+
+Common usage — map insert mode ``gf`` to normal mode ``gf`` (“goto file”)
+=========================================================================
+
+The ``gf`` command is very useful, especially if you bop around source
+code and note files a lot and leave yourself file path references in
+comments or in your notes.
+
+But after a while, you might grow tired of needing to leave insert mode
+to run ``gf``! One idea is to map insert mode ``gf`` to running the
+normal mode command of the same name, e.g.,
+
+::
+
+   let timeout_msec = 100
+
+   " Wire the `gf` key sequence to the `gf` command.
+   call g:embrace#amapper#register_insert_mode_map("gf", "gf", timeout_msec)
+
+You could similarly add a visual mode mapping:
+
+::
+
+   " [y]ank selected text to `"` register, then paste `"` contents as arg to :edit.
+   vnoremap gf y:edit <C-r>"<CR>
+
+(You can see a real-world implementation in
+https://github.com/embrace-vim/vim-goto-file-sh/blob/release/plugin/includeexpr-for-gf.vim.)
+
+Timeout values
+==============
+
+You can set a different timeout for each sequence, as shown in the
+examples above.
+
+If you omit the timeout, it defaults to the value of a global variable,
+``g:vim_async_mapper_timeout``, which defaults to 100 unless you change
+it, e.g.,
+
+::
+
+   let g:vim_async_mapper_timeout = 100
+
+Such a short timeout works well for the examples shown above, but you
+may need a longer timeout for other maps.
+
+- For instance, if you mix case, you might find that you need a longer
+  timeout, e.g.,
+
+  ::
+
+     let timeout_msec = 200
+
+     call g:embrace#amapper#register_insert_mode_map("gW", "gW", timeout_msec)
+
+Disable plugin for specific file types
+======================================
+
+You can disable ``vim-async-mapper`` for specific file types (or for any
+buffer) by setting ``b:vim_async_mapper_disable = 1``, e.g.:
+
+::
+
+   autocmd FileType text,markdown call setbufvar(bufnr("%"), 'vim_async_mapper_disable', 1)
+
+- This applies to all registered mappings, however. (Feel free to PR if
+  you want to make it more discerning, i.e., to disable individual key
+  sequences instead of it being all-or-nothing.)
+
+Requirements — Python 3 (Optional)
+==================================
+
+Python3 is required to set a timeout less than 2000 msec., e.g.,
+
+::
+
+   let g:vim_async_mapper_timeout = 100
+
+Otherwise the shortest usable timeout will be 2 secs.
+
+- If more than *timeout* time passes between keypresses, the current key
+  sequence is ignored.
+
+  - E.g., if you ``g`` and then briefly pause before typing ``f``, you
+    can avoid running the ``gf`` command.
+
+    - Though not that ``gf`` is a very common substring in English —
+      there are only about 19 words that contain it, including “dogface”
+      (older slang for a WW II infantryman), “eggfruit”, “pigfish”,
+      “songful”, “slugfest”, and probably the most commonly used match,
+      “meaningful”. (Thanks to https://www.visca.com/regexdict/ for help
+      with research.)
+
+Hints:
+
+- On macOS, ensure MacVim installed and its ``vim``/``vi`` are on
+  ``PATH`` before Apple’s.
+
+- On Linux, build Vim with Python3 support.
+
+  - Here’s how DepoXy project builds Vim:
+
+    https://github.com/DepoXy/depoxy/blob/1.4.0/home/.vim/\_mrconfig#L53-L108
+
+Installation
+============
+
+Installation is easy using the packages feature (see `:help
+packages <https://vimhelp.org/repeat.txt.html#packages>`__).
+
+To install the package so that it will automatically load on Vim
+startup, use a ``start`` directory, e.g.,
+
+::
+
+   mkdir -p ~/.vim/pack/embrace-vim/start
+   cd ~/.vim/pack/embrace-vim/start
+
+If you want to test the package first, make it optional instead (see
+`:help pack-add <https://vimhelp.org/repeat.txt.html#pack-add>`__):
+
+::
+
+   mkdir -p ~/.vim/pack/embrace-vim/opt
+   cd ~/.vim/pack/embrace-vim/opt
+
+Clone the project to the desired path:
+
+::
+
+   git clone https://github.com/embrace-vim/vim-async-mapper.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+::
+
+   :packadd! vim-async-mapper
+
+Just once, tell Vim to build the online help:
+
+::
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+::
+
+   :help vim-async-mapper
+
+Note that you’ll need to update the repo manually (e.g., ``git pull``
+occasionally).
+
+- If you’d like to be able to update from within Vim, you could use
+  `vim-plug <https://github.com/junegunn/vim-plug>`__.
+
+  - You could then skip the steps above and register the plugin like
+    this, e.g.:
+
+  ::
+
+     call plug#begin()
+
+     " List your plugins here
+     Plug 'embrace-vim/vim-async-mapper'
+
+     call plug#end()
+
+- And to update, call:
+
+  ::
+
+     :PlugUpdate
+
+- Similarly, there’s also
+  `Vundle <https://github.com/VundleVim/Vundle.vim>`__.
+
+  - You’d configure it something like this:
+
+  ::
+
+     set nocompatible              " be iMproved, required
+     filetype off                  " required
+
+     " set the runtime path to include Vundle and initialize
+     set rtp+=~/.vim/bundle/Vundle.vim
+     call vundle#begin()
+     " alternatively, pass a path where Vundle should install plugins
+     "call vundle#begin('~/some/path/here')
+
+     " let Vundle manage Vundle, required
+     Plugin 'VundleVim/Vundle.vim'
+
+     Plugin 'embrace-vim/vim-async-mapper'
+
+     " All of your Plugins must be added before the following line
+     call vundle#end()            " required
+     filetype plugin indent on    " required
+     " To ignore plugin indent changes, instead use:
+     "filetype plugin on
+
+- And then to update, call one of these:
+
+  ::
+
+     :PluginInstall!
+     :PluginUpdate
+
+- Or, if you’re like the author, you could use a multi-repo Git tool,
+  such as `myrepos <https://myrepos.branchable.com/>`__ (along with the
+  author’s library,
+  `ohmyrepos <https://github.com/landonb/ohmyrepos>`__)).
+
+  - With `myrepos <https://myrepos.branchable.com/>`__, you could update
+    all your Git repos with the following command:
+
+  ::
+
+     mr -d / pull
+
+- Alternatively, if you use
+  `ohmyrepos <https://github.com/landonb/ohmyrepos>`__, you could pull
+  just Vim plugin changes with something like this:
+
+  ::
+
+     MR_INCLUDE=vim-plugins mr -d / pull
+
+- After you identify your vim-plugins using the ‘skip’ action, e.g.:
+
+  ::
+
+     # Put this in ~/.mrconfig, or something loaded by it.
+     [DEFAULT]
+     skip = mr_exclusive "vim-plugins"
+
+     [pack/embrace-vim/start/vim-async-mapper]
+     lib = remote_set origin https://github.com/embrace-vim/vim-async-mapper.git
+
+     [DEFAULT]
+     skip = false
+
+Attribution
+===========
+
+The `embrace-vim <https://github.com/embrace-vim>`__ logo by
+`@landonb <https://github.com/landonb>`__ contains `coffee cup with
+straw by farra nugraha from Noun
+Project <https://thenounproject.com/icon/coffee-cup-with-straw-6961731/>`__
+(CC BY 3.0).
+
+Very Special Thanks
+===================
+
+This project would not exist if not for
+`vim-easyescape <https://github.com/zhou13/vim-easyescape>`__!
+
+That plugin offered a novel approach to adding insert mode mappings, one
+that I’ve used for many years, and it was only because I like it so much
+that I hacked away hoping to improve upon it.
+
+So with gratitude and admiration, thanks you,
+
+::
+
+   _____                  _____                          
+    | ____|__ _ ___ _   _  | ____|___  ___ __ _ _ __   ___ 
+    |  _| / _` / __| | | | |  _| / __|/ __/ _` | '_ \ / _ \
+    | |__| (_| \__ \ |_| | | |___\__ \ (_| (_| | |_) |  __/
+    |_____\__,_|___/\__, | |_____|___/\___\__,_| .__/ \___|
+                    |___/                      |_|
+
+###############
+vim-buffer-ring
+###############
+
+A circular, most-recently-used buffer navigator.
+
+Introduction
+============
+
+A buffer navigator, similar to Vim’s builtin ``:bn[ext]`` and
+``:bp[revious]``, but rather than ordering buffers by their numbers,
+buffers are ordered by how recently they were edited (i.e., by most
+recently used, or MRU, order).
+
+This plugin is derived from the first great buffer navigator,
+`vim-bufsurf <http://github.com/ton/vim-bufsurf>`__.
+
+But with two tweaks:
+
+1. Each buffer is only included once in the history list.
+
+- In this plugin, each buffer is only listed once in the history.
+
+  For instance, suppose the user opens the three files, ‘foo’, ‘bar’,
+  and then ‘baz’, in that order. The history list has the following
+  entries:
+
+  ::
+
+     [foo, bar, baz]
+                ^^^
+
+  where ‘baz’ (as indicated) is the current index.
+
+  If the users edits ‘foo’ again, rather than creating a fourth entry in
+  the list, e.g.,
+
+  ::
+
+     [foo, bar, baz, foo]  # How vim-bufsurf works.
+                     ^^^
+
+  this plugin will remove the existing entry and reposition it, e.g.,:
+
+  ::
+
+     [bar, baz, foo]  # How this plugin, vim-buffer-ring, works.
+                ^^^
+
+  - The author prefers this behavior because they often use an
+    ``:edit #`` mapping to jump back and forth between the same two
+    buffers, which would otherwise end up creating a history like this:
+
+    ::
+
+       [foo, bar, baz, foo, baz, foo, baz, foo, baz, foo]  # How vim-bufsurf works.
+                                                     ^^^
+
+which makes walking backwards (say, to the ‘bar’ buffer) take longer.
+
+2. This plugin wraps around the buffer history list, rather than
+   stopping at the front or back of the list.
+
+Requirements
+------------
+
+This plug-in requires Vim v8.0 or greater, to take advantage of timers.
 
 Usage
 =====
 
-==============    =========================================================================
-Command           Description
---------------    -------------------------------------------------------------------------
+Call ``:BufferRingReverse`` to navigate to the previous buffer in the
+history:
 
-``gW``            Akin to Vim's builtin ``gf`` command, but for URLs (think: Go Web).
-                  Opens a new browser window with the location of the URL under the cursor.
---------------    -------------------------------------------------------------------------
-``g!``            Like ``gW``, but opens location in an incognito (aka private) browser window.
---------------    -------------------------------------------------------------------------
-``<Leader>W``     Opens a new browser window and searches (Google) for the word under the cursor
-                  (normal or insert mode), or for the selected text (visual mode).
---------------    -------------------------------------------------------------------------
-``<Leader>D``     Opens a new browser window and loads the definition of the word under the cursor
-                  (normal or insert mode), or for the selected text (visual mode).
-==============    =========================================================================
+::
 
-The ``gW`` and ``g!`` commands work from normal mode, and the
-leader commands from normal and insert modes, and on selections.
+     :BufferRingReverse
 
-Configure
-=========
+Call ``:BufferRingForward`` to navigate to the next buffer in the
+history:
 
-Default Browser
----------------
+::
 
-On Linux (Debian), this plugin call ``sensible-browser --version`` to
-determine which browser to use.
+   :BufferRingForward
 
-- Use the ``$BROWSER`` environ to set your default browser.
+You will probably want to wire this in your own Vim configuration to
+whatever keys you like best.
 
-  - E.g., include this in your ``~/.bashrc`` if you prefer Chrome::
+- The author has these two commands wired to ``<Ctrl-j>`` and
+  ``<Ctrl-k>``, e.g.,
 
-      export BROWSER=/usr/bin/google-chrome
+  ::
 
-  - For the best documentation on ``sensible-browser``, see the source,
-    which you might find at::
+       noremap <C-j> :BufferRingReverse<CR>
+       inoremap <C-j> <C-O>:BufferRingReverse<CR>
 
-      /usr/bin/sensible-browser
+  and
 
-On macOS, this plugin reads the user's ``LaunchServices`` property list
-looking for the default browser to use.
+  ::
 
-- Run the browser you want to be the default, and look for an option
-  within the browser to set it as the default.
+       noremap <C-k> :BufferRingForward<CR>
+       inoremap <C-k> <C-O>:BufferRingForward<CR>
 
-Please feel free to open a pull request to add support for additional OSes.
+Additional Commands:
 
-Tab or Window
--------------
+Use ``BufferRingList`` to print the buffer history for the current
+window.
 
-By default, each command opens a new browser tab in new window.
+::
 
-- To instead prefer opening a new tab in an existing window,
-  set the following global variable to nonzero, e.g.,::
+     :BufferRingList
 
-    g:dubs_web_hatch_use_tab = 1
+Use ``BufferRingClear`` to clear the buffer history for the current
+window.
 
-User Profile
+::
+
+     :BufferRingClear
+
+Options
+=======
+
+To set an option, include a line like the following in your
+``~/.vimrc``:
+
+::
+
+     let g:BufferRingIgnore = '\[BufExplorer\]'
+
+The following options are available:
+
+- ``g:BufferRingIgnore`` — comma separated list of patterns (default:
+  ’’)
+
+  A comma-separated list of regular expressions used to exclude buffers.
+  Any buffer whose name matches any of the regular expressions in the
+  list will be excluded from the buffer history. Note that unlisted
+  buffers are always excluded from the history (this includes the netrw
+  buffer, for instance).
+
+- ``g:BufferRingMessages`` — Boolean value; either 0 or 1 (default: 1)
+
+  Determines whether BufferRing messages are displayed in the status
+  line.
+
+Installation
+============
+
+Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-buffer-ring.git
+   vim -u NONE -c "helptags vim-buffer-ring/doc" -c q
+
+To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
+instead and call ``:packadd vim-buffer-ring`` when ready.
+
+License
+=======
+
+| Copyright 2020 Landon Bouma. All rights reserved.
+| Copyright 2010-2012, 2017-2019 Ton van den Heuvel. All rights
+  reserved.
+
+This work is licensed under the MIT License. View the
+`LICENSE <LICENSE>`__ file for details.
+
+#######################
+vim-clip-expand-path 👣
+#######################
+
+Two commands to copy current file’s path to system clipboard.
+
+Commands
+========
+
+Use ``<leader>j`` and ``<leader>J`` to copy the current file path:
+
+- ``<leader>j`` — Copies path relative to Git project root
+
+  - E.g., ``doc/vim-clip-expand-path.txt``
+
+- ``<leader>J`` — Copies full path, using tilde for user home
+
+  - E.g.,
+    ``~/.vim/pack/DepoXy/start/vim-clip-expand-path/doc/vim-clip-expand-path.txt``
+
+Requirements
+============
+
+None. Uses ``pbcopy`` on macOS, and ``xclip`` on Linux.
+
+INSTALL
+=======
+
+Installation is easy using Vim’s packages feature (see
+``:help packages``).
+
+If you want the plugin to load automatically on Vim startup, use a
+``start/`` directory, e.g.,
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+
+And then clone the project to that path:
+
+.. code:: shell
+
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-clip-expand-path.git
+
+If you want to test the package first, make it optional instead (see
+``:help pack-add``):
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/opt
+   cd ~/.vim/pack/landonb/opt
+   git clone https://github.com/landonb/vim-clip-expand-path.git
+
+   " When ready, load the [opt]ional plugin (or is it [opt]-in?).
+   :packadd! vim-clip-expand-path
+
+To build the help, ensure the plugin is loaded, and then run the
+following command just one time from within Vim:
+
+.. code:: shell
+
+   :Helptags
+
+Or, you can build the help from the terminal instead. Run:
+
+.. code:: shell
+
+   vim -u NONE -c "helptags vim-clip-expand-path/doc" -c q
+
+And then to view the help from within Vim, run:
+
+.. code:: shell
+
+   :help vim-clip-expand-path
+
+SEE ALSO
+========
+
+DepoXy Development Environment Orchestrator
+
+https://github.com/DepoXy/depoxy#🍯
+
+AUTHOR
+======
+
+**vim-clip-expand-path** is Copyright (c) 2020-2023 Landon Bouma
+<depoxy@tallybark.com>
+
+This software is released under the MIT license (see ``LICENSE`` file
+for more)
+
+REPORTING BUGS
+==============
+
+<https://github.com/DepoXy/vim-clip-expand-path/issues>
+
+######################
+vim-command-line-clock
+######################
+
+An answer to the age-old question after hiding the macOS menu bar,
+
+`Quelle heure est
+il? <https://www.google.com/search?q=Quelle+heure+est+il>`__
+
+Introduction
+============
+
+This plugin shows the date and time of day in the Vim command window.
+
+The author finds this useful on macOS, because I like to hide the macOS
+menu bar, which is normally where you’d see the clock.
+
+Requirements
 ------------
 
-By default, when Chrome is opened, the default user profile is used.
+This plug-in requires Vim v8.0 or greater, to take advantage of timers.
 
-- To instead open a window using the most recently used profile,
-  set the following global variable to nonzero, e.g.,::
+Usage
+=====
 
-    g:dubs_web_hatch_mru_profile = 1
+Nothing. If this plugin is loaded, it’ll show a clock in the command
+window.
 
-Supported Browsers
-------------------
+For example, here’s the lower-right hand corner of Vim running on Linux
+Mint MATE. The arrow points to the clock that shows up in the Vim
+command window:
 
-This plugin works with the following browsers:
+.. figure:: doc/assets/vim-command-line-clock-se-corner-MATE-desktop.png
+   :alt: vim-command-line-clock example
 
-- On Debian: Google Chrome, Chromium, and Mozilla Firefox.
+   vim-command-line-clock example
 
-- On macOS: Google Chrome, Mozilla Firefox, and Apple Safari.
+Note that the clock will be temporarily hidden when other messages are
+printed to the command window. (E.g., type ``:echo "hello"`` and the
+clock will disappear while you’re typing the command, and for a number
+of seconds after running the command, while the echo message is
+displayed.)
 
-Note that Safari does not accept command line arguments, so it does not
-respect tab vs. window, nor can it open a location in incognito mode.
+See Also
+========
 
-Please feel free to open a pull request to add support for additional browsers.
+If you’d like to show a clock in the title bar, see a similar plugin:
+`vim-title-bar-time-of-day <https://www.github.com/landonb/vim-title-bar-time-of-day>`__
 
-Install
+Options
 =======
+
+To set an option, include a line like the following in your
+``~/.vimrc``:
+
+::
+
+   let g:CommandLineClockDisabled = 1
+
+The following options are available:
+
+- ``g:CommandLineClockDisabled`` — Boolean value; either 0 or 1
+  (default: 0).
+
+  Set this variable truthy to disable the plugin.
+
+- ``g:CommandLineClockRepeatTime`` — Non-negative integer value
+  (default: 101).
+
+  Determines how often to run the timer that updates the clock (in
+  milliseconds).
+
+- ``g:CommandLineClockBackoffMultiplier`` - (default: 50).
+
+  How long to wait after a message is detected in the command window
+  before repainting the clock (and overwriting the message). The length
+  of time is this multiplier multiplied by the repeat time (e.g., 101 \*
+  50 = 5,050 msec.). This feature gives the user time to see (and read)
+  whatever message was printed to the command window, before the clock
+  is repainted.
+
+Installation
+============
+
+Installation is easy using the packages feature (see
+``:help packages``).
+
+If you want the plugin to load automatically on Vim startup, use a
+``start/`` directory, e.g.,
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+
+And then clone the project to that path:
+
+.. code:: shell
+
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-command-line-clock.git
+
+If you want to test the package first, make it optional instead (see
+``:help pack-add``):
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/opt
+   cd ~/.vim/pack/landonb/opt
+   git clone https://github.com/landonb/vim-command-line-clock.git
+
+   " When ready, load the [opt]ional plugin (or is it [opt]-in?).
+   :packadd! vim-command-line-clock
+
+To build the help, ensure the plugin is loaded, and then run the
+following command just one time from within Vim:
+
+.. code:: shell
+
+   :Helptags
+
+Or, you can build the help from the terminal instead. Run:
+
+.. code:: shell
+
+   vim -u NONE -c "helptags vim-command-line-clock/doc" -c q
+
+And then to view the help from within Vim, run:
+
+.. code:: shell
+
+   :help vim-command-line-clock
+
+Enjoy!
+
+#######################
+vim-depoxy-coc-defaults
+#######################
+
+Opinionated `coc <https://github.com/neoclide/coc.nvim>`__ defaults.
+
+Introduction
+============
+
+Sets opinionated `coc <https://github.com/neoclide/coc.nvim>`__
+defaults.
+
+- Disables highlighting symbol on hover.
+
+  ::
+
+     let g:lsp_highlight_references_enabled = 0
+
+- Disables autocomplete popup by default.
+
+  ::
+
+     let g:asyncomplete_auto_popup = 0
+
+- Always show ``signcolumn`` to avoid jittery UX.
+
+  ::
+
+     set signcolumn=number
+
+- Adds a handful of useful commands (see below).
+
+Requirements
+------------
+
+This plug-in requires ``coc`` and whatever else it requires.
+
+https://github.com/neoclide/coc.nvim
+
+You’ll also need LSPes for your languages, e.g.,
+
+https://github.com/neoclide/coc-tsserver
+
+https://github.com/neoclide/coc-json
+
+Commands
+========
+
+Use ``[g`` and ``]g`` to navigate diagnostics:
+
+- ``[g`` — Calls ``coc-diagnostic-prev``
+
+- ``]g`` — Calls ``coc-diagnostic-next``
+
+Use ``:CocDiagnostics`` to get all diagnostics of current buffer in
+location list.
+
+Find definition and usages, etc.:
+
+- ``gd`` — Calls ``coc-definition``
+
+- ``gy`` — Calls ``coc-type-definition``
+
+- ``gi`` — Calls ``coc-implementation``
+
+- ``gr`` — Calls ``coc-references``
+
+Other:
+
+- ``K`` — Shows documentation for keyword under cursor
+
+INSTALL
+=======
+
+Installation is easy using Vim’s packages feature (see
+``:help packages``).
+
+If you want the plugin to load automatically on Vim startup, use a
+``start/`` directory, e.g.,
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+
+And then clone the project to that path:
+
+.. code:: shell
+
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-depoxy-coc-defaults.git
+
+If you want to test the package first, make it optional instead (see
+``:help pack-add``):
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/opt
+   cd ~/.vim/pack/landonb/opt
+   git clone https://github.com/landonb/vim-depoxy-coc-defaults.git
+
+   " When ready, load the [opt]ional plugin (or is it [opt]-in?).
+   :packadd! vim-depoxy-coc-defaults
+
+To build the help, ensure the plugin is loaded, and then run the
+following command just one time from within Vim:
+
+.. code:: shell
+
+   :Helptags
+
+Or, you can build the help from the terminal instead. Run:
+
+.. code:: shell
+
+   vim -u NONE -c "helptags vim-depoxy-coc-defaults/doc" -c q
+
+And then to view the help from within Vim, run:
+
+.. code:: shell
+
+   :help vim-depoxy-coc-defaults
+
+SEE ALSO
+========
+
+DepoXy Development Environment Orchestrator
+
+https://github.com/DepoXy/depoxy#🍯
+
+AUTHOR
+======
+
+**vim-depoxy-coc-defaults** is Copyright (c) 2020-2023 Landon Bouma
+<depoxy@tallybark.com>
+
+This software is released under the MIT license (see ``LICENSE`` file
+for more)
+
+REPORTING BUGS
+==============
+
+<https://github.com/DepoXy/vim-depoxy-coc-defaults/issues>
+
+#####################
+Vim Fullscreen Toggle
+#####################
+
+About This Plugin
+=================
+
+Display-aware Vim fullscreen toggle.
+
+Fullscreen Window Commands
+==========================
+
+This plugin is a dual-display-aware version of an old trick::
+
+  set columns=999 lines=999
+
+which will resize a gVim/MacVim window to fill the screen.
+
+But that trick breaks when there's more than one monitor attached.
+
+This plugin restricts the resize to just one monitor, and
+it also adjusts vertical splits to be equal widths.
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<F11>``                    Change gVim/MacVim            Cycles through 3 different window sizes:
+                              window dimensions             fullscreen → mostly fullscreen → original size → (repeat).
+                                                            If the original size when user first presses ``<F11>``
+                                                            is already fullscreen or mostly fullscreen, the plugin
+                                                            will only cycle through 2 sizes: fullscreen → mostly fullscreen → (repeat).
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+``<Shift-F11>``               Restrict to right-half of     Like ``<F11>``, cycles through 3 different window sizes,
+                              display                       but sets window width and position to right-half of display.
+===========================  ============================  ==============================================================================
+
+Override
+--------
+
+To use your own mappings, define ``g:TBVIMCreateDefaultMappings = 0`` to
+inhibit the ``<F11>`` and ``<S-F11>`` mappings, and then define your own.
+
+Installation
+============
 
 Installation is easy using the packages feature (see ``:help packages``).
 
@@ -3123,13 +3938,13 @@ Clone the project to the desired path:
 
 .. code-block:: bash
 
-    git clone https://github.com/landonb/dubs_web_hatch.git
+    git clone https://github.com/landonb/vim-fullscreen-toggle.git
 
 If you installed to the optional path, tell Vim to load the package:
 
 .. code-block:: vim
 
-   :packadd! dubs_web_hatch
+   :packadd! vim-fullscreen-toggle
 
 Just once, tell Vim to build the online help:
 
@@ -3141,7 +3956,619 @@ Then whenever you want to reference the help from Vim, run:
 
 .. code-block:: vim
 
-   :help dubs-web-hatch
+   :help vim-fullscreen-toggle
+
+####################
+``vim-goto-file-sh``
+####################
+
+About This Plugin
+=================
+
+This plugin enables the Vim ``gf`` command to resolve shell variable
+paths, including those with alternative values.
+
+For example, you could position the cursor over the following path
+and press ``gf``:
+
+.. code-block::
+
+  ${VIM_PACK:-${HOME}/.vim/pack}/embrace-vim/start/vim-goto-file-sh/README.rst
+
+and Vim would open the file at
+``~/.vim/pack/embrace-vim/start/vim-goto-file-sh/README.rst``.
+
+Further Details
+===============
+
+The Vim ``gf`` command ("Edit the file whose name is under or after the cursor")
+will resolve tilde and the HOME environ variable, but not other variables.
+
+- E.g., ``gf`` works on these paths:
+
+.. code-block::
+
+    ~/.vim/pack/embrace-vim/start/vim-goto-file-sh/README.rst
+    
+    "$HOME/.vim/pack/embrace-vim/start/vim-goto-file-sh/README.rst"
+
+    "${HOME}/.vim/pack/embrace-vim/start/vim-goto-file-sh/README.rst"
+
+- But Vim's built-in ``gf`` won't work on these paths:
+
+.. code-block::
+
+    "${VIM_PACK:-${HOME}/.vim/pack}/embrace-vim/start/vim-goto-file-sh/README.rst"
+
+    "${EMBRACE_VIM:-${VIM_PACK:-${HOME}/.vim/pack}/embrace-vim/start}/vim-goto-file-sh/README.rst"
+
+Fortunately, Vim provides the ``includeexpr`` hook for when ``gf`` comes
+up empty — so we don't need to rewrite the ``gf`` function, we can just
+add an ``includeexpr`` function.
+
+Setup
+=====
+
+First, install this plugin (see `Installation`_, below).
+
+Next, ensure that ``isfname`` is configured properly.
+
+- To work on alternative shell variable values, e.g., if you want
+  ``gf`` to resolve ``${foo:-bar}`` to ``bar`` if ``$foo`` is not defined
+  in the environment, then you'll need to ensure that Vim includes colons
+  when sussing filenames.
+
+  - E.g., here's the author's ``isfname`` value (where 39 is the
+    single quote character, and 48-57 are the characters '0'-'9'):
+
+.. code-block::
+
+  set isfname=@,48-57,/,.,:,-,_,+,,,#,$,%,~,=,{,},(,),!,39
+
+Configuration
+=============
+
+By default, this plugin will only change ``includeexpr`` for specific
+file types (and it will not alert you if it clobbers an existing
+``includeexpr``).
+
+- Specifically, this plugin works on Bash and Shell file types,
+  as well as reST, Markdown, and Text.
+
+- You can use a global variable to add or remove file types.
+
+  Here's the default value:
+
+.. code-block::
+
+  let g:vim_goto_file_filetypes = 'bash,sh,markdown,rst,txt'
+
+- If you'd like a global ``includeexpr`` (e.g., ``set includeexpr = ...``
+  and not ``set local includeexpr = ...``), you can set this value to
+  the empty string, e.g.:
+
+.. code-block::
+
+  let g:vim_goto_file_filetypes = ''
+
+Caveats
+=======
+
+This plugin calls ``eval('$<var>')`` on the environment variables
+to try to resolves matches. So it matters how you started Vim.
+
+- If you've started Vim/gVim from a shell terminal, it'll resolve
+  environments normally defined in your shell.
+
+- But if you've started Vim/gVim some other way, e.g., if you started
+  MacVim via Spotlight Search, then your Vim environment won't include
+  the same environment variables that your shell normally has.
+
+  - Just FYI, you might want to start Vim/gVim from your shell to
+    get this most utility out of this plugin.
+
+Optional ``gf`` insert and visual mode maps
+===========================================
+
+.. |vim-async-mapper| replace:: ``vim-async-mapper``
+.. _vim-async-mapper: https://github.com/embrace-vim/vim-async-mapper
+
+``gf`` insert mode map
+----------------------
+
+If you'd like a nondisruptive ``gf`` binding to work from insert
+mode, you can install |vim-async-mapper|_:
+
+  https://github.com/embrace-vim/vim-async-mapper#જ⁀➴
+
+If that plugin is installed, you can use ``gf`` from insert mode
+to open file paths (and it won't interrupt your normal ``g``
+keypresses — i.e., you won't see a pause after typing ``g``
+like you would with a naïve ``imap gf`` binding).
+
+- You can enable the insert mode ``gf`` map by installing
+  |vim-async-mapper|_, and then add the following to your
+  Vim config:
+
+.. code-block:: vim
+
+  " Enable insert mode `gf` map
+  let g:vim_goto_file_add_insert_mode_map = 1
+
+By default, the insert mode ``gf`` map will call ``gF``, so that
+it honors a line number following the file path.
+
+- If you'd like to use regular ``gf`` instead, use another
+  global variable:
+
+.. code-block:: vim
+
+  " Use `gf` (instead of `gF`)
+  let g:vim_goto_file_use_simple_gf = 1
+
+``gf`` visual mode map
+----------------------
+
+``vim-goto-file-sh`` will also create a visual mode ``gf`` map, so
+that you can select text and then type ``gf`` to open the selected
+path.
+
+- You can enable the visual mode ``gf`` map by adding the
+  following to your Vim config:
+
+.. code-block:: vim
+
+  " Enable visual mode `gf` map
+  let g:vim_goto_file_add_visual_mode_map = 1
+
+Reference
+=========
+
+See Vim online help for details about ``gf`` and ``includeexpr``:
+
+.. code-block:: vim
+
+  :h gf
+
+  :h includeexpr
+
+Related projects
+================
+
+.. |vim-npr| replace:: ``https://github.com/tomarrell/vim-npr#🐿``
+.. _vim-npr: https://github.com/tomarrell/vim-npr
+
+.. |vim-apathy| replace:: ``https://github.com/tpope/vim-apathy``
+.. _vim-apathy: https://github.com/tpope/vim-apathy
+
+See also these similar project(s):
+
+- *Sensible 'gf' for Node Path Relative JS module resolution per project 🐿*
+
+  |vim-npr|_
+
+- *Apathy sets the five path searching options — 'path', 'suffixesadd',
+  'include', 'includeexpr', and 'define' — for file types I don't care
+  about enough to bother with creating a proper plugin.*
+
+  |vim-apathy|_
+
+.. FIXME/2024-12-10 18:06: How does Vim ``gf`` relative paths?
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block::
+
+    mkdir -p ~/.vim/pack/embrace-vim/start
+    cd ~/.vim/pack/embrace-vim/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block::
+
+    mkdir -p ~/.vim/pack/embrace-vim/opt
+    cd ~/.vim/pack/embrace-vim/opt
+
+Clone the project to the desired path:
+
+.. code-block::
+
+    git clone https://github.com/embrace-vim/vim-goto-file-sh.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+    :packadd! vim-goto-file-sh
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+    :help vim-goto-file-sh
+
+.. |vim-plug| replace:: ``vim-plug``
+.. _vim-plug: https://github.com/junegunn/vim-plug
+
+.. |Vundle| replace:: ``Vundle``
+.. _Vundle: https://github.com/VundleVim/Vundle.vim
+
+.. |myrepos| replace:: ``myrepos``
+.. _myrepos: https://myrepos.branchable.com/
+
+.. |ohmyrepos| replace:: ``ohmyrepos``
+.. _ohmyrepos: https://github.com/landonb/ohmyrepos
+
+Note that you'll need to update the repo manually (e.g., ``git pull``
+occasionally).
+
+- If you'd like to be able to update from within Vim, you could use
+  |vim-plug|_.
+
+  - You could then skip the steps above and register
+    the plugin like this, e.g.:
+
+.. code-block:: vim
+
+    call plug#begin()
+
+    " List your plugins here
+    Plug 'embrace-vim/vim-goto-file-sh'
+
+    call plug#end()
+
+- And to update, call:
+
+.. code-block:: vim
+
+    :PlugUpdate
+
+- Similarly, there's also |Vundle|_.
+
+  - You'd configure it something like this:
+
+.. code-block:: vim
+
+    set nocompatible              " be iMproved, required
+    filetype off                  " required
+
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    " alternatively, pass a path where Vundle should install plugins
+    "call vundle#begin('~/some/path/here')
+
+    " let Vundle manage Vundle, required
+    Plugin 'VundleVim/Vundle.vim'
+
+    Plugin 'embrace-vim/vim-goto-file-sh'
+
+    " All of your Plugins must be added before the following line
+    call vundle#end()            " required
+    filetype plugin indent on    " required
+    " To ignore plugin indent changes, instead use:
+    "filetype plugin on
+
+- And then to update, call one of these:
+
+.. code-block:: vim
+
+    :PluginInstall!
+    :PluginUpdate
+
+- Or, if you're like the author, you could use a multi-repo Git tool,
+  such as |myrepos|_ (along with the author's library, |ohmyrepos|_).
+
+  - With |myrepos|_, you could update all your Git repos with
+    the following command:
+
+.. code-block::
+
+    mr -d / pull
+
+- Alternatively, if you use |ohmyrepos|_, you could pull
+  just Vim plugin changes with something like this:
+
+.. code-block::
+
+    MR_INCLUDE=vim-plugins mr -d / pull
+
+- After you identify your vim-plugins using the 'skip' action, e.g.:
+
+.. code-block::
+
+    # Put this in ~/.mrconfig, or something loaded by it.
+    [DEFAULT]
+    skip = mr_exclusive "vim-plugins"
+
+    [pack/embrace-vim/start/vim-goto-file-sh]
+    lib = remote_set origin https://github.com/embrace-vim/vim-goto-file-sh.git
+
+    [DEFAULT]
+    skip = false
+
+Attribution
+===========
+
+.. |embrace-vim| replace:: ``embrace-vim``
+.. _embrace-vim: https://github.com/embrace-vim
+
+.. |@landonb| replace:: ``@landonb``
+.. _@landonb: https://github.com/landonb
+
+The |embrace-vim|_ logo by |@landonb|_ contains
+`coffee cup with straw by farra nugraha from Noun Project
+<https://thenounproject.com/icon/coffee-cup-with-straw-6961731/>`__
+(CC BY 3.0).
+
+####################
+vim-lcd-project-root
+####################
+
+Sets the working directory when editing a new buffer to the file’s Git
+project root, or to the file’s parent directory.
+
+- Inspired by: `“Sane Vim Working
+  Directories” <http://inlehmansterms.net/2014/09/04/sane-vim-working-directories/>`__.
+
+Introduction
+============
+
+Useful for builtin ``find`` and ``grep`` commands, as well as for search
+plugins like `CtrlP <https://github.com/ctrlpvim/ctrlp.vim>`__,
+`Command-T <https://github.com/wincent/command-t>`__, and
+`fzf <https://github.com/junegunn/fzf>`__. Also
+`vim-fugitive <https://github.com/tpope/vim-fugitive>`__-aware.
+
+Commands
+========
+
+None. Runs on ``BufRead *``, i.e., when starting to edit a new buffer.
+
+Installation
+============
+
+Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-lcd-project-root.git
+   vim -u NONE -c "helptags vim-lcd-project-root/doc" -c q
+
+To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
+instead and call ``:packadd vim-lcd-project-root`` when ready.
+
+License
+=======
+
+Copyright (c) Landon Bouma. This work is distributed wholly under CC0
+and dedicated to the Public Domain.
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+########################
+Vim `mkspell` When Stale
+########################
+
+About This Plugin
+=================
+
+Simple Vim ``mkspell`` wrapper that runs on Vim startup and
+on demand.
+
+Mkspell-When-Stale Commands
+===========================
+
+*g:mkspell_when_stale#MkspellWhenStale()*
+
+``g:mkspell_when_stale#MkspellWhenStale()`` feeds each ``~/.vim/spell/*.add``
+file to ``mkspell`` to generate ``.spl`` files that Vim uses to spell check.
+
+- In the most basic example, an English user has a single input
+  file, ``~/.vim/spell/en.utf-8.add``
+
+  - After running the wrapper command, or after restarting Vim,
+    the wrapper command generates ``~/.vim/spell/en.utf-8.add.spl``
+
+- This command finishes immediately if the ``.spl`` file is already
+  up to date (newer than the input file).
+
+This command runs on startup, and can also be called directly,
+or perhaps from a script after updating the input file, e.g.,
+
+.. code-block:: bash
+
+  vim_generate_spellfile () {
+    vim -c "call g:mkspell_when_stale#MkspellWhenStale()" -c q
+  }
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-mkspell-when-stale.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-mkspell-when-stale
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-mkspell-when-stale
+
+############################
+vim-netrw-cfg-split-explorer
+############################
+
+Sets the netrw global variable options to the only values I think make
+sense.
+
+Be sure you also grab Tim Pope’s
+`vim-vinegar <https://github.com/tpope/vim-vinegar>`__.
+
+Commands
+========
+
+None. Sets a few ``g:*`` netrw configuration values.
+
+- Hide the banner. Press ``I`` to toggle it.
+
+  .. code:: vim
+
+     let g:netrw_banner = 0
+
+- Open files in the current window pane. This is a split explorer after
+  all, and not a project drawer!
+
+  .. code:: vim
+
+     " Options:
+     "  1 - open files in a new horizontal split
+     "  2 - open files in a new vertical split
+     "  3 - open files in a new tab
+     "  4 - open in previous window
+     "  0 - re-use same window (default)
+     let g:netrw_browse_split = 0
+
+- Show a ‘thin’ directory listing. Because bug in ‘tree’ view cannot
+  open symlinks; the ‘long’ view is a mess because tab stops do not
+  align; and the ‘wide’ view generally requires extra keystrokes to find
+  and open files.
+
+  .. code:: vim
+
+     " Options: 'thin', one-file-per-line (0); long (1); wide (2); and tree (3).
+     let g:netrw_liststyle = 0
+
+Installation
+============
+
+Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-netrw-cfg-split-explorer.git
+   vim -u NONE -c "helptags vim-netrw-cfg-split-explorer/doc" -c q
+
+To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
+instead and call ``:packadd vim-netrw-cfg-split-explorer`` when ready.
+
+License
+=======
+
+Copyright (c) Landon Bouma. This work is distributed wholly under CC0
+and dedicated to the Public Domain.
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+######################
+vim-netrw-link-resolve
+######################
+
+Reopens files opened with ``netrw`` at their resolved path to avoid a
+file-exists error on save.
+
+Introduction
+============
+
+After a file is opened via ``netrw``, e.g., using ``:Explore``, this
+plugin closes the opened file if if was opened from a symlink path, and
+reopens the file using its real path.
+
+This avoids a problem that occurs if you open the same file using two
+different paths, as Vim will treat the buffers independently and will
+not let you save changes without a bang, e.g., ``:w!``, and scolds you
+otherwise:
+
+::
+
+   E13: File exists (add ! to override)
+
+Commands
+========
+
+None. Uses the ``g:Netrw_funcref`` callback to run.
+
+Prerequisites
+=============
+
+There’s an old ``netrw`` bug in Vim that breaks this plugin.
+
+The bug was fixed in patch 8.2.3386, so you’ll need to ensure you’re
+running that version or better. (Alternatively, you could copy
+``netrw.vim`` from the latest Vim source to this plugin’s ``autoload/``
+directory, if you are unable to find or build a newer version of Vim.)
+
+Installation
+============
+
+Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-netrw-link-resolve.git
+   vim -u NONE -c "helptags vim-netrw-link-resolve/doc" -c q
+
+To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
+instead and call ``:packadd vim-netrw-link-resolve`` when ready.
+
+License
+=======
+
+Copyright (c) Landon Bouma. This work is distributed wholly under CC0
+and dedicated to the Public Domain.
+
+https://creativecommons.org/publicdomain/zero/1.0/
 
 ##############################################
 Vim Plugin |em_dash| Nicer File Changed Prompt
@@ -3819,7 +5246,7 @@ there at one point, but it makes the matching a lot slower). E.g.,::
 Note that you definitely don't want to store passwords in your notes,
 so this highlight can be used to warn you if you accidentally do.
 
-And you might also find this highlight useful if you've |wired-pass-edit|_
+But really you might also find this highlight useful if you've |wired-pass-edit|_
 to open `password store <https://www.passwordstore.org/>`__ entries in Vim.
 
 .. |wired-pass-edit| replace:: wired ``pass edit``
@@ -3828,7 +5255,7 @@ to open `password store <https://www.passwordstore.org/>`__ entries in Vim.
 Highlight: Browser config hyperlinks
 ------------------------------------
 
-Pretty basic. The following URLs will be highlighted::
+Pretty basic. The following URL formats will be highlighted::
 
   chrome://<foo>
 
@@ -3945,6 +5372,523 @@ Just once, tell Vim to build the online help::
 Then whenever you want to reference the help from Vim, run::
 
    :help vim-reST-highdefs
+
+License
+=======
+
+Copyright (c) Landon Bouma. This work is distributed
+wholly under CC0 and dedicated to the Public Domain.
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+###########################################################################
+``vim-reST-highfive`` |em_dash| reST five-letter uppercase word highlighter
+###########################################################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+About This Plugin
+=================
+
+This plugin adds FIVER (uppercase five-letter word) highlighting
+to your reST documents.
+
+Supercharge your notetaking and knowledge management practices!
+
+Install this plugin to make it easier to manage notes in Vim
+using reStructuredText markup.
+
+Why You Might Want to Use This Plugin
+=====================================
+
+If you like to use Vim to organize your life (I do!),
+see how this plugin makes it easier to manage your notes.
+
+Consider the following document::
+
+  @@@@@@@@@@@@@@
+  My Vim Backlog
+  @@@@@@@@@@@@@@
+
+  FTREQ: Develop a Vim plugin to highlight five-letter uppercase words.
+
+  FIXME: Opening symlinks using netrw plugin causes save-file warning.
+
+  LEARN: Teach yourself the latest Vim 9 script language: `:h new-9`.
+
+Normally, only the header is highlighted in Vim (by the ``syntax/rst.vim``
+syntax file).
+
+But this plugin will highlight each of the five-letter words that are
+preceded by a colon.
+
+This is especially useful (at least to the author) when you've got a
+lot of notes in a file, and you want action items to stand out.
+
+For instance, I might have a "FIXME" note followed by a few paragraphs
+of text, followed by another "FIXME", etc., and I want to be able to
+scroll down the document and quickly see each "FIXME".
+
+What are FIVER action words?
+============================
+
+In lieu of bug tracking or issue management software, you can use
+reStructuredText files in Vim to manage your notes and "backlog"
+items.
+
+The author of this plugin has been doing so for over a decade, and
+over the course of those years, I started using five-letter action
+words to highlight different *types* of notes. This includes work
+to be done, work completed, an interesting note I want to highlight,
+etc.
+
+For example, you might think of something you want to do, and then
+you could record it in your notes with the appropriate FIVER word,
+such as using "FTREQ" to denote new work that you'd like to complete::
+
+  FTREQ: Write the `reST-highfive` help doc.
+
+Or if you found an issue that you wanted to fix, you could use "FIXME"::
+
+  FIXME: Promote the 'reST-highfive` plugin.
+
+Other uses include documenting interesting information, such as using
+"SAVVY" to remind yourself of some trick you learned::
+
+  SAVVY: Search Gmail by date: `after:YYYY/MM/DD before:YYYY/MM/DD`
+
+Or you could use "REFER" to reference information outside your notes
+(and maybe you've got the `dubs_web_hatch
+<https://github.com/landonb/dubs_web_hatch>`__ plugin installed, so you
+could type ``<gW>`` to open the URL under the cursor), e.g.,::
+
+  REFER: Anduril 2 Manual:
+
+  http://toykeeper.net/torches/fsm/anduril2/anduril-manual.txt
+
+The uses are quite endless, and the vocabulary is essentially
+yours to create.
+
+How to highlight FIVERs
+=======================
+
+This plugin automatically highlights any FIVER word (a five-letter
+uppercase word) that's followed by a colon or a forward slash.
+
+E.g., just type "FIVER" followed by a colon, and it'll be highlighted::
+
+  FIVER: The "FIVER" before the colon is highlighted.
+
+Additionally, any FIVER followed by a forward slash is also highlighted
+(because that's how the author dates their notes), e.g.::
+
+  TRYME/2022-09-24 18:35: Try cooking Jackfruit Pulled "Pork".
+
+Using FIVERs to mark tasks completed
+====================================
+
+When you've completed a task, you can change the FIVER to indicate that
+the task is done, or you can prefix it with a completion FIVER.
+
+For instance, after completing a "FIXME" task, rename it "FIXED", e.g.::
+
+  FIXED: Update the README
+
+This plugin will specially highlight these FIVERs using a strikethrough.
+
+You can also prefix the previous FIVER with the completion FIVER, and
+the old FIVER will no longer be highlighted, e.g.::
+
+  FIXED/FIXME: Send it
+
+will show "FIXED" in strikethrough and will show "FIXME" unadorned.
+
+Which FIVER words signify completion
+====================================
+
+The following five-letter uppercase words will be highlighted with a
+strikethrough.
+
+For example, when a *FIXME* is *FIXED*, you can rename *FIXME* to *FIXED*.
+Then, instead of yellow and bold, the FIVER is now highlighted purplish
+and stricken-through.
+
+Alternatively (and this is what the author prefers), you can prefix
+the old FIVER, e.g.::
+
+  FIXED/FIXME: Some task
+
+Then the "FIXED" will be written in purple strikethrough, the "FIXME"
+will no longer be highlighted, and you can easily scan the document for
+active FIVERs (which are highlighted in yellow or yellowish-green bold
+text), while preserving the original FIVER type.
+
+This following FIVERs are highlighted in purple with strikethrough:
+
+- ``FIXED``
+
+  - For when you complete a "FIXME", or any other actionable FIVER.
+
+- ``ANNUL``
+
+  - For any canceled task, e.g., a *FIXME* that you *WONTFIX*.
+
+- ``NOTED``
+
+  - For non-actionable notes you want to archive, in a sense.
+    (The author uses "NOTED" so that when I'm skimming notes,
+    I can ignore any block of text marked "NOTED" (or marked
+    with any other FIVER that's printed in strikethrough).)
+
+- ``COPYD``
+
+  - For any note you want to mark as duplicate, or if you copy
+    a note somewhere else but want to leave a breadcrumb. (The
+    author uses this in at least two use cases. First, I often
+    find duplicate backlog items, so I'll mark one "COPYD".
+    Second, if I have a long block of notes with multiple FIVERs
+    and some are completed but some are not, I might extract the
+    uncompleted tasks by copying them elsewhere, and then I'll
+    mark the original notes "COPYD". This way I can leave the
+    original note intact, as a point of reference, and for context.)
+
+- ``ORDRD``
+
+  - For something you've purchased. (When the author is thinking about
+    buying something, I'll leave myself an "ORDER" note. If I
+    purchase said thing later, I'll mark it "ORDRD", e.g.,
+    ``ORDRD/ORDER/2024-10-20: Some thing``).
+
+- ``SNIPD``
+
+  - For text you moved from elsewhere, when you want to leave a back-ref.
+    (E.g., ``SNIPD/2024-10-20: Moved from ~/some/file: ...``.)
+
+- ``RECVD``
+
+  - Used to complement "SHIPD" and used alongside "ORDER" and
+    "ORDRD", for tracking shipments. E.g., you might have a completed
+    note such as ``RECVD/SHIPD: UPS tracking number: XXXX``.
+
+- ``SPOKE``
+
+  - Awkwardly-named final state for a "SPIKE" backlog item (I know
+    it's a silly name, but can you think of a better name for a
+    finished "SPIKE" backlog item? (other than FIXED, of course!).)
+
+- ``WAITD``
+
+  - The final state for "AWAIT", which are actionables that are delayed
+    until a later date or some external trigger. (E.g.,
+    ``WAITD/AWAIT: Expect the president to call you back by Friday.``)
+
+(Note the previous list is ordered by usage count in the author's notes.
+For instance, I have 8,230 notes marked "FIXED", 2,744 notes marked
+"ANNUL", but only 146 notes marked "WAITD".)
+
+Always-highlighted FIVERs
+=========================
+
+Some FIVERs are always highlighted when used in a document, regardless
+of being followed by a forward slash or a colon. The list is limited to
+the following two FIVERs::
+
+  MAYBE
+
+  AWAIT
+
+(This list used to include about 20 FIVERs, but this feature proved not
+to be that useful, and it can be distracting when overused. So the list
+has been pared to just those FIVERs that the author uses standalone. See
+inline comments for a discussion (especially re: this feature is not
+*that* useful).)
+
+Suggesting FIVERs
+=================
+
+The author is more than willing to entertain new FIVER words, or changes
+to the dictionary setup by this plugin. But note that how anyone chooses
+to use this plugin is probably very specific to their own tastes. So you
+might just want to fork the plugin and tweak the dictionary to your liking.
+(Or we could move the predefined FIVERs to ``g:`` variables that you could
+customize from your own Vim script; feel free to PR such a change if you
+want.)
+
+In any case, the author would love to hear about how you use and how you've
+personalized this plugin! (Indeed, if anyone likes this plugin, please
+give the project a star, I'd love to know that other devs enjoy it as
+much as I do. =)
+
+Tips: Related supercharged reST plugins
+=======================================
+
+Consider these complementary reST highlights plugins that pair
+well with this plugin to help you take notes in Vim:
+
+- Advanced reST document section folder.
+
+  `https://github.com/landonb/vim-reSTfold#🙏
+  <https://github.com/landonb/vim-reSTfold#🙏>`__
+
+  Supercharge your notetaking and recordkeeping!
+
+  Add section folding to your reST notes so you can,
+  e.g., collapse a 10,000-line-long TODO file and get a
+  nice high-level view of all the things you wanna do.
+
+- Additional syntax highlight rules.
+
+  `https://github.com/landonb/vim-reST-highdefs#🎨
+  <https://github.com/landonb/vim-reST-highdefs#🎨>`__
+
+  Colorize email addresses and host names, and disable spell checking
+  on emails, hosts, and acronyms (all-capital words).
+
+- Simple horizontal rule highlight.
+
+  `https://github.com/landonb/vim-reST-highline#➖
+  <https://github.com/landonb/vim-reST-highline#➖>`__
+
+  Repeat the same punctuation character 8 or more times on
+  a line, and it'll be highlighted.
+
+  Useful for adding a visual separation to your notes without
+  using a reST section heading.
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-reST-highfive.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-reST-highfive
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-reST-highfive
+
+License
+=======
+
+Copyright (c) Landon Bouma. This work is distributed
+wholly under CC0 and dedicated to the Public Domain.
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+################################################################
+``vim-reST-highline`` |em_dash| reST horizontal rule highlighter
+################################################################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+About This Plugin
+=================
+
+This plugin highlights lines of repeated characters
+(that aren't otherwise a reST section header), so
+that you can add colorful delimiters to your reST
+documents.
+
+*Supercharge your notetaking and recordkeeping!*
+
+Install this plugin and make your reStructuredText markup more lively.
+
+Why You Might Want to Use This Plugin
+=====================================
+
+(Of all the author's reStructuredText plugins, this is the last
+one you might want. Not to undersell it, but first check out
+`Tips: Related supercharged reST plugins`_, below, if you have
+not already demoed or installed my other reST plugins.)
+
+This plugin works quite simply: if you repeat the same character
+eight or more times on a line, and there are no other characters
+besides whitespace, that line is specially highlighted.
+
+The author used to use this feature, e.g., to draw a line of
+pipes, and they'd be highlighted in green::
+
+  Blah blah blah some text.
+
+  |||||||||||||||||
+
+  Blah blah blah some more text.
+
+Or to draw a line of dollar signs, and they'd be highlighted
+with a cyan background, e.g.,::
+
+  Blah blah blah some text.
+
+  $$$$$$$$$$$$$$$$$
+
+  Blah blah blah some more text.
+
+But recently, the author has just been using a row of seven dashes
+as a delimiter, which the built-in ``runtime/syntax/rst.vim`` rules
+highlight in purple.
+
+- You can easily insert such a line of dashes using the ``<Ctrl-->``
+  (Ctrl-minus) shortcut, if you install `vim-ovm-seven-of-spines#🦴
+  <https://github.com/landonb/vim-ovm-seven-of-spines#🦴>`__.
+
+Nonetheless, this plugin still exists, because it's how I used to
+roll, until I realized that a short horizontal rule of seven dashes
+was enough to delineate one sub-section of my notes from another,
+without creating a new section header.
+
+E.g., I might have a section for some bug that I want to fix, and
+then I'll use the seven-dash approach to separate my different
+thoughts on the subject, such as::
+
+  #########################################################
+  FIXME/2022-09-24: Move reST HR highlights to a new plugin
+  #########################################################
+
+  FIXME/2022-09-24 22:11: Split the vim-reSTfold plugin to
+  spin-off the HR highlights.
+
+  -------
+
+  SPIKE/2022-09-24 22:12: Verify that syntax load order does
+  not interfere with the `rstSections` rule from vim-reSTfold.
+
+  -------
+
+  ################################################
+  FIXME/2022-09-24: Some other issue I want to fix
+  ################################################
+
+  Blah blah blah.
+
+  -------
+
+Tips: Related supercharged reST plugins
+=======================================
+
+Consider these complementary reST highlights plugins that pair
+well with this plugin to help you take notes in Vim:
+
+- Advanced reST document section folder.
+
+  `https://github.com/landonb/vim-reSTfold#🙏
+  <https://github.com/landonb/vim-reSTfold#🙏>`__
+
+  Supercharge your notetaking and recordkeeping!
+
+  Add section folding to your reST notes so you can,
+  e.g., collapse a 10,000-line-long TODO file and get a
+  nice high-level view of all the things you wanna do.
+
+- Additional syntax highlight rules.
+
+  `https://github.com/landonb/vim-reST-highdefs#🎨
+  <https://github.com/landonb/vim-reST-highdefs#🎨>`__
+
+  Colorize email addresses and host names, and disable spell checking
+  on emails, hosts, and acronyms (all-capital words).
+
+- Special so-called *FIVER* syntax rules.
+
+  `https://github.com/landonb/vim-reST-highfive#🖐
+  <https://github.com/landonb/vim-reST-highfive#🖐>`__
+
+  Highlight action words.
+
+  E.g., "FIXME" is emphasized (in bright, bold yellow), and so is
+  "FIXED" (crossed-out and purple), and so are "MAYBE", "LEARN",
+  "ORDER", and "CHORE", and a few other choice five-letter words.
+
+  Why five letters? So that you can use action words in section
+  headers, and then the heading titles align nicely when folded.
+  (Really, it's only important that each action word is the same
+  width, and not necessarily that it's five long — but *FIXME* is
+  the ultimate developer action word, so might as well be five.)
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/start
+    cd ~/.vim/pack/landonb/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block:: bash
+
+    mkdir -p ~/.vim/pack/landonb/opt
+    cd ~/.vim/pack/landonb/opt
+
+Clone the project to the desired path:
+
+.. code-block:: bash
+
+    git clone https://github.com/landonb/vim-reST-highline.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+   :packadd! vim-reST-highline
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+   :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+   :help vim-reST-highline
+
+License
+=======
+
+Copyright (c) Landon Bouma. This work is distributed
+wholly under CC0 and dedicated to the Public Domain.
+
+https://creativecommons.org/publicdomain/zero/1.0/
 
 ############################
 vim-select-mode-stopped-down
@@ -4064,6 +6008,611 @@ and then map the key bindings from your own code, e.g.,::
   inoremap <silent> <C-S-Right> <C-O>:<C-U>call <SID>extend_selection_by_word_forward('i')<CR>
   vnoremap <silent> <C-S-Right> :<C-U>call <SID>extend_selection_by_word_forward('v')<CR>
 
+############################
+Dubs Vim |em_dash| Web Hatch
+############################
+
+.. |em_dash| unicode:: 0x2014 .. em dash
+
+Simple URL opener with search and word definition options.
+
+At its core, opens a location in your default browser.
+
+It can also Google search or define a selected word, or open
+a URL in an incognito (private) window.
+
+Initialization
+==============
+
+Your Vim config must initialize the plugin, otherwise it won't do anything.
+
+Call this from your Vim config:
+
+.. code-block::
+
+    call embrace#vim_web_hatch#create_maps()
+
+See `Command Configuration`_ below for details on how to choose
+what commands to enable, and what key sequences to use to map them.
+
+Default Commands
+================
+
+Without any configuration, ``vim-web-hatch`` will configure the following
+maps in each of three separate modes — normal mode, insert mode, and visual
+mode. ``vim-web-hatch`` will not redefine an existing command. See the next
+section for customizing or disabling each command map.
+
+
+==============    =========================================================================
+Command           Description
+--------------    -------------------------------------------------------------------------
+``<Leader>T``     Opens a new browser window with the location of the
+                  URL under the cursor. Similar to Vim's builtin ``gf``
+                  command that opens the file path found under the
+                  cursor. Works from normal and insert mode on the
+                  URL under the cursor, or from visual mode on the
+                  selected text.
+                  (Mnemonic: new Tab)
+--------------    -------------------------------------------------------------------------
+``<Leader>D``     Opens a browser tab and loads the definition of the
+                  word under the cursor (normal or insert mode) or the
+                  selected text (visual mode). (Currently searches
+                  Google, but please submit a PR if you'd like to make
+                  the definition lookup configurable.)
+                  (Mnemonic: Define)
+--------------    -------------------------------------------------------------------------
+``<Leader>W``     Opens a browser tab and Google-searches the word
+                  under the cursor (normal or insert mode) or the
+                  selected text (visual mode). (Please submit a PR
+                  if you'd like to make the search engine configurable.)
+                  (Mnemonic: Web search)
+--------------    -------------------------------------------------------------------------
+``<Leader>P``     Like ``<Leader>T``, but opens the location in an
+                  incognito (aka private) browser window. Works from
+                  normal and insert mode on the URL under the cursor,
+                  or from visual mode on the selected text.
+                  (Mnemonic: Private window)
+==============    =========================================================================
+
+Command Configuration
+=====================
+
+OPTION 1
+--------
+
+Option 1: Define individual global variables for each feature.
+
+- Using this approach will create three maps for each key sequence,
+  one each in the three modes: normal, insert, and visual.
+
+  - See Option 2 (next) to specify a different sequence for each mode.
+
+- Set a variable to the empty string to disable the maps for that feature.
+
+For example, the default commands (listed above) are configured like this:
+
+.. code-block::
+
+    let g:vim_web_hatch_open_url_seq = "<Leader>T"
+    let g:vim_web_hatch_google_define_seq = "<Leader>D"
+    let g:vim_web_hatch_google_search_seq = "<Leader>W"
+    let g:vim_web_hatch_open_incognito_seq = "<Leader>P"
+
+    call embrace#vim_web_hatch#create_maps()
+
+OPTION 2
+--------
+
+Option 2: Define a single global variable Dictionary.
+
+- This option supports different key sequences for the
+  different modes, and it lets you define multiple maps
+  using different key sequences for the same command.
+
+  - E.g., if you want the basic "open" command to work from
+    either ``<Leader>T`` or from ``gW`` (to match the ``gf`` command),
+    you could define:
+
+.. code-block::
+
+    let g:vim_web_hatch_maps = { "open": { "nmap": [ "<Leader>T", "gW" ] } }
+
+- To inhibit maps for a specific feature, set the top-level
+  value to an empty dictionary, e.g., to skip the incognito
+  feature altogether, you could set:
+
+.. code-block::
+
+    let g:vim_web_hatch_maps = { "incognito": {} }
+
+- Or, to inhibit maps for a specific mode, set the nested dictionary
+  value to an empty string or to an empty list.
+
+  For example, this setting will only define an "open" command in visual
+  mode, and it will skip the normal and insert mode maps for open URL:
+
+.. code-block::
+
+    let g:vim_web_hatch_maps =
+      \ { "open": { "nmap": "", "imap": [], "vmap": "<Leader>T" } }
+
+- Note the plugin uses ``g:vim_web_hatch_maps`` if a top-level key
+  is found (like "open"). But it will look for the Option 1
+  variable if the top-level key is missing.
+
+  - And if the Option 1 variable isn't set, it'll use the
+    default key sequence shown above (in `Default Commands`_).
+
+  - So this plugin is opt-out, not opt-in; but it no case will it
+    clobber an existing map.
+
+For example, this is how the author configures this plugin — I add
+``gW`` for "open", because it's similar to the ``gf`` builtin command; and
+I change the incognito key sequence to ``g!`` and only enable it from
+visual mode:
+
+.. code-block::
+
+    let g:vim_web_hatch_maps =
+      \ {
+      \   "open":
+      \     {
+      \       "nmap": [ "<Leader>T", "gW" ],
+      \       "imap": "<Leader>T",
+      \       "vmap": "<Leader>T",
+      \     },
+      \   "define": "<Leader>D",
+      \   "search": "<Leader>W",
+      \   "incognito": { "nmap": "g!" },
+
+    call embrace#vim_web_hatch#create_maps()
+
+Tip: If you'd like to avoid a long dictionary definition, you
+can build the dictionary one key-value at a time.
+
+- For example, here's the same dictionary as the previous
+  example but defined one-by-one:
+
+.. code-block::
+
+    let g:vim_web_hatch_maps = {}
+
+    let g:vim_web_hatch_maps.open = {}
+    let g:vim_web_hatch_maps.define = {}
+    let g:vim_web_hatch_maps.search = {}
+    let g:vim_web_hatch_maps.incognito = {}
+
+    let g:vim_web_hatch_maps.open.nmap = [ "<Leader>T", "gW" ]
+    let g:vim_web_hatch_maps.open.imap = "<Leader>T"
+    let g:vim_web_hatch_maps.open.vmap = "<Leader>T"
+
+    let g:vim_web_hatch_maps.define.nmap = "<Leader>D"
+    let g:vim_web_hatch_maps.define.imap = "<Leader>D"
+    let g:vim_web_hatch_maps.define.vmap = "<Leader>D"
+
+    let g:vim_web_hatch_maps.search.nmap = "<Leader>W"
+    let g:vim_web_hatch_maps.search.imap = "<Leader>W"
+    let g:vim_web_hatch_maps.search.vmap = "<Leader>W"
+
+    let g:vim_web_hatch_maps.incognito.nmap = "g!"
+
+    call embrace#vim_web_hatch#create_maps()
+
+.. |vim-web-hatch-config| replace:: ``https://github.com/DepoXy/depoxy/blob/release/home/.vim/pack/DepoXy/start/vim-depoxy/plugin/vim-web-hatch-config.vim``
+.. _vim-web-hatch-config: https://github.com/DepoXy/depoxy/blob/release/home/.vim/pack/DepoXy/start/vim-depoxy/plugin/vim-web-hatch-config.vim
+
+(You can see a real-world implementation in
+|vim-web-hatch-config|_.)
+
+Browser Configure
+=================
+
+Default Browser
+---------------
+
+On Linux (Debian), this plugin call ``sensible-browser --version`` to
+determine which browser to use.
+
+- Use the ``$BROWSER`` environ to set your default browser.
+
+  - E.g., include this in your ``~/.bashrc`` if you prefer Chrome::
+
+      export BROWSER=/usr/bin/google-chrome
+
+  - For the best documentation on ``sensible-browser``, see the source,
+    which you might find at::
+
+      /usr/bin/sensible-browser
+
+On macOS, this plugin reads the user's ``LaunchServices`` property list
+looking for the default browser to use.
+
+- Run the browser you want to be the default, and look for an option
+  within the browser to set it as the default.
+
+- Or, better yet, install ``finicky`` to define the default browser,
+  browser behavior, and to associate different browsers with
+  different URLs:
+
+  https://github.com/johnste/finicky
+
+Please feel free to open a pull request to add support for additional OSes,
+or to offer additional help.
+
+Tab or Window
+-------------
+
+By default, each command opens a new browser tab in new window.
+
+- To instead prefer opening a new tab in an existing window,
+  set the following global variable to nonzero, e.g.,::
+
+    g:dubs_web_hatch_use_tab = 1
+
+User Profile
+------------
+
+By default, when Chrome is opened, the default user profile is used.
+
+- To instead open a window using the most recently used profile,
+  set the following global variable to nonzero, e.g.,::
+
+    g:dubs_web_hatch_mru_profile = 1
+
+Supported Browsers
+------------------
+
+This plugin works with the following browsers:
+
+- On Debian: Google Chrome, Chromium, and Mozilla Firefox.
+
+- On macOS: Google Chrome, Mozilla Firefox, and Apple Safari.
+
+Note that Safari does not accept command line arguments, so it does not
+respect tab vs. window, nor can it open a location in incognito mode.
+
+Please feel free to open a pull request to add support for additional browsers.
+
+Installation
+============
+
+Installation is easy using the packages feature (see ``:help packages``).
+
+To install the package so that it will automatically load on Vim startup,
+use a ``start`` directory, e.g.,
+
+.. code-block::
+
+    mkdir -p ~/.vim/pack/embrace-vim/start
+    cd ~/.vim/pack/embrace-vim/start
+
+If you want to test the package first, make it optional instead
+(see ``:help pack-add``):
+
+.. code-block::
+
+    mkdir -p ~/.vim/pack/embrace-vim/opt
+    cd ~/.vim/pack/embrace-vim/opt
+
+Clone the project to the desired path:
+
+.. code-block::
+
+    git clone https://github.com/embrace-vim/vim-web-hatch.git
+
+If you installed to the optional path, tell Vim to load the package:
+
+.. code-block:: vim
+
+    :packadd! vim-web-hatch
+
+Just once, tell Vim to build the online help:
+
+.. code-block:: vim
+
+    :Helptags
+
+Then whenever you want to reference the help from Vim, run:
+
+.. code-block:: vim
+
+    :help vim-web-hatch
+
+.. |vim-plug| replace:: ``vim-plug``
+.. _vim-plug: https://github.com/junegunn/vim-plug
+
+.. |Vundle| replace:: ``Vundle``
+.. _Vundle: https://github.com/VundleVim/Vundle.vim
+
+.. |myrepos| replace:: ``myrepos``
+.. _myrepos: https://myrepos.branchable.com/
+
+.. |ohmyrepos| replace:: ``ohmyrepos``
+.. _ohmyrepos: https://github.com/landonb/ohmyrepos
+
+Note that you'll need to update the repo manually (e.g., ``git pull``
+occasionally).
+
+- If you'd like to be able to update from within Vim, you could use
+  |vim-plug|_.
+
+  - You could then skip the steps above and register
+    the plugin like this, e.g.:
+
+.. code-block:: vim
+
+    call plug#begin()
+
+    " List your plugins here
+    Plug 'embrace-vim/vim-web-hatch'
+
+    call plug#end()
+
+- And to update, call:
+
+.. code-block:: vim
+
+    :PlugUpdate
+
+- Similarly, there's also |Vundle|_.
+
+  - You'd configure it something like this:
+
+.. code-block:: vim
+
+    set nocompatible              " be iMproved, required
+    filetype off                  " required
+
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    " alternatively, pass a path where Vundle should install plugins
+    "call vundle#begin('~/some/path/here')
+
+    " let Vundle manage Vundle, required
+    Plugin 'VundleVim/Vundle.vim'
+
+    Plugin 'embrace-vim/vim-web-hatch'
+
+    " All of your Plugins must be added before the following line
+    call vundle#end()            " required
+    filetype plugin indent on    " required
+    " To ignore plugin indent changes, instead use:
+    "filetype plugin on
+
+- And then to update, call one of these:
+
+.. code-block:: vim
+
+    :PluginInstall!
+    :PluginUpdate
+
+- Or, if you're like the author, you could use a multi-repo Git tool,
+  such as |myrepos|_ (along with the author's library, |ohmyrepos|_).
+
+  - With |myrepos|_, you could update all your Git repos with
+    the following command:
+
+.. code-block::
+
+    mr -d / pull
+
+- Alternatively, if you use |ohmyrepos|_, you could pull
+  just Vim plugin changes with something like this:
+
+.. code-block::
+
+    MR_INCLUDE=vim-plugins mr -d / pull
+
+- After you identify your vim-plugins using the 'skip' action, e.g.:
+
+.. code-block::
+
+    # Put this in ~/.mrconfig, or something loaded by it.
+    [DEFAULT]
+    skip = mr_exclusive "vim-plugins"
+
+    [pack/embrace-vim/start/vim-web-hatch]
+    lib = remote_set origin https://github.com/embrace-vim/vim-web-hatch.git
+
+    [DEFAULT]
+    skip = false
+
+Attribution
+===========
+
+.. |embrace-vim| replace:: ``embrace-vim``
+.. _embrace-vim: https://github.com/embrace-vim
+
+.. |@landonb| replace:: ``@landonb``
+.. _@landonb: https://github.com/landonb
+
+The |embrace-vim|_ logo by |@landonb|_ contains
+`coffee cup with straw by farra nugraha from Noun Project
+<https://thenounproject.com/icon/coffee-cup-with-straw-6961731/>`__
+(CC BY 3.0).
+
+###################
+vim-source-reloader
+###################
+
+A classic Vim tip, packaged for easy `installation <#installation>`__ to
+``~/.vim/pack``.
+
+- `“Source current file when editing a
+  script” <http://vim.wikia.com/wiki/Source_current_file_when_editing_a_script>`__.
+
+Commands
+========
+
+Press ``<F9>`` to reload the current source file.
+
+Usage Tip
+=========
+
+I like to include the following boilerplate atop each source to remind
+myself how to reload the file.
+
+.. code:: vim
+
+   " YOU: Uncomment the 'unlet', then <F9> to reload this file.
+   "       https://github.com/landonb/vim-source-reloader
+   "  silent! unlet g:loaded_foo_bar
+
+   if exists("g:loaded_foo_bar") || &cp
+     finish
+   endif
+   let g:loaded_foo_bar = 1
+
+Note that this will not always work! You might see errors if your source
+code is not reentrant, e.g., you’ll want to use ``function!``,
+``augroup | au! ...``, etc., to ensure your code can be re-sourced
+without complaint.
+
+Installation
+============
+
+Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-source-reloader.git
+   vim -u NONE -c "helptags vim-source-reloader/doc" -c q
+
+To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
+instead and call ``:packadd vim-source-reloader`` when ready.
+
+License
+=======
+
+Copyright (c) Landon Bouma. This work is distributed wholly under CC0
+and dedicated to the Public Domain.
+
+https://creativecommons.org/publicdomain/zero/1.0/
+
+#########################
+vim-title-bar-time-of-day
+#########################
+
+An answer to the age-old question after hiding the macOS menu bar,
+
+`Quelle heure est
+il? <https://www.google.com/search?q=Quelle+heure+est+il>`__
+
+Introduction
+============
+
+This plugin shows the date and time of day in the Vim titlebar.
+
+The author finds this useful on macOS, because I like to hide the macOS
+menu bar, which is normally where you’d see the clock.
+
+Requirements
+------------
+
+This plug-in requires Vim v8.0 or greater, to take advantage of timers.
+
+Usage
+=====
+
+Nothing. If this plugin is loaded, it’ll show a clock in the titlebar.
+
+For example, here’s the titlebar of Vim running on Linux Mint MATE.
+You’ll see the clock printed on the right. To the left of the clock are
+three other details: First, the filename; next, the file path; and
+third, the ``--servername``:
+
+.. figure:: doc/assets/vim-title-bar-time-of-day-MATE-desktop.png
+   :alt: vim-title-bar-time-of-day example
+
+   vim-title-bar-time-of-day example
+
+Options
+=======
+
+To set an option, include a line like the following in your
+``~/.vimrc``:
+
+::
+
+   let g:TitleBarTimeOfDayDisabled = 1
+
+The following options are available:
+
+- ``g:TitleBarTimeOfDayDisabled`` — Boolean value; either 0 or 1
+  (default: 0)
+
+  Set this variable truthy to disable the plugin.
+
+- ``g:TitleBarTimeOfDayRepeatTime`` — Non-negative integer value
+  (default: 101).
+
+  Determines how often to run the timer that updates the clock (in
+  milliseconds).
+
+See Also
+========
+
+If you’d like to show a clock in the Vim command window, see a similar
+plugin:
+`vim-command-line-clock <https://www.github.com/landonb/vim-command-line-clock>`__
+
+Installation
+============
+
+Installation is easy using the packages feature (see
+``:help packages``).
+
+If you want the plugin to load automatically on Vim startup, use a
+``start/`` directory, e.g.,
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/start
+
+And then clone the project to that path:
+
+.. code:: shell
+
+   cd ~/.vim/pack/landonb/start
+   git clone https://github.com/landonb/vim-title-bar-time-of-day.git
+
+If you want to test the package first, make it optional instead (see
+``:help pack-add``):
+
+.. code:: shell
+
+   mkdir -p ~/.vim/pack/landonb/opt
+   cd ~/.vim/pack/landonb/opt
+   git clone https://github.com/landonb/vim-title-bar-time-of-day.git
+
+   " When ready, load the [opt]ional plugin (or is it [opt]-in?).
+   :packadd! vim-title-bar-time-of-day
+
+To build the help, ensure the plugin is loaded, and then run the
+following command just one time from within Vim:
+
+.. code:: shell
+
+   :Helptags
+
+Or, you can build the help from the terminal instead. Run:
+
+.. code:: shell
+
+   vim -u NONE -c "helptags vim-title-bar-time-of-day/doc" -c q
+
+And then to view the help from within Vim, run:
+
+.. code:: shell
+
+   :help vim-title-bar-time-of-day
+
+Enjoy!
+
 ################
 Additional Notes
 ################
@@ -4139,7 +6688,7 @@ with your pointer or middle finger.
                                                             *Hint:* Run ``ctags`` on your code to make a ``tags`` file first,
                                                             and then ``:set tags=<path,path,...>`` in Vim to point to the ``tags`` file.
                                                             You can setup different tags for different file types and projects;
-                                                            see ``dubs_file_finder/dubs_projects.vim``, which you can customize.
+                                                            see ``dubs_grep_steady/dubs_projects.vim``, which you can customize.
 ===========================  ============================  ==============================================================================
 
 Differences from Vim
