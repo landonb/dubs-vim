@@ -94,7 +94,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch#🐣>`__                                  ``sensible-browser`` mappings (cross-platform hyperlink opener).
+  `vim-async-mapper <https://github.com/embrace-vim/vim-async-mapper#જ⁀➴>`__                         Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
@@ -108,7 +108,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-fullscreen-toggle <https://github.com/DepoXy/vim-fullscreen-toggle#💯>`__                     Press <F11> to cycle through a few different Vim window dimensions.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-goto-file <https://github.com/thirsty-vim/vim-goto-file#🚕>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
+  `vim-goto-file <https://github.com/embrace-vim/vim-goto-file#🚕>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root#🥔>`__                      Sets the working directory when editing a new buffer to the file's Git project root.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
@@ -139,6 +139,8 @@ These are plugins I've developed and continue to maintain:
   `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day#⌚>`__            Shows the date and clock time in the titlebar, useful if you hide the macOS menubar.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator#🧭>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-web-hatch <https://github.com/embrace-vim/vim-web-hatch#🐣>`__                                Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
   ================================================================================================  ==============================================================================================================
 
 .. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/DepoXy/depoxy/tree/release/home/.vim/pack/DepoXy/start/vim-depoxy

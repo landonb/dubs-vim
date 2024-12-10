@@ -10,7 +10,7 @@ build_readme_using () {
   local startd="${HOME}/.vim/pack/landonb/start"
   # local optd="${HOME}/.vim/pack/landonb/optd"
 
-  local thirsty="${HOME}/.vim/pack/thirsty-vim/start"
+  local embrace="${HOME}/.vim/pack/embrace-vim/start"
 
   # PARITY: See directories under ~/.vim/pack/landonb/start
   # OHWELL: Ideally, I'd convert README.md → README.rst (and ensure
@@ -40,13 +40,12 @@ build_readme_using () {
   cat ${startd}/dubs_style_guard/README.rst >> ${target}
   # cat ${optd}/dubs_syntastic_wrap/README.rst >> ${target}
   cat ${startd}/dubs_toggle_textwrap/README.rst >> ${target}
-  cat ${startd}/dubs_web_hatch/README.rst >> ${target}
   # (forked; not reST) cat ${startd}/QFEnter/README.md >> ${target}
   # (not reST) cat ${startd}/vim-buffer-ring/README.md >> ${target}
   # (forked) cat ${startd}/vim-classic-taglist/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-command-line-clock/README.md >> ${target}
   cat ${startd}/vim-fullscreen-toggle/README.rst >> ${target}
-  cat ${thirsty}/vim-goto-file-sh/README.rst >> ${target}
+  cat ${embrace}/vim-goto-file-sh/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-lcd-project-root/README.md >> ${target}
   # (forked; not reST) cat ${startd}/vim-markdown/README.md >> ${target}
   cat ${startd}/vim-mkspell-when-stale/README.rst >> ${target}
@@ -60,6 +59,7 @@ build_readme_using () {
   cat ${startd}/vim-reST-highfive/README.rst >> ${target}
   cat ${startd}/vim-reST-highline/README.rst >> ${target}
   cat ${startd}/vim-select-mode-stopped-down/README.rst >> ${target}
+  cat ${embrace}/vim-web-hatch/README.rst >> ${target}
   # (not reST) cat ${startd}/vim-source-reloader/README.md >> ${target}
   # (forked; not reST) cat ${startd}/vim-surround/README.markdown >> ${target}
   # (not reST) cat ${startd}/vim-title-bar-time-of-day/README.md >> ${target}
