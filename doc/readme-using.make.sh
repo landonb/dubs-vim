@@ -8,6 +8,7 @@ build_readme_using () {
   cat readme-using.pt1.rst > ${target}
 
   local startd="${HOME}/.vim/pack/landonb/start"
+  # local optd="${HOME}/.vim/pack/landonb/optd"
 
   local thirsty="${HOME}/.vim/pack/thirsty-vim/start"
 
@@ -37,7 +38,7 @@ build_readme_using () {
   cat ${startd}/dubs_project_tray/README.rst >> ${target}
   cat ${startd}/dubs_quickfix_wrap/README.rst >> ${target}
   cat ${startd}/dubs_style_guard/README.rst >> ${target}
-  cat ${startd}/dubs_syntastic_wrap/README.rst >> ${target}
+  # cat ${optd}/dubs_syntastic_wrap/README.rst >> ${target}
   cat ${startd}/dubs_toggle_textwrap/README.rst >> ${target}
   cat ${startd}/dubs_web_hatch/README.rst >> ${target}
   # (forked; not reST) cat ${startd}/QFEnter/README.md >> ${target}

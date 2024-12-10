@@ -92,8 +92,6 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_style_guard <https://github.com/landonb/dubs_style_guard#💂>`__                              Automatically set whitespace and line-length settings.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap#🤸>`__                        Syntastic wrapper.
-  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_web_hatch <https://github.com/landonb/dubs_web_hatch#🐣>`__                                  ``sensible-browser`` mappings (cross-platform hyperlink opener).
@@ -179,9 +177,6 @@ List of Third-party Plugins
 
 These are awesome third-party plugins I find useful or otherwise curious:
 
-| `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
-    "Automatically adapt timestamps, copyright notices, etc."
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
 | `coc-json <https://github.com/neoclide/coc-json>`__:
     JSON LSP server
 | `coc.nvim <https://github.com/neoclide/coc.nvim>`__:
@@ -193,30 +188,14 @@ These are awesome third-party plugins I find useful or otherwise curious:
       [`more <http://editorconfig.org/>`__]
 | `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
     Fuzzy-find plugin
-| `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
-    "Distraction-free writing in Vim"
 | `improvedft <https://github.com/chrisbra/improvedft>`__
-| `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
-    "Vimscript library of common functions."
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=4433>`__]
 | `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
     "|flashlight| All the world's indeed a stage and we are merely players"
 | `matchit <https://github.com/chrisbra/matchit>`__
 | `nerdcommenter <https://github.com/preservim/nerdcommenter>`__:
     Easily add and remove comment leaders
-| `syntastic <https://github.com/scrooloose/syntastic>`__:
-    "Syntax checking hacks for vim"
 | `tagbar <https://github.com/majutsushi/tagbar>`__
-| `tcomment_vim <https://github.com/tomtom/tcomment_vim>`__:
-    "An extensible & universal comment plugin"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=1173>`__,
-       see also: `vim-commentary <https://github.com/tpope/vim-commentary>`__]
-| `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
-    "Some utility functions for VIM"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=1863>`__]
 | `typescript-vim <https://github.com/leafgarland/typescript-vim>`__
-| `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`__
-| `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."
   [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
@@ -227,9 +206,6 @@ These are awesome third-party plugins I find useful or otherwise curious:
 | `vim-js <https://github.com/yuezk/vim-js>`__
 | `vim-jsx-pretty <https://github.com/MaxMEllon/vim-jsx-pretty>`__
 | `vim-mergetool <https://github.com/samoshkin/vim-mergetool>`__
-| `vim-misc <https://github.com/xolox/vim-misc>`__:
-    "Miscellaneous auto-load Vim scripts"
-      [`more <https://peterodding.com/code/vim/misc/>`__]
 | `vim-python-matchit <https://github.com/voithos/vim-python-matchit>`__
 | `vim-toml <https://github.com/cespare/vim-toml>`__
 | `yats.vim <https://github.com/HerringtonDarkholme/yats.vim>`__
@@ -283,14 +259,35 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
 | `asyncomplete-lsp.vim <https://github.com/prabirshrestha/asyncomplete-lsp.vim>`__
 | `asyncomplete.vim <https://github.com/prabirshrestha/asyncomplete.vim>`__
 | `async.vim <https://github.com/prabirshrestha/async.vim>`__
+| `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
+    "Automatically adapt timestamps, copyright notices, etc."
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
 | `command-t <https://github.com/wincent/command-t>`__:
     "Fast file navigation for VIM"
 | `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
     "Fuzzy file, buffer, mru, tag, etc finder."
       [`deets <https://kien.github.io/ctrlp.vim/>`__]
+| `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap#🤸>`__:
+    Syntastic wrapper.
+| `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
+    "Distraction-free writing in Vim"
+| `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
+    "Vimscript library of common functions."
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4433>`__]
 | `nerdtree <https://github.com/scrooloose/nerdtree>`__:
     "A tree explorer plugin for vim."
+| `syntastic <https://github.com/scrooloose/syntastic>`__:
+    "Syntax checking hacks for vim"
+| `tcomment_vim <https://github.com/tomtom/tcomment_vim>`__:
+    "An extensible & universal comment plugin"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1173>`__,
+       see also: `vim-commentary <https://github.com/tpope/vim-commentary>`__]
+| `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
+    "Some utility functions for VIM"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1863>`__]
+| `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`__
 | `vim-commentary <https://github.com/tpope/vim-commentary>`__
+| `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__
 | `vim-endwise <https://github.com/tpope/vim-endwise>`__:
     "endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script, etc"
   [`vim script <http://www.vim.org/scripts/script.php?script_id=2386>`__]
@@ -299,6 +296,9 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
 | `vim-lsp-settings <https://github.com/mattn/vim-lsp-settings>`__
 | `vim-lsp-typescript <https://github.com/ryanolsonx/vim-lsp-typescript>`__
 | `vim-lsp <https://github.com/prabirshrestha/vim-lsp>`__
+| `vim-misc <https://github.com/xolox/vim-misc>`__:
+    "Miscellaneous auto-load Vim scripts"
+      [`more <https://peterodding.com/code/vim/misc/>`__]
 | `vim-pathogen <https://github.com/tpope/vim-pathogen>`__
 | `vim-restructuredtext <https://github.com/marshallward/vim-restructuredtext>`__
 | `vim-scriptease <https://github.com/tpope/vim-scriptease>`__:
