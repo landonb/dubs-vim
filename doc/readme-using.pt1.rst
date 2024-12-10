@@ -143,7 +143,7 @@ These are plugins I've developed and continue to maintain:
   `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator#🧭>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
   ================================================================================================  ==============================================================================================================
 
-.. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/wafflbattr/waffle-batter-vim
+.. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/DepoXy/depoxy/tree/release/home/.vim/pack/DepoXy/start/vim-depoxy
 .. SKIPD/2022-09-21: DepoXy/vim-trap is private, but worth calling out: https://github.com/YOU/vim-trap
 
 List of Forked Plugins
