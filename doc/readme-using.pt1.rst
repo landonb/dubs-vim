@@ -336,14 +336,31 @@ Tim Pope plugins I've tried but don't currently use:
 
 See below for `Other Tim Pope plugins to consider`_.
 
+List of Fuzzy-Finder Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+I like ``junegunn/fzf.vim``:
+
+| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
+    Fuzzy-find plugin
+
+See also:
+
+| `command-t <https://github.com/wincent/command-t>`__:
+    "Fast file navigation for VIM"
+| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
+    "Fuzzy file, buffer, mru, tag, etc finder."
+      [`deets <https://kien.github.io/ctrlp.vim/>`__]
+| `ddu.vim <https://github.com/Shougo/ddu.vim>`__:
+    "Dark deno-powered UI framework for Vim/Neovim"
+      [`deets <https://github.com/Shougo/ddu.vim/blob/main/doc/ddu.txt>`__]
+
 List of Other Plugins
 ^^^^^^^^^^^^^^^^^^^^^
 
 These are other awesome third-party plugins I find useful or otherwise
 curious (though some I rarely use, I'll admit):
 
-| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
-    Fuzzy-find plugin
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."
   [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
@@ -388,11 +405,6 @@ and then ``\te``.)
 | `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
     "Automatically adapt timestamps, copyright notices, etc."
       [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
-| `command-t <https://github.com/wincent/command-t>`__:
-    "Fast file navigation for VIM"
-| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
-    "Fuzzy file, buffer, mru, tag, etc finder."
-      [`deets <https://kien.github.io/ctrlp.vim/>`__]
 | `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
     "Distraction-free writing in Vim"
 | `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
