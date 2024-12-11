@@ -155,29 +155,31 @@ with the upstream project's goals, or because I'm lazy):
 
 | `ansible-vim <https://github.com/landonb/ansible-vim>`__:
     "A vim plugin for syntax highlighting Ansible's common filetypes."
+    Fork inhibits ``ansible-vim`` from changing ``isfname`` and ``path``,
+    tweaks Yaml indent behavior, and disables ``indentexpr``.
       (Upstream: `ansible-vim <https://github.com/pearofducks/ansible-vim>`__)
 | `QFEnter <https://github.com/landonb/QFEnter>`__:
     "Open a Quickfix item in a window you choose."
+    Fork restores quickfix cursor position after opening error, and it
+    avoids opening file in any window showing a special buffer.
       (Upstream: `QFEnter <https://github.com/yssl/QFEnter>`__)
-| `vim-jsx <https://github.com/landonb/vim-jsx>`__:
-    "React JSX syntax highlighting and indenting for Vim."
-      (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
 | `vim-markdown <https://github.com/landonb/vim-markdown#👇>`__:
     "Markdown for Vim."
+    Fork fixes issues seeing XML tags and content being white on white
+    (though might be specific to my Vim environment).
       (Upstream: `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
-| `vim-surround <https://github.com/landonb/vim-surround#🔄>`__:
-    "Quoting and parenthesizing made simple."
-      (Upstream: `vim script <http://www.vim.org/scripts/script.php?script_id=1697>`__,
-                 `vim-surround <https://github.com/tpope/vim-surround>`__)
 | `vim-unimpaired <https://github.com/landonb/vim-unimpaired#👿>`__:
     "Pairs of handy bracket mappings."
+    Fork adds ``[om`` and ``[om`` to show/hide menubar (for Linux users).
       (Upstream: `vim script <http://www.vim.org/scripts/script.php?script_id=1590>`__,
                  `vim-unimpaired <https://github.com/tpope/vim-unimpaired>`__)
 
-List of Third-party Plugins
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+List of LSP Plugins
+^^^^^^^^^^^^^^^^^^^
 
-These are awesome third-party plugins I find useful or otherwise curious:
+These are `LSP <https://langserver.org/>`__ client and server plugins,
+which empower Vim to be a great choice for all your development needs
+(they integrate features like auto completion, go to definition, etc.).
 
 | `coc-json <https://github.com/neoclide/coc-json>`__:
     JSON LSP server
@@ -185,78 +187,200 @@ These are awesome third-party plugins I find useful or otherwise curious:
     LSP (Language Server Protocol) plugin
 | `coc-tsserver <https://github.com/neoclide/coc-tsserver>`__:
     TypeScript LSP server
+
+List of Motion Plugins
+^^^^^^^^^^^^^^^^^^^^^^
+
+Note that many of these plugins each redefine or improve upon the
+built-in ``f``, ``F``, ``t``, ``T``, ``;``, and ``,`` commands,
+so generally you want to choose one of these to use. (The others
+you'll find under ``opt/``.)
+
+One nicety about ``vim-easymotion`` is that all its features are *opt-in*,
+so you can leave it under its ``start/`` directory and it won't wire
+anything unless you add wiring from your config (as opposed to, say,
+``improveft``, which adds its maps (e.g., to ``s``) when it loads).
+
+| `improvedft <https://github.com/chrisbra/improvedft>`__
+| `vim-easymotion <https://github.com/easymotion/vim-easymotion>`__
+| `vim-sneak <https://github.com/justinmk/vim-sneak>`__
+
+Motion plugins that implement two-character jumpers:
+
+| `vim-easymotion <https://github.com/easymotion/vim-easymotion>`__:
+    The pinnacle of motion plugins, it seems
+| `vim-sneak <https://github.com/justinmk/vim-sneak>`__:
+    Jump to any location specified by two characters;
+    "minimalist alternative to *EasyMotion*"
+| `hop.nvim <https://github.com/smoka7/hop.nvim>`__:
+    *EasyMotion*-like plugin for Neovim
+| `leap.nvim <https://github.com/ggandor/leap.nvim>`__:
+    Neovim vim-sneak fork with target label previews
+| `vim-seek <https://github.com/goldfeld/vim-seek>`__
+| `vim-smalls <https://github.com/t9md/vim-smalls>`__:
+    grays out doc to highlight cursor and matches
+
+Motion plugins that implement single-character `f`, `F`, `t`, and `T`
+improvements, e.g., multiline, smart case, repeat with `;` and `,`,
+and highlighting:
+
+| `improvedft <https://github.com/chrisbra/improvedft>`__
+| `clever-f.vim <https://github.com/rhysd/clever-f.vim>`__
+| `vim-extended-ft <https://github.com/svermeulen/vim-extended-ft>`__
+| `vim-fanfingtastic <https://github.com/dahu/vim-fanfingtastic>`__
+| `flash.nvim <https://github.com/folke/flash.nvim>`__ (Neovim)
+
+List of Window-related Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
+    "|flashlight| All the world's indeed a stage and we are merely players"
+| `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
+
+List of Programming and Language Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+General:
+
 | `editorconfig-vim <https://github.com/editorconfig/editorconfig-vim>`__:
     "EditorConfig plugin for Vim"
       [`more <http://editorconfig.org/>`__]
-| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
-    Fuzzy-find plugin
-| `improvedft <https://github.com/chrisbra/improvedft>`__
-| `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
-    "|flashlight| All the world's indeed a stage and we are merely players"
 | `matchit <https://github.com/chrisbra/matchit>`__
+    `matchit docs <https://github.com/chrisbra/matchit/blob/master/doc/matchit.txt>`__
 | `nerdcommenter <https://github.com/preservim/nerdcommenter>`__:
     Easily add and remove comment leaders
 | `tagbar <https://github.com/majutsushi/tagbar>`__
-| `typescript-vim <https://github.com/leafgarland/typescript-vim>`__
-| `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
-    "transparent editing of gpg encrypted files."
-  [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
+
+Coverage:
+
 | `vim-istanbul <https://github.com/juanpabloaj/vim-istanbul>`__
+
+Git:
+
+| `vim-fugitive <https://github.com/tpope/vim-fugitive>`__:
+    "fugitive.vim: a Git wrapper so awesome, it should be illegal"
+  [`vim script <http://www.vim.org/scripts/script.php?script_id=2975>`__]
+| `vim-mergetool <https://github.com/samoshkin/vim-mergetool>`__
+
+JSON:
+
+| `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__
+
+Python:
+
+| `vim-python-matchit <https://github.com/voithos/vim-python-matchit>`__
+
+Ruby:
+
+| `vim-rails <https://github.com/tpope/vim-rails>`__:
+    "rails.vim: Ruby on Rails power tools"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1567>`__]
+
+TOML:
+
+| `vim-toml <https://github.com/cespare/vim-toml>`__
+
+TypeScript/JavaScript:
+
 | `vim-javascript <https://github.com/pangloss/vim-javascript>`__:
-    "Vastly improved Javascript indentation and syntax support in Vim.
+    "Vastly improved JavaScript indentation and syntax support in Vim.
       [`vim script <http://www.vim.org/scripts/script.php?script_id=4452>`__]
 | `vim-js <https://github.com/yuezk/vim-js>`__
 | `vim-jsx-pretty <https://github.com/MaxMEllon/vim-jsx-pretty>`__
-| `vim-mergetool <https://github.com/samoshkin/vim-mergetool>`__
-| `vim-python-matchit <https://github.com/voithos/vim-python-matchit>`__
-| `vim-toml <https://github.com/cespare/vim-toml>`__
 | `yats.vim <https://github.com/HerringtonDarkholme/yats.vim>`__
-| `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
-
-.. |flashlight| unicode:: 0x1F526 .. flashlight
 
 List of Tim Pope Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-These plugins are maintained by the venerable `Tim Pope <https://github.com/tpope>`__:
+These plugins are maintained by the venerable `Tim Pope <https://github.com/tpope>`__
+(and that are not included in the lists above):
 
 | `vim-abolish <https://github.com/tpope/vim-abolish>`__
-| `vim-fugitive <https://github.com/tpope/vim-fugitive>`__:
-    "fugitive.vim: a Git wrapper so awesome, it should be illegal"
-  [`vim script <http://www.vim.org/scripts/script.php?script_id=2975>`__]
-| `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__
+| `vim-fugitive <https://github.com/tpope/vim-fugitive>`__ (see above)
+| `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__ (see above)
+| `vim-rails <https://github.com/tpope/vim-rails>`__ (see above)
+| `vim-repeat <https://github.com/tpope/vim-repeat>`__
+| `vim-surround <https://github.com/landonb/vim-surround#🔄>`__:
+    "Quoting and parenthesizing made simple."
+    (Inspired by `a vim script <http://www.vim.org/scripts/script.php?script_id=1697>`__)
 | `vim-speeddating <https://github.com/tpope/vim-speeddating>`__:
     "speeddating.vim: use CTRL-A/CTRL-X to increment dates, times, and more"
       [`vim script <http://www.vim.org/scripts/script.php?script_id=2120>`__]
+| `vim-unimpaired <https://github.com/tpope/vim-unimpaired>`__ (see above)
 | `vim-vinegar <https://github.com/tpope/vim-vinegar>`__:
     "vinegar.vim: combine with netrw to create a delicious salad dressing"
 
-List of Less-used Plugins
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Tim Pope plugins I've tried but don't currently use:
 
-These plugins that I no longer use (or rarely use) but that I still have installed:
+| `vim-commentary <https://github.com/tpope/vim-commentary>`__:
+    I use `NERD Commenter <https://github.com/preservim/nerdcommenter>`__;
+    see also `tcomment.vim <https://github.com/tomtom/tcomment_vim>`__
+| `vim-endwise <https://github.com/tpope/vim-endwise>`__:
+    "endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script, etc";
+    I tried but found it disruptive (I'm not a huge fan of auto-completion...)
+  [`vim script <http://www.vim.org/scripts/script.php?script_id=2386>`__]
+| `vim-obsession <https://github.com/tpope/vim-obsession>`__:
+    *obsession.vim: continuously updated session files*;
+    see instead `my approach
+    <https://github.com/landonb/dubs_appearance/blob/release/plugin/session_file_boss.vim>`__
+| `vim-pathogen <https://github.com/tpope/vim-pathogen>`__:
+    I use the `myrepos <https://myrepos.branchable.com/>`__ and
+    `Oh, My Repos! <https://github.com/landonb/ohmyrepos>`__ to
+    manage Vim plugins as a group of managed Git repositories
+| `vim-scriptease <https://github.com/tpope/vim-scriptease>`__:
+    "scriptease.vim: A Vim plugin for Vim plugins"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=4394>`__]
+| `vim-vividchalk <https://github.com/tpope/vim-vividchalk>`__:
+    "vividchalk.vim: a colorscheme strangely reminiscent of Vibrant Ink for a certain OS X editor"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=1891>`__]
+
+See below for `Other Tim Pope plugins to consider`_.
+
+List of Other Plugins
+^^^^^^^^^^^^^^^^^^^^^
+
+These are other awesome third-party plugins I find useful or otherwise
+curious (though some I rarely use, I'll admit):
+
+| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
+    Fuzzy-find plugin
+| `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
+    "transparent editing of gpg encrypted files."
+  [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
+
+.. |flashlight| unicode:: 0x1F526 .. flashlight
+
+List of Color Scheme Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The author created the ``dubs_after_dark`` color scheme because I wanted a true
+black background and vibrant foreground colors, and most (none?) of the other
+color schemes that I demoed use true black (most dark themes uses a darkish grey).
+
+These plugins are installed under ``pack/*/opt/`` paths, so you can load them
+first via ``:packadd {plugin-name}`` and then run ``colorscheme {scheme-name}``
+to try out different color schemes.
 
 | `jellybeans.vim <https://github.com/nanotech/jellybeans.vim>`__:
     "A colorful, dark color scheme for Vim."
       [`vim.org <http://www.vim.org/scripts/script.php?script_id=2555>`__]
 | `nord-vim <https://github.com/arcticicestudio/nord-vim>`__:
     "An arctic, north-bluish clean and elegant Vim theme."
-| `TeTrIs.vim <https://github.com/vim-scripts/TeTrIs.vim>`__:
-    "A tetris game in pure vim"
-| `viki_vim <https://github.com/tomtom/viki_vim>`__:
-    "A personal wiki for Vim"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=861>`__]
-| `vim-rails <https://github.com/tpope/vim-rails>`__:
-    "rails.vim: Ruby on Rails power tools"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=1567>`__]
+| `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`__
+| `vim-vividchalk <https://github.com/tpope/vim-vividchalk>`__ (see above)
 
-List of Retired Plugins
-^^^^^^^^^^^^^^^^^^^^^^^
+List of Retired or Optional Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For posterity, here are plugins that I used to use, but that I've since stopped using
 (this is not a judgement on their merits: sometimes I use certain plugins with certain
 technologies that I no longer use, or I maybe some functionality has since been 
-incorporated into Vim itself, or maybe I found a different plugin, who knows):
+incorporated into Vim itself, or maybe I found a different plugin, who knows).
+
+Note that many of these plugins I simply moved under their related ``opt/``
+directory, so you can load them on-demand. (E.g., there's no reason to
+always load *TeTrIs*, but if you want to try it, run ``:packadd TeTrIs.vim``
+and then ``\te``.)
 
 | `asyncomplete-lsp.vim <https://github.com/prabirshrestha/asyncomplete-lsp.vim>`__
 | `asyncomplete.vim <https://github.com/prabirshrestha/asyncomplete.vim>`__
@@ -269,8 +393,6 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
 | `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
     "Fuzzy file, buffer, mru, tag, etc finder."
       [`deets <https://kien.github.io/ctrlp.vim/>`__]
-| `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap#🤸>`__:
-    Syntastic wrapper.
 | `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
     "Distraction-free writing in Vim"
 | `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
@@ -284,15 +406,19 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
     "An extensible & universal comment plugin"
       [`vim script <http://www.vim.org/scripts/script.php?script_id=1173>`__,
        see also: `vim-commentary <https://github.com/tpope/vim-commentary>`__]
+| `TeTrIs.vim <https://github.com/vim-scripts/TeTrIs.vim>`__:
+    "A tetris game in pure vim"
 | `tlib_vim <https://github.com/tomtom/tlib_vim>`__:
     "Some utility functions for VIM"
       [`vim script <http://www.vim.org/scripts/script.php?script_id=1863>`__]
-| `vim-colorschemes <https://github.com/flazz/vim-colorschemes>`__
-| `vim-commentary <https://github.com/tpope/vim-commentary>`__
+| `typescript-vim <https://github.com/leafgarland/typescript-vim>`__:
+    Circa TypeScript 1.0, since superseded by Vim's
+    `typescript.vim <https://github.com/vim/vim/blob/master/runtime/syntax/typescript.vim>`__
+    and `YATS <https://github.com/HerringtonDarkholme/yats.vim>`__.
+| `viki_vim <https://github.com/tomtom/viki_vim>`__:
+    "A personal wiki for Vim"
+      [`vim script <http://www.vim.org/scripts/script.php?script_id=861>`__]
 | `vim-easyescape <https://github.com/zhou13/vim-easyescape>`__
-| `vim-endwise <https://github.com/tpope/vim-endwise>`__:
-    "endwise.vim: wisely add "end" in ruby, endfunction/endif/more in vim script, etc"
-  [`vim script <http://www.vim.org/scripts/script.php?script_id=2386>`__]
 | `vim-go <https://github.com/editorconfig/vim-go>`__
 | `vim-lsp-javascript <https://github.com/ryanolsonx/vim-lsp-javascript>`__
 | `vim-lsp-settings <https://github.com/mattn/vim-lsp-settings>`__
@@ -301,21 +427,117 @@ incorporated into Vim itself, or maybe I found a different plugin, who knows):
 | `vim-misc <https://github.com/xolox/vim-misc>`__:
     "Miscellaneous auto-load Vim scripts"
       [`more <https://peterodding.com/code/vim/misc/>`__]
-| `vim-pathogen <https://github.com/tpope/vim-pathogen>`__
 | `vim-restructuredtext <https://github.com/marshallward/vim-restructuredtext>`__
-| `vim-scriptease <https://github.com/tpope/vim-scriptease>`__:
-    "scriptease.vim: A Vim plugin for Vim plugins"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=4394>`__]
-| `vim-vividchalk <https://github.com/tpope/vim-vividchalk>`__:
-    "vividchalk.vim: a colorscheme strangely reminiscent of Vibrant Ink for a certain OS X editor"
-      [`vim script <http://www.vim.org/scripts/script.php?script_id=1891>`__]
 
 Plugins that I used to develop or that I forked, but no longer use:
 
 | `dubs_cycloplan <https://github.com/landonb/dubs_cycloplan>`__
 | `dubs_file_finder <https://github.com/landonb/dubs_file_finder>`__
     Find and open files quickly using ``:CommandT`` and ``:CtrlP`` plugins.
-| `vim-jsx <https://github.com/landonb/vim-jsx>`__
+| `dubs_syntastic_wrap <https://github.com/landonb/dubs_syntastic_wrap#🤸>`__:
+    Syntastic wrapper.
+| `vim-jsx <https://github.com/landonb/vim-jsx>`__:
+    "React JSX syntax highlighting and indenting for Vim."
+      (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
+
+Other Tim Pope plugins to consider
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Other Tim Pope plugins to consider (that author has not tried; listed
+here just to be sure you're not missing anything useful):
+
+| `vim-dadbod <https://github.com/tpope/vim-dadbod>`__:
+    "dadbod.vim: Modern database interface for Vim",
+    e.g., ``:DB postgresql:///foobar``
+| `vim-eunuch <https://github.com/tpope/vim-eunuch>`__:
+    "eunuch.vim: Helpers for UNIX",
+    e.g., ``:Chmod``
+| `vim-projectionist <https://github.com/tpope/vim-projectionist>`__:
+    "projectionist.vim: Granular project configuration",
+    helps work with boilerplate or similarly-configured projects
+| `vim-git <https://github.com/tpope/vim-git>`__:
+    "syntax, indent, and filetype plugin files for git, gitcommit, gitconfig, gitrebase, and gitsendemail",
+    "earlier versions of these files are shipped with Vim"
+    [`vim script <https://www.vim.org/scripts/script.php?script_id=1654>`__]
+| `vim-sleuth <https://github.com/tpope/vim-sleuth>`__:
+    "sleuth.vim: Heuristically set buffer options",
+    "automatically adjusts ``shiftwidth`` and ``expandtab`` heuristically based on the current file",
+    "Modelines and EditorConfig are also consulted"
+| `vim-haml <https://github.com/tpope/vim-haml>`__:
+    "Vim runtime files for Haml, Sass, and SCSS",
+    "You only need it if you want the very latest updates."
+| `vim-dispatch <https://github.com/tpope/vim-dispatch>`__:
+    "dispatch.vim: Asynchronous build and test dispatcher"
+| `vim-salve <https://github.com/tpope/vim-salve>`__:
+    "salve.vim: Static Vim support for Leiningen, Boot, and the Clojure CLI"
+| `vim-sensible <https://github.com/tpope/vim-sensible>`__:
+    "sensible.vim: Defaults everyone can agree on"
+    (`plugin/sensible.vim <https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim>`__)
+| `vim-markdown <https://github.com/tpope/vim-markdown>`__:
+    "Vim Markdown runtime files",
+    "you don't need to install these if you are running a recent version of Vim"
+| `vim-rvm <https://github.com/tpope/vim-rvm>`__:
+    "rvm.vim: Switch Ruby versions from inside Vim"
+| `vim-cucumber <https://github.com/tpope/vim-cucumber>`__:
+    "Vim Cucumber runtime files",
+    "development version of Vim's included runtime files for the Ruby acceptance testing framework Cucumber"
+| `rbenv-ctags <https://github.com/tpope/rbenv-ctags>`__:
+    "Automatically generate ctags for rbenv Ruby stdlibs"
+| `vim-rake <https://github.com/tpope/vim-rake>`__:
+    "rake.vim: it's like rails.vim without the rails",
+    leverages "projectionist.vim to enable you to use all those parts of
+    rails.vim that you wish you could use on your other Ruby projects"
+| `mta-settings <https://github.com/tpope/mta-settings>`__:
+    "Configure ActionMailer or Mail delivery settings based on the environment",
+    Ruby gem "enables transparent MTA (mail transport agent) configuration from the environment
+    for both `ActionMailer <https://github.com/rails/rails/tree/main/actionmailer>`__
+    and `Mail <https://github.com/mikel/mail>`__
+| `vim-bundler <https://github.com/tpope/vim-bundler>`__:
+    "bundler.vim: Lightweight support for Ruby's Bundler"
+| `vim-flagship <https://github.com/tpope/vim-flagship>`__:
+    "flagship.vim: Configurable and extensible tab line and status line",
+    "Vim status line and tab line that are both easily customizable by the user and extensible by other plugins"
+| `vim-capslock <https://github.com/tpope/vim-capslock>`__:
+    "capslock.vim: Software caps lock",
+    "Press ``<C-G>c`` in insert mode to toggle a temporary software caps lock,
+    or ``gC`` in normal mode to toggle a slightly more permanent one"
+| `vim-rhubarb <https://github.com/tpope/vim-rhubarb>`__:
+    "rhubarb.vim: GitHub extension for fugitive.vim",
+    "If fugitive.vim is the Git, rhubarb.vim is the Hub",
+    e.g., ``:GBrowse`` to open GitHub URLs
+| `vim-rsi <https://github.com/tpope/vim-rsi>`__:
+    "rsi.vim: Readline style insertion",
+    "C-a, C-b, C-d, C-e, C-f, C-t, M-b, M-d, M-f, M-n, and M-p are provided"
+    (`plugin/rsi.vim <https://github.com/tpope/vim-rsi/blob/master/plugin/rsi.vim>`__)
+| `vim-tbone <https://github.com/tpope/vim-tbone>`__:
+    "tbone.vim: tmux basics"
+| `vim-sexp-mappings-for-regular-people <https://github.com/tpope/vim-sexp-mappings-for-regular-people>`__:
+    "`vim-sexp <https://github.com/guns/vim-sexp>`__ mappings for regular people"
+| `vim-ragtag <https://github.com/tpope/vim-ragtag>`__:
+    "ragtag.vim: ghetto HTML/XML mappings (formerly allml.vim)"
+| `vim-heroku <https://github.com/tpope/vim-heroku>`__:
+    "heroku.vim: Heroku CLI wrapper"
+| `vim-dotenv <https://github.com/tpope/vim-dotenv>`__:
+    "dotenv.vim: Basic support for ``.env`` and ``Procfile``"
+| `vim-liquid <https://github.com/tpope/vim-liquid>`__:
+    "Vim `Liquid <https://jekyllrb.com/docs/liquid/>`__ runtime files
+    with `Jekyll <https://jekyllrb.com/>`__ enhancements"
+| `vim-apathy <https://github.com/tpope/vim-apathy>`__:
+    "apathy.vim: Set the 'path' option for miscellaneous file types",
+    "sets the five path searching options — ``path``, ``suffixesadd``,
+    ``include``, ``includeexpr``, and ``define``
+| `vim-classpath <https://github.com/tpope/vim-classpath>`__:
+    "classpath.vim: Set 'path' from the Java class path"
+| `vim-haystack <https://github.com/tpope/vim-haystack>`__:
+    "haystack.vim: fuzzy matching algorithm",
+    "a fuzzy matching algorithm for use by other Vim plugins"
+| `vim-afterimage <https://github.com/tpope/vim-afterimage>`__:
+    "afterimage.vim: edit binary files by converting them to text equivalents",
+    "Edit ICO, PNG, and GIF icons. No really. They're converted with ImageMagick to XPM,
+    a plain text image format with beautiful syntax highlighting in GUI versions of Vim"
+| `vim-flatfoot <https://github.com/tpope/vim-flatfoot>`__:
+    "flatfoot.vim: experimental enhancement of "f" and "t" keys"
+    (`plugin/flatfoot.vim <https://github.com/tpope/vim-flatfoot/blob/master/plugin/flatfoot.vim>`__)
 
 Comprehensive Feature List
 --------------------------
