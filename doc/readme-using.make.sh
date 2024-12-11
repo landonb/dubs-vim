@@ -84,6 +84,14 @@ build_readme_using () {
 # - It creates ``links` <https://links>`__ which doesn't
 #   render as a link, but renders verbatim.
 # - So we'll convert [`links`][links] to [links][links] first.
+#
+# ALTLY: I also tried this Python project, but it similarly had issues
+# converting [`links`][links] (so why not stick with pandoc if we have
+# to add pre- and post-processing anyway):
+# - *Markdown to reStructuredText converter*:
+#     pipx install m2r
+#     m2r --overwrite README.md && mv README.rst README-m2r.rst
+#   https://github.com/miyakogi/m2r
 
 md2rst () {
   local file="$1"
@@ -92,7 +100,39 @@ md2rst () {
     sed -E 's/\[`([^`]*)`\]/\[\1\]/g' "${file}"
   }
 
-  pandoc --from=markdown --to=rst <(sanitize_links)
+  # pandoc uses the 5 header level delimiters: === --- ~~~ ^^^ '''
+  # Whereas author uses reST level delimiters: ### === ---
+  # - Note, too, first header must be overlined, too.
+  # - Avoids restview render error: "(SEVERE/4) Title level inconsistent"
+  upgrade_headers () {
+    sed \
+      -e '/^==[=]*/ s/=/#/g' \
+      -e '/^--[-]*/ s/-/=/g' \
+      -e '/^~~[~]*/ s/~/-/g'
+  }
+
+  # 2p prints the second line when it's read.
+  # H appends current line to hold space, but with newline prefix.
+  # 1h overwrites the hold space for first line without the newline.
+  # $!d means if this is not (!) the last line ($), delete the line
+  #   from the pattern space (don't print it), and start the next
+  #   cycle (so following commands only execute for last line).
+  # x swaps contents of the pattern and hold spaces, which only runs
+  #   on the last line — and when it runs, the pattern space is the
+  #   last line, and the hold space contains everything collected so
+  #   far. So the swap puts the hold space in the pattern space, which
+  #   is then printed.
+  overline_title () {
+    sed -e '2p;H;1h;$!d;x'
+  }
+
+  pandoc --from=markdown --to=rst <(sanitize_links) \
+    | upgrade_headers \
+    | overline_title
+
+  # Ensure followed by newline (if not, and next doc's header does
+  # not follow a blank line, "Title level inconsistent"). 
+  echo
 }
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
