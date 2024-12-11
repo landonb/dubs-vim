@@ -144,6 +144,8 @@ md2rst () {
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 main () {
+  set -e
+
   local before_cd="$(pwd -L)"
 
   build_readme_using
