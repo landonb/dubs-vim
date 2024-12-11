@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# vim:tw=0:ts=2:sw=2:et:norl:ft=bash
+# Author: Landon Bouma <https://tallybark.com/>
+# Project: https://github.com/landonb/dubs-vim#✌️
+# License: GPLv3
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 build_readme_using () {
   cd "${HOME}/.vim/doc"
