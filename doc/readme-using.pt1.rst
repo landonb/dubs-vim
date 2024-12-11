@@ -94,7 +94,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-async-mapper <https://github.com/embrace-vim/vim-async-mapper#જ⁀➴>`__                         Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
+  `vim-async-map <https://github.com/embrace-vim/vim-async-map#જ⁀➴>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------

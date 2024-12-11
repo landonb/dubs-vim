@@ -41,7 +41,7 @@ build_readme_using () {
   # (opted) cat "${optd}/dubs_syntastic_wrap/README.rst" >> ${target}
   cat "${startd}/dubs_toggle_textwrap/README.rst" >> ${target}
   # (forked) cat ${startd}/QFEnter/README.md" >> ${target}
-  md2rst "${embrace}/vim-async-mapper/README.md" >> ${target}
+  md2rst "${embrace}/vim-async-map/README.md" >> ${target}
   md2rst "${startd}/vim-buffer-ring/README.md" >> ${target}
   # (forked) md2rst "${startd}/vim-classic-taglist/README.rst" >> ${target}
   md2rst "${depoxy}/vim-clip-expand-path/README.md" >> ${target}
