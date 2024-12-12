@@ -94,7 +94,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-async-mapper <https://github.com/embrace-vim/vim-async-mapper#જ⁀➴>`__                         Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
+  `vim-async-map <https://github.com/embrace-vim/vim-async-map#જ⁀➴>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
@@ -336,14 +336,31 @@ Tim Pope plugins I've tried but don't currently use:
 
 See below for `Other Tim Pope plugins to consider`_.
 
+List of Fuzzy-Finder Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+I like ``junegunn/fzf.vim``:
+
+| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
+    Fuzzy-find plugin
+
+See also:
+
+| `command-t <https://github.com/wincent/command-t>`__:
+    "Fast file navigation for VIM"
+| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
+    "Fuzzy file, buffer, mru, tag, etc finder."
+      [`deets <https://kien.github.io/ctrlp.vim/>`__]
+| `ddu.vim <https://github.com/Shougo/ddu.vim>`__:
+    "Dark deno-powered UI framework for Vim/Neovim"
+      [`deets <https://github.com/Shougo/ddu.vim/blob/main/doc/ddu.txt>`__]
+
 List of Other Plugins
 ^^^^^^^^^^^^^^^^^^^^^
 
 These are other awesome third-party plugins I find useful or otherwise
 curious (though some I rarely use, I'll admit):
 
-| `fzf.vim <https://github.com/junegunn/fzf.vim>`__:
-    Fuzzy-find plugin
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."
   [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
@@ -388,11 +405,6 @@ and then ``\te``.)
 | `AutoAdapt <https://github.com/vim-scripts/AutoAdapt>`__:
     "Automatically adapt timestamps, copyright notices, etc."
       [`vim script <http://www.vim.org/scripts/script.php?script_id=4654>`__]
-| `command-t <https://github.com/wincent/command-t>`__:
-    "Fast file navigation for VIM"
-| `ctrlp.vim <https://github.com/kien/ctrlp.vim>`__:
-    "Fuzzy file, buffer, mru, tag, etc finder."
-      [`deets <https://kien.github.io/ctrlp.vim/>`__]
 | `goyo.vim <https://github.com/junegunn/goyo.vim>`__:
     "Distraction-free writing in Vim"
 | `ingo-library <https://github.com/vim-scripts/ingo-library>`__:
@@ -713,7 +725,7 @@ This plugin configures the appearance of Vim.
 - Enable ``modeline``: Vim will read modelines at the head or tail,
   like ``vim:tw=78:ts=8:ft=help:norl:``, and set itself accordingly.
 
-- Enable ``:autoindent``, and loading ``indent/`` files.
+- Enable ``:autoindent``, and load ``indent/`` files.
 
 - Enable ``:wildmenu``, a/k/a, Vim command line tab completion.
 
@@ -1099,72 +1111,6 @@ Optional Vendor Plugins
 You can enable additional functionality by
 installing the third-party plugins.
 
-AutoAdapt
----------
-
-`AutoAdapt <http://www.vim.org/scripts/script.php?script_id=4654>`__
-will "automatically adapt timestamps, copyright notices, etc."
-
-- When you save a file, it'll check the header and footer and
-  update any "Last Modified"-like lines, and it'll update the
-  copyright years, too.
-
-  - The Dubs Vim code tweaks the match algorithm to recognize
-    and use commas in the copyright, e.g., "2009, 2011-2014" might
-    become "2009, 2011-2015" or "2009, 2001-2014, 2016" depending
-    on if the current year is 2015 or 2016. This might seem a little
-    pretentious, but if you don't publish something some year, you
-    can't claim a copyright on it that year. ALTMLU.
-
-  - The match is also tightened so that it'll only occur if it
-    matches at the beginning of the line, optionally after the
-    start of a comment.
-
-To install AutoAdapt and also a necessary support library,
-`ingo-library <http://www.vim.org/scripts/script.php?script_id=4433>`__,
-grab the latest Vimballs and let 'em loose. Be sure to specify
-an install directory so we can install to the Pathogen directory.
-
-Download the support library to the appropriate ``packages`` directory.
-
-.. code-block:: bash
-
-   mkdir -p ~/.vim/pack/vim-scripts/start/ingo-library
-   cd ~/.vim/pack/vim-scripts/start/ingo-library
-   wget -O ingo-library-1.022.vmb.gz \
-      http://www.vim.org/scripts/download_script.php?src_id=22460
-   gvim ingo-library-1.022.vmb.gz
-
-Install from Vim.
-
-.. code-block:: vim
-
-   :UseVimball ~/.vim/pack/vim-scripts/start/ingo-library
-
-Download AutoAdapt to a new Pathogen location.
-
-.. code-block:: bash
-
-   mkdir ~/.vim/pack/vim-scripts/start/AutoAdapt
-   cd ~/.vim/pack/vim-scripts/start/AutoAdapt
-   wget -O AutoAdapt-1.10.vmb.gz \
-      http://www.vim.org/scripts/download_script.php?src_id=21327
-   # You can run gunzip first, or you can just run gvim.
-   gvim AutoAdapt-1.10.vmb.gz
-
-Install from Vim.
-
-.. code-block:: vim
-
-   :UseVimball ~/.vim/pack/vim-scripts/start/AutoAdapt
-
-Cleanup.
-
-.. code-block:: bash
-
-   rm ~/.vim/pack/vim-scripts/start/AutoAdapt/AutoAdapt-1.10.vmb.gz
-   rm ~/.vim/pack/vim-scripts/start/ingo-library/ingo-library-1.022.vmb.gz
-
 taglist
 -------
 
@@ -1446,9 +1392,6 @@ Editing and Formatting Text
  ``<Ctrl-P>`` and ``<Ctrl-L>``      Swap Paragraphs                     ``<Ctrl-P>`` swaps the paragraph under the cursor with the paragraph above.
 
                                                                         ``<Ctrl-L>`` swaps in with the paragraph below.
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\O``                             Open hyperlink under cursor
-                                    or selected.
 =================================  ==================================  ==============================================================================
 
 Common Buffer Commands
@@ -1555,6 +1498,28 @@ Highlights:
           (it should reverse one item at a time through the tag list)
           but it doesn't work. It might be conflicting with ``MoveParagraphUp()``.
 
+Insert Date and Time Commands
+-----------------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``TTT``                      Insert today's date           Insert time as "YYYY-MM-DD".
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``TTT_``                     Insert today's date           Insert time as "YYYY_MM_DD".
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``TTTtt``                    Insert today's date           Insert time as "YYYY-MM-DD HH:MM".
+ ``:::``
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``TTTTtt``                   Insert today's date           Insert time as "YYYY-MM-DD-HH:MM".
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``ttt``                      Insert today's date           Insert time as "HH:MM".
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Leader>T``                Insert today's date           Insert time as "/YYYY-MM-DD: ".
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<F12>``                    Insert today's date           Insert time as "/YYYY-MM-DD HH-MM: ".
+===========================  ============================  ==============================================================================
+
 Obscure (Rarely Used) But Useful Commands
 -----------------------------------------
 
@@ -1585,11 +1550,19 @@ Obscure (Rarely Used) But Useful Commands
  ``:DiffOrig``                Diff Buffer Against File      See the difference between the current buffer and the file it was loaded from,
                                                             thus the changes you've made since you last saved.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Leader>da``               Toggle ASCII                  Decimal and Hexadecimal 8-bit character set
+ ``<Leader>dA``               Toggle ASCII                  Decimal and Hexadecimal 8-bit character set
                               Character Table               (based on `CharTab <http://www.vim.org/scripts/script.php?script_id=898>`__).
 
                                                             *Hint:* Hit ``b`` to toggle between bases (radices).
                                                             To return to the previous buffer, hit ``q``, ``<ESC>`` or ``<Shift-Alt-1>``.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Leader>dTl``              Diff-toggle left              Close left window of a three-way diff.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Leader>dTc``              Diff-toggle center            Close center window of a three-way diff.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Leader>dTr``              Diff-toggle right             Close right window of a three-way diff.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Leader>dd``               Left-justify                  Left-justify the current line (remove leading whitespace).
 ===========================  ============================  ==============================================================================
 
 The Alt-Shift Mappings
@@ -1731,11 +1704,6 @@ See ``:help digraph`` for the list of defined digraphs.
 #################################
 Dubs Vim |em_dash| Filetype Hacks
 #################################
-
-.. FIXME/2022-12-11 22:39: Finish promoting to individual plugins... maybe:
-..
-..    vim-synsible-ftplugin-*#*
-
 
 .. |em_dash| unicode:: 0x2014 .. em dash
 
@@ -2215,31 +2183,17 @@ the character to be translated).
 
 - E.g., if you enter ``&``, it'll insert ``&amp;``.
 
-Toggle Entity List Visibility
------------------------------
-
-You can obviously map ``<Leader>ht`` to any key
-command you want, but you can also map a
-toggle function, which creates or destroys
-the interactive entity list depending on
-whether not its already visible.
-
-To map the toggle function to, e.g.,
-``<Alt-Shift-5>`` (or ``<Alt-%>``), add the
-following to your vim environment:
-
-``nmap <M-%> <Plug>DubsHtmlEntities_ToggleLookup``
-
-Core Dubs Vim Key Mappings
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you're using all the Dubs Vim, the HTML entity table is already mapped.
+Dubs Vim Kep Mapping Reference
+==============================
 
 ===========================  ============================  ==============================================================================
  Key Mapping                  Description                   Notes
 ===========================  ============================  ==============================================================================
- ``<Shift-Alt-5>``            Toggle HTML                   Show special HTML character entity lookup.
+ ``<Leader>dh``               Toggle HTML                   Show special HTML character entity lookup.
                               Character Entity Table        You can switch between decimal, hexadecimal, and friendly names.
+===========================  ============================  ==============================================================================
+ ``<Leader>dH``               HTML Character Entity         Prompts for a character and inserts its encoded HTML representation.
+                              Prompt                        - E.g., type `&` and it'll insert ``&amp;``.
 ===========================  ============================  ==============================================================================
 
 ############################
@@ -2753,26 +2707,26 @@ Key Mappings
 =================================  ==================================  ==============================================================================
  Key Mapping                        Description                         Notes
 =================================  ==================================  ==============================================================================
- ``\e``                             Cycle Through Whitespace Styles     Cycles through the various syntax enforcement profiles.
+ ``\de``                            Cycle Through Whitespace Styles     Cycles through the various syntax enforcement profiles.
                                                                         Currently, just two are active (spaced with 2 spaces/indent,
                                                                         and tabbed with 4 character widths/indent), though more are
                                                                         defined (six total for the combinations of tabbed or spaced
                                                                         and 2, 3, or 4 characters/indent).
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\E``                             Reset Whitespace Style              Resets the buffer's whitespace configuration to either the
+ ``\dE``                            Reset Whitespace Style              Resets the buffer's whitespace configuration to either the
                                                                         file's modeline, the project's modeline, the deduced value
                                                                         (by counting and comparing lines that start with spaces versus
                                                                         tabs), or the default value set by the user
                                                                         (using ``g:dubs_style_preferred_expand_tab``
                                                                         and ``g:dubs_style_preferred_indent``).
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\r``                             Cycle Through Long-Line Features    Cycles through the various long-line sytles.
+ ``\dr``                            Cycle Through Long-Line Features    Cycles through the various long-line sytles.
                                                                         Currently, there are four styles -- just show a subtle column
                                                                         near the 80-character mark, also highlight long lines and
                                                                         automatically wrap long lines as they're typed, only autowrap,
                                                                         and show and do nothing with regard to long lines.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\R``                             Reset Long-Line Feature             Resets the long-line feature to the default, which is to just show
+ ``\dR``                            Reset Long-Line Feature             Resets the long-line feature to the default, which is to just show
                                                                         a subtle column near the 80-character mark but not to do anything else.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``:match none``                    Hide highlighted                    Use the command ``:match none`` to disable highlighting,
@@ -2904,7 +2858,7 @@ Key Mappings
 Asynchronous, non-blocking insert mode maps
 ###########################################
 
-Use ``vim-async-mapper`` to add non-blocking insert mode maps using
+Use ``vim-async-map`` to add non-blocking insert mode maps using
 “regular” characters.
 
 - Instead of using a ``<Leader>`` combination or modifiers (e.g.,
@@ -2951,7 +2905,7 @@ the following changes:
 Details
 =======
 
-``vim-async-mapper`` lets you add nondisruptive insert mode maps.
+``vim-async-map`` lets you add nondisruptive insert mode maps.
 
 - A normal, naïve insert map pauses input between keypresses, e.g., if
   you wanted to be able to use ``gf`` to open file paths from insert
@@ -2990,7 +2944,7 @@ Details
      this is gsome text
               ↑ cursor
 
-- So instead of adding multiple-character mappings, ``vim-async-mapper``
+- So instead of adding multiple-character mappings, ``vim-async-map``
   adds single-character mappings and then monitors input to see if it
   matches any sequence that you’ve registered with it.
 
@@ -3011,8 +2965,8 @@ The most common use case is to replace ``vim-easyescape``:
 
    let timeout_msec = 100
 
-   call g:embrace#amapper#register_insert_mode_map("kj", "\<ESC>", timeout_msec)
-   call g:embrace#amapper#register_insert_mode_map("jk", "\<ESC>", timeout_msec)
+   call g:embrace#async_map#register_insert_mode_map("kj", "\<ESC>", timeout_msec)
+   call g:embrace#async_map#register_insert_mode_map("jk", "\<ESC>", timeout_msec)
 
 If you also wanted ``kj`` and ``jk`` to work from command mode, you
 could add two simple maps:
@@ -3030,8 +2984,8 @@ built-in ``j`` or ``k`` commands, e.g.,
 
    let timeout_msec = 100
 
-   call g:embrace#amapper#register_normal_mode_map("kj", "ji", timeout_msec)
-   call g:embrace#amapper#register_normal_mode_map("jk", "ki", timeout_msec)
+   call g:embrace#async_map#register_normal_mode_map("kj", "ji", timeout_msec)
+   call g:embrace#async_map#register_normal_mode_map("jk", "ki", timeout_msec)
 
 - So if you type ``kj``, the ``k`` moves the cursor up one row, and the
   ``j`` triggers the map command. And then the map command runs ``j`` to
@@ -3054,7 +3008,7 @@ built-in ``j`` or ``k`` commands, e.g.,
     fast as they can.)
 
 (You can see a real-world implementation in
-https://github.com/landonb/vim-ovm-easyescape-kj-jk/blob/release/plugin/vim_ovm_easyescape_kj_jk.vim.)
+https://github.com/landonb/vim-ovm-easyescape-kj-jk/blob/2.0.0/plugin/vim_ovm_easyescape_kj_jk.vim.)
 
 Common usage — map insert mode ``gf`` to normal mode ``gf`` (“goto file”)
 =========================================================================
@@ -3072,7 +3026,7 @@ normal mode command of the same name, e.g.,
    let timeout_msec = 100
 
    " Wire the `gf` key sequence to the `gf` command.
-   call g:embrace#amapper#register_insert_mode_map("gf", "gf", timeout_msec)
+   call g:embrace#async_map#register_insert_mode_map("gf", "gf", timeout_msec)
 
 You could similarly add a visual mode mapping:
 
@@ -3082,7 +3036,7 @@ You could similarly add a visual mode mapping:
    vnoremap gf y:edit <C-r>"<CR>
 
 (You can see a real-world implementation in
-https://github.com/embrace-vim/vim-goto-file-sh/blob/release/plugin/includeexpr-for-gf.vim.)
+https://github.com/embrace-vim/vim-goto-file-sh/blob/1.3.1/after/plugin/async-mode-maps.vim.)
 
 Timeout values
 ==============
@@ -3091,12 +3045,12 @@ You can set a different timeout for each sequence, as shown in the
 examples above.
 
 If you omit the timeout, it defaults to the value of a global variable,
-``g:vim_async_mapper_timeout``, which defaults to 100 unless you change
-it, e.g.,
+``g:vim_async_map_timeout``, which defaults to 100 unless you change it,
+e.g.,
 
 ::
 
-   let g:vim_async_mapper_timeout = 100
+   let g:vim_async_map_timeout = 100
 
 Such a short timeout works well for the examples shown above, but you
 may need a longer timeout for other maps.
@@ -3108,17 +3062,17 @@ may need a longer timeout for other maps.
 
      let timeout_msec = 200
 
-     call g:embrace#amapper#register_insert_mode_map("gW", "gW", timeout_msec)
+     call g:embrace#async_map#register_insert_mode_map("gW", "gW", timeout_msec)
 
 Disable plugin for specific file types
 ======================================
 
-You can disable ``vim-async-mapper`` for specific file types (or for any
-buffer) by setting ``b:vim_async_mapper_disable = 1``, e.g.:
+You can disable ``vim-async-map`` for specific file types (or for any
+buffer) by setting ``b:vim_async_map_disable = 1``, e.g.:
 
 ::
 
-   autocmd FileType text,markdown call setbufvar(bufnr("%"), 'vim_async_mapper_disable', 1)
+   autocmd FileType text,markdown call setbufvar(bufnr("%"), 'vim_async_map_disable', 1)
 
 - This applies to all registered mappings, however. (Feel free to PR if
   you want to make it more discerning, i.e., to disable individual key
@@ -3131,7 +3085,7 @@ Python3 is required to set a timeout less than 2000 msec., e.g.,
 
 ::
 
-   let g:vim_async_mapper_timeout = 100
+   let g:vim_async_map_timeout = 100
 
 Otherwise the shortest usable timeout will be 2 secs.
 
@@ -3185,13 +3139,13 @@ Clone the project to the desired path:
 
 ::
 
-   git clone https://github.com/embrace-vim/vim-async-mapper.git
+   git clone https://github.com/embrace-vim/vim-async-map.git
 
 If you installed to the optional path, tell Vim to load the package:
 
 ::
 
-   :packadd! vim-async-mapper
+   :packadd! vim-async-map
 
 Just once, tell Vim to build the online help:
 
@@ -3203,7 +3157,7 @@ Then whenever you want to reference the help from Vim, run:
 
 ::
 
-   :help vim-async-mapper
+   :help vim-async-map
 
 Note that you’ll need to update the repo manually (e.g., ``git pull``
 occasionally).
@@ -3219,7 +3173,7 @@ occasionally).
      call plug#begin()
 
      " List your plugins here
-     Plug 'embrace-vim/vim-async-mapper'
+     Plug 'embrace-vim/vim-async-map'
 
      call plug#end()
 
@@ -3248,7 +3202,7 @@ occasionally).
      " let Vundle manage Vundle, required
      Plugin 'VundleVim/Vundle.vim'
 
-     Plugin 'embrace-vim/vim-async-mapper'
+     Plugin 'embrace-vim/vim-async-map'
 
      " All of your Plugins must be added before the following line
      call vundle#end()            " required
@@ -3291,8 +3245,8 @@ occasionally).
      [DEFAULT]
      skip = mr_exclusive "vim-plugins"
 
-     [pack/embrace-vim/start/vim-async-mapper]
-     lib = remote_set origin https://github.com/embrace-vim/vim-async-mapper.git
+     [pack/embrace-vim/start/vim-async-map]
+     lib = remote_set origin https://github.com/embrace-vim/vim-async-map.git
 
      [DEFAULT]
      skip = false
@@ -4070,16 +4024,16 @@ to try to resolves matches. So it matters how you started Vim.
 Optional ``gf`` insert and visual mode maps
 ===========================================
 
-.. |vim-async-mapper| replace:: ``vim-async-mapper``
-.. _vim-async-mapper: https://github.com/embrace-vim/vim-async-mapper
+.. |vim-async-map| replace:: ``vim-async-map``
+.. _vim-async-map: https://github.com/embrace-vim/vim-async-map
 
 ``gf`` insert mode map
 ----------------------
 
 If you'd like a nondisruptive ``gf`` binding to work from insert
-mode, you can install |vim-async-mapper|_:
+mode, you can install |vim-async-map|_:
 
-  https://github.com/embrace-vim/vim-async-mapper#જ⁀➴
+  https://github.com/embrace-vim/vim-async-map#જ⁀➴
 
 If that plugin is installed, you can use ``gf`` from insert mode
 to open file paths (and it won't interrupt your normal ``g``
@@ -4087,7 +4041,7 @@ keypresses — i.e., you won't see a pause after typing ``g``
 like you would with a naïve ``imap gf`` binding).
 
 - You can enable the insert mode ``gf`` map by installing
-  |vim-async-mapper|_, and then add the following to your
+  |vim-async-map|_, and then add the following to your
   Vim config:
 
 .. code-block:: vim
@@ -4152,8 +4106,6 @@ See also these similar project(s):
   about enough to bother with creating a proper plugin.*
 
   |vim-apathy|_
-
-.. FIXME/2024-12-10 18:06: How does Vim ``gf`` relative paths?
 
 Installation
 ============
