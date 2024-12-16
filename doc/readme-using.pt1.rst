@@ -233,6 +233,7 @@ and highlighting:
 List of Window-related Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+| `BufOnly.vim <https://github.com/vim-scripts/BufOnly.vim>`__
 | `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
     "|flashlight| All the world's indeed a stage and we are merely players"
 | `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
