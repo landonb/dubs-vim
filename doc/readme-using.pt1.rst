@@ -140,7 +140,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator#🧭>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-web-hatch <https://github.com/embrace-vim/vim-web-hatch#🐣>`__                                Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
+  `vim-webopen <https://github.com/embrace-vim/vim-webopen#🐣>`__                                    Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
   ================================================================================================  ==============================================================================================================
 
 .. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/DepoXy/depoxy/tree/release/home/.vim/pack/DepoXy/start/vim-depoxy

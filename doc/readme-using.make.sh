@@ -68,7 +68,7 @@ build_readme_using () {
   gpwcat "${startd}/vim-reST-highfive/README.rst" >> ${target}
   gpwcat "${startd}/vim-reST-highline/README.rst" >> ${target}
   gpwcat "${startd}/vim-select-mode-stopped-down/README.rst" >> ${target}
-  gpwcat "${embrace}/vim-web-hatch/README.rst" >> ${target}
+  gpwcat "${embrace}/vim-webopen/README.rst" >> ${target}
   md2rst "${startd}/vim-source-reloader/README.md" >> ${target}
   # (forked) md2rst "${startd}/vim-surround/README.markdown" >> ${target}
   md2rst "${startd}/vim-title-bar-time-of-day/README.md" >> ${target}
