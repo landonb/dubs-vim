@@ -34,7 +34,6 @@ build_readme_using () {
   # (forked) md2rst "${startd}/ansible-vim/README.md" >> ${target}
   gpwcat "${startd}/dubs_after_dark/README.rst" >> ${target}
   gpwcat "${startd}/dubs_appearance/README.rst" >> ${target}
-  gpwcat "${startd}/dubs_buffer_fun/README.rst" >> ${target}
   gpwcat "${startd}/dubs_edit_juice/README.rst" >> ${target}
   # (opted) gpwcat "${optd}/opt/dubs_file_finder/README.rst" >> ${target}
   gpwcat "${startd}/dubs_ftype_mess/README.rst" >> ${target}
@@ -48,6 +47,7 @@ build_readme_using () {
   gpwcat "${startd}/dubs_toggle_textwrap/README.rst" >> ${target}
   # (forked) gpwcat ${startd}/QFEnter/README.md" >> ${target}
   md2rst "${embrace}/vim-async-map/README.md" >> ${target}
+  gpwcat "${embrace}/vim-buffer-delights/README.rst" >> ${target}
   md2rst "${startd}/vim-buffer-ring/README.md" >> ${target}
   # (forked) md2rst "${startd}/vim-classic-taglist/README.rst" >> ${target}
   md2rst "${depoxy}/vim-clip-expand-path/README.md" >> ${target}

@@ -74,8 +74,6 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_appearance <https://github.com/landonb/dubs_appearance#💅>`__                                Configure basic Vim look n' feel (that appeals to the author).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun#🎲>`__                                Manage Buffers and Windows.
-  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice#🧃>`__                                Powerful Text Editing commands.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess#🧹>`__                                Filetype-specific features, like syntax highlighters, etc.
@@ -95,6 +93,8 @@ These are plugins I've developed and continue to maintain:
   `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-async-map <https://github.com/embrace-vim/vim-async-map#જ⁀➴>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-buffer-delights <https://github.com/embrace-vim/vim-buffer-delights#🍧>`__                    Manage Buffers and Windows.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
