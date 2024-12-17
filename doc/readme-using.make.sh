@@ -59,6 +59,7 @@ build_readme_using () {
   # (forked) md2rst "${startd}/vim-markdown/README.md" >> ${target}
   gpwcat "${startd}/vim-mkspell-when-stale/README.rst" >> ${target}
   md2rst "${startd}/vim-netrw-cfg-split-explorer/README.md" >> ${target}
+  gpwcat "${embrace}/vim-netrw-explore-map/README.rst" >> ${target}
   md2rst "${startd}/vim-netrw-link-resolve/README.md" >> ${target}
   gpwcat "${startd}/vim-nicer-file-changed-prompt/README.rst" >> ${target}
   gpwcat "${startd}/vim-ovm-easyescape-kj-jk/README.rst" >> ${target}
