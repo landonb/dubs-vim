@@ -67,84 +67,84 @@ List of Dubs Vim Plugins
 These are plugins I've developed and continue to maintain:
 
 .. table::
-  :widths: 25 75
+  :widths: 30 70
 
   ================================================================================================  ==============================================================================================================
-  `dubs_after_dark <https://github.com/landonb/dubs_after_dark#🌃>`__                                Compelling light on dark color scheme (that uses true black).
+  🌃 `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__                                Compelling light on dark color scheme (that uses true black).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_appearance <https://github.com/landonb/dubs_appearance#💅>`__                                Configure basic Vim look n' feel (that appeals to the author).
+  💅 `dubs_appearance <https://github.com/landonb/dubs_appearance>`__                                Configure basic Vim look n' feel (that appeals to the author).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice#🧃>`__                                Powerful Text Editing commands.
+  🧃 `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__                                Powerful Text Editing commands.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess#🧹>`__                                Filetype-specific features, like syntax highlighters, etc.
+  🧹 `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__                                Filetype-specific features, like syntax highlighters, etc.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady#🤹>`__                              Clever Text Search including Replace.
+  🤹 `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__                              Clever Text Search including Replace.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_html_entities <https://github.com/landonb/dubs_html_entities#👽>`__                          HTML Entity table.
+  👽 `dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__                          HTML Entity table.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_mescaline <https://github.com/landonb/dubs_mescaline#🍄>`__                                  *Choice* Status Line.
+  🍄 `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__                                  *Choice* Status Line.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_project_tray <https://github.com/landonb/dubs_project_tray#🗂>`__                            Project plugin wrapper.
+  🗂 `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__                            Project plugin wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap#🌯>`__                          Elegant Quickfix wrapper.
+  🌯 `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__                          Elegant Quickfix wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_style_guard <https://github.com/landonb/dubs_style_guard#💂>`__                              Automatically set whitespace and line-length settings.
+  💂 `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__                              Automatically set whitespace and line-length settings.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
+  🔘 `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__                      Simple text wrapping wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-async-map <https://github.com/embrace-vim/vim-async-map#જ⁀➴>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
+  જ⁀➴ `vim-async-map <https://github.com/embrace-vim/vim-async-map>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search#🕹>`__                        Visual search enhancements.
+  🕹 `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search>`__                        Visual search enhancements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-buffer-delights <https://github.com/embrace-vim/vim-buffer-delights#🍧>`__                    Manage Buffers and Windows.
+  🍧 `vim-buffer-delights <https://github.com/embrace-vim/vim-buffer-delights>`__                    Manage Buffers and Windows.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
+  💍 `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist#🏛>`__                        Clone of http://vim-taglist.sourceforge.net/
+  🏛 `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist>`__                        Clone of http://vim-taglist.sourceforge.net/
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-clip-expand-path <https://github.com/DepoXy/vim-clip-expand-path#👣>`__                       Press ``<Leader>J`` to copy full file path to clipboard, or ``<Leader>j`` to copy relative path.
+  👣 `vim-clip-expand-path <https://github.com/DepoXy/vim-clip-expand-path>`__                       Press ``<Leader>J`` to copy full file path to clipboard, or ``<Leader>j`` to copy relative path.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-command-line-clock <https://github.com/landonb/vim-command-line-clock#🕰>`__                  Shows the date and clock time in the command line when no other output is displayed.
+  🕰 `vim-command-line-clock <https://github.com/landonb/vim-command-line-clock>`__                  Shows the date and clock time in the command line when no other output is displayed.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-depoxy-coc-defaults <https://github.com/DepoXy/vim-depoxy-coc-defaults#🥥>`__                 Sensible coc.nvim defaults and maps.
+  🥥 `vim-depoxy-coc-defaults <https://github.com/DepoXy/vim-depoxy-coc-defaults>`__                 Sensible coc.nvim defaults and maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-fullscreen-toggle <https://github.com/DepoXy/vim-fullscreen-toggle#💯>`__                     Press <F11> to cycle through a few different Vim window dimensions.
+  💯 `vim-fullscreen-toggle <https://github.com/DepoXy/vim-fullscreen-toggle>`__                     Press <F11> to cycle through a few different Vim window dimensions.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-goto-file <https://github.com/embrace-vim/vim-goto-file#🚕>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
+  🚕 `vim-goto-file <https://github.com/embrace-vim/vim-goto-file>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root#🥔>`__                      Sets the working directory when editing a new buffer to the file's Git project root.
+  🥔 `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root>`__                      Sets the working directory when editing a new buffer to the file's Git project root.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-mkspell-when-stale <https://github.com/landonb/vim-mkspell-when-stale#🥖>`__                  Automatically rebuild the Vim spell file on startup.
+  🥖 `vim-mkspell-when-stale <https://github.com/landonb/vim-mkspell-when-stale>`__                  Automatically rebuild the Vim spell file on startup.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-netrw-cfg-split-explorer <https://github.com/landonb/vim-netrw-cfg-split-explorer#🌐>`__      Sensible ``:netrw`` defaults.
+  🌐 `vim-netrw-cfg-split-explorer <https://github.com/landonb/vim-netrw-cfg-split-explorer>`__      Sensible ``:netrw`` defaults.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-netrw-explore-map <https://github.com/embrace-vim/vim-netrw-explore-map#🐾>`__                Wire convenient ``:Explore [dir]`` command maps.
+  🐾 `vim-netrw-explore-map <https://github.com/embrace-vim/vim-netrw-explore-map>`__                Wire convenient ``:Explore [dir]`` command maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve#🧩>`__                  Reopens files opened with `netrw` at their resolved path to avoid a file-exists error on save.
+  🧩 `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve>`__                  Reopens files opened with `netrw` at their resolved path to avoid a file-exists error on save.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt#🗯>`__    Skip Vim alert when file modification changed but not content, useful if you git-rebase a lot.
+  🗯 `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt>`__    Skip Vim alert when file modification changed but not content, useful if you git-rebase a lot.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk#🧼>`__              Quickly ype ``jk`` or ``kj`` in Insert mode to switch to Normal mode.
+  🧼 `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk>`__              Quickly ype ``jk`` or ``kj`` in Insert mode to switch to Normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-ovm-seven-of-spines <https://github.com/landonb/vim-ovm-seven-of-spines#🦴>`__                Press <Ctrl-minus> to insert an hrule into reST docs.
+  🦴 `vim-ovm-seven-of-spines <https://github.com/landonb/vim-ovm-seven-of-spines>`__                Press <Ctrl-minus> to insert an hrule into reST docs.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reSTfold <https://github.com/landonb/vim-reSTfold#🙏>`__                                      Innovative reStructuredText document folding (manage notes like a pro).
+  🙏 `vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__                                      Innovative reStructuredText document folding (manage notes like a pro).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs#🎨>`__                            A plethora of reStructuredText syntax highlights to make maintaining reST notes files beautiful.
+  🎨 `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs>`__                            A plethora of reStructuredText syntax highlights to make maintaining reST notes files beautiful.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive#🖐>`__                            Add *FIVER* highlighting to reStructuredText notes files.
+  🖐 `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive>`__                            Add *FIVER* highlighting to reStructuredText notes files.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reST-highline <https://github.com/landonb/vim-reST-highline#➖>`__                            Highlight lines of repeated characters in reStructuredText notes files, to use as a colorful hrule.
+  ➖ `vim-reST-highline <https://github.com/landonb/vim-reST-highline>`__                            Highlight lines of repeated characters in reStructuredText notes files, to use as a colorful hrule.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down#🛑>`__      Tweaked ``select-mode`` Ctrl-Shift-Left and Ctrl-Shift-Right motions, for ``behave mswin``.
+  🛑 `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down>`__      Tweaked ``select-mode`` Ctrl-Shift-Left and Ctrl-Shift-Right motions, for ``behave mswin``.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-source-reloader <https://github.com/landonb/vim-source-reloader#🔃>`__                        Press <F9> to reload VimL source files.
+  🔃 `vim-source-reloader <https://github.com/landonb/vim-source-reloader>`__                        Press <F9> to reload VimL source files.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day#⌚>`__            Shows the date and clock time in the titlebar, useful if you hide the macOS menubar.
+  ⌚ `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day>`__            Shows the date and clock time in the titlebar, useful if you hide the macOS menubar.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator#🧭>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
+  🧭 `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-webopen <https://github.com/embrace-vim/vim-webopen#🐣>`__                                    Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
+  🐣 `vim-webopen <https://github.com/embrace-vim/vim-webopen>`__                                    Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
   ================================================================================================  ==============================================================================================================
 
 .. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/DepoXy/depoxy/tree/release/home/.vim/pack/DepoXy/start/vim-depoxy
