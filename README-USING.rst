@@ -67,80 +67,84 @@ List of Dubs Vim Plugins
 These are plugins I've developed and continue to maintain:
 
 .. table::
-  :widths: 25 75
+  :widths: 30 70
 
   ================================================================================================  ==============================================================================================================
-  `dubs_after_dark <https://github.com/landonb/dubs_after_dark#🌃>`__                                Compelling light on dark color scheme (that uses true black).
+  🌃 `dubs_after_dark <https://github.com/landonb/dubs_after_dark>`__                                Compelling light on dark color scheme (that uses true black).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_appearance <https://github.com/landonb/dubs_appearance#💅>`__                                Configure basic Vim look n' feel (that appeals to the author).
+  💅 `dubs_appearance <https://github.com/landonb/dubs_appearance>`__                                Configure basic Vim look n' feel (that appeals to the author).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_buffer_fun <https://github.com/landonb/dubs_buffer_fun#🎲>`__                                Manage Buffers and Windows.
+  🧃 `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice>`__                                Powerful Text Editing commands.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_edit_juice <https://github.com/landonb/dubs_edit_juice#🧃>`__                                Powerful Text Editing commands.
+  🧹 `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess>`__                                Filetype-specific features, like syntax highlighters, etc.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_ftype_mess <https://github.com/landonb/dubs_ftype_mess#🧹>`__                                Filetype-specific features, like syntax highlighters, etc.
+  🤹 `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady>`__                              Clever Text Search including Replace.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady#🤹>`__                              Clever Text Search including Replace.
+  👽 `dubs_html_entities <https://github.com/landonb/dubs_html_entities>`__                          HTML Entity table.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_html_entities <https://github.com/landonb/dubs_html_entities#👽>`__                          HTML Entity table.
+  🍄 `dubs_mescaline <https://github.com/landonb/dubs_mescaline>`__                                  *Choice* Status Line.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_mescaline <https://github.com/landonb/dubs_mescaline#🍄>`__                                  *Choice* Status Line.
+  🗂 `dubs_project_tray <https://github.com/landonb/dubs_project_tray>`__                            Project plugin wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_project_tray <https://github.com/landonb/dubs_project_tray#🗂>`__                            Project plugin wrapper.
+  🌯 `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap>`__                          Elegant Quickfix wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_quickfix_wrap <https://github.com/landonb/dubs_quickfix_wrap#🌯>`__                          Elegant Quickfix wrapper.
+  💂 `dubs_style_guard <https://github.com/landonb/dubs_style_guard>`__                              Automatically set whitespace and line-length settings.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_style_guard <https://github.com/landonb/dubs_style_guard#💂>`__                              Automatically set whitespace and line-length settings.
+  🔘 `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap>`__                      Simple text wrapping wrapper.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `dubs_toggle_textwrap <https://github.com/landonb/dubs_toggle_textwrap#🔘>`__                      Simple text wrapping wrapper.
+  જ⁀➴ `vim-async-map <https://github.com/embrace-vim/vim-async-map>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-async-map <https://github.com/embrace-vim/vim-async-map#જ⁀➴>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
+  🕹 `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search>`__                        Visual search enhancements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
+  🍧 `vim-buffer-delights <https://github.com/embrace-vim/vim-buffer-delights>`__                    Manage Buffers and Windows.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist#🏛>`__                        Clone of http://vim-taglist.sourceforge.net/
+  💍 `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-clip-expand-path <https://github.com/DepoXy/vim-clip-expand-path#👣>`__                       Press ``<Leader>J`` to copy full file path to clipboard, or ``<Leader>j`` to copy relative path.
+  🏛 `vim-classic-taglist <https://github.com/landonb/vim-classic-taglist>`__                        Clone of http://vim-taglist.sourceforge.net/
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-command-line-clock <https://github.com/landonb/vim-command-line-clock#🕰>`__                  Shows the date and clock time in the command line when no other output is displayed.
+  👣 `vim-clip-expand-path <https://github.com/DepoXy/vim-clip-expand-path>`__                       Press ``<Leader>J`` to copy full file path to clipboard, or ``<Leader>j`` to copy relative path.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-depoxy-coc-defaults <https://github.com/DepoXy/vim-depoxy-coc-defaults#🥥>`__                 Sensible coc.nvim defaults and maps.
+  🕰 `vim-command-line-clock <https://github.com/landonb/vim-command-line-clock>`__                  Shows the date and clock time in the command line when no other output is displayed.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-fullscreen-toggle <https://github.com/DepoXy/vim-fullscreen-toggle#💯>`__                     Press <F11> to cycle through a few different Vim window dimensions.
+  🥥 `vim-depoxy-coc-defaults <https://github.com/DepoXy/vim-depoxy-coc-defaults>`__                 Sensible coc.nvim defaults and maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-goto-file <https://github.com/embrace-vim/vim-goto-file#🚕>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
+  💯 `vim-fullscreen-toggle <https://github.com/embrace-vim/vim-fullscreen-toggle>`__                Cycle through a few different Vim window dimensions (e.g., by pressing ``<F11>``).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root#🥔>`__                      Sets the working directory when editing a new buffer to the file's Git project root.
+  🚕 `vim-goto-file <https://github.com/embrace-vim/vim-goto-file>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-mkspell-when-stale <https://github.com/landonb/vim-mkspell-when-stale#🥖>`__                  Automatically rebuild the Vim spell file on startup.
+  🥔 `vim-lcd-project-root <https://github.com/landonb/vim-lcd-project-root>`__                      Sets the working directory when editing a new buffer to the file's Git project root.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-netrw-cfg-split-explorer <https://github.com/landonb/vim-netrw-cfg-split-explorer#🌐>`__      Sensible ``:netrw`` defaults.
+  🥖 `vim-mkspell-when-stale <https://github.com/landonb/vim-mkspell-when-stale>`__                  Automatically rebuild the Vim spell file on startup.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve#🧩>`__                  Reopens files opened with `netrw` at their resolved path to avoid a file-exists error on save.
+  🌐 `vim-netrw-cfg-split-explorer <https://github.com/landonb/vim-netrw-cfg-split-explorer>`__      Sensible ``:netrw`` defaults.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt#🗯>`__    Skip Vim alert when file modification changed but not content, useful if you git-rebase a lot.
+  🥾 `vim-netrw-explore-map <https://github.com/embrace-vim/vim-netrw-explore-map>`__                Wire convenient ``:Explore [dir]`` command maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk#🧼>`__              Quickly ype ``jk`` or ``kj`` in Insert mode to switch to Normal mode.
+  🧩 `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve>`__                  Reopens files opened with `netrw` at their resolved path to avoid a file-exists error on save.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-ovm-seven-of-spines <https://github.com/landonb/vim-ovm-seven-of-spines#🦴>`__                Press <Ctrl-minus> to insert an hrule into reST docs.
+  🗯 `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt>`__    Skip Vim alert when file modification changed but not content, useful if you git-rebase a lot.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reSTfold <https://github.com/landonb/vim-reSTfold#🙏>`__                                      Innovative reStructuredText document folding (manage notes like a pro).
+  🧼 `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk>`__              Quickly ype ``jk`` or ``kj`` in Insert mode to switch to Normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs#🎨>`__                            A plethora of reStructuredText syntax highlights to make maintaining reST notes files beautiful.
+  🦴 `vim-ovm-seven-of-spines <https://github.com/landonb/vim-ovm-seven-of-spines>`__                Press <Ctrl-minus> to insert an hrule into reST docs.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive#🖐>`__                            Add *FIVER* highlighting to reStructuredText notes files.
+  🙏 `vim-reSTfold <https://github.com/landonb/vim-reSTfold>`__                                      Innovative reStructuredText document folding (manage notes like a pro).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-reST-highline <https://github.com/landonb/vim-reST-highline#➖>`__                            Highlight lines of repeated characters in reStructuredText notes files, to use as a colorful hrule.
+  🎨 `vim-reST-highdefs <https://github.com/landonb/vim-reST-highdefs>`__                            A plethora of reStructuredText syntax highlights to make maintaining reST notes files beautiful.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down#🛑>`__      Tweaked ``select-mode`` Ctrl-Shift-Left and Ctrl-Shift-Right motions, for ``behave mswin``.
+  🖐 `vim-reST-highfive <https://github.com/landonb/vim-reST-highfive>`__                            Add *FIVER* highlighting to reStructuredText notes files.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-source-reloader <https://github.com/landonb/vim-source-reloader#🔃>`__                        Press <F9> to reload VimL source files.
+  ➖ `vim-reST-highline <https://github.com/landonb/vim-reST-highline>`__                            Highlight lines of repeated characters in reStructuredText notes files, to use as a colorful hrule.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day#⌚>`__            Shows the date and clock time in the titlebar, useful if you hide the macOS menubar.
+  🛑 `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down>`__      Tweaked ``select-mode`` Ctrl-Shift-Left and Ctrl-Shift-Right motions, for ``behave mswin``.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator#🧭>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
+  🔃 `vim-source-reloader <https://github.com/embrace-vim/vim-source-reloader>`__                    Reload VimL (Vim script) source files (e.g., by pressing ``<F9>``).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  `vim-web-hatch <https://github.com/embrace-vim/vim-web-hatch#🐣>`__                                Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
+  ⌚ `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day>`__            Shows the date and clock time in the titlebar, useful if you hide the macOS menubar.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  🧭 `vim-tmux-navigator <https://github.com/landonb/vim-tmux-navigator>`__                          Fork of https://github.com/christoomey/vim-tmux-navigator adds keybindings for previous and next.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  🐣 `vim-webopen <https://github.com/embrace-vim/vim-webopen>`__                                    Open URLs, search selected text/text under cursor, and lookup word definitions in your browser.
   ================================================================================================  ==============================================================================================================
 
 .. AWAIT/2022-09-21: Add DepoXy/waffle-batter-vim, once published: https://github.com/DepoXy/depoxy/tree/release/home/.vim/pack/DepoXy/start/vim-depoxy
@@ -163,11 +167,6 @@ with the upstream project's goals, or because I'm lazy):
     Fork restores quickfix cursor position after opening error, and it
     avoids opening file in any window showing a special buffer.
       (Upstream: `QFEnter <https://github.com/yssl/QFEnter>`__)
-| `vim-markdown <https://github.com/landonb/vim-markdown#👇>`__:
-    "Markdown for Vim."
-    Fork fixes issues seeing XML tags and content being white on white
-    (though might be specific to my Vim environment).
-      (Upstream: `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
 | `vim-unimpaired <https://github.com/landonb/vim-unimpaired#👿>`__:
     "Pairs of handy bracket mappings."
     Fork adds ``[om`` and ``[om`` to show/hide menubar (for Linux users).
@@ -233,12 +232,13 @@ and highlighting:
 List of Window-related Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+| `BufOnly.vim <https://github.com/vim-scripts/BufOnly.vim>`__
 | `limelight.vim <https://github.com/junegunn/limelight.vim>`__:
     "|flashlight| All the world's indeed a stage and we are merely players"
 | `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
 
-List of Programming and Language Plugins
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+List of Programming, Language, and Markup Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 General:
 
@@ -265,6 +265,10 @@ Git:
 JSON:
 
 | `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__
+
+Markdown:
+
+| `vim-markdown <https://github.com/preservim/vim-markdown>`__
 
 Python:
 
@@ -361,6 +365,9 @@ List of Other Plugins
 These are other awesome third-party plugins I find useful or otherwise
 curious (though some I rarely use, I'll admit):
 
+| `Tabular <https://github.com/godlygeek/tabular>`__:
+    "Vim script for text filtering and alignment"
+    (also required by `vim-markdown <https://github.com/tpope/vim-markdown>`__)
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."
   [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
@@ -440,6 +447,13 @@ and then ``\te``.)
     "Miscellaneous auto-load Vim scripts"
       [`more <https://peterodding.com/code/vim/misc/>`__]
 | `vim-restructuredtext <https://github.com/marshallward/vim-restructuredtext>`__
+| `vim-slash <https://github.com/junegunn/vim-slash>`__
+    "Enhancing in-buffer search experience":
+    "Automatically clears search highlight when cursor is moved"
+    (see also `vim-evanesco <https://github.com/pgdouyon/vim-evanesco>`__)
+    but also has a nifty optional match highlight blink feature
+    that grifted for
+    `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search>`__
 
 Plugins that I used to develop or that I forked, but no longer use:
 
@@ -451,6 +465,11 @@ Plugins that I used to develop or that I forked, but no longer use:
 | `vim-jsx <https://github.com/landonb/vim-jsx>`__:
     "React JSX syntax highlighting and indenting for Vim."
       (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
+| `vim-markdown <https://github.com/landonb/vim-markdown#👇>`__:
+    "Markdown for Vim."
+    Fork fixes issues seeing XML tags and content being white on white
+    (though might be specific to my Vim environment).
+      (Upstream: `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
 
 Other Tim Pope plugins to consider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -574,17 +593,18 @@ brief description of the feature and then more detailed notes.
 ..       so instead we'll assemble this file from a script, readme-using.make.sh,
 ..       which appends all the package docs to this file.
 
-##################################
-Dubs Vim |em_dash| Dubs After Dark
-##################################
+#####################################
+Dubs Vim |em_dash| Dubs After Dark 🌃
+#####################################
 
 .. |em_dash| unicode:: 0x2014 .. em dash
 
-Vibrant white and light text on a black background.
+Striking Vim `colorscheme <https://vimhelp.org/usr_06.txt.html>__`!
+Vibrant white and colorful foreground text on a truly black background.
 
 .. image:: doc/color-scheme-test-ruby-and-javascript.png
 
-*The Dubs After Dark color scheme and* `Dubs Mescaline <https://github.com/landonb/dubs_mescaline>`__ *status line.*
+*Dubs After Dark colorscheme pairs well with* `Dubs Mescaline <https://github.com/landonb/dubs_mescaline>`__ *status line.*
 
 About This Plugin
 =================
@@ -636,54 +656,9 @@ For another excellent light-on-dark (though not black) color scheme,
 check out
 `jellybeans.vim <https://github.com/nanotech/jellybeans.vim>`__.
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_after_dark.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_after_dark
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-after-dark
-
-####################################
-Dubs Vim |em_dash| Appearance Plugin
-####################################
+#######################################
+Dubs Vim |em_dash| Appearance Plugin 💅
+#######################################
 
 .. |em_dash| unicode:: 0x2014 .. em dash
 
@@ -794,256 +769,66 @@ The plugin also improves upon the default color scheme.
 
 - Remove distracting vertical split line between adjacent windows.
 
-- Or, if you have `Dubs After Dark <https://github.com/landonb/dubs_after_dark>`__
-  installed, this plugin will load the ``after-dark`` color scheme.
-
 See the source for a few other settings and more comments.
 
-Installation
+Dependencies
 ============
 
-Installation is easy using the packages feature (see ``:help packages``).
+This plugin uses commands from a few plugins that you'll want to
+install separately:
 
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
+- ``BufOnly``: *Delete all the buffers except the current/named buffer*:
 
-.. code-block:: bash
+  https://github.com/vim-scripts/BufOnly.vim
 
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
+  - Source: https://www.vim.org/scripts/script.php?script_id=1071
 
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
+- ``Bdelete``: *Delete buffers (close files) without closing your
+  windows or messing up your layout.*:
 
-.. code-block:: bash
+  https://github.com/vim-scripts/bbye
 
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
+  - See also similar, previous versions of that concept:
 
-Clone the project to the desired path:
+    - ``Kwbd``: *Keep Window on Buffer Delete - Improved*
+      (commonly mapped to ``\bd``):
 
-.. code-block:: bash
+      https://github.com/vim-scripts/kwbdi.vim
 
-    git clone https://github.com/landonb/dubs_appearance.git
+      - Source: https://www.vim.org/scripts/script.php?script_id=2103
 
-If you installed to the optional path, tell Vim to load the package:
+  - ``:Bclose`` and original ``Kwbd``: *Deleting a buffer without closing the window*:
 
-.. code-block:: vim
+    https://vim.fandom.com/wiki/Deleting_a_buffer_without_closing_the_window
 
-   :packadd! dubs_appearance
+Window-Related Commands
+=======================
 
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-appearance
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Alt-w>c``                 Close Window                  Closes the window that the cursor is in. Calls ``<C-W>c``
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-w>o``                 "Only" Window                 Closes all windows except the one containing the cursor. Calls ``<C-W>o``
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-w>p``                 Horizontal Split              Creates a new window by splitting the current window in half along the horizon.
+                                                            Calls ``<C-W>s``
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-w>s``                 Vertical Split                Creates a new window by splitting the current window in half along the vertical
+                                                            axis. Calls ``<C-W>v<C-W>p:enew<CR><C-W>p``
+                                                            - Hint: If you want to compare two files side-by-side, open one file and
+                                                              then the other file, hit ``<Alt-w>s`` to split the window, and then hit
+                                                              ``<F2>`` to jump to the first buffer; now you're looking at both buffers.
+===========================  ============================  ==============================================================================
 
 Appearance Commands
 ===================
 
 This script does not define any commands.
 
-#############################
-Dubs Vim |em_dash| Buffer Fun
-#############################
-
-.. |em_dash| unicode:: 0x2014 .. em dash
-
-About This Plugin
-=================
-
-Buffer and window navigation features, and ctags!
-
-This plugin defines a few automatic commands:
-
-- Automatically jump to last known cursor position when
-  opening a file.
-
-- Enable ``hidden`` so buffers are not unloaded when abandoned.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_buffer_fun.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_buffer_fun
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-buffer-fun
-
-Buffer and Window Commands
-==========================
-
-Note: Some useful, similar Vim commands are listed alongside
-the Dubs Vim functions, just to remind us of all the commands
-available.
-
-Changing Buffers
-----------------
-
-It's easy to switch between buffers, especially the
-most-recently-used buffer, or the next or last buffer
-in the history stack.
-
-===========================  ============================  ==============================================================================
- Key Mapping                  Description                   Notes
-===========================  ============================  ==============================================================================
- ``<F2>``                     Toggle MRU Buffer             Jump to the most recently used buffer:
-                                                            Loads the last loaded buffer in the current window (think ``:e #``).
-                                                            I.e., if you hit ``<F2>`` twice, you'll be looking at the same buffer.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-J>``                 Traverse Buffer History       Traverses the buffer history backwards.
-                                                            Hint: If you find yourself down a rabbit hole, opening file after file,
-                                                            and you can't remember what you were doing, hit ``<Ctrl-J>`` to crawl out of it.
-                                                            Caveat: Splitting and Closing windows can mess up the buffer history, 'natch.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-K>``                 Forward Traverse History      Traverses the buffer history forwards; opposite of ``<Ctrl-J>``.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-Tab>``               Traverse BufList              ``<Ctrl-Tab>`` and ``<Ctrl-Shift-Tab>``
-                                                            are similar to ``<Ctrl-J>`` and ``<Ctrl-K>``
-                                                            but traverse the list of buffers in the order
-                                                            that they were originally loaded.
-                                                            Note: In default Vim, these commands
-                                                            move the cursor between windows,
-                                                            i.e., like ``<Alt-Shift-Up>`` and ``<Alt-Shift-Down>`` now do.
-                                                            ([lb] admits that Ctrl-Tab switches tabs in a lot of apps
-                                                            (vis-à-vis web browsers) but I've never found tabs to be
-                                                            useful in Vim, other than to run the ``:TabMessage`` command;
-                                                            I switch windows and buffers, not tabs.)
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-Shift-Tab>``         Reverse Traverse BufList      See previous notes.
-===========================  ============================  ==============================================================================
-
-You can also easily switch buffers by filename,
-but you might find it easier to always use a
-more general file-open command, like ``:CommandT``,
-which is mapped to ``<Ctrl-D>`` (see later section).
-
-===========================  ============================  ==============================================================================
- Key Mapping                  Description                   Notes
-===========================  ============================  ==============================================================================
- ``:b filena<CR>``            Switch to Buffer
-                              by (partial) Name
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``:ls``                      List buffer numbers           Hint: ``map <S-F2> :ls<CR>:b<Space>`` is a nifty switcheroo.
-                              and names
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Shift-F2>``               Show buffer list and          Calls ``:ls<CR>:b<Space>`` so you can see the list of buffers and
-                              prompt for number             then either type a buffer name or type (part of) a filename
-                              or (partial) name             followed by <enter> to switch buffers.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``__``                       Show buffer list prompt       Similar to ``<Shift-F2>``, but simpler.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Shift-Alt-2>``            Toggle ``:netrw``             This toggles the ``:netrw`` Explorer window.
-===========================  ============================  ==============================================================================
-
-Dubs Vim Window Commands
-------------------------
-
-These are window commands custom to Dubs Vim.
-
-===========================  ============================  ==============================================================================
- Key Mapping                  Description                   Notes
-===========================  ============================  ==============================================================================
- ``<Ctrl-Shift-Up>``          Move Cursor to Window         Moves the cursor to the window above the current window,
-                              Above or Leftward             or the window to the left.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-Shift-Down>``        Move Cursor to Window         Moves the cursor to the window to the right of
-                              to Right or Below             or below the current window.
-===========================  ============================  ==============================================================================
-
-Common Window Commands
-----------------------
-
-These are commonly-used window commands that are part of Vim
-(that is, these commands are not specific to Dubs Vim).
-This is just a refresher...
-
-===========================  ============================  ==============================================================================
- Key Mapping                  Description                   Notes
-===========================  ============================  ==============================================================================
- ``<Alt-w>c``                 Close Window                  Closes the window that the cursor is in.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Alt-w>o``                 "Only" Window                 Closes all window except the one containing the cursor.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Alt-w>p``                 Horizontal Split              Creates a new window by splitting the current window in half along the horizon.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Alt-w>s``                 Vertical Split                Creates a new window by splitting the current window in half along the vertical
-                                                            axis. Hint: If you want to compare two files side-by-side, open one file and
-                                                            then then other file, hit ``<Alt-w>s`` to split the window, and then hit
-                                                            ``<F2>`` to jump to the first buffer; now you're looking at both buffers.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-w><Shift-L>``        Move Window to the Left       Hint: If you have two windows split horizontally and the cursor is in the
-                                                            right window, use ``<Ctrl-W><Shift-L>`` to essentially swap windows, so the
-                                                            left-side window and buffer will now be on the right, and vice versa.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-w><Shift-R>``        Move Window to the Right      Opposite of ``<Ctrl-W><Shift-L>``: If you have the cursor in the left-most window,
-                                                            swap positions with the right-most window, if you've got two horizontally
-                                                            split windows showing.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-w><Shift-J/-K>``     Move Window Down or Up        Like the last two commands but useful when the two windows are split vertically.
-===========================  ============================  ==============================================================================
-
-Dubs Vim Tab Commands
----------------------
-
-These are tab commands custom to Dubs Vim.
-
-===========================  ============================  ==============================================================================
- Key Mapping                  Description                   Notes
-===========================  ============================  ==============================================================================
- ``<Alt-PageUp>``             Switch Tabs                   Changes to the next tab.
-                                                            I [lb] almost never uses tabs in Vim -- the exception being ``:TabMessage``.
-                                                            But if you use tabs, ``<Alt-PageUp>`` and ``<Alt-PageDown>``
-                                                            can be used to iterate through the list of tabs.
----------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Alt-PageDown>``           Switch Tabs                   The opposite of ``<Alt-PageUp>``; changes to previous tab.
-===========================  ============================  ==============================================================================
-
-#############################
-Dubs Vim |em_dash| Edit Juice
-#############################
+################################
+Dubs Vim |em_dash| Edit Juice 🧃
+################################
 
 .. |em_dash| unicode:: 0x2014 .. em dash
 
@@ -1059,51 +844,6 @@ This script originally started to make Vim emulate
 `EditPlus <https://www.editplus.com/>`__,
 but it's grown considerably since then to
 just make Vim a more comfortable editor all around.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_edit_juice.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_edit_juice
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-edit-juice
 
 Optional Vendor Plugins
 =======================
@@ -1367,16 +1107,10 @@ Editing and Formatting Text
  ``<Alt-Shift-Right>``              Select from Cursor                  Same as ``<Shift-End>``, or ``v$``.
                                     to End of Line
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-Shift-PageUp>``            Select from Cursor                  Executes ``vH``; same as ``<Alt-Shift-Up>``.
+ ``<Ctrl-Shift-PageUp>``            Select from Cursor                  Executes ``vH``.
                                     to First Line of Window
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-Shift-PageDown>``          Select from Cursor                  Executes ``vL``; same as ``<Alt-Shift-Down>``.
-                                    to Last Line of Window
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Alt-Shift-Up>``                 Select from Cursor                  Executes ``vH``; same as ``<Ctrl-Shift-PageUp>``.
-                                    to First Line of Window
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Alt-Shift-Down>``               Select from Cursor                  Executes ``vL``; same as ``<Ctrl-Shift-PageDown>``.
+ ``<Ctrl-Shift-PageDown>``          Select from Cursor                  Executes ``vL``.
                                     to Last Line of Window
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``<Tab>`` and ``<Shift-Tab>``      Indent and Undent                   Select some text in one or more lines and use ``<Tab>`` and ``<Shift-Tab>``
@@ -1421,6 +1155,9 @@ Key Mapping                            Description                         Notes
 ``M``                                  Move Cursor                         Moves the cursor to the middle of the window without scrolling the buffer.
                                        to Window Middle
 -------------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+``<Leader>dz``                         Recenter Window Vertically          Scrolls the window to move the cursor line to the center of the window.
+                                                                           (Same as builtin ``zz`` command, but also works from insert mode.)
+-------------------------------------  ----------------------------------  ------------------------------------------------------------------------------
 ``<Alt-F12>``                          Start Editing                       This is an obscure command: Moves the cursor to the middle of the window
                                        at Window Middle                    without scrolling the buffer and starts an edit session.
 -------------------------------------  ----------------------------------  ------------------------------------------------------------------------------
@@ -1441,6 +1178,34 @@ Key Mapping                            Description                         Notes
 ``<Shift>``-*other keys*               Select text motion                  Shift can be combined with most of the cursor movement commands above
                                                                            to select the text that the cursor flies over.
 =====================================  ==================================  ==============================================================================
+
+Changing Buffers
+----------------
+
+It's easy to switch between buffers between the next
+and last buffers in the history stack.
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Ctrl-J>``                 Reverse Traverse Buffers      Traverse buffer history backwards by most recently
+                                                            viewed; opposite of ``<Ctrl-K>``.
+                                                            - Hint: If you find yourself down a rabbit hole,
+                                                              opening file after file, and you can't remember
+                                                              what you were doing, hit ``<Ctrl-J>`` to crawl
+                                                              out of it.
+                                                            - Caveat: Splitting and Closing windows can mess
+                                                              up the buffer history, 'natch.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Ctrl-K>``                 Forward Traverse History      Traverse buffer history forwards by most recentlt
+                                                            viewed; opposite of ``<Ctrl-J>``.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Shift-Ctrl-Tab>``         Reverse Traverse Buffers      Traverse buffer list backward in the order that
+                                                            they were originally loaded; opposite of ``<Ctrl-Alt-Tab>``.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Ctrl-Tab>``               Forward Traverse Buffers      Traverse buffer list forward in the order that
+                                                            they were originally loaded; opposite of ``<Shift-Ctrl-Alt-Tab>``.
+===========================  ============================  ==============================================================================
 
 Developer Commands
 ------------------
@@ -1515,7 +1280,7 @@ Insert Date and Time Commands
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``ttt``                      Insert today's date           Insert time as "HH:MM".
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
- ``<Leader>T``                Insert today's date           Insert time as "/YYYY-MM-DD: ".
+ ``<Leader>t``                Insert today's date           Insert time as "/YYYY-MM-DD: ".
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<F12>``                    Insert today's date           Insert time as "/YYYY-MM-DD HH-MM: ".
 ===========================  ============================  ==============================================================================
@@ -1714,51 +1479,6 @@ This plugin customizes filetype-specific behavior,
 mostly by adding syntax highlighting for non-standard
 filetypes.
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_ftype_mess.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_ftype_mess
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-ftype-mess
-
 Key Mappings
 ============
 
@@ -1868,53 +1588,8 @@ About This Plugin
 
 This plugin sets up a powerful text search utility.
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_grep_steady.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_grep_steady
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-grep-steady
-
 Prerequisites
--------------
+=============
 
 This script uses an external grep utility.
 
@@ -1941,7 +1616,7 @@ This plugin also requires
 you're not expected to manage this plugin with Pathogen).
 
 Plugin Setup
-------------
+============
 
 You can search like normal, e.g.,::
 
@@ -2004,6 +1679,36 @@ Key Mapping                  Description                   Notes
 
 Tips 'n Tricks
 ==============
+
+Choose a Default Search Path
+----------------------------
+
+After you first start Vim and run your first grep-steady search
+using ``<F4>``, you will be prompted for the search location.
+
+To avoid the prompt, specify the default search index (from
+your ``dubs_projects.vim`` file), e.g., given the following
+projects file:
+
+.. code-block::
+
+  let g:ds_simple_grep_locat_lookup = [
+    \ "Search in:",
+    \
+    \ "[Enter 1 to Cancel]",
+    \ "2",
+    \ "/path/to/foo",
+    \ "/path/to/bar",
+    \ "5",
+    \]
+
+If you want the default search path to be ``/path/to/foo``,
+which is at index ``3``, you can define a global variable,
+e.g.:
+
+.. code-block::
+
+  let g:ds_simple_grep_default_list_i = 3
 
 Find Non-Ascii Characters
 -------------------------
@@ -2090,51 +1795,6 @@ I lifted the list of HTML4 Character Entities from TNT Luoma:
           surprise yourself sometimes after a backspace.
 
           Hint: Try ``:TabMessage digraph`` to copy and paste digraphs.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_html_entities.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_html_entities
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-html-entities
 
 Entity Table Commands
 =====================
@@ -2238,51 +1898,6 @@ This plugin provides a simple, elegant status line:
 - See also Tim Pope's
   `vim-flagship <https://github.com/tpope/vim-flagship>`__
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_mescaline.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_mescaline
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-mescaline
-
 ###############################
 Dubs Vim |em_dash| Project Tray
 ###############################
@@ -2306,51 +1921,6 @@ Additional features:
 
 - Enjoy a few small usability tweaks to the original
   Project plugin.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_project_tray.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_project_tray
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-project-tray
 
 Usage
 =====
@@ -2455,70 +2025,56 @@ The quickfix window is nifty but has a few limitations:
 - When hiding the quickfix, it affects other windows'
   heights, which this script stops from happening.
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_quickfix_wrap.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_quickfix_wrap
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-quickfix-wrap
-
 Quickfix Wrapper Commands
 =========================
 
 ==================================  ==================================  ==============================================================================
 Key Mapping                         Description                         Notes
 ==================================  ==================================  ==============================================================================
-``<Shift-Alt-3>``                   Toggle Quickfix window.             Show/Hide the
-                                                                        `QuickFix <http://vimdoc.sourceforge.net/htmldoc/quickfix.html>`__
-                                                                        window.
+``<Shift-Alt-3>``                   Toggle Quickfix window              Show/Hide the `QuickFix <https://vimhelp.org/quickfix.txt.html>`__ window.
 
-                                                                        The QuickFix list shows search results, stack traces, and log file output.
-                                                                        It occupies the bottom part of the screen, above the command line
-                                                                        (or above the MiniBufExplorer, if that's showing).
-----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
-``\S``                              Search-Replace Text in All Files    First search and populate the quickfix window (e.g.,
-                                    Listed in Quickfix Window.          type \g to call GrepPrompt_Simple and start a search).
-                                                                        Next, select text and then type \S to start a
-                                                                        find-replace operation that'll bufdo all the files
-                                                                        listed in the quickfix window.
+                                                                        The quickfix list shows search results, stack traces,
+                                                                        and log file output. It occupies the bottom part of
+                                                                        the screen, above the command line.
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``\S``                             Search and Replace Text             This is similar to ``\s`` but it searches and replaces
+                                    in All Files Listed                 text in all files listed in the quickfix window.
+                                    in the QuickFix Window
+                                                                        - Hint: Do an ``<F4>`` or ``\g`` search to populate the
+                                                                          quickfix list (these two commands are part of
+                                                                          `dubs_grep_steady
+                                                                          <https://github.com/landonb/dubs_grep_steady#🧐>`__).
+
+                                                                        - Double-click the first entry in the Quickfix search
+                                                                          results to open that buffer.
+
+                                                                        - Highlight the text you want to replace and then
+                                                                          hit ``\`` and then ``S``.
+
+                                                                        - Type the replacement text and hit return, and the
+                                                                          command will find and replace in all of the files
+                                                                          in the Quickfix list (using ``:bufdo``).
+
+                                                                        Caveat: If you are not happy with the results, you'll
+                                                                        have to |:undo| (or maybe <Ctrl-Z>_ each file that
+                                                                        was edited; fortunately, a single undo undoes all
+                                                                        of the changes in each buffer.
+
+                                                                        Caveat: If a substring of your replacement text
+                                                                        matches the original text, the function will
+                                                                        endlessly recurse, oops!
+
+                                                                        - Just type ``<Ctrl-C>`` to stop it (or ``<Cmd-.>``
+                                                                          in MacVim).
+
+                                                                        SAVVY: This command is slow! You might be better off
+			                                                                  using a Git pipeline to replace text across files.
+
+			                                                                  - For example, run something like this:
+
+			                                                                    ``git ls-files -z | 
+			                                                                      xargs -0 -I '{}' bash -c '[ -h "{}" ] \
+                                                                  			    || sed -i -e "s/<pat>/<sub>/g" "{}"'``
 ==================================  ==================================  ==============================================================================
 
 ##############################
@@ -2581,51 +2137,6 @@ be formatted specially. But if you want to edit it, you can type
   bottom of the file, which specifies ``ft=help``.) You can also use
   Vim's built-in ``:e`` command to re-read an open buffer and reset
   its editing settings.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/dubs_style_guard.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! dubs_style_guard
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help dubs-style-guard
 
 Modeline and Modeline Files
 ===========================
@@ -2854,9 +2365,9 @@ Key Mappings
                                                                         and fixes associated settings.
 =================================  ==================================  ==============================================================================
 
-###########################################
-Asynchronous, non-blocking insert mode maps
-###########################################
+###############################################
+Asynchronous, non-blocking insert mode maps જ⁀➴
+###############################################
 
 Use ``vim-async-map`` to add non-blocking insert mode maps using
 “regular” characters.
@@ -2965,8 +2476,8 @@ The most common use case is to replace ``vim-easyescape``:
 
    let timeout_msec = 100
 
-   call g:embrace#async_map#register_insert_mode_map("kj", "\<ESC>", timeout_msec)
-   call g:embrace#async_map#register_insert_mode_map("jk", "\<ESC>", timeout_msec)
+   call g:embrace#async_map#RegisterInsertModeMap("kj", "\<ESC>", timeout_msec)
+   call g:embrace#async_map#RegisterInsertModeMap("jk", "\<ESC>", timeout_msec)
 
 If you also wanted ``kj`` and ``jk`` to work from command mode, you
 could add two simple maps:
@@ -2984,8 +2495,8 @@ built-in ``j`` or ``k`` commands, e.g.,
 
    let timeout_msec = 100
 
-   call g:embrace#async_map#register_normal_mode_map("kj", "ji", timeout_msec)
-   call g:embrace#async_map#register_normal_mode_map("jk", "ki", timeout_msec)
+   call g:embrace#async_map#RegisterNormalModeMap("kj", "ji", timeout_msec)
+   call g:embrace#async_map#RegisterNormalModeMap("jk", "ki", timeout_msec)
 
 - So if you type ``kj``, the ``k`` moves the cursor up one row, and the
   ``j`` triggers the map command. And then the map command runs ``j`` to
@@ -3008,7 +2519,7 @@ built-in ``j`` or ``k`` commands, e.g.,
     fast as they can.)
 
 (You can see a real-world implementation in
-https://github.com/landonb/vim-ovm-easyescape-kj-jk/blob/2.0.0/plugin/vim_ovm_easyescape_kj_jk.vim.)
+https://github.com/landonb/vim-ovm-easyescape-kj-jk/blob/2.1.0/plugin/vim_ovm_easyescape_kj_jk.vim.)
 
 Common usage — map insert mode ``gf`` to normal mode ``gf`` (“goto file”)
 =========================================================================
@@ -3026,7 +2537,7 @@ normal mode command of the same name, e.g.,
    let timeout_msec = 100
 
    " Wire the `gf` key sequence to the `gf` command.
-   call g:embrace#async_map#register_insert_mode_map("gf", "gf", timeout_msec)
+   call g:embrace#async_map#RegisterInsertModeMap("gf", "gf", timeout_msec)
 
 You could similarly add a visual mode mapping:
 
@@ -3036,7 +2547,7 @@ You could similarly add a visual mode mapping:
    vnoremap gf y:edit <C-r>"<CR>
 
 (You can see a real-world implementation in
-https://github.com/embrace-vim/vim-goto-file-sh/blob/1.3.1/after/plugin/async-mode-maps.vim.)
+https://github.com/embrace-vim/vim-goto-file-sh/blob/1.4.0/after/plugin/async-mode-maps.vim.)
 
 Timeout values
 ==============
@@ -3062,7 +2573,7 @@ may need a longer timeout for other maps.
 
      let timeout_msec = 200
 
-     call g:embrace#async_map#register_insert_mode_map("gW", "gW", timeout_msec)
+     call g:embrace#async_map#RegisterInsertModeMap("gW", "gW", timeout_msec)
 
 Disable plugin for specific file types
 ======================================
@@ -3113,153 +2624,6 @@ Hints:
 
     https://github.com/DepoXy/depoxy/blob/1.4.0/home/.vim/\_mrconfig#L53-L108
 
-Installation
-============
-
-Installation is easy using the packages feature (see `:help
-packages <https://vimhelp.org/repeat.txt.html#packages>`__).
-
-To install the package so that it will automatically load on Vim
-startup, use a ``start`` directory, e.g.,
-
-::
-
-   mkdir -p ~/.vim/pack/embrace-vim/start
-   cd ~/.vim/pack/embrace-vim/start
-
-If you want to test the package first, make it optional instead (see
-`:help pack-add <https://vimhelp.org/repeat.txt.html#pack-add>`__):
-
-::
-
-   mkdir -p ~/.vim/pack/embrace-vim/opt
-   cd ~/.vim/pack/embrace-vim/opt
-
-Clone the project to the desired path:
-
-::
-
-   git clone https://github.com/embrace-vim/vim-async-map.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-::
-
-   :packadd! vim-async-map
-
-Just once, tell Vim to build the online help:
-
-::
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-::
-
-   :help vim-async-map
-
-Note that you’ll need to update the repo manually (e.g., ``git pull``
-occasionally).
-
-- If you’d like to be able to update from within Vim, you could use
-  `vim-plug <https://github.com/junegunn/vim-plug>`__.
-
-  - You could then skip the steps above and register the plugin like
-    this, e.g.:
-
-  ::
-
-     call plug#begin()
-
-     " List your plugins here
-     Plug 'embrace-vim/vim-async-map'
-
-     call plug#end()
-
-- And to update, call:
-
-  ::
-
-     :PlugUpdate
-
-- Similarly, there’s also
-  `Vundle <https://github.com/VundleVim/Vundle.vim>`__.
-
-  - You’d configure it something like this:
-
-  ::
-
-     set nocompatible              " be iMproved, required
-     filetype off                  " required
-
-     " set the runtime path to include Vundle and initialize
-     set rtp+=~/.vim/bundle/Vundle.vim
-     call vundle#begin()
-     " alternatively, pass a path where Vundle should install plugins
-     "call vundle#begin('~/some/path/here')
-
-     " let Vundle manage Vundle, required
-     Plugin 'VundleVim/Vundle.vim'
-
-     Plugin 'embrace-vim/vim-async-map'
-
-     " All of your Plugins must be added before the following line
-     call vundle#end()            " required
-     filetype plugin indent on    " required
-     " To ignore plugin indent changes, instead use:
-     "filetype plugin on
-
-- And then to update, call one of these:
-
-  ::
-
-     :PluginInstall!
-     :PluginUpdate
-
-- Or, if you’re like the author, you could use a multi-repo Git tool,
-  such as `myrepos <https://myrepos.branchable.com/>`__ (along with the
-  author’s library,
-  `ohmyrepos <https://github.com/landonb/ohmyrepos>`__)).
-
-  - With `myrepos <https://myrepos.branchable.com/>`__, you could update
-    all your Git repos with the following command:
-
-  ::
-
-     mr -d / pull
-
-- Alternatively, if you use
-  `ohmyrepos <https://github.com/landonb/ohmyrepos>`__, you could pull
-  just Vim plugin changes with something like this:
-
-  ::
-
-     MR_INCLUDE=vim-plugins mr -d / pull
-
-- After you identify your vim-plugins using the ‘skip’ action, e.g.:
-
-  ::
-
-     # Put this in ~/.mrconfig, or something loaded by it.
-     [DEFAULT]
-     skip = mr_exclusive "vim-plugins"
-
-     [pack/embrace-vim/start/vim-async-map]
-     lib = remote_set origin https://github.com/embrace-vim/vim-async-map.git
-
-     [DEFAULT]
-     skip = false
-
-Attribution
-===========
-
-The `embrace-vim <https://github.com/embrace-vim>`__ logo by
-`@landonb <https://github.com/landonb>`__ contains `coffee cup with
-straw by farra nugraha from Noun
-Project <https://thenounproject.com/icon/coffee-cup-with-straw-6961731/>`__
-(CC BY 3.0).
-
 Very Special Thanks
 ===================
 
@@ -3280,6 +2644,676 @@ So with gratitude and admiration, thanks you,
     | |__| (_| \__ \ |_| | | |___\__ \ (_| (_| | |_) |  __/
     |_____\__,_|___/\__, | |_____|___/\___\__,_| .__/ \___|
                     |___/                      |_|
+
+#####################################
+Visual Search Improvements for Vim 🕹
+#####################################
+.. Blinky, aka Shadow, "is the leader of the Ghosts and the
+   arch-enemy of Pac-Man", in the classic arcade 🕹 game.
+     https://pacman.fandom.com/wiki/Blinky
+
+.. contents:: :local:
+
+About This Plugin
+=================
+
+This plugin supercharges the familiar Vim ``star`` (``*``) and ``#`` search
+commands and adds the following features:
+
+- Search across newlines.
+
+  - You can select text spanning a line break and search that.
+
+- Search without regard for whitespace.
+
+  - A search for ``"foo  bar   baz"`` will match ``"foo bar baz"``.
+
+  - You can toggle this effect on and off (the toggle defaults
+    to ``<Leader>ds`` (``\ds``)).
+
+- Search variations of multiple-word identifiers (multi-case).
+
+  - A search for ``foo-bar``, ``fooBar`` or ``foo_bar`` will find
+    all of these case variations.
+
+  - You can toggle this effect to be always-on, always-off,
+    or to use the default behavior (the toggle defaults to
+    ``<Leader>dc`` (``\dc``)).
+
+  - By default, only ``<F8>`` and ``<Enter>`` enable multi-case.
+
+    If you run ``\dc`` once, you'll enable multi-case for all
+    search commands. And if you run it again, you'll disable
+    multi-case for all commands. Run a third time to reset
+    the default behavior (where only ``<F8>`` and ``<Enter>``
+    enable multi-case.)
+
+- Momentarily blink the match under the cursor.
+
+  - Depending on your Vim *colorscheme*, especially the cursor shape
+    and its color compared to the match highlight color, it might be
+    difficult to spot the cursor while matching. This blink feature
+    can help!
+
+  - You can toggle this effect on and off (the toggle defaults
+    to ``<Leader>dB`` (``\dB``)).
+
+- Center the cursor line vertically.
+
+  - When you advance the cursor to the next match, some of the plugin
+    commands will reposition the cursor line in the middle of the window.
+
+    - But not all of them — it depends on which map command you use.
+
+      By default, ``g*``, ``g#``, ``n`` and ``N`` will call ``zz`` to center the
+      line in the window.
+
+      But not the commands ``*``, ``#``, ``<F1>``, ``<S-F1>``, ``<F3>``, ``<S-F3>``,
+      ``<F8>``, or ``<Enter>``.
+
+    - You can also easily configure the plugin to not do this, or to
+      choose different keybindings.
+
+      See `User Configuration`_ for details on how to
+      pick your own command maps.
+
+This plugins maps a number of F-keys and other keys to help you search:
+
+- Start a search using ``<F1>`` and ``<Shift-F1>``. ``<F1>`` is similar to using
+  ``g*`` and will jump to the next match. ``<S-F1>`` is similar to using
+  ``*`` and stays put.
+
+  Advance to the next match using ``<F3>`` and ``<Shift-F3>`` instead of ``n`` and ``N``.
+
+  Start a multi-case search using ``<F8>`` or ``<Enter>`` (or toggle that feature
+  always-on with ``\dc``).
+
+  You can use any of the F-key commands from visual mode to start a new
+  search.
+
+  See the table under `Search Commands`_ for more details
+  about how these commands each work, and how they differ from one another.
+
+Inspiration
+===========
+
+.. |vim-slash| replace:: ``junegunn/vim-slash``
+.. _vim-slash: https://github.com/junegunn/vim-slash
+
+The newline and whitespace features are inspired by a classic Vim tip:
+
+https://vim.fandom.com/wiki/Search_for_visually_selected_text
+
+The blinky feature is inspired by a Stack Exchange answer that the
+author happened to run across (and that only has 5 upvotes! But it's
+way cooler than that =):
+
+https://vi.stackexchange.com/questions/8851/interrupting-blink-highlighting-function-if-mapping-is-invoked-again/13551#13551
+
+- Their post is based on Damian Conway's work, ``die_blinkënmatchen.vim``,
+  as found in *More Instantly Better Vim - OSCON 2013*.
+
+  https://www.youtube.com/watch?v=aHm36-na4-4
+
+- Albeit since then the ``die_blinkënmatchen.vim`` feature has been
+  replaced by a much more concise blink function, which has been
+  lovingly grifted from |vim-slash|_.
+
+The `multi-word identifier
+<https://en.wikipedia.org/wiki/Naming_convention_(programming)#Multiple-word_identifiers>`__
+feature is my creation, because sometimes I work on React code where
+variables have multiple identities (e.g., ``embraceVim`` and ``embrace-vim``)
+and I got annoyed after about the fifth time I hand-typed something like
+``embrace.\?vim`` so that I could search both at the same time.
+
+- Though I "borrowed" the case filters from `tpope/vim-abolish
+  <https://github.com/tpope/vim-abolish>`__ (it's only 19 lines of code,
+  but it's 19 lines of regexp which is, like, 19 hours of work ;).
+  Thank you, Tim Pope!
+
+Search Commands
+===============
+
+.. |vim-search-commands| replace:: ``:help search-commands``
+.. _vim-search-commands: https://vimhelp.org/pattern.txt.html#search-commands
+
+In stock Vim, ``*``, ``#``, ``g*``, ``g#``, ``/``, and ``?`` start a buffer search. You can then
+advance to the next match using ``n`` (forward match) and ``N`` (backward match).
+
+- Refer to |vim-search-commands|_ for more details on the builtin search commands.
+
+This plugin modifies ``*``, ``#``, ``g*``, and ``g#`` as described below, and it
+adds a number of additional commands.
+
+It's also easy to choose your own key sequences for the commands listed
+below. See the next section for more: `User Configuration`_
+
+=================================  ==================================  ==============================================================================
+ Key Mapping                        Description                         Notes
+=================================  ==================================  ==============================================================================
+ ``*``                              Restrictive Search                  Search buffer for exact word under cursor.
+                                    of Word Under Cursor
+                                    or Selected Text                    In stock Vim, this works from normal and visual mode.
+                                                                        With this plugin, it also works from select mode.
+                                                                        
+                                                                        When used from visual or select mode, this plugin
+                                                                        supports multiline searching (if the selected text
+                                                                        contains newlines). It can also be configured to
+                                                                        ignore, or not to ignore, differences in whitespace
+                                                                        (which you can toggle using ``\ds``).
+                                                                        
+                                                                        This plugin also centers the match line vertically
+                                                                        in the window (by calling ``zz``).
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``#``                              Restrictive Search                  Same as ``*``, but search backward.
+                                    in Reverse
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``g*``                             Substring Search                    Like ``*``, but don't put ``\<`` and ``\>`` around the word.
+                                    of Word Under Cursor                This makes the search also find matches that are not a
+                                    or Selected Text                    whole word.
+                                                                        
+                                                                        This command also centers the match line vertically
+                                                                        in the window (by calling ``zz``).
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``g#``                             Substring Search                    Like ``#``, but don't put ``\<`` and ``\>`` around the word.
+                                    in Reverse                          This makes the search also find matches that are not a
+                                                                        whole word.
+                                                                        
+                                                                        This command also centers the match line vertically
+                                                                        in the window (by calling ``zz``).
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``<F1>``                           Search Buffer for                   Search buffer for substring under cursor.
+                                    Word Under Cursor
+                                    or Selected Text                    Similar to ``g*`` — it searches more loosely.
+                                                                        
+                                                                        - For example, searching "foo" will also match the
+                                                                          "foo" in "foobar" (like ``g*``, but not like ``*``).
+                                                                        
+                                                                        When used from visual or select mode, this command
+                                                                        supports multiline search (i.e., so you select text
+                                                                        across newlines). And it will ignore differences in
+                                                                        whitespace if the ``\ds`` toggle is not disabled.
+                                                                        
+                                                                        This command works in the four main modes —
+                                                                        normal, insert, visual and select.
+                                                                        
+                                                                        Hint: To easily start a search, put the cursor on
+                                                                        a term to search, or select some text, and hit
+                                                                        ``<F1>``. Then use ``<F3>`` to continue searching.
+                                                                        
+                                                                        Caveat: If ``ignorecase`` and ``smartcase`` are enabled,
+                                                                        and if the search term is lowercase, you'll get
+                                                                        case-insensitive matches. But if the search term
+                                                                        is mixed- or upper-case, you'll get case-sensitive
+                                                                        matches.
+                                                                        
+                                                                        Note that in stock Vim, ``<F1>`` opens the ``:help``.
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``n``                              Forward Search Match                Move cursor forward to and highlight next search match.
+                                                                        
+                                                                        This works similar to the builtin ``n`` command, but
+                                                                        it also centers the match line vertically in the
+                                                                        window (using ``zz``) and momentarily blinks the match.
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``N``                              Backward Search Match               Move cursor backward to and highlight previous search match.
+                                                                        
+                                                                        This works similar to the builtin ``N`` command, but
+                                                                        it also centers the match line vertically in the
+                                                                        window (using ``zz``) and it quickly blinks the match.
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``<F3>``                           Forward Search Match                Move cursor forward to and highlight previous next match.
+                                                                        
+                                                                        This works similar to the ``n`` command, but it
+                                                                        does not center the match line (so it works like
+                                                                        the builtin ``n`` command).
+                                                                        
+                                                                        From visual or select mode, behaves like ``<F1>`` and
+                                                                        starts a search for the selected text, and jumps
+                                                                        to the next search match. The search may contain
+                                                                        newlines, and ``\ds`` can be toggled to disable/enable
+                                                                        wildcard whitespace matching.
+                                                                        
+                                                                        Hint: The search wraps at the end of the buffer.
+                                                                        When it wraps, you'll see a message highlighted in
+                                                                        red in the status window that reads, "search hit
+                                                                        BOTTOM, continuing at TOP".
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``<Shift-F3>``                     Backward Search Match               Move cursor backward to and highlight previous search match.
+                                                                        
+                                                                        This works similar to the ``N`` command, but it
+                                                                        does not center the match line (so it works like
+                                                                        the builtin ``N`` command).
+                                                                        
+                                                                        From visual or select mode, behaves like ``<F1>`` and
+                                                                        starts a search for the selected text, and it jumps
+                                                                        to the previous search match. The search may contain
+                                                                        newlines, and ``\ds`` can be toggled to disable/enable
+                                                                        wildcard whitespace matching.
+                                                                        
+                                                                        Like ``<F3>``, this command also wraps at the start
+                                                                        of the file and continues from the end, back up to
+                                                                        the cursor. It'll also report, e.g., "search hit TOP,
+                                                                        continuing at BOTTOM".
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``<F8>``                           Start Multicase Search              Start a search like ``<F1>``, but match different case
+                                                                        variations for the term.
+                                                                        
+                                                                        - For example, if you search the following word:
+                                                                        
+                                                                          .. code-block::
+                                                                        
+                                                                            fooBar
+                                                                        
+                                                                          the search will also find these two words:
+                                                                        
+                                                                          .. code-block::
+                                                                        
+                                                                            foo_bar
+                                                                        
+                                                                            foo-bar
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``<Enter>``                        Start Search and Highlight          Toggle highlighting of the word under the cursor and
+                                    Word Under Cursor                   use to start a search query. Press ``<Enter>`` again to
+                                                                        turn off highlighting.
+                                                                        
+                                                                        The search also finds different case variations for
+                                                                        the term, like it does for ``<F8>``.
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``<Shift-F1>``                     Start Search and Highlight          Start a search on the word under the cursor from
+                                    Word Under Cursor or Selection      normal or insert mode. From visual or select mode,
+                                                                        start a search using the selected text. Does not
+                                                                        jump to the next search match.
+                                                                        
+                                                                        Starting a search with ``<S-F1>`` is similar to using
+                                                                        ``*`` and searches for the exact word under the
+                                                                        cursor, unlike ``<F1>`` which searches more loosely.
+                                                                        
+                                                                        Otherwise the search follows the same rules as
+                                                                        searching with ``<F1>`` — it supports multiline
+                                                                        searches (the selected text may contain newlines).
+                                                                        It can also be configured to ignore, or not to
+                                                                        ignore, differences in whitespace (using ``\ds``).
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``<Ctrl-H>``                       Hide Search Highlights              Hide search highlights (calls ``:nohlsearch``).
+                                                                        
+                                                                        After you initiate a search, the matching words in
+                                                                        the buffers are highlighted. Use ``<Ctrl-H>`` to
+                                                                        disable the highlights.
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``\ds``                            Toggle Whitespace Behavior          Toggle whitespace matching behavior, which is used
+                                                                        by each search command in visual and select mode.
+                                                                        
+                                                                        The toggle defaults to matching loosely (wildcard
+                                                                        matching), such that selecting text that includes
+                                                                        whitespace and then using that selection to start
+                                                                        a search will ignore differences in whitespace.
+                                                                        
+                                                                        - For instance, if you select and search
+                                                                          ``"foo bar baz"``, then it would also match
+                                                                          ``"foo  bar   baz"``.
+                                                                        
+                                                                        - Likewise, searching ``"it "`` (with a space)
+                                                                          matches ``"it"`` (without a space).
+                                                                        
+                                                                        If you'd like to change the default behavior to
+                                                                        be strict about whitespace instead, you can set
+                                                                        a global variable from your config:
+                                                                        
+                                                                        .. code-block::
+                                                                        
+                                                                          let g:vim_blinky_search_strict = 1
+                                                                        
+                                                                        In the Vim tip this feature was lifted from, it
+                                                                        was known by its variable name, ``g:VeryLiteral``.
+---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
+ ``\dc``                            Toggle Multi-case Behavior          Toggle multi-case matching behavior.
+                                                                        
+                                                                        By default, multi-case behavior is only enabled
+                                                                        for ``<F8>`` and ``<Enter>``.
+                                                                        
+                                                                        This toggle lets you enable multi-case behavior
+                                                                        for all commands, or to disable it for all commands.
+                                                                        Toggle it a third time to restore defaults.
+=================================  ==================================  ==============================================================================
+
+User Configuration
+==================
+
+.. |after-plugin| replace:: ``after/plugin/vim-blinky-search.vim``
+.. _after-plugin: https://github.com/embrace-vim/vim-blinky-search/blob/release/after/plugin/vim-blinky-search.vim
+
+If you'd like to define your own maps, set the disable flag, and then
+call the create-map functions from your own config.
+
+- First, set the disable flag from your config:
+
+  .. code-block::
+
+    let g:blinky_search_disable = 1
+
+- Then call the map setup commands from your config.
+
+  Consult the |after-plugin|_ script to see how this
+  plugin configures all the commands listed above.
+
+  You could simply copy that file and modify it to taste.
+
+  Or, you could copy the following and edit it to your liking:
+
+  .. code-block::
+
+    " Wire various command to start search with different behavior
+    call g:embrace#blinky_search#CreateMaps_GStarSearch('<F1>')
+    call g:embrace#blinky_search#CreateMaps_StarSearchStayPut('<S-F1>')
+
+    " These two commands also enable multicase matching by default
+    call g:embrace#blinky_search#CreateMaps_GStarSearchStayPut('<F8>')
+    call g:embrace#blinky_search#CreateMaps_ToggleHighlight('<CR>')
+
+    " Wire two F-key commmands to next/prev match
+    call g:embrace#blinky_search#CreateMaps_SearchForward('<F3>')
+    call g:embrace#blinky_search#CreateMaps_SearchBackward('<S-F3>')
+
+    " Wire '*' and '#' from visual mode
+    call g:embrace#blinky_search#CreateMaps_StarPound_VisualMode()
+
+    " Wire the three feature toggles
+    call g:embrace#blinky_search#CreateMaps_ToggleBlinking('<Leader>dB')
+    call g:embrace#blinky_search#CreateMaps_ToggleMulticase('<Leader>dc')
+    call g:embrace#blinky_search#CreateMaps_ToggleStrict('<Leader>ds')
+
+    " Change builtins to also center match line with `zz`
+    call g:embrace#middle_matches#CreateMaps(['n', 'N', '*', '#', 'g*', 'g#'])
+
+    " Hide highlights with <Ctrl-H>
+    call g:embrace#hide_highlights#CreateMaps('<C-h>')
+
+    " Blink the current match momentarily — twice for 75 msec. each time
+    if has('timers')
+      nnoremap <expr> <Plug>(blinky-search-after) g:embrace#slash_blink#blink(2, 75)
+    endif
+
+Similar plugins
+===============
+
+.. |slash_blink.vim| replace:: ``autoload/embrace/slash_blink.vim``
+.. _slash_blink.vim: https://github.com/embrace-vim/vim-blinky-search/blob/release/autoload/embrace/slash_blink.vim
+
+See also these plugins the author found along the way:
+
+- ``thinca/vim-visualstar`` : *star(\*) for Visual-mode*:
+
+  https://github.com/thinca/vim-visualstar
+
+  https://www.vim.org/scripts/script.php?script_id=2944
+
+- ``junegunn/vim-slash``: *Enhancing in-buffer search experience*:
+
+  https://github.com/junegunn/vim-slash
+
+  - "Automatically clears search highlight when cursor is moved".
+
+  - Also changes ``*`` search to highlight without moving
+    (although scrolls the match line to the middle of window).
+
+  - Its blink highlight code is incorporated into
+    ``vim-blinky-search``'s |slash_blink.vim|_ file.
+
+- ``vim-evanesco``: *Automatically clears search highlight*:
+
+  https://github.com/pgdouyon/vim-evanesco
+
+  - ``vim-blinky-search`` wires a hide-highlight command you can use
+    (which defaults to ``<Ctrl-H>``), but if you'd like a more automated
+    solution that hides when you move the cursor or leave insert mode,
+    check out ``junegunn/vim-slash`` or ``pgdouyon/vim-evanesco``.
+
+Blinky Ghost
+============
+
+.. code-block::
+
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟥🟥🟥🟥🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛🟥⬜⬜🟥🟥🟥🟥⬜⬜🟥🟥🟥⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜🟥🟥⬜⬜⬜⬜🟥🟥⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛🟦🟦⬜⬜🟥🟥🟦🟦⬜⬜🟥🟥⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥🟦🟦⬜⬜🟥🟥🟦🟦⬜⬜🟥🟥🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥🟥⬜⬜🟥🟥🟥🟥⬜⬜🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥🟥⬛🟥🟥🟥⬛⬛🟥🟥🟥⬛🟥🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛🟥⬛⬛⬛🟥🟥⬛⬛🟥🟥⬛⬛⬛🟥⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+  ⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+
+################################################
+Delightful Buffer and Window Features for Vim 🍧
+################################################
+
+About This Plugin
+=================
+
+Buffer and window navigation features for Vim.
+
+- This plugin defines a bunch of window and buffer
+  navigation commands — see the list below.
+
+This plugin also defines a few automatic commands:
+
+- Automatically jump to the last known cursor position
+  when opening a file.
+
+- Enable ``hidden`` so buffers are not unloaded when abandoned.
+
+Disable The Plugin
+==================
+
+If you'd just like to use the ``autoload/`` functions, or nothing
+at all, set the following global to disable all command maps
+and ``plugin/`` setup:
+
+.. code-block::
+
+  let g:vim_buffer_delights_disable = 1
+
+Buffer-Related Commands
+=======================
+
+Switching MRU buffers
+---------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<F2>``                     Toggle MRU Buffer             Jump to the most recently used buffer:
+                                                            Loads the last loaded buffer in the current window (think ``:e #``).
+                                                            I.e., if you hit ``<F2>`` twice, you'll be looking at the same buffer.
+===========================  ============================  ==============================================================================
+
+Find buffers by name
+--------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Shift-F2>``               Show buffer list and          Calls ``:ls<CR>:b<Space>`` so you can see the list of buffers and
+                              prompt for number             then either type a buffer name or type (part of) a filename
+                              or (partial) name             followed by <enter> to switch buffers.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``__``                       Show buffer list prompt       Similar to ``<Shift-F2>``, but simpler.
+===========================  ============================  ==============================================================================
+
+Related Vim commands
+--------------------
+
+These two commands are provided by Vim, not this plugin. Just FYI, for comparison.
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``:b filena<CR>``            Switch to Buffer
+                              by (partial) Name
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``:ls``                      List buffer numbers           Hint: ``map <S-F2> :ls<CR>:b<Space>`` is a nifty *switcheroo*.
+                              and names
+===========================  ============================  ==============================================================================
+
+Window-Related Commands
+=======================
+
+Window-related commands
+-----------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Ctrl-Shift-Up>``          Move Cursor to Window         Moves the cursor to the window above the current window,
+                              Above or Leftward             or the window to the left.
+                                                            - Note: ``mswin.vim`` wires ``<Shift-Ctrl-Tab>`` to same.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Ctrl-Shift-Down>``        Move Cursor to Window         Moves the cursor to the window to the right of
+                              to Right or Below             or below the current window.
+                                                            - Note: ``mswin.vim`` wires ``<Ctrl-Tab>`` to same.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``vv``                       New Vertical Split            Creates a new vertical-split window, with the
+                                                            same buffer visible in each window.
+===========================  ============================  ==============================================================================
+
+Dubs Vim ``netrw`` Commands
+---------------------------
+
+These are window commands custom to Dubs Vim.
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Shift-Alt-2>``            Toggle ``:netrw``             Toggles the ``netrw`` ``:Lexplore`` window.
+===========================  ============================  ==============================================================================
+
+tmux-Compatible Navigation Commands
+===================================
+
+``<Ctrl-Up/Down/PageUp/PageDown>`` window jumpers
+-------------------------------------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Alt-Up>``                 Move Cursor to Window         Switch to Vim or tmux window above.
+                              Above
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-Down>``               Move Cursor to Window         Switch to Vim or tmux window below.
+                              Below
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-PageUp>``             Move Cursor to Window         Switch to Vim or tmux window leftward.
+                              Leftward
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-PageDown>``           Move Cursor to Window         Switch to Vim or tmux window rightward.
+                              Rightward
+===========================  ============================  ==============================================================================
+
+``<Cmd-Ctrl-Up/Down/Left/Right>`` window jumpers
+------------------------------------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Cmd-Ctrl-Up>``            Move Cursor to Window         Switch to Vim or tmux window above.
+                              Above
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Cmd-Ctrl-Down>``          Move Cursor to Window         Switch to Vim or tmux window below.
+                              Below
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Cmd-Ctrl-Left>``          Move Cursor to Window         Switch to Vim or tmux window leftward.
+                              Leftward
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Cmd-Ctrl-Right>``         Move Cursor to Window         Switch to Vim or tmux window rightward.
+                              Rightward
+===========================  ============================  ==============================================================================
+
+``<Cmd-Alt-Up/Down/Left/Right>`` window jumpers
+-----------------------------------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Cmd-Alt-Up>``             Move Cursor to Window         Switch to Vim or tmux window above.
+                              Above
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Cmd-Alt-Down>``           Move Cursor to Window         Switch to Vim or tmux window below.
+                              Below
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Cmd-Alt-Left>``           Move Cursor to Window         Switch to Vim or tmux window leftward.
+                              Leftward
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Cmd-Alt-Right>``          Move Cursor to Window         Switch to Vim or tmux window rightward.
+                              Rightward
+===========================  ============================  ==============================================================================
+
+``<Alt-Numpad>`` window jumpers
+-----------------------------------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Alt-8>``                  Move Cursor to Window         Switch to Vim or tmux window above.
+                              Above
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-2>``                  Move Cursor to Window         Switch to Vim or tmux window below.
+                              Below
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-4>``                  Move Cursor to Window         Switch to Vim or tmux window leftward.
+                              Leftward
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-6>``                  Move Cursor to Window         Switch to Vim or tmux window rightward.
+                              Rightward
+===========================  ============================  ==============================================================================
+
+MRU window jumper
+-----------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Alt-\>``                  Move Cursor to MRU Window     Toggle focus between current and previously-focused window.
+===========================  ============================  ==============================================================================
+
+Cyclical window jumpers
+-----------------------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Ctrl-Shift-Up>``          Move Cursor Counter-          Cycle focus counter-clockwise around windows.
+                              Clockwise
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Ctrl-Shift-Down>``        Move Cursor Clockwise         Cycle focus clockwise around windows.
+===========================  ============================  ==============================================================================
+
+Tab-Related Navigation Commands
+===============================
+
+Tab jumpers
+-----------
+
+===========================  ============================  ==============================================================================
+ Key Mapping                  Description                   Notes
+===========================  ============================  ==============================================================================
+ ``<Alt-Shift-Up>``           Previous Tab                  Switch to previous tab page.
+                                                            - Same as ``gt`` in normal mode.
+                                                            - Same as ``<Ctrl-Alt-PageDown>``.
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``<Alt-Shift-Down>``         Next Tab                      Switch to next tab page.
+                                                            - Same as ``gT`` in normal mode.
+                                                            - Same as ``<Ctrl-Alt-PageUp>``.
+===========================  ============================  ==============================================================================
 
 ###############
 vim-buffer-ring
@@ -3425,21 +3459,6 @@ The following options are available:
 
   Determines whether BufferRing messages are displayed in the status
   line.
-
-Installation
-============
-
-Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/start
-   cd ~/.vim/pack/landonb/start
-   git clone https://github.com/landonb/vim-buffer-ring.git
-   vim -u NONE -c "helptags vim-buffer-ring/doc" -c q
-
-To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
-instead and call ``:packadd vim-buffer-ring`` when ready.
 
 License
 =======
@@ -3629,59 +3648,6 @@ The following options are available:
   whatever message was printed to the command window, before the clock
   is repainted.
 
-Installation
-============
-
-Installation is easy using the packages feature (see
-``:help packages``).
-
-If you want the plugin to load automatically on Vim startup, use a
-``start/`` directory, e.g.,
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/start
-
-And then clone the project to that path:
-
-.. code:: shell
-
-   cd ~/.vim/pack/landonb/start
-   git clone https://github.com/landonb/vim-command-line-clock.git
-
-If you want to test the package first, make it optional instead (see
-``:help pack-add``):
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/opt
-   cd ~/.vim/pack/landonb/opt
-   git clone https://github.com/landonb/vim-command-line-clock.git
-
-   " When ready, load the [opt]ional plugin (or is it [opt]-in?).
-   :packadd! vim-command-line-clock
-
-To build the help, ensure the plugin is loaded, and then run the
-following command just one time from within Vim:
-
-.. code:: shell
-
-   :Helptags
-
-Or, you can build the help from the terminal instead. Run:
-
-.. code:: shell
-
-   vim -u NONE -c "helptags vim-command-line-clock/doc" -c q
-
-And then to view the help from within Vim, run:
-
-.. code:: shell
-
-   :help vim-command-line-clock
-
-Enjoy!
-
 #######################
 vim-depoxy-coc-defaults
 #######################
@@ -3845,8 +3811,9 @@ which will resize a gVim/MacVim window to fill the screen.
 
 But that trick breaks when there's more than one monitor attached.
 
-This plugin restricts the resize to just one monitor, and
-it also adjusts vertical splits to be equal widths.
+This plugin restricts the resize to just one monitor.
+
+After resizing, It also adjusts vertical splits to be equal widths.
 
 ===========================  ============================  ==============================================================================
  Key Mapping                  Description                   Notes
@@ -3862,59 +3829,19 @@ it also adjusts vertical splits to be equal widths.
 ===========================  ============================  ==============================================================================
 
 Override
---------
+========
 
-To use your own mappings, define ``g:TBVIMCreateDefaultMappings = 0`` to
-inhibit the ``<F11>`` and ``<S-F11>`` mappings, and then define your own.
+By default, this plugin will define both ``<F11>`` and ``<S-F11>`` maps,
+and it'll run on startup (to set window dimensions to mostly fullscreen).
 
-Installation
-============
+If you'd like to define your own maps and to call resize on your own time,
+you can inhibit the default behavior by setting a global variable::
 
-Installation is easy using the packages feature (see ``:help packages``).
+  let g:vim_fullscreen_toggle_disable = 1
 
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-fullscreen-toggle.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-fullscreen-toggle
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-fullscreen-toggle
-
-####################
-``vim-goto-file-sh``
-####################
+######################################
+Open ``${VAR:-/paths}`` with ``gf`` 🚕
+######################################
 
 About This Plugin
 =================
@@ -4107,165 +4034,6 @@ See also these similar project(s):
 
   |vim-apathy|_
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block::
-
-    mkdir -p ~/.vim/pack/embrace-vim/start
-    cd ~/.vim/pack/embrace-vim/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block::
-
-    mkdir -p ~/.vim/pack/embrace-vim/opt
-    cd ~/.vim/pack/embrace-vim/opt
-
-Clone the project to the desired path:
-
-.. code-block::
-
-    git clone https://github.com/embrace-vim/vim-goto-file-sh.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-    :packadd! vim-goto-file-sh
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-    :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-    :help vim-goto-file-sh
-
-.. |vim-plug| replace:: ``vim-plug``
-.. _vim-plug: https://github.com/junegunn/vim-plug
-
-.. |Vundle| replace:: ``Vundle``
-.. _Vundle: https://github.com/VundleVim/Vundle.vim
-
-.. |myrepos| replace:: ``myrepos``
-.. _myrepos: https://myrepos.branchable.com/
-
-.. |ohmyrepos| replace:: ``ohmyrepos``
-.. _ohmyrepos: https://github.com/landonb/ohmyrepos
-
-Note that you'll need to update the repo manually (e.g., ``git pull``
-occasionally).
-
-- If you'd like to be able to update from within Vim, you could use
-  |vim-plug|_.
-
-  - You could then skip the steps above and register
-    the plugin like this, e.g.:
-
-.. code-block:: vim
-
-    call plug#begin()
-
-    " List your plugins here
-    Plug 'embrace-vim/vim-goto-file-sh'
-
-    call plug#end()
-
-- And to update, call:
-
-.. code-block:: vim
-
-    :PlugUpdate
-
-- Similarly, there's also |Vundle|_.
-
-  - You'd configure it something like this:
-
-.. code-block:: vim
-
-    set nocompatible              " be iMproved, required
-    filetype off                  " required
-
-    " set the runtime path to include Vundle and initialize
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
-    " alternatively, pass a path where Vundle should install plugins
-    "call vundle#begin('~/some/path/here')
-
-    " let Vundle manage Vundle, required
-    Plugin 'VundleVim/Vundle.vim'
-
-    Plugin 'embrace-vim/vim-goto-file-sh'
-
-    " All of your Plugins must be added before the following line
-    call vundle#end()            " required
-    filetype plugin indent on    " required
-    " To ignore plugin indent changes, instead use:
-    "filetype plugin on
-
-- And then to update, call one of these:
-
-.. code-block:: vim
-
-    :PluginInstall!
-    :PluginUpdate
-
-- Or, if you're like the author, you could use a multi-repo Git tool,
-  such as |myrepos|_ (along with the author's library, |ohmyrepos|_).
-
-  - With |myrepos|_, you could update all your Git repos with
-    the following command:
-
-.. code-block::
-
-    mr -d / pull
-
-- Alternatively, if you use |ohmyrepos|_, you could pull
-  just Vim plugin changes with something like this:
-
-.. code-block::
-
-    MR_INCLUDE=vim-plugins mr -d / pull
-
-- After you identify your vim-plugins using the 'skip' action, e.g.:
-
-.. code-block::
-
-    # Put this in ~/.mrconfig, or something loaded by it.
-    [DEFAULT]
-    skip = mr_exclusive "vim-plugins"
-
-    [pack/embrace-vim/start/vim-goto-file-sh]
-    lib = remote_set origin https://github.com/embrace-vim/vim-goto-file-sh.git
-
-    [DEFAULT]
-    skip = false
-
-Attribution
-===========
-
-.. |embrace-vim| replace:: ``embrace-vim``
-.. _embrace-vim: https://github.com/embrace-vim
-
-.. |@landonb| replace:: ``@landonb``
-.. _@landonb: https://github.com/landonb
-
-The |embrace-vim|_ logo by |@landonb|_ contains
-`coffee cup with straw by farra nugraha from Noun Project
-<https://thenounproject.com/icon/coffee-cup-with-straw-6961731/>`__
-(CC BY 3.0).
-
 ####################
 vim-lcd-project-root
 ####################
@@ -4289,21 +4057,6 @@ Commands
 ========
 
 None. Runs on ``BufRead *``, i.e., when starting to edit a new buffer.
-
-Installation
-============
-
-Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/start
-   cd ~/.vim/pack/landonb/start
-   git clone https://github.com/landonb/vim-lcd-project-root.git
-   vim -u NONE -c "helptags vim-lcd-project-root/doc" -c q
-
-To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
-instead and call ``:packadd vim-lcd-project-root`` when ready.
 
 License
 =======
@@ -4349,51 +4102,6 @@ or perhaps from a script after updating the input file, e.g.,
     vim -c "call g:mkspell_when_stale#MkspellWhenStale()" -c q
   }
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-mkspell-when-stale.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-mkspell-when-stale
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-mkspell-when-stale
-
 ############################
 vim-netrw-cfg-split-explorer
 ############################
@@ -4438,21 +4146,6 @@ None. Sets a few ``g:*`` netrw configuration values.
      " Options: 'thin', one-file-per-line (0); long (1); wide (2); and tree (3).
      let g:netrw_liststyle = 0
 
-Installation
-============
-
-Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/start
-   cd ~/.vim/pack/landonb/start
-   git clone https://github.com/landonb/vim-netrw-cfg-split-explorer.git
-   vim -u NONE -c "helptags vim-netrw-cfg-split-explorer/doc" -c q
-
-To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
-instead and call ``:packadd vim-netrw-cfg-split-explorer`` when ready.
-
 License
 =======
 
@@ -4460,6 +4153,119 @@ Copyright (c) Landon Bouma. This work is distributed wholly under CC0
 and dedicated to the Public Domain.
 
 https://creativecommons.org/publicdomain/zero/1.0/
+
+##############################################
+Convenient Netrw ``:Explore`` Map Commands  🐾
+##############################################
+
+Wire convenient ``:Explore [dir]`` command maps.
+
+Initialization
+==============
+
+Your Vim config must initialize the plugin, otherwise it won't do anything.
+
+Call something like this from your Vim config:
+
+.. code-block::
+
+  let notable_notes_mappings = [
+    \   ["<Leader>p", "~/path/to/dir1"],
+    \   ["<Leader>P", "~/path/to/dir2"],
+    \   ["<Leader><M-p>", "~/path/to/dir3"],
+    \   ["<Leader><M-P>", "~/path/to/dir4"],
+    \ ]
+
+  call g:embrace#explore#CreateMapsAndSetupNetrw(notable_notes_mappings)
+
+This will create 4 maps:
+
+- ``\p`` will explore ``~/path/to/dir1``.
+
+- ``\P`` will explore ``~/path/to/dir2``.
+
+- ``\<Alt-p>`` will explore ``~/path/to/dir3``.
+
+- ``\<Alt-P>`` will explore ``~/path/to/dir4``.
+
+Dependencies
+============
+
+This plugin uses a command from ``embrace-vim/vim-buffer-delights``
+to avoid opening files in a special buffer:
+
+https://github.com/embrace-vim/vim-buffer-delights 🍧
+
+This plugin will issue a single warning if the ``vim-buffer-delights``
+plugin is not installed, but it will otherwise work.
+
+- You can disable the warning with a global variable:
+
+.. code-block::
+
+  let g:vim_buffer_delights_alerts_disable = 1
+
+The ``vim-buffer-delights`` plugin will wire a number of window and
+buffer command maps, which you can disable with a global variable:
+
+.. code-block::
+
+  let g:vim_buffer_delights_disable = 1
+
+Hints
+=====
+
+The author uses maps like these to explore a directory of symlinks,
+where each symlink is prefixed "00", "01", etc., and each symlink
+points to a text file that I often edit.
+
+Then, when you run the map command (e.g., ``\p`` from the example above),
+you can:
+
+- Look at file you want to open.
+
+- Type the number indicated.
+
+- Hit the down arrow.
+
+- Press ``<Enter>`` to open the file.
+
+E.g., ``\p4↓<CR>`` takes 5 keystrokes to open a specific file.
+
+This plugin is just one example of many options for opening commonly
+edited files:
+
+- You could wire a Vim ``map`` to the specific file.
+
+  - E.g., you could wire ``<Alt-p>``::
+
+      nnoremap <M-p> :e ~/path/to/dir1/file<CR>
+
+- You could instead use an OS accelerator mapping.
+
+  - E.g., using `Hammerspoon <https://www.hammerspoon.org/>`__,
+    and |gvim-open-kindness|_ 🐬, you could wire ``<Alt-p>``::
+
+      local alt_p = hs.hotkey.bind({"alt"}, "P", function()
+        gvim_open_kindness("~/path/to/dir1/file")
+      end)
+
+.. |gvim-open-kindness| replace:: ``gvim-open-kindness``
+.. _gvim-open-kindness: https://github.com/DepoXy/gvim-open-kindness
+
+- You could use a fuzzy-finder, such as ``junegunn/fzf.vim``:
+
+  https://github.com/junegunn/fzf
+
+  https://github.com/junegunn/fzf.vim
+
+In the first two examples above, it takes just one keystroke to open
+the file, but if you have lots of files you'd like easy access to,
+you might quickly run out of convenient bindings. Or you might not
+remember them all!
+
+By using ``vim-netrw-explore-map``, we hope it makes it easier to
+quickly find and open your favorite text files.
 
 ######################
 vim-netrw-link-resolve
@@ -4499,21 +4305,6 @@ running that version or better. (Alternatively, you could copy
 ``netrw.vim`` from the latest Vim source to this plugin’s ``autoload/``
 directory, if you are unable to find or build a newer version of Vim.)
 
-Installation
-============
-
-Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/start
-   cd ~/.vim/pack/landonb/start
-   git clone https://github.com/landonb/vim-netrw-link-resolve.git
-   vim -u NONE -c "helptags vim-netrw-link-resolve/doc" -c q
-
-To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
-instead and call ``:packadd vim-netrw-link-resolve`` when ready.
-
 License
 =======
 
@@ -4552,53 +4343,6 @@ NOTE: On Linux, pressing Space or Enter will accept the default dialog
 choice ("Load File"), but on macOS (MacVim), you'll want to press Return
 (as pressing Space will "OK" the dialog, which does not reload the file).
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-nicer-file-changed-prompt.git
-
-If you installed to the optional path (``opt``), tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-nicer-file-changed-prompt
-
-otherwise Vim will automatically load the plugin when installed to ``start``.
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-nicer-file-changed-prompt
-
 ############################################################
 One Vimmer's Maps |em_dash| <kj> or <jk> Escapes Insert Mode
 ############################################################
@@ -4621,53 +4365,6 @@ This plugin wires mappings to commands provided by another plugin,
 
   https://github.com/zhou13/vim-easyescape
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-ovm-easyescape-kj-jk.git
-
-If you installed to the optional path (``opt``), tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-ovm-easyescape-kj-jk
-
-otherwise Vim will automatically load the plugin when installed to ``start``.
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-ovm-easyescape-kj-jk
-
 ##################################################################
 One Vimmer's Maps |em_dash| <Ctrl-Shift--> inserts ``-------\n\n``
 ##################################################################
@@ -4681,53 +4378,6 @@ This plugin inserts seven dashes and two newlines when you press `Ctrl-Shift--`.
 
 This plugin is part of a larger suite of plugins that comprise features and
 mappings for maintaining notes files according to the `reSTfold` `method`.
-
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-ovm-seven-of-spines.git
-
-If you installed to the optional path (``opt``), tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-ovm-seven-of-spines
-
-otherwise Vim will automatically load the plugin when installed to ``start``.
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-ovm-seven-of-spines
 
 ###############################################
 ``vim-reSTfold`` |em_dash| reST Document Folder
@@ -5080,51 +4730,6 @@ well with this plugin to help you take notes in Vim:
   Useful for adding a visual separation to your notes without
   using a reST section heading.
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-reSTfold.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-reSTfold
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-reSTfold
-
 ###############################################################
 ``vim-reST-highdefs`` |em_dash| Extended reST Syntax Highlights
 ###############################################################
@@ -5291,40 +4896,6 @@ well with this plugin to help you take notes in Vim:
   Useful for adding a visual separation to your notes without
   using a reST section heading.
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package such that it automatically loads on Vim startup,
-use a ``start`` directory, e.g.,
-::
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-Or, if you want to test the package first, make it optional instead
-(see ``:help pack-add``)::
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Next, clone the project to the path you chose::
-
-    git clone https://github.com/landonb/vim-reST-highdefs.git
-
-If you installed to the optional path, tell Vim to load the package::
-
-   :packadd! vim-reST-highdefs
-
-Just once, tell Vim to build the online help::
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run::
-
-   :help vim-reST-highdefs
-
 License
 =======
 
@@ -5410,8 +4981,8 @@ Other uses include documenting interesting information, such as using
   SAVVY: Search Gmail by date: `after:YYYY/MM/DD before:YYYY/MM/DD`
 
 Or you could use "REFER" to reference information outside your notes
-(and maybe you've got the `dubs_web_hatch
-<https://github.com/landonb/dubs_web_hatch>`__ plugin installed, so you
+(and maybe you've got the `vim-webopen
+<https://github.com/embrace-vim/vim-webopen>`__ plugin installed, so you
 could type ``<gW>`` to open the URL under the cursor), e.g.,::
 
   REFER: Anduril 2 Manual:
@@ -5607,51 +5178,6 @@ well with this plugin to help you take notes in Vim:
   Useful for adding a visual separation to your notes without
   using a reST section heading.
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-reST-highfive.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-reST-highfive
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-reST-highfive
-
 License
 =======
 
@@ -5789,51 +5315,6 @@ well with this plugin to help you take notes in Vim:
   width, and not necessarily that it's five long — but *FIXME* is
   the ultimate developer action word, so might as well be five.)
 
-Installation
-============
-
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/start
-    cd ~/.vim/pack/landonb/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block:: bash
-
-    mkdir -p ~/.vim/pack/landonb/opt
-    cd ~/.vim/pack/landonb/opt
-
-Clone the project to the desired path:
-
-.. code-block:: bash
-
-    git clone https://github.com/landonb/vim-reST-highline.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-   :packadd! vim-reST-highline
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-   :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-   :help vim-reST-highline
-
 License
 =======
 
@@ -5952,26 +5433,29 @@ and then map the key bindings from your own code, e.g.,::
 
   let g:vim_select_mode_stopped_down_no_mappings = 1
 
-  nnoremap <silent> <C-S-Left> :<C-U>call <SID>extend_selection_by_word_reverse('n')<CR>
-  inoremap <silent> <C-S-Left> <C-O>:<C-U>call <SID>extend_selection_by_word_reverse('i')<CR>
-  vnoremap <silent> <C-S-Left> :<C-U>call <SID>extend_selection_by_word_reverse('v')<CR>
+  nnoremap <silent> <C-S-Left> :<C-U>call g:embrace#alt_select_motion#extend_selection_by_word_reverse('n')<CR>
+  inoremap <silent> <C-S-Left> <C-O>:<C-U>call g:embrace#alt_select_motion#extend_selection_by_word_reverse('i')<CR>
+  vnoremap <silent> <C-S-Left> :<C-U>call g:embrace#alt_select_motion#extend_selection_by_word_reverse('v')<CR>
 
-  nnoremap <silent> <C-S-Right> :<C-U>call <SID>extend_selection_by_word_forward('n')<CR>
-  inoremap <silent> <C-S-Right> <C-O>:<C-U>call <SID>extend_selection_by_word_forward('i')<CR>
-  vnoremap <silent> <C-S-Right> :<C-U>call <SID>extend_selection_by_word_forward('v')<CR>
+  nnoremap <silent> <C-S-Right> :<C-U>call g:embrace#alt_select_motion#extend_selection_by_word_forward('n')<CR>
+  inoremap <silent> <C-S-Right> <C-O>:<C-U>call g:embrace#alt_select_motion#extend_selection_by_word_forward('i')<CR>
+  vnoremap <silent> <C-S-Right> :<C-U>call g:embrace#alt_select_motion#extend_selection_by_word_forward('v')<CR>
 
-############################
-Dubs Vim |em_dash| Web Hatch
-############################
+  nnoremap <C-Left> b
+  inoremap <C-Left> <C-O>b
 
-.. |em_dash| unicode:: 0x2014 .. em dash
+  nnoremap <silent> <C-Right> :<C-U>call g:embrace#alt_word_motion#forward_text_next_word('n', -1)<CR>
+  inoremap <silent> <C-Right> <C-\><C-O>:call g:embrace#alt_word_motion#forward_text_next_word('i', -1)<CR>
 
-Simple URL opener with search and word definition options.
+################################
+Open URLs in external browser 🐣
+################################
 
-At its core, opens a location in your default browser.
+Open URLs from Vim. Or search the web, define words, or use an incognito
+(private) window.
 
-It can also Google search or define a selected word, or open
-a URL in an incognito (private) window.
+Use this plugin to define your choice of normal, insert, and visual mode
+commands and their key sequences.
 
 Initialization
 ==============
@@ -5982,17 +5466,17 @@ Call this from your Vim config:
 
 .. code-block::
 
-    call embrace#vim_web_hatch#create_maps()
+    call g:embrace#webopen#CreateMaps()
 
-See `Command Configuration`_ below for details on how to choose
-what commands to enable, and what key sequences to use to map them.
+See `Command Configuration`_ below for details on how to choose which
+commands to enable, and how to specify which key sequences to use.
 
 Default Commands
 ================
 
-Without any configuration, ``vim-web-hatch`` will configure the following
+Without any configuration, ``vim-webopen`` will configure the following
 maps in each of three separate modes — normal mode, insert mode, and visual
-mode. ``vim-web-hatch`` will not redefine an existing command. See the next
+mode. ``vim-webopen`` will not redefine an existing command. See the next
 section for customizing or disabling each command map.
 
 
@@ -6046,12 +5530,12 @@ For example, the default commands (listed above) are configured like this:
 
 .. code-block::
 
-    let g:vim_web_hatch_open_url_seq = "<Leader>T"
-    let g:vim_web_hatch_google_define_seq = "<Leader>D"
-    let g:vim_web_hatch_google_search_seq = "<Leader>W"
-    let g:vim_web_hatch_open_incognito_seq = "<Leader>P"
+    let g:vim_webopen_open_location_seq = "<Leader>T"
+    let g:vim_webopen_google_define_seq = "<Leader>D"
+    let g:vim_webopen_google_search_seq = "<Leader>W"
+    let g:vim_webopen_open_incognito_seq = "<Leader>P"
 
-    call embrace#vim_web_hatch#create_maps()
+    call g:embrace#webopen#CreateMaps()
 
 OPTION 2
 --------
@@ -6068,7 +5552,7 @@ Option 2: Define a single global variable Dictionary.
 
 .. code-block::
 
-    let g:vim_web_hatch_maps = { "open": { "nmap": [ "<Leader>T", "gW" ] } }
+    let g:vim_webopen_maps = { "open": { "nmap": [ "<Leader>T", "gW" ] } }
 
 - To inhibit maps for a specific feature, set the top-level
   value to an empty dictionary, e.g., to skip the incognito
@@ -6076,7 +5560,7 @@ Option 2: Define a single global variable Dictionary.
 
 .. code-block::
 
-    let g:vim_web_hatch_maps = { "incognito": {} }
+    let g:vim_webopen_maps = { "incognito": {} }
 
 - Or, to inhibit maps for a specific mode, set the nested dictionary
   value to an empty string or to an empty list.
@@ -6086,10 +5570,10 @@ Option 2: Define a single global variable Dictionary.
 
 .. code-block::
 
-    let g:vim_web_hatch_maps =
+    let g:vim_webopen_maps =
       \ { "open": { "nmap": "", "imap": [], "vmap": "<Leader>T" } }
 
-- Note the plugin uses ``g:vim_web_hatch_maps`` if a top-level key
+- Note the plugin uses ``g:vim_webopen_maps`` if a top-level key
   is found (like "open"). But it will look for the Option 1
   variable if the top-level key is missing.
 
@@ -6106,7 +5590,7 @@ visual mode:
 
 .. code-block::
 
-    let g:vim_web_hatch_maps =
+    let g:vim_webopen_maps =
       \ {
       \   "open":
       \     {
@@ -6118,7 +5602,7 @@ visual mode:
       \   "search": "<Leader>W",
       \   "incognito": { "nmap": "g!" },
 
-    call embrace#vim_web_hatch#create_maps()
+    call g:embrace#webopen#CreateMaps()
 
 Tip: If you'd like to avoid a long dictionary definition, you
 can build the dictionary one key-value at a time.
@@ -6128,34 +5612,34 @@ can build the dictionary one key-value at a time.
 
 .. code-block::
 
-    let g:vim_web_hatch_maps = {}
+    let g:vim_webopen_maps = {}
 
-    let g:vim_web_hatch_maps.open = {}
-    let g:vim_web_hatch_maps.define = {}
-    let g:vim_web_hatch_maps.search = {}
-    let g:vim_web_hatch_maps.incognito = {}
+    let g:vim_webopen_maps.open = {}
+    let g:vim_webopen_maps.define = {}
+    let g:vim_webopen_maps.search = {}
+    let g:vim_webopen_maps.incognito = {}
 
-    let g:vim_web_hatch_maps.open.nmap = [ "<Leader>T", "gW" ]
-    let g:vim_web_hatch_maps.open.imap = "<Leader>T"
-    let g:vim_web_hatch_maps.open.vmap = "<Leader>T"
+    let g:vim_webopen_maps.open.nmap = [ "<Leader>T", "gW" ]
+    let g:vim_webopen_maps.open.imap = "<Leader>T"
+    let g:vim_webopen_maps.open.vmap = "<Leader>T"
 
-    let g:vim_web_hatch_maps.define.nmap = "<Leader>D"
-    let g:vim_web_hatch_maps.define.imap = "<Leader>D"
-    let g:vim_web_hatch_maps.define.vmap = "<Leader>D"
+    let g:vim_webopen_maps.define.nmap = "<Leader>D"
+    let g:vim_webopen_maps.define.imap = "<Leader>D"
+    let g:vim_webopen_maps.define.vmap = "<Leader>D"
 
-    let g:vim_web_hatch_maps.search.nmap = "<Leader>W"
-    let g:vim_web_hatch_maps.search.imap = "<Leader>W"
-    let g:vim_web_hatch_maps.search.vmap = "<Leader>W"
+    let g:vim_webopen_maps.search.nmap = "<Leader>W"
+    let g:vim_webopen_maps.search.imap = "<Leader>W"
+    let g:vim_webopen_maps.search.vmap = "<Leader>W"
 
-    let g:vim_web_hatch_maps.incognito.nmap = "g!"
+    let g:vim_webopen_maps.incognito.nmap = "g!"
 
-    call embrace#vim_web_hatch#create_maps()
+    call g:embrace#webopen#CreateMaps()
 
-.. |vim-web-hatch-config| replace:: ``https://github.com/DepoXy/depoxy/blob/release/home/.vim/pack/DepoXy/start/vim-depoxy/plugin/vim-web-hatch-config.vim``
-.. _vim-web-hatch-config: https://github.com/DepoXy/depoxy/blob/release/home/.vim/pack/DepoXy/start/vim-depoxy/plugin/vim-web-hatch-config.vim
+.. |vim-webopen-config| replace:: ``https://github.com/DepoXy/depoxy/blob/1.7.5/home/.vim/pack/DepoXy/start/vim-depoxy/plugin/vim-webopen-config.vim``
+.. _vim-webopen-config: https://github.com/DepoXy/depoxy/blob/1.7.5/home/.vim/pack/DepoXy/start/vim-depoxy/plugin/vim-webopen-config.vim
 
 (You can see a real-world implementation in
-|vim-web-hatch-config|_.)
+|vim-webopen-config|_.)
 
 Browser Configure
 =================
@@ -6200,7 +5684,7 @@ By default, each command opens a new browser tab in new window.
 - To instead prefer opening a new tab in an existing window,
   set the following global variable to nonzero, e.g.,::
 
-    g:dubs_web_hatch_use_tab = 1
+    g:vim_webopen_use_tab = 1
 
 User Profile
 ------------
@@ -6210,7 +5694,7 @@ By default, when Chrome is opened, the default user profile is used.
 - To instead open a window using the most recently used profile,
   set the following global variable to nonzero, e.g.,::
 
-    g:dubs_web_hatch_mru_profile = 1
+    g:vim_webopen_mru_profile = 1
 
 Supported Browsers
 ------------------
@@ -6226,224 +5710,127 @@ respect tab vs. window, nor can it open a location in incognito mode.
 
 Please feel free to open a pull request to add support for additional browsers.
 
-Installation
-============
+########################################
+Quickly source Vim scripts at runtime 🔃
+########################################
 
-Installation is easy using the packages feature (see ``:help packages``).
-
-To install the package so that it will automatically load on Vim startup,
-use a ``start`` directory, e.g.,
-
-.. code-block::
-
-    mkdir -p ~/.vim/pack/embrace-vim/start
-    cd ~/.vim/pack/embrace-vim/start
-
-If you want to test the package first, make it optional instead
-(see ``:help pack-add``):
-
-.. code-block::
-
-    mkdir -p ~/.vim/pack/embrace-vim/opt
-    cd ~/.vim/pack/embrace-vim/opt
-
-Clone the project to the desired path:
-
-.. code-block::
-
-    git clone https://github.com/embrace-vim/vim-web-hatch.git
-
-If you installed to the optional path, tell Vim to load the package:
-
-.. code-block:: vim
-
-    :packadd! vim-web-hatch
-
-Just once, tell Vim to build the online help:
-
-.. code-block:: vim
-
-    :Helptags
-
-Then whenever you want to reference the help from Vim, run:
-
-.. code-block:: vim
-
-    :help vim-web-hatch
-
-.. |vim-plug| replace:: ``vim-plug``
-.. _vim-plug: https://github.com/junegunn/vim-plug
-
-.. |Vundle| replace:: ``Vundle``
-.. _Vundle: https://github.com/VundleVim/Vundle.vim
-
-.. |myrepos| replace:: ``myrepos``
-.. _myrepos: https://myrepos.branchable.com/
-
-.. |ohmyrepos| replace:: ``ohmyrepos``
-.. _ohmyrepos: https://github.com/landonb/ohmyrepos
-
-Note that you'll need to update the repo manually (e.g., ``git pull``
-occasionally).
-
-- If you'd like to be able to update from within Vim, you could use
-  |vim-plug|_.
-
-  - You could then skip the steps above and register
-    the plugin like this, e.g.:
-
-.. code-block:: vim
-
-    call plug#begin()
-
-    " List your plugins here
-    Plug 'embrace-vim/vim-web-hatch'
-
-    call plug#end()
-
-- And to update, call:
-
-.. code-block:: vim
-
-    :PlugUpdate
-
-- Similarly, there's also |Vundle|_.
-
-  - You'd configure it something like this:
-
-.. code-block:: vim
-
-    set nocompatible              " be iMproved, required
-    filetype off                  " required
-
-    " set the runtime path to include Vundle and initialize
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
-    " alternatively, pass a path where Vundle should install plugins
-    "call vundle#begin('~/some/path/here')
-
-    " let Vundle manage Vundle, required
-    Plugin 'VundleVim/Vundle.vim'
-
-    Plugin 'embrace-vim/vim-web-hatch'
-
-    " All of your Plugins must be added before the following line
-    call vundle#end()            " required
-    filetype plugin indent on    " required
-    " To ignore plugin indent changes, instead use:
-    "filetype plugin on
-
-- And then to update, call one of these:
-
-.. code-block:: vim
-
-    :PluginInstall!
-    :PluginUpdate
-
-- Or, if you're like the author, you could use a multi-repo Git tool,
-  such as |myrepos|_ (along with the author's library, |ohmyrepos|_).
-
-  - With |myrepos|_, you could update all your Git repos with
-    the following command:
-
-.. code-block::
-
-    mr -d / pull
-
-- Alternatively, if you use |ohmyrepos|_, you could pull
-  just Vim plugin changes with something like this:
-
-.. code-block::
-
-    MR_INCLUDE=vim-plugins mr -d / pull
-
-- After you identify your vim-plugins using the 'skip' action, e.g.:
-
-.. code-block::
-
-    # Put this in ~/.mrconfig, or something loaded by it.
-    [DEFAULT]
-    skip = mr_exclusive "vim-plugins"
-
-    [pack/embrace-vim/start/vim-web-hatch]
-    lib = remote_set origin https://github.com/embrace-vim/vim-web-hatch.git
-
-    [DEFAULT]
-    skip = false
-
-Attribution
-===========
-
-.. |embrace-vim| replace:: ``embrace-vim``
-.. _embrace-vim: https://github.com/embrace-vim
-
-.. |@landonb| replace:: ``@landonb``
-.. _@landonb: https://github.com/landonb
-
-The |embrace-vim|_ logo by |@landonb|_ contains
-`coffee cup with straw by farra nugraha from Noun Project
-<https://thenounproject.com/icon/coffee-cup-with-straw-6961731/>`__
-(CC BY 3.0).
-
-###################
-vim-source-reloader
-###################
-
-A classic Vim tip, packaged for easy `installation <#installation>`__ to
-``~/.vim/pack``.
-
-- `“Source current file when editing a
-  script” <http://vim.wikia.com/wiki/Source_current_file_when_editing_a_script>`__.
+A classic Vim tip to make it quick and easy to source the Vim script
+you’re working on.
 
 Commands
 ========
 
 Press ``<F9>`` to reload the current source file.
 
+- Works from insert and normal modes.
+
+- You can disable one or both commands by setting global variables:
+
+  ::
+
+     " Don't define normal mode <F9> command
+     let g:vim_source_reloader_disable_normal = 1
+
+     " Don't define insert mode <F9> command
+     let g:vim_source_reloader_disable_insert = 1
+
 Usage Tip
 =========
 
-I like to include the following boilerplate atop each source to remind
-myself how to reload the file.
+Oftentimes, you’ll see code atop a Vim plugin that prevents that script
+from being sourced twice. E.g., perhaps you’ve see code like this:
 
-.. code:: vim
+::
 
-   " YOU: Uncomment the 'unlet', then <F9> to reload this file.
-   "       https://github.com/landonb/vim-source-reloader
-   "  silent! unlet g:loaded_foo_bar
-
-   if exists("g:loaded_foo_bar") || &cp
+   if exists("g:loaded_source_reloader") || &cp
      finish
    endif
-   let g:loaded_foo_bar = 1
+   let g:loaded_source_reloader = 1
 
-Note that this will not always work! You might see errors if your source
-code is not reentrant, e.g., you’ll want to use ``function!``,
-``augroup | au! ...``, etc., to ensure your code can be re-sourced
-without complaint.
+Such code inhibits this plugin (and the ``:source`` command) from
+reloading those scripts.
 
-Installation
-============
+But there are a few ways to get around the guard clause so you can
+reload the file at runtime after you’ve made changes to it. (Skip to the
+`third option <#user-content-option-3--automatically-unlet-the-gvar>`__
+for possibly the best approach.)
 
-Take advantage of Vim’s packages feature (``:h packages``), e.g.,:
+Option 1 — Unlet the ``g:var``
+------------------------------
 
-.. code:: shell
+One option is to unlet the variable, either manually or by adding an
+unlet before the finish guard, e.g.:
 
-   mkdir -p ~/.vim/pack/landonb/start
-   cd ~/.vim/pack/landonb/start
-   git clone https://github.com/landonb/vim-source-reloader.git
-   vim -u NONE -c "helptags vim-source-reloader/doc" -c q
+::
 
-To load the plugin manually, install to ``~/.vim/pack/landonb/opt``
-instead and call ``:packadd vim-source-reloader`` when ready.
+   " Uncomment the unlet to :source this file again at runtime.
+   unlet g:loaded_source_reloader = 1
 
-License
+   if exists("g:loaded_source_reloader") || &cp
+     finish
+   endif
+   let g:loaded_source_reloader = 1
+
+Option 2 — Disable the ``finish``
+---------------------------------
+
+Another option is to (temporarily) remove or comment out the finish,
+e.g.,
+
+::
+
+   if exists("g:loaded_source_reloader") || &cp
+     " Comment the finish (temporarily) to reload this file at runtime.
+     "finish
+   endif
+   let g:loaded_source_reloader = 1
+
+Option 3 — Automatically unlet the ``g:var``
+--------------------------------------------
+
+A third option works automatically by checking ``<sfile>``, e.g.,
+
+::
+
+   if expand("%:p") ==# expand("<sfile>:p")
+     unlet g:loaded_source_reloader
+   endif
+
+   if exists("g:loaded_source_reloader") || &cp
+     finish
+   endif
+   let g:loaded_source_reloader = 1
+
+(Props to `EasyMotion <https://github.com/easymotion/vim-easymotion>`__
+for this approach — it’s the only source file this author has seen that
+does it like that. So *savvy!*)
+
+Shout-Outs
+==========
+
+The original tip may be from the venerable Luc Hermitte, who commented
+on it, but the Wiki shows it was originally posted by *127.0.0.1*.
+
+- *Source current file when editing a script*
+
+  http://vim.wikia.com/wiki/Source_current_file_when_editing_a_script
+
+Caveats
 =======
 
-Copyright (c) Landon Bouma. This work is distributed wholly under CC0
-and dedicated to the Public Domain.
+Be aware that calling ``:source`` will not always work!
 
-https://creativecommons.org/publicdomain/zero/1.0/
+You might see errors if your source code is not reentrant.
+
+For instance:
+
+- Be sure to use ``function!``, with the bang, to overwrite existing
+  functions of the same name.
+
+- Be sure to use ``augroup | au! ...`` to recreate *autocommands*.
+
+- Be sure to avoid duplicate command maps, e.g., call ``unmap`` or
+  ``nnoremap``.
 
 #########################
 vim-title-bar-time-of-day
@@ -6511,59 +5898,6 @@ See Also
 If you’d like to show a clock in the Vim command window, see a similar
 plugin:
 `vim-command-line-clock <https://www.github.com/landonb/vim-command-line-clock>`__
-
-Installation
-============
-
-Installation is easy using the packages feature (see
-``:help packages``).
-
-If you want the plugin to load automatically on Vim startup, use a
-``start/`` directory, e.g.,
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/start
-
-And then clone the project to that path:
-
-.. code:: shell
-
-   cd ~/.vim/pack/landonb/start
-   git clone https://github.com/landonb/vim-title-bar-time-of-day.git
-
-If you want to test the package first, make it optional instead (see
-``:help pack-add``):
-
-.. code:: shell
-
-   mkdir -p ~/.vim/pack/landonb/opt
-   cd ~/.vim/pack/landonb/opt
-   git clone https://github.com/landonb/vim-title-bar-time-of-day.git
-
-   " When ready, load the [opt]ional plugin (or is it [opt]-in?).
-   :packadd! vim-title-bar-time-of-day
-
-To build the help, ensure the plugin is loaded, and then run the
-following command just one time from within Vim:
-
-.. code:: shell
-
-   :Helptags
-
-Or, you can build the help from the terminal instead. Run:
-
-.. code:: shell
-
-   vim -u NONE -c "helptags vim-title-bar-time-of-day/doc" -c q
-
-And then to view the help from within Vim, run:
-
-.. code:: shell
-
-   :help vim-title-bar-time-of-day
-
-Enjoy!
 
 ################
 Additional Notes
