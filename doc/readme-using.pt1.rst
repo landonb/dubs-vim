@@ -94,6 +94,8 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-async-map <https://github.com/embrace-vim/vim-async-map#જ⁀➴>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search#🕹>`__                        Visual search enhancements.
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-buffer-delights <https://github.com/embrace-vim/vim-buffer-delights#🍧>`__                    Manage Buffers and Windows.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   `vim-buffer-ring <https://github.com/landonb/vim-buffer-ring#💍>`__                                <Ctrl-J> and <Ctrl-K> buffer navigation — like the venerable ``vim-bufsurf`` but with a few improvements.

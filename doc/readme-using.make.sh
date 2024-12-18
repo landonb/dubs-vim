@@ -47,6 +47,7 @@ build_readme_using () {
   gpwcat "${startd}/dubs_toggle_textwrap/README.rst" >> ${target}
   # (forked) gpwcat ${startd}/QFEnter/README.md" >> ${target}
   md2rst "${embrace}/vim-async-map/README.md" >> ${target}
+  md2rst "${embrace}/vim-blinky-search/README.rst" >> ${target}
   gpwcat "${embrace}/vim-buffer-delights/README.rst" >> ${target}
   md2rst "${startd}/vim-buffer-ring/README.md" >> ${target}
   # (forked) md2rst "${startd}/vim-classic-taglist/README.rst" >> ${target}
