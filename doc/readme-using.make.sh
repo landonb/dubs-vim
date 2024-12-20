@@ -31,7 +31,7 @@ build_readme_using () {
   #           do nothing, because this task is not a priority,
   #           and I need to focus my attention elsewhere.)
 
-  # (forked) md2rst "${startd}/ansible-vim/README.md" >> ${target}
+  # (forked) filter_mkd "${startd}/ansible-vim/README.md" >> ${target}
   filter_rst "${startd}/dubs_after_dark/README.rst" >> ${target}
   filter_rst "${startd}/dubs_appearance/README.rst" >> ${target}
   filter_rst "${startd}/dubs_edit_juice/README.rst" >> ${target}
@@ -45,23 +45,23 @@ build_readme_using () {
   filter_rst "${startd}/dubs_style_guard/README.rst" >> ${target}
   # (opted) filter_rst "${optd}/dubs_syntastic_wrap/README.rst" >> ${target}
   filter_rst "${startd}/dubs_toggle_textwrap/README.rst" >> ${target}
-  # (forked) filter_rst ${startd}/QFEnter/README.md" >> ${target}
-  md2rst "${embrace}/vim-async-map/README.md" >> ${target}
-  md2rst "${embrace}/vim-blinky-search/README.rst" >> ${target}
+  # (forked) filter_mkd ${startd}/QFEnter/README.md" >> ${target}
+  filter_mkd "${embrace}/vim-async-map/README.md" >> ${target}
+  filter_rst "${embrace}/vim-blinky-search/README.rst" >> ${target}
   filter_rst "${embrace}/vim-buffer-delights/README.rst" >> ${target}
-  md2rst "${startd}/vim-buffer-ring/README.md" >> ${target}
-  # (forked) md2rst "${startd}/vim-classic-taglist/README.rst" >> ${target}
-  md2rst "${depoxy}/vim-clip-expand-path/README.md" >> ${target}
-  md2rst "${startd}/vim-command-line-clock/README.md" >> ${target}
-  md2rst "${depoxy}/vim-depoxy-coc-defaults/README.md" >> ${target}
+  filter_mkd "${startd}/vim-buffer-ring/README.md" >> ${target}
+  # (forked) filter_rst "${startd}/vim-classic-taglist/README.rst" >> ${target}
+  filter_mkd "${depoxy}/vim-clip-expand-path/README.md" >> ${target}
+  filter_mkd "${startd}/vim-command-line-clock/README.md" >> ${target}
+  filter_mkd "${depoxy}/vim-depoxy-coc-defaults/README.md" >> ${target}
   filter_rst "${startd}/vim-fullscreen-toggle/README.rst" >> ${target}
   filter_rst "${embrace}/vim-goto-file-sh/README.rst" >> ${target}
-  md2rst "${startd}/vim-lcd-project-root/README.md" >> ${target}
-  # (forked) md2rst "${startd}/vim-markdown/README.md" >> ${target}
+  filter_mkd "${startd}/vim-lcd-project-root/README.md" >> ${target}
+  # (forked) filter_mkd "${startd}/vim-markdown/README.md" >> ${target}
   filter_rst "${startd}/vim-mkspell-when-stale/README.rst" >> ${target}
-  md2rst "${startd}/vim-netrw-cfg-split-explorer/README.md" >> ${target}
+  filter_mkd "${startd}/vim-netrw-cfg-split-explorer/README.md" >> ${target}
   filter_rst "${embrace}/vim-netrw-explore-map/README.rst" >> ${target}
-  md2rst "${startd}/vim-netrw-link-resolve/README.md" >> ${target}
+  filter_mkd "${startd}/vim-netrw-link-resolve/README.md" >> ${target}
   filter_rst "${startd}/vim-nicer-file-changed-prompt/README.rst" >> ${target}
   filter_rst "${startd}/vim-ovm-easyescape-kj-jk/README.rst" >> ${target}
   filter_rst "${startd}/vim-ovm-seven-of-spines/README.rst" >> ${target}
@@ -71,11 +71,11 @@ build_readme_using () {
   filter_rst "${startd}/vim-reST-highline/README.rst" >> ${target}
   filter_rst "${startd}/vim-select-mode-stopped-down/README.rst" >> ${target}
   filter_rst "${embrace}/vim-webopen/README.rst" >> ${target}
-  md2rst "${startd}/vim-source-reloader/README.md" >> ${target}
-  # (forked) md2rst "${startd}/vim-surround/README.markdown" >> ${target}
-  md2rst "${startd}/vim-title-bar-time-of-day/README.md" >> ${target}
-  # (forked) md2rst "${startd}/vim-tmux-navigator/README.markdown" >> ${target}
-  # (forked) md2rst "${startd}/vim-unimpaired/README.markdown" >> ${target}
+  filter_mkd "${startd}/vim-source-reloader/README.md" >> ${target}
+  # (forked) filter_mkd "${startd}/vim-surround/README.markdown" >> ${target}
+  filter_mkd "${startd}/vim-title-bar-time-of-day/README.md" >> ${target}
+  # (forked) filter_mkd "${startd}/vim-tmux-navigator/README.markdown" >> ${target}
+  # (forked) filter_mkd "${startd}/vim-unimpaired/README.markdown" >> ${target}
 
   gpwcat "readme-using.pt2.rst" >> ${target}
 }
@@ -86,6 +86,12 @@ filter_rst () {
   local file="$1"
 
   gpwcat "${file}" | filter_common_sections
+}
+
+filter_mkd () {
+  local file="$1"
+
+  md2rst "${file}" | filter_common_sections
 }
 
 filter_common_sections () {
