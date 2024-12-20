@@ -130,6 +130,8 @@ md2rst () {
   #   last line, and the hold space contains everything collected so
   #   far. So the swap puts the hold space in the pattern space, which
   #   is then printed.
+  # REFER/2024-12-19: Here's a great sed example — with comments!:
+  #   https://github.com/preservim/vim-markdown/blob/8f6cb3a/Makefile#L49-L75
   overline_title () {
     sed -e '2p;H;1h;$!d;x'
   }
