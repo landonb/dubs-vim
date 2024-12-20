@@ -80,7 +80,7 @@ build_readme_using () {
   gpwcat "readme-using.pt2.rst" >> ${target}
 }
 
-# ***
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 # REFER: pandoc `--from` and `--to` are not required if the
 # file extensions also match. E.g.,
