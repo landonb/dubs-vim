@@ -108,7 +108,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🥥 `vim-depoxy-coc-defaults <https://github.com/DepoXy/vim-depoxy-coc-defaults>`__                 Sensible coc.nvim defaults and maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  💯 `vim-fullscreen-toggle <https://github.com/DepoXy/vim-fullscreen-toggle>`__                     Press <F11> to cycle through a few different Vim window dimensions.
+  💯 `vim-fullscreen-toggle <https://github.com/embrace-vim/vim-fullscreen-toggle>`__                Cycle through a few different Vim window dimensions (e.g., by pressing ``<F11>``).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🚕 `vim-goto-file <https://github.com/embrace-vim/vim-goto-file>`__                                Enables ``gf`` to resolve shell variable paths, like ``${VIM_PACK:-${HOME}/.vim/pack}``
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
@@ -138,7 +138,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🛑 `vim-select-mode-stopped-down <https://github.com/landonb/vim-select-mode-stopped-down>`__      Tweaked ``select-mode`` Ctrl-Shift-Left and Ctrl-Shift-Right motions, for ``behave mswin``.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  🔃 `vim-source-reloader <https://github.com/landonb/vim-source-reloader>`__                        Press <F9> to reload VimL source files.
+  🔃 `vim-source-reloader <https://github.com/embrace-vim/vim-source-reloader>`__                    Reload VimL (Vim script) source files (e.g., by pressing ``<F9>``).
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   ⌚ `vim-title-bar-time-of-day <https://github.com/landonb/vim-title-bar-time-of-day>`__            Shows the date and clock time in the titlebar, useful if you hide the macOS menubar.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
