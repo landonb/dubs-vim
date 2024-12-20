@@ -25,8 +25,8 @@
 #   https://github.com/DepoXy/spellfile.txt#🧙
 /spell/
 
-# tags is generated, 'natch.
-/tags
+# Generated ctags tags files.
+/doc/tags
 
 # mkview/loadview files.
 /view/
