@@ -82,6 +82,9 @@ build_readme_using () {
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
+# Remove common "Installation" and "Attribution" sections (that all
+# say the same thing and aren't very helpful in the larger help doc).
+
 filter_rst () {
   local file="$1"
 
@@ -94,8 +97,63 @@ filter_mkd () {
   md2rst "${file}" | filter_common_sections
 }
 
+# Filter matching sections and their content:
+#
+#   Installation
+#   ============
+#   ...
+#
+# and
+#
+#   Attribution
+#   ===========
+#   ...
+
 filter_common_sections () {
-  cat
+  awk '
+    BEGIN {
+      prev_line = "";
+      title_matched = 0;
+      ignore_section = 0;
+    }
+
+    {
+      if ($0 ~ /^===[=]*$/) {
+        # Found section delimiter
+        if (title_matched) {
+          # Found section to ignore.
+          ignore_section = 1;
+          title_matched = 0;
+
+          next
+        }
+        else if (ignore_section) {
+          # Entered a new section.
+          ignore_section = 0;
+          # Print previous title.
+          print prev_line;
+        }
+      }
+      else if (title_matched) {
+        title_matched = 0;
+        print prev_line;
+      }
+
+      prev_line = $0;
+
+      if (($0 ~ /^Installation$/) || ($0 ~ /^Attribution$/)) {
+        title_matched = 1;
+
+        next;
+      }
+
+      if (ignore_section) {
+        next;
+      }
+
+      print;
+    }
+  '
 }
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
