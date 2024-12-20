@@ -167,11 +167,6 @@ with the upstream project's goals, or because I'm lazy):
     Fork restores quickfix cursor position after opening error, and it
     avoids opening file in any window showing a special buffer.
       (Upstream: `QFEnter <https://github.com/yssl/QFEnter>`__)
-| `vim-markdown <https://github.com/landonb/vim-markdown#👇>`__:
-    "Markdown for Vim."
-    Fork fixes issues seeing XML tags and content being white on white
-    (though might be specific to my Vim environment).
-      (Upstream: `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
 | `vim-unimpaired <https://github.com/landonb/vim-unimpaired#👿>`__:
     "Pairs of handy bracket mappings."
     Fork adds ``[om`` and ``[om`` to show/hide menubar (for Linux users).
@@ -242,8 +237,8 @@ List of Window-related Plugins
     "|flashlight| All the world's indeed a stage and we are merely players"
 | `ZoomWin <https://github.com/vim-scripts/ZoomWin>`__
 
-List of Programming and Language Plugins
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+List of Programming, Language, and Markup Plugins
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 General:
 
@@ -270,6 +265,10 @@ Git:
 JSON:
 
 | `vim-jdaddy <https://github.com/tpope/vim-jdaddy>`__
+
+Markdown:
+
+| `vim-markdown <https://github.com/preservim/vim-markdown>`__
 
 Python:
 
@@ -366,6 +365,9 @@ List of Other Plugins
 These are other awesome third-party plugins I find useful or otherwise
 curious (though some I rarely use, I'll admit):
 
+| `Tabular <https://github.com/godlygeek/tabular>`__:
+    "Vim script for text filtering and alignment"
+    (also required by `vim-markdown <https://github.com/tpope/vim-markdown>`__)
 | `vim-gnupg <https://github.com/jamessan/vim-gnupg>`__:
     "transparent editing of gpg encrypted files."
   [`vim script <http://www.vim.org/scripts/script.php?script_id=3645>`__]
@@ -456,6 +458,11 @@ Plugins that I used to develop or that I forked, but no longer use:
 | `vim-jsx <https://github.com/landonb/vim-jsx>`__:
     "React JSX syntax highlighting and indenting for Vim."
       (Upstream: `vim-jsx <https://github.com/mxw/vim-jsx>`__)
+| `vim-markdown <https://github.com/landonb/vim-markdown#👇>`__:
+    "Markdown for Vim."
+    Fork fixes issues seeing XML tags and content being white on white
+    (though might be specific to my Vim environment).
+      (Upstream: `vim-markdown <https://github.com/gabrielelana/vim-markdown>`__)
 
 Other Tim Pope plugins to consider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
