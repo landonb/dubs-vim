@@ -1,8 +1,0 @@
-# This directory is meant to remain empty.
-
-# Ignore everything in this directory.
-*
-
-# Except this file.
-!.gitignore
-
