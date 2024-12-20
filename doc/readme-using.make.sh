@@ -147,7 +147,7 @@ md2rst () {
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
-source_deps () {
+source_deps_gpw () {
   # Optional: git-put-wise, for 'identify_scope_ends_at'.
   # CXREF: https://github.com/DepoXy/git-put-wise#🥨
   # - For color support:
@@ -259,7 +259,7 @@ main () {
 
   local before_cd="$(pwd -L)"
 
-  source_deps
+  source_deps_gpw
 
   build_readme_using
 
