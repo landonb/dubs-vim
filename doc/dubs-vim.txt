@@ -21,6 +21,14 @@ See USING.rst for more detailed help on the commands listed below.
 
 BWARE: This help doc. is severly outdated! [2024-12-08]
 
+- REFER: Please see `README-USING.rst` for a complete help reference:
+
+    https://github.com/landonb/dubs-vim/blob/release/README-USING.rst
+
+  Or query each plugin separately, e.g., >
+
+    :help vim-async-map
+>
 ==============================================================================
 2. Dubs Vim Plugins (Lots More Help)			*dubs-plugins*
 
