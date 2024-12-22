@@ -54,7 +54,7 @@ build_readme_using () {
   filter_mkd "${depoxy}/vim-clip-expand-path/README.md" >> ${target}
   filter_mkd "${startd}/vim-command-line-clock/README.md" >> ${target}
   filter_mkd "${depoxy}/vim-depoxy-coc-defaults/README.md" >> ${target}
-  filter_rst "${startd}/vim-fullscreen-toggle/README.rst" >> ${target}
+  filter_rst "${embrace}/vim-fullscreen-toggle/README.rst" >> ${target}
   filter_rst "${embrace}/vim-goto-file-sh/README.rst" >> ${target}
   filter_mkd "${startd}/vim-lcd-project-root/README.md" >> ${target}
   # (forked) filter_mkd "${startd}/vim-markdown/README.md" >> ${target}
@@ -71,7 +71,7 @@ build_readme_using () {
   filter_rst "${startd}/vim-reST-highline/README.rst" >> ${target}
   filter_rst "${startd}/vim-select-mode-stopped-down/README.rst" >> ${target}
   filter_rst "${embrace}/vim-webopen/README.rst" >> ${target}
-  filter_mkd "${startd}/vim-source-reloader/README.md" >> ${target}
+  filter_mkd "${embrace}/vim-source-reloader/README.md" >> ${target}
   # (forked) filter_mkd "${startd}/vim-surround/README.markdown" >> ${target}
   filter_mkd "${startd}/vim-title-bar-time-of-day/README.md" >> ${target}
   # (forked) filter_mkd "${startd}/vim-tmux-navigator/README.markdown" >> ${target}
