@@ -447,6 +447,13 @@ and then ``\te``.)
     "Miscellaneous auto-load Vim scripts"
       [`more <https://peterodding.com/code/vim/misc/>`__]
 | `vim-restructuredtext <https://github.com/marshallward/vim-restructuredtext>`__
+| `vim-slash <https://github.com/junegunn/vim-slash>`__
+    "Enhancing in-buffer search experience":
+    "Automatically clears search highlight when cursor is moved"
+    (see also `vim-evanesco <https://github.com/pgdouyon/vim-evanesco>`__)
+    but also has a nifty optional match highlight blink feature
+    that grifted for
+    `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search>`__
 
 Plugins that I used to develop or that I forked, but no longer use:
 
