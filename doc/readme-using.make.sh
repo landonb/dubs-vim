@@ -47,6 +47,7 @@ build_readme_using () {
   filter_rst "${startd}/dubs_toggle_textwrap/README.rst" >> ${target}
   # (forked) filter_mkd ${startd}/QFEnter/README.md" >> ${target}
   filter_mkd "${embrace}/vim-async-map/README.md" >> ${target}
+  filter_rst "${embrace}/vim-better-file-changed-prompt/README.rst" >> ${target}
   filter_rst "${embrace}/vim-blinky-search/README.rst" >> ${target}
   filter_rst "${embrace}/vim-buffer-delights/README.rst" >> ${target}
   filter_mkd "${startd}/vim-buffer-ring/README.md" >> ${target}
@@ -62,7 +63,6 @@ build_readme_using () {
   filter_mkd "${startd}/vim-netrw-cfg-split-explorer/README.md" >> ${target}
   filter_rst "${embrace}/vim-netrw-explore-map/README.rst" >> ${target}
   filter_mkd "${startd}/vim-netrw-link-resolve/README.md" >> ${target}
-  filter_rst "${startd}/vim-nicer-file-changed-prompt/README.rst" >> ${target}
   filter_rst "${startd}/vim-ovm-easyescape-kj-jk/README.rst" >> ${target}
   filter_rst "${startd}/vim-ovm-seven-of-spines/README.rst" >> ${target}
   filter_rst "${startd}/vim-reSTfold/README.rst" >> ${target}

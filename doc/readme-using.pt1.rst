@@ -94,6 +94,9 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   જ⁀➴ `vim-async-map <https://github.com/embrace-vim/vim-async-map>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  🗯 `vim-better-file-changed-prompt                                                                 Change default file-modified prompt to reload file on <Enter> (Vim's default is to not reload it).
+  <https://github.com/embrace-vim/vim-better-file-changed-prompt>`__
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🕹 `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search>`__                        Visual search enhancements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🍧 `vim-buffer-delights <https://github.com/embrace-vim/vim-buffer-delights>`__                    Manage Buffers and Windows.
@@ -121,8 +124,6 @@ These are plugins I've developed and continue to maintain:
   🥾 `vim-netrw-explore-map <https://github.com/embrace-vim/vim-netrw-explore-map>`__                Wire convenient ``:Explore [dir]`` command maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🧩 `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve>`__                  Reopens files opened with `netrw` at their resolved path to avoid a file-exists error on save.
-  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  🗯 `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt>`__    Skip Vim alert when file modification changed but not content, useful if you git-rebase a lot.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🧼 `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk>`__              Quickly ype ``jk`` or ``kj`` in Insert mode to switch to Normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
