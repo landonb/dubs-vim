@@ -94,6 +94,9 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   જ⁀➴ `vim-async-map <https://github.com/embrace-vim/vim-async-map>`__                               Wire async mode maps, e.g., type ``kj`` quickly in insert mode to escape to normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
+  🗯 `vim-better-file-changed-prompt                                                                 Change default file-modified prompt to reload file on <Enter> (Vim's default is to not reload it).
+  <https://github.com/embrace-vim/vim-better-file-changed-prompt>`__
+  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🕹 `vim-blinky-search <https://github.com/embrace-vim/vim-blinky-search>`__                        Visual search enhancements.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🍧 `vim-buffer-delights <https://github.com/embrace-vim/vim-buffer-delights>`__                    Manage Buffers and Windows.
@@ -121,8 +124,6 @@ These are plugins I've developed and continue to maintain:
   🥾 `vim-netrw-explore-map <https://github.com/embrace-vim/vim-netrw-explore-map>`__                Wire convenient ``:Explore [dir]`` command maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🧩 `vim-netrw-link-resolve <https://github.com/landonb/vim-netrw-link-resolve>`__                  Reopens files opened with `netrw` at their resolved path to avoid a file-exists error on save.
-  ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  🗯 `vim-nicer-file-changed-prompt <https://github.com/landonb/vim-nicer-file-changed-prompt>`__    Skip Vim alert when file modification changed but not content, useful if you git-rebase a lot.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🧼 `vim-ovm-easyescape-kj-jk <https://github.com/landonb/vim-ovm-easyescape-kj-jk>`__              Quickly ype ``jk`` or ``kj`` in Insert mode to switch to Normal mode.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
@@ -837,13 +838,16 @@ About This Plugin
 
 This plugin maps a bunch of editing-related features
 to key combinations to help delete text, select text,
-edit text, move the cursor around the buffer, and
-perform single-key text searches within the buffer.
+edit text, move the cursor around the buffer.
 
-This script originally started to make Vim emulate
-`EditPlus <https://www.editplus.com/>`__,
-but it's grown considerably since then to
-just make Vim a more comfortable editor all around.
+This author originally created this script to emulate
+`EditPlus <https://www.editplus.com/>`__/>, which the author
+used in the early aughts on Windows before making the
+leap to Vim.
+
+But this plugin has grown considerably since then to
+just make Vim a more comfortable editor all around
+(at least for me!).
 
 Optional Vendor Plugins
 =======================
@@ -891,8 +895,8 @@ part of any undo block).
 
 - See: http://vim.wikia.com/wiki/Recover_from_accidental_Ctrl-U
 
-Features Bound to Key Commands
-==============================
+Command Mappings
+================
 
 Searching Buffers
 -----------------
@@ -902,112 +906,46 @@ Commands for searching for text within a file.
 =================================  ==================================  ==============================================================================
  Key Mapping                        Description                         Notes
 =================================  ==================================  ==============================================================================
- ``/``                              Start a buffer search               Press the forward slash key to start a buffer search in the window
-                                                                        wherein your cursor lies. The cursor will jump to matches as you type;
-                                                                        hit Enter when you're done typing the search command.
-
-                                                                        Hint: If you type lowercase characters only, the search is
-                                                                        case-insensitive, but if you use one or more uppercase characters,
-                                                                        the search is case sensitive.
+ ``\s``                             Search and Replace                  Start find-replace in current buffer using selected
+                                    in Buffer                           text.
+                                                                       
+                                                                        To substitute matching text throughout a file, select
+                                                                        the text you want to replace and hit backslash and
+                                                                        then ``s``. You'll see a partially-completed command
+                                                                        ready for you to type the replacement text. Hit
+                                                                        ``<Enter>``, and then hit ``y`` to confirm each replacement
+                                                                        or hit ``a`` to do 'em all.
+                                                                       
+                                                                        Caveat: the search-and-replace starts at the cursor
+                                                                        and continues until the end of the file but it does
+                                                                        not wrap around.
+                                                                       
+                                                                        Hint: You'll notice that you are completing a builtin
+                                                                        Vim search-n-replace command; if you'd like to do
+                                                                        case-sensitive matching, add an 'I' to the end of the
+                                                                        search, e.g., ``:.,$s/Find_Me/Replace_Me/gcI``
+                                                                       
+                                                                        - REFER: There's a similar command in another plugin
+                                                                          that starts a substitute command for all buffers
+                                                                          listed in the quickfix window using the selected
+                                                                          text.
+                                                                       
+                                                                          - See ``<Leader>S`` (``\S``) in ``dubs_quickfix_wrap``:
+                                                                       
+                                                                            https://github.com/landonb/dubs_quickfix_wrap#🌯
+                                                                       
+                                                                          - Though the author now prefers to use a Git
+                                                                            pipeline to replace text across the files.
+                                                                            See that plugin's help for details.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<F3>``                           Forward and Backward                After you've started a buffer search, use ``<F3>`` or ``n``
-                                    Search Matches                      to search forward through the buffer,
-                                                                        and use ``<Shift-F3>`` and ``N`` (i.e., Shift-'n')
-                                                                        to search backwards through the buffer.
-
-                                                                        Hint: The search wraps at the end of the buffer;
-                                                                        when it wraps, you'll see the scroll bar elevator jump and
-                                                                        you'll see a message highlighted in red in the status window
-                                                                        that reads, "search hit TOP, continuing at BOTTOM", or,
-                                                                        conversely, "search hit BOTTOM, continuing at TOP".
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Shift-F3>``                     Backward Search Match               Like ``<F3>``, but go to the previous result,
-                                                                        possibly wrapping at the start of the file and continuing from
-                                                                        the end, back up to the cursor.
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``n`` and ``N``                    Forward and Backward                Same as ``<F3>`` and ``<Shift-F3>``, respectively.
-                                    Search Matches
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<F1>``                           Search Buffer for                   If there's a selection, searches the buffer for that,
-                                    Word Under Cursor                   otherwise selects the word under the cursor and searches for that.
-                                                                        This is a shortcut to ``/`` in a sense.
-
-                                                                        Hint: To start searching a buffer for a term,
-                                                                        put the cursor on that term,
-                                                                        hit ``<F1>`` and then use ``<F3>`` to continue searching the file.
-
-                                                                        Caveat: If the search term is lowercase,
-                                                                        you'll get case-insensitive matches,
-                                                                        but if the search term is mixed- or upper-case,
-                                                                        you'll get case-sensitive matches.
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Shift-F1>``                     Highlight Word Under                Like ``<F1>`` -- starts a search for the word under the cursor -- but
-                                    Cursor on Start Search              doesn't jump to the next match, but rather the cursor stays put.
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``*``                              Restrictive Search                  The star-search is a Vim builtin.
-                                    Selected                            It does a case-insensitive "word-search"
-                                    or Under Cursor                     for the word under the cursor, that is,
-                                                                        it only matches exact words.
-                                                                        It also excludes special characters, like hyphens,
-                                                                        but it combines words across underscores.
-                                                                        It does not match supersets
-                                                                        (unlike ``<F1>`` where, e.g., 'ord' matches 'word').
-                                                                        So, e.g., starting a \*-search on 'john\_doe' would
-                                                                        match 'John\_doe' but not 'john-doe', and starting
-                                                                        a \*-search on the reverse,
-                                                                        i.e., on the first half of 'john-doe',
-                                                                        would match just 'john' or 'John' or 'JOHN', etc.).
-                                                                        The set of word delimiters is obviously customizable.
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``#``                              Restrictive Search                  Like ``*`` search, but backward through the buffer.
-                                    in Reverse
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``<Ctrl-H>``                       Hide Search Highlights              After you initiate a search,
-                                                                        the matching words in the buffers are highlighted.
-                                                                        To disable the highlight, type ``<Ctrl-H>``
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\ds``                            Toggle ``*`` Whitespace             ``VeryLiteral`` defaults to off, such that selecting text with trailing
-                                    Behavior                            whitespace and then pressing ``*`` to start a match matches the same text
-                                                                        but ignores whitespace, e.g., "it " (with a space) matches "it" (without a space).
-                                                                        You probably won't ever use this command, since you'll normally use ``*``
-                                                                        in insert or command mode for the word under the cursor, rather than
-                                                                        selecting text first and using ``*`` in visual mode.
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\s``                             Search and Replace                  To substitute matching text throughout a file, select the text you want to
-                                    in Buffer                           replace and hit backslash and then 's'. You'll see a partially-completed
-                                                                        command ready for you to type the replacement text. Hit return,
-                                                                        and then hit 'y' to confirm each replacement or hit 'a' to do 'em all.
-
-                                                                        Caveat: the search-and-replace starts at the cursor and continues until the
-                                                                        end of the file but it doesn't wrap around.
-
-                                                                        Hint: You'll notice that you are completing a builtin Vim search-n-replace command;
-                                                                        if you'd like to do case-sensitive matching, add an 'I' to the end of the search,
-                                                                        i.e., ``:.,$s/Find_Me/Replace_Me/gcI``
----------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``\S``                             Search and Replace                  This is similar to ``\s`` but it searches and replaces text in all of the files
-                                    in All Files                        listed in the quickfix window.
-                                    Listed in Quickfix
-                                                                        - Hint: Do an ``<F4>`` or ``\g`` search to populate the Quickfix window
-                                                                          (these two commands are part of
-                                                                          `dubs_grep_steady <https://github.com/landonb/dubs_grep_steady#🧐>`__).
-
-                                                                        - Double-click the first entry in the Quickfix search results to open that buffer.
-
-                                                                        - Highlight the text you want to replace and then hit ``\`` and then ``S``.
-
-                                                                        - Type the replacement text and hit return, and the plugin will find and replace
-                                                                          in all of the files in the Quickfix list.
-
-                                                                        Caveat: If you are not happy with the results, you'll have to ``<Ctrl-Z>``
-                                                                        each file that was edited; fortunately, a single Ctrl-Z undoes all of the
-                                                                        changes in each buffer.
-
-                                                                        (FIXME: We could make a :bufdo to run Ctrl-Z once in each open buffer.)
-
-                                                                        Caveat: If a substring of your replacement text matches the original text,
-                                                                        the function will endlessly recurse, oops!
-                                                                        Just type ``<Ctrl-C>`` to stop it.
+ ``\S#``                            Search and Replace in Buffer       Same as ``\s``, but uses the pound symbol (``#``) as the
+                                    — Using ``#`` regexp delimiter     pattern delimiter. This is useful if you want to
+                                                                       find-and-replace a path string, so you don't have
+                                                                       have to escape the path separators.
+                                                                       
+                                                                       - E.g., instead of: ``/\/foo\/bar\//\/baz\/bat\//g``
+                                                                       
+                                                                         use this pattern: ``#/foo/bar/#/baz/bat/g#``
 =================================  ==================================  ==============================================================================
 
 Editing and Formatting Text
@@ -1031,11 +969,11 @@ Editing and Formatting Text
  ``<Ctrl-Q><Shift-Click>``          Block Select                        When you select text normally, you select a sequence of characters.
                                                                         But if your text file is pretty-printed (with well-formatted columns
                                                                         and whatnot) you can select text as a "block".
-
+                                                                        
                                                                         First, enter command mode, then hit ``<Ctrl-Q>`` and then ``<Shift-Click>``
                                                                         elsewhere to make a block selection.
                                                                         You can copy, paste and cut block selections like you can normal sequence selections.
-
+                                                                        
                                                                         (Note: In default Vim, this command is mapped to Ctrl-V, but Ctrl-V is paste, yo! =)
                                                                         so we've remapped Vim's Ctrl-V to Ctrl-Q so we can use Ctrl-V for paste
                                                                         (and since we're using Ctrl-Q for block select, if you want to quit, try ``<Alt-f>x``).)
@@ -1052,23 +990,29 @@ Editing and Formatting Text
                                                                         This would not be so special if the plugin had not had to change Vim's default:
                                                                         in default Vim, when in select mode, Ctrl-Z lowercases what's selected.
                                                                         But with this plugin, even when text is selected, Ctrl-Z just undoes what was dud.
-
+                                                                        
                                                                         Hint: If you pine for the lowercase operation, select text and then type ``<Ctrl-o>gu<DOWN>``
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
- ``f/`` and ``f\``                  Change Slashes                      Use ``f/`` and ``f\`` to change the direction of slashes.
-
+ ``f/`` and ``f\\``                 Change Slashes                      Use ``f/`` and ``f\\`` to change the direction of slashes.
+                                                                        
                                                                         Press ``f/`` to change every backslash to a forward slash in the current line;
-                                                                        use ``f \`` to do the opposite.
-
+                                                                        use ``f \\`` to do the opposite.
+                                                                        
                                                                         Hint: This is useful for converting Windows OS directory paths to Linux/Mac, and vice versa.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``qq`` and ``q`` and ``Q``         Record and Playback                 This is a shortcut to playback the recording in the q register.
                                     Keystrokes
                                                                         1. Start recording with ``qq``.
-
+                                                                        
                                                                         2. End recording with ``q`` (or with ``<Ctrl-o>q`` if in Insert mode).
-
+                                                                        
                                                                         3. Playback with ``Q``.
+                                                                        
+                                                                        NOTE: This replaces the built-in ``Q`` command,
+                                                                        which switches to ``Ex`` mode. But you can also
+                                                                        switch to ``Ex`` mode using ``gQ``, albeit the
+                                                                        latter enables command line editing, completion,
+                                                                        etc.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``<Ctrl-C>``                       Copy                                ``<Ctrl-Insert>`` and ``<Shift-Insert>`` are aliases
                                                                         for ``<Ctrl-C>`` and ``<Ctrl-V>``, which are aliases
@@ -1116,7 +1060,7 @@ Editing and Formatting Text
  ``<Tab>`` and ``<Shift-Tab>``      Indent and Undent                   Select some text in one or more lines and use ``<Tab>`` and ``<Shift-Tab>``
                                     Selected Text                       to indent and undent the text according to the current tab width
                                                                         (and using tabs or spaces as appropriate).
-
+                                                                        
                                                                         Caveat: Cindent is too smart and won't shift octothorpes
                                                                         that are in the first column
                                                                         (because it thinks they're pre-compilation macros);
@@ -1231,7 +1175,7 @@ Highlights:
  Key Mapping                        Description                         Notes
 =================================  ==================================  ==============================================================================
  ``<Ctrl-]>``                       Jump to Definition                  Jumps to the definition of the function named under the cursor.
-
+                                                                        
                                                                         Hint: You can return to the tag from which you jumped using ``<Alt-]>``.
 ---------------------------------  ----------------------------------  ------------------------------------------------------------------------------
  ``<Alt-]>``                        Jump to Last Tag                    Jumps to the tag used by the last ``<Ctrl-]>`` command.
@@ -1303,6 +1247,9 @@ Obscure (Rarely Used) But Useful Commands
  ``:?``                       Immediately open Vim          Immediately runs ``:help {selected-text}`` on the selected text.
                               Help on Selected Text
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
+ ``:"``                       Immediately ``echom``         Immediately runs ``:echom {selected-text}`` on the selected text.
+                              Selected Text
+---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``:Lorem``                   Lorum Ipsum Dump              Pastes the first paragraph of Lorum Ipsum at the prompt.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``:Foobar``                  Foo Bar Baz Bat... Dump       Pastes a list of
@@ -1317,7 +1264,7 @@ Obscure (Rarely Used) But Useful Commands
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
  ``<Leader>dA``               Toggle ASCII                  Decimal and Hexadecimal 8-bit character set
                               Character Table               (based on `CharTab <http://www.vim.org/scripts/script.php?script_id=898>`__).
-
+                                                            
                                                             *Hint:* Hit ``b`` to toggle between bases (radices).
                                                             To return to the previous buffer, hit ``q``, ``<ESC>`` or ``<Shift-Alt-1>``.
 ---------------------------  ----------------------------  ------------------------------------------------------------------------------
@@ -1341,9 +1288,9 @@ The alt-shift commands show and hide special windows.
  ``<Shift-Alt-1>``            Toggle Tag list               Show/Hide the
                                                             `Tag List <http://www.vim.org/scripts/script.php?script_id=273>`__
                                                             window.
-
+                                                            
                                                             Calls ``:TlistToggle``. See ``:help taglist``.
-
+                                                            
                                                             *Hint:* Run ``ctags`` on your code to make a ``tags`` file first,
                                                             and then ``:set tags=<path,path,...>`` in Vim to point to the ``tags`` file.
                                                             You can setup different tags for different file types and projects;
@@ -1465,6 +1412,9 @@ And you can dig into your own font file, e.g.,::
   charmap --font="Hack Regular 9"
 
 See ``:help digraph`` for the list of defined digraphs.
+
+REFER: See also author's Unicode reference:
+https://github.com/DepoXy/emoji-lookup#🙄
 
 #################################
 Dubs Vim |em_dash| Filetype Hacks
@@ -2644,6 +2594,222 @@ So with gratitude and admiration, thanks you,
     | |__| (_| \__ \ |_| | | |___\__ \ (_| (_| | |_) |  __/
     |_____\__,_|___/\__, | |_____|___/\___\__,_| .__/ \___|
                     |___/                      |_|
+
+##################################################
+File-Changed Prompt with "Load File" as Default 🗯
+##################################################
+
+This plugin change the default file-changed prompt so that
+pressing ``<Enter>`` loads the changes.
+
+- The stock Vim prompt ignores changes by default (it does
+  not update the local buffer with the external changes).
+
+- And if you decide you want the buffer version back, it's
+  easy to restore your local changes — just ``:undo`` (or
+  press ``<Ctrl-Z>`` if you fly with |mswin.vim|_).
+
+.. |mswin.vim| replace:: ``mswin.vim``
+.. _mswin.vim: https://vimhelp.org/gui_w32.txt.html#mswin.vim
+
+(Gory) Details
+==============
+
+By default, Vim prompts you if a buffer you're working on
+was changed by an external program.
+
+But the default action (if you press ``<Enter>``) is to ignore
+changes.
+
+At least in the author's experience, I'd usually rather load
+the changes. So I made this plugin to facilitate that workflow.
+
+On Linux
+--------
+
+Here's a look at the default prompt on Linux Mint MATE:
+
+.. image:: doc/MintMATE-FCS-prompt--builtin.png
+   :alt: Default Mint MATE file-changed prompt
+   :align: center
+
+You'll notice the *ignore* action is labeled simply "OK",
+which you can pick by pressing ``<Enter>`` or ``<Space>``, or
+by using the ``<Alt-O>`` accelerator.
+
+.. image:: doc/MintMATE-FCS-prompt-builtin--Accelerators.png
+   :alt: The prompt accelerators when Alt is pressed
+   :align: center
+
+- If you'd like to pick "Load File", you can ``<Tab>`` first,
+  and then press ``<Enter>`` or ``<Space>``, or you can use
+  the ``<Alt-L>`` or ``<Alt-A>`` accelerator.
+
+The prompt message is also a little wordy (IMHO).
+
+This plugin changes the prompt thusly:
+
+.. image:: doc/MintMATE-FCS-prompt--better.png
+   :alt: Improved Mint MATE file-changed prompt
+   :align: center
+
+So now to load the changes, simple press ``<Enter>`` or
+``<Space>``, or use the ``<Alt-L>`` accelerator.
+
+The prompt message is also a smidgen more concise.
+
+On macOS
+--------
+
+The gameplay on macOS is slightly different, and perhaps
+not as intuitive if you're more familiar with the Linux UX.
+
+Here's what the default prompt looks like in `MacVim <https://macvim.org/>`__:
+
+.. image:: doc/MacVim-FCS-prompt--builtin.png
+   :alt: Default MacVim file-changed prompt
+   :align: center
+
+If you're not familiar with macOS dialog wiring:
+
+- The button with the *blue background* is picked
+  when you press ``<Enter>``.
+
+- The button with the *blue border* is picked when
+  you press ``<Space>``.
+
+- You can move the selected button with ``<Tab>``.
+
+  - Regardless of the selected button, ``<Enter>`` will
+    *always* pick the "OK" button.
+
+- There are no accelerators defined (e.g., nothing like
+  the ``<Alt-L>`` you can use on Linux).
+
+This plugin changes the prompt thusly:
+
+.. image:: doc/MacVim-FCS-prompt--better.png
+   :alt: Improved MacVim file-changed prompt
+   :align: center
+
+The prompt text is also less wordy than the default,
+and you'll see a helpful little hint added to
+remind you how ``<Enter>`` and ``<Tab>``/``<Space>`` work on macOS.
+
+- And if you've read |help-W11|_ once, you probably
+  don't need to be reminded of it every time.
+
+.. |help-W11| replace:: ``:help W11``
+.. _help-W11: https://vimhelp.org/message.txt.html#W11
+
+Some changes are automatically reloaded
+---------------------------------------
+
+Vim identifies at least six different types of changes:
+
+- The file on disk was deleted while a buffer is open.
+
+- The file timestamp was changed.
+
+- The file permissions were changed.
+
+- The file contents were changed, but the buffer has
+  not been modified (|help-modified|_).
+
+- The file contents were changed and the buffer has
+  local modifications.
+
+- The file on disk was *created* after a buffer with
+  that path was opened.
+
+  - This is actually a different prompt altogether
+    that is not scriptable (|help-W13|_).
+
+If Vim notices that only the timestamp has changed, you
+won't notice. It will ignore the event and move on.
+
+- But it will notify this plugin. And it'll print a
+  short `message
+  <https://vimhelp.org/message.txt.html#%3Amessages>`__
+  to bleep you, |because-what-the-hay|_ (but it won't
+  prompt you).
+
+- For you |rebasers|_ out there, this event occurs
+  frequently when you rebase history.
+
+If Vim notices that the permissions have changed,
+the default is to always prompt you.
+
+- This plugin will *not* prompt you when permissions
+  change. [Although maybe it should, or at least if
+  the file is no longer writable or readable by the
+  user. But this seems like such a rare use case, we're
+  not gonna worry about that now. But please open an
+  `Issue
+  <https://github.com/embrace-vim/vim-better-file-changed-prompt/issues>`__
+  if this impacts you negatively.]
+
+For the remaining three cases — file deleted, changed,
+or conflicts — this plugin will prompt you as described
+earlier.
+
+.. |help-modified| replace:: ``:help modified``
+.. _help-modified: https://vimhelp.org/options.txt.html#%27modified%27
+
+.. |help-W13| replace:: ``:help W13``
+.. _help-W13: https://vimhelp.org/message.txt.html#W13
+
+.. |rebasers| replace:: *rebasers*
+.. _rebasers: https://git-scm.com/docs/git-rebase
+
+.. |because-what-the-hay| replace:: *because what the hay*
+.. _because-what-the-hay: https://www.google.com/search?q=define+hay
+
+Reference
+=========
+
+Relevant Vim documentation for the *endlessly curious*:
+
+- |help-FileChangedShell|_
+
+- |help-fcs_choice|_
+
+- |help-fcs_reason|_
+
+- |help-timestamp|_
+
+- Vim Tip: *File no longer available - mark buffer modified*, by *Ewfalor*, 2008:
+
+  `https://vim.fandom.com/wiki/File_no_longer_available_-_mark_buffer_modified
+  <https://vim.fandom.com/wiki/File_no_longer_available_-_mark_buffer_modified>`__
+
+  - This tip provides a simple ``FileChangedShell`` hander that was the basis
+    for this project's `file-changed handler
+    <https://github.com/embrace-vim/vim-better-file-changed-prompt/blob/release/autoload/embrace/fcs_handler.vim>`__.
+
+.. |help-FileChangedShell| replace:: ``:h FileChangedShell``
+.. _help-FileChangedShell: https://vimhelp.org/autocmd.txt.html#FileChangedShell
+
+.. |help-fcs_choice| replace:: ``:h v:fcs_choice``
+.. _help-fcs_choice: https://vimhelp.org/eval.txt.html#v%3Afcs_choice
+
+.. |help-fcs_reason| replace:: ``:h v:fcs_reason``
+.. _help-fcs_reason: https://vimhelp.org/eval.txt.html#v%3Afcs_reason
+
+.. |help-timestamp| replace:: ``:h timestamp``
+.. _help-timestamp: https://vimhelp.org/editing.txt.html#timestamp
+
+Related Projects
+================
+
+- ``interuptless.vim`` — *Makes vim interrupt you less*
+
+  https://github.com/vim-utils/vim-interruptless
+
+- ``vim-autoread`` — Have Vim automatically reload a
+  file that has changed externally
+
+  https://github.com/djoshea/vim-autoread
 
 #####################################
 Visual Search Improvements for Vim 🕹
@@ -4313,36 +4479,6 @@ and dedicated to the Public Domain.
 
 https://creativecommons.org/publicdomain/zero/1.0/
 
-##############################################
-Vim Plugin |em_dash| Nicer File Changed Prompt
-##############################################
-
-.. |em_dash| unicode:: 0x2014 .. em dash
-
-About This Plugin
-=================
-
-This plugin makes two changes to the ``FileChangedShell`` prompt behavior:
-
-1. The default selected button is 'Load File', so you can just press
-   Return (or Space) to reload the file, which is usually the action
-   you want. (And it's easy to undo — Press `Ctrl-z` and the changes
-   are undone).
-
-2. The prompt is not shown for certain types of changes that you
-   shouldn't care about, like permissions changes.
-
-USE CASE: If you rebase source code often, you'll find yourself needing
-to fix conflicts, but when a file is changed outside of Vim, Vim prompts
-you, asking if you want to reload it, but defaulting the selected dialog
-button to not reloading the file. If you're tired of seeing this dialog,
-and then pressing Tab or using the mouse to select 'Load File' instead of
-'OK', then this plugin is for you!
-
-NOTE: On Linux, pressing Space or Enter will accept the default dialog
-choice ("Load File"), but on macOS (MacVim), you'll want to press Return
-(as pressing Space will "OK" the dialog, which does not reload the file).
-
 ############################################################
 One Vimmer's Maps |em_dash| <kj> or <jk> Escapes Insert Mode
 ############################################################
@@ -5742,9 +5878,11 @@ from being sourced twice. E.g., perhaps you’ve see code like this:
 
 ::
 
-   if exists("g:loaded_source_reloader") || &cp
+   if exists('g:loaded_source_reloader') || &cp
+
      finish
    endif
+
    let g:loaded_source_reloader = 1
 
 Such code inhibits this plugin (and the ``:source`` command) from
@@ -5764,11 +5902,13 @@ unlet before the finish guard, e.g.:
 ::
 
    " Uncomment the unlet to :source this file again at runtime.
-   unlet g:loaded_source_reloader = 1
+   unlet! g:loaded_source_reloader = 1
 
-   if exists("g:loaded_source_reloader") || &cp
+   if exists('g:loaded_source_reloader') || &cp
+
      finish
    endif
+
    let g:loaded_source_reloader = 1
 
 Option 2 — Disable the ``finish``
@@ -5779,10 +5919,12 @@ e.g.,
 
 ::
 
-   if exists("g:loaded_source_reloader") || &cp
+   if exists('g:loaded_source_reloader') || &cp
+
      " Comment the finish (temporarily) to reload this file at runtime.
      "finish
    endif
+
    let g:loaded_source_reloader = 1
 
 Option 3 — Automatically unlet the ``g:var``
@@ -5792,13 +5934,15 @@ A third option works automatically by checking ``<sfile>``, e.g.,
 
 ::
 
-   if expand("%:p") ==# expand("<sfile>:p")
-     unlet g:loaded_source_reloader
+   if expand('%:p') ==# expand('<sfile>:p')
+     unlet! g:loaded_source_reloader
    endif
 
-   if exists("g:loaded_source_reloader") || &cp
+   if exists('g:loaded_source_reloader') || &cp
+
      finish
    endif
+
    let g:loaded_source_reloader = 1
 
 (Props to `EasyMotion <https://github.com/easymotion/vim-easymotion>`__
