@@ -35,7 +35,6 @@ BWARE: This help doc. is severly outdated! [2024-12-08]
 This plugin isn't really a plugin — it's a collection of plugins.
 
 |dubs-buffer-fun|: Manage Buffers and Windows.
-|dubs-file-finder|: Find and Open Files.
 |dubs-project-tray|: Project plugin wrapper.
 |dubs-quickfix-wrap|: Elegant Quickfix wrapper.
 |dubs-grep-steady|: Clever Text Search including Replace.
