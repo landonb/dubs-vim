@@ -53,7 +53,7 @@ build_readme_using () {
   filter_mkd "${startd}/vim-buffer-ring/README.md" >> ${target}
   # (forked) filter_rst "${startd}/vim-classic-taglist/README.rst" >> ${target}
   filter_mkd "${depoxy}/vim-clip-expand-path/README.md" >> ${target}
-  filter_mkd "${startd}/vim-command-line-clock/README.md" >> ${target}
+  filter_mkd "${embrace}/vim-command-line-clock/README.md" >> ${target}
   filter_mkd "${depoxy}/vim-depoxy-coc-defaults/README.md" >> ${target}
   filter_rst "${embrace}/vim-fullscreen-toggle/README.rst" >> ${target}
   filter_rst "${embrace}/vim-goto-file-sh/README.rst" >> ${target}
