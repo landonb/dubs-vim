@@ -19,9 +19,18 @@
 " This script called twice from ~/.vim/.vimrc and a third time
 " from Vim after .vimrc sourced.
 
-if exists("g:loaded_vim_plugin_dubs_preloads") || &cp
+" GUARD: Press <F9> to reload this plugin (or :source it).
+" - Via: https://github.com/embrace-vim/vim-source-reloader#↩️
+
+if expand('%:p') ==# expand('<sfile>:p')
+  unlet! g:loaded_vim_plugin_dubs_preloads
+endif
+
+if exists('g:loaded_vim_plugin_dubs_preloads') || &cp
+
   finish
 endif
+
 let g:loaded_vim_plugin_dubs_preloads = 1
 
 " ------------------------------------------------------------
