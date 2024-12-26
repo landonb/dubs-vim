@@ -1,15 +1,17 @@
-" Vim startup script sourced before system scripts are loaded.
-" Author: Landon Bouma (landonb &#x40; retrosoft &#x2E; com)
+" Author: Landon Bouma <https://tallybark.com/>
 " Project: https://github.com/landonb/dubs-vim#🖖
 " License: https://creativecommons.org/publicdomain/zero/1.0/
+" Summary: Vim startup script sourced before system scripts are loaded.
 
-" ------------------------------------------
+" ------------------------------------------------------------
 " About:
 
 " If you want to set any g:global variables to override stock
 " Vim script behavior, you have to set the globals *before*
 " sourcing the shared Vim files. So the `.vimrc` for Dubs Vim
 " sources this script before loading any system scripts.
+
+" ------------------------------------------------------------
 
 " ------------------------------------------------------------
 " Inhibit multiple sourcings.
@@ -21,6 +23,8 @@ if exists("g:loaded_vim_plugin_dubs_preloads") || &cp
   finish
 endif
 let g:loaded_vim_plugin_dubs_preloads = 1
+
+" ------------------------------------------------------------
 
 " ------------------------------------------------------------
 " Add user local bin to path.
