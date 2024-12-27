@@ -7,20 +7,34 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 EVIM_INSTALL_TEMPLATE="${EVIM_INSTALL_TEMPLATE:-${HOME}/.vim/doc/INSTALL.m4.md}"
+EVIM_REAME_TEMPLATE_MD="${EVIM_REAME_TEMPLATE_MD:-${HOME}/.vim/doc/INSTALL-README.m4.md}"
+EVIM_REAME_TEMPLATE_RST="${EVIM_REAME_TEMPLATE_RST:-${HOME}/.vim/doc/INSTALL-README.m4.rst}"
 
 EVIM_INSTALL_TARGET="${EVIM_INSTALL_TARGET:-INSTALL.md}"
+EVIM_README_MD_TARGET="${EVIM_README_MD_TARGET:-README.md}"
+EVIM_README_RST_TARGET="${EVIM_README_RST_TARGET:-README.rst}"
+
+# ***
 
 gm4 () {
   command -v gm4 || command -v m4
 }
 
+must_locate_templates () {
+  must_locate_template "${EVIM_INSTALL_TEMPLATE}"
+  must_locate_template "${EVIM_REAME_TEMPLATE_MD}"
+  must_locate_template "${EVIM_REAME_TEMPLATE_RST}"
+}
+
 must_locate_template () {
-  if [ -s "${EVIM_INSTALL_TEMPLATE}" ]; then
+  local template="$1"
+
+  if [ -s "${template}" ]; then
 
     return
   fi
 
-  >&2 echo "GAFFE: Template not found at ${EVIM_INSTALL_TEMPLATE}"
+  >&2 echo "GAFFE: Template not found at ${template}"
 
   exit 1
 }
@@ -67,6 +81,29 @@ generate_document () {
 
 generate_install_readme () {
   generate_document "${EVIM_INSTALL_TEMPLATE}" > "${EVIM_INSTALL_TARGET}"
+
+  echo "Created new readme ${EVIM_INSTALL_TARGET}"
+}
+
+# ***
+
+append_readme_sections () {
+  append_readme_sections_from_template "${EVIM_REAME_TEMPLATE_MD}" "${EVIM_README_MD_TARGET}"
+  append_readme_sections_from_template "${EVIM_REAME_TEMPLATE_RST}" "${EVIM_README_RST_TARGET}"
+}
+
+append_readme_sections_from_template () {
+  local template="$1"
+  local target="$2"
+
+  if ! [ -f "${target}" ]; then
+
+    return
+  fi
+
+  generate_document "${template}" >> "${target}"
+
+  echo "ALERT: Please clean up changes to ${target}"
 }
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
@@ -74,13 +111,17 @@ generate_install_readme () {
 main () {
   set -e
 
-  must_locate_template
+  must_locate_templates
 
   must_be_repo_root
 
   must_not_clobber
 
   generate_install_readme
+
+  # For convenience, append short-n-sweet install section to existing
+  # README file, though user will have to clean up.
+  append_readme_sections
 }
 
 main "$@"
