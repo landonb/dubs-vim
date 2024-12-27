@@ -1,3 +1,5 @@
+.. ISOFF/2024-12-26: Use INSTALL.m4.md instead.
+
 Installation
 ============
 
