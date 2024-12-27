@@ -42,7 +42,7 @@ must_not_clobber () {
     return
   fi
 
-  >&2 echo "GAFFE: The target file already exists at ${EVIM_INSTALL_TEMPLATE}"
+  >&2 echo "GAFFE: The target file already exists at ${EVIM_INSTALL_TARGET}"
 
   exit 1
 }
