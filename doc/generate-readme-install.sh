@@ -47,7 +47,11 @@ must_not_clobber () {
   exit 1
 }
 
-generate_readme_install () {
+# ***
+
+generate_document () {
+  local template="$1"
+
   command $(gm4) \
     --define=ORG_NAME=${EVIM_ORG_NAME:-embrace-vim} \
     \
@@ -57,9 +61,12 @@ generate_readme_install () {
     <( \
         printf "m4_changecom()"; \
         printf "m4_changequote(\`[[[', \`]]]')"; \
-        cat "${EVIM_INSTALL_TEMPLATE}"; \
-    ) \
-    > "${EVIM_INSTALL_TARGET}"
+        cat "${template}"; \
+    )
+}
+
+generate_install_readme () {
+  generate_document "${EVIM_INSTALL_TEMPLATE}" > "${EVIM_INSTALL_TARGET}"
 }
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
@@ -73,7 +80,7 @@ main () {
 
   must_not_clobber
 
-  generate_readme_install
+  generate_install_readme
 }
 
 main "$@"
