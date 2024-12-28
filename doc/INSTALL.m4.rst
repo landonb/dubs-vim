@@ -143,5 +143,5 @@ occasionally).
     lib = remote_set origin https://github.com/ORG_NAME/PLUG_NAME.git
 
     [DEFAULT]
-    skip = false
+    skip = mr_exclusive
 
