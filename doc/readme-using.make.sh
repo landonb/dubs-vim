@@ -288,6 +288,8 @@ print_scoped_head () {
 
   # Optional: git-put-wise scope logic.
   if ! command -v git-put-wise > /dev/null; then
+    >&2 echo "ALERT: git-put-wise absent! Using HEAD, not scoped head!"
+
     scoped_head_sha="HEAD"
   else
     # Exclude latest commits whose messages start with "PRIVATE: " or
