@@ -16,7 +16,7 @@ EVIM_README_RST_TARGET="${EVIM_README_RST_TARGET:-README.rst}"
 
 # ***
 
-gm4 () {
+gnu_m4 () {
   command -v gm4 || command -v m4
 }
 
@@ -66,7 +66,7 @@ must_not_clobber () {
 generate_document () {
   local template="$1"
 
-  command $(gm4) \
+  $(gnu_m4) \
     --define=ORG_NAME=${EVIM_ORG_NAME:-embrace-vim} \
     \
     --define=PLUG_NAME=$(basename -- "$(pwd)") \
