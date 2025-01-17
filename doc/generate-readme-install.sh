@@ -17,7 +17,10 @@ EVIM_README_RST_TARGET="${EVIM_README_RST_TARGET:-README.rst}"
 # ***
 
 gnu_m4 () {
-  command -v gm4 || command -v m4
+  for cmd in "gm4" "m4"; do
+    ( unset -f ${cmd}; unalias ${cmd}; command -v ${cmd} ) 2> /dev/null \
+      && break
+  done
 }
 
 must_locate_templates () {
