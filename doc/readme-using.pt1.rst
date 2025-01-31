@@ -107,7 +107,7 @@ These are plugins I've developed and continue to maintain:
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   👣 `vim-clip-expand-path <https://github.com/DepoXy/vim-clip-expand-path>`__                       Press ``<Leader>J`` to copy full file path to clipboard, or ``<Leader>j`` to copy relative path.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
-  🕰 `vim-command-line-clock <https://github.com/embrace-vim/vim-command-line-clock>`__              Shows the date and clock time in the command line when no other output is displayed.
+  🕰️ `vim-command-line-clock <https://github.com/embrace-vim/vim-command-line-clock>`__              Shows the date and clock time in the command line when no other output is displayed.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
   🥥 `vim-depoxy-coc-defaults <https://github.com/DepoXy/vim-depoxy-coc-defaults>`__                 Sensible coc.nvim defaults and maps.
   ------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------
