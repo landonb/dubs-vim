@@ -483,7 +483,7 @@ here just to be sure you're not missing anything useful):
     e.g., ``:DB postgresql:///foobar``
 | `vim-eunuch <https://github.com/tpope/vim-eunuch>`__:
     "eunuch.vim: Helpers for UNIX",
-    e.g., ``:Chmod``
+    including file system commands, e.g., ``:Chmod``, ``:Remove``, ``:SudoEdit``
 | `vim-projectionist <https://github.com/tpope/vim-projectionist>`__:
     "projectionist.vim: Granular project configuration",
     helps work with boilerplate or similarly-configured projects
