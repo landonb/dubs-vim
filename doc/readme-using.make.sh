@@ -13,14 +13,14 @@ build_readme_using () {
 
   gpwcat "readme-using.pt1.rst" > ${target}
 
-  local startd="${HOME}/.vim/pack/landonb/start"
-  # local optd="${HOME}/.vim/pack/landonb/optd"
+  local startd="${HOME}/.kit/nvim/landonb"
+  # local optd="${HOME}/.kit/nvim/landonb/.whilom"
 
-  local depoxy="${HOME}/.vim/pack/DepoXy/start"
+  local depoxy="${HOME}/.kit/nvim/DepoXy/start"
 
-  local embrace="${HOME}/.vim/pack/embrace-vim/start"
+  local embrace="${HOME}/.kit/nvim/embrace-vim/start"
 
-  # PARITY: See directories under ~/.vim/pack/landonb/start
+  # PARITY: See directories under ~/.kit/nvim/landonb
   # OHWELL: Ideally, I'd convert README.md → README.rst (and ensure
   #         README-USING.rst includes all my plugs), but I've been
   #         thinking that having a *huge* README is not so valuable.
